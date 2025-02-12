@@ -1,0 +1,56 @@
+business:
+- business: null
+  desc: 接收器命令发送
+  params:
+    COM口:
+      value: COM3
+      path: $[0].params.value.comPort
+    波特率:
+      value: 9600
+      path: $[0].params.value.baudRate
+    数据位:
+      value: 8
+      path: $[0].params.value.byteSize
+    停止位:
+      value: 2
+      path: $[0].params.value.stopBite  
+    要发送的信息:
+      value: ''
+      path: $[0].params.value.message
+step:
+- action: VariableAction
+  method: set_variable
+  desc: 接收器停止_生成控制命令json
+  params:
+    name: data
+    value:
+      comPort: COM3
+      baudRate: 9600
+      byteSize: 8
+      stopBite: 2
+      message: ''
+- action: HttpAction
+  method: request
+  desc: 接收器停止_发送控制命令,返回json
+  params:
+    method: post
+    url: /receiver/sendser
+    headers: null
+    params: null
+    data: null
+    json: 'data'
+    result_json: result_json
+- action: JsonAction
+  method: get_json_value
+  desc: 接收器停止_获取设置状态
+  params:
+    json_data: ${result_json}
+    
+    json_path: $.status
+    result: res
+- action: CheckAction
+  method: equal
+  desc: 接收器停止_判断设置是否成功
+  params:
+    real_value: ${res}
+    expect_value: success

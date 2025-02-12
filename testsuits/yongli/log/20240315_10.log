@@ -1,0 +1,114 @@
+2024-03-15 15:14:30,295 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-03-15 15:14:30,296 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-03-15 15:14:31,780 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:14:31,781 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:14:31,781 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': [2022, 2, 22, 12, 22, 22], 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-03-15 15:14:31,782 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized
+2024-03-15 15:14:31,782 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': [2022, 2, 22, 12, 22, 22], 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-03-15 15:14:33,680 - root - INFO - post接口的响应时间==>1.89515
+2024-03-15 15:14:33,680 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/customized
+2024-03-15 15:14:33,680 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:14:33,681 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Customized path added'}
+2024-03-15 15:14:33,681 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-03-15 15:14:33,682 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:14:33,682 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-03-15 15:14:33,682 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-03-15 15:14:33,685 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：1
+        失败用例数：0
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 100.0 %
+        
+2024-03-15 15:14:35,693 - root - ERROR - '报告d:\\BaiduSyncdisk\\project\\python\\skydel\\scene\\testsuits\\BD420023\\report\\allure\\report目录不存在！'
+2024-03-15 15:18:04,384 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-03-15 15:18:04,385 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-03-15 15:18:04,475 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:18:04,476 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:18:04,477 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': [2022, 2, 22, 12, 22, 22], 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-03-15 15:18:04,478 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized
+2024-03-15 15:18:04,478 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': [2022, 2, 22, 12, 22, 22], 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-03-15 15:18:06,472 - root - INFO - post接口的响应时间==>1.992579
+2024-03-15 15:18:06,472 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/customized
+2024-03-15 15:18:06,473 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:18:06,473 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Customized path added'}
+2024-03-15 15:18:06,474 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-03-15 15:18:06,474 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:18:06,474 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-03-15 15:18:06,475 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-03-15 15:18:06,479 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：1
+        失败用例数：0
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 100.0 %
+        
+2024-03-15 15:18:08,492 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2024-03-15 15:19:00,758 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-03-15 15:19:00,759 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-03-15 15:19:00,833 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:19:00,834 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:19:00,834 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': [2022, 2, 22, 12, 22, 22], 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-03-15 15:19:00,835 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized
+2024-03-15 15:19:00,835 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': [2022, 2, 22, 12, 22, 22], 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-03-15 15:19:02,937 - root - INFO - post接口的响应时间==>2.101452
+2024-03-15 15:19:02,937 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/customized
+2024-03-15 15:19:02,938 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:19:02,938 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Customized path added'}
+2024-03-15 15:19:02,938 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-03-15 15:19:02,939 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:19:02,939 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-03-15 15:19:02,939 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-03-15 15:19:02,942 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：1
+        失败用例数：0
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 100.0 %
+        
+2024-03-15 15:19:04,956 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2024-03-15 15:58:25,008 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-03-15 15:58:25,008 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-03-15 15:58:25,083 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:25,084 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:25,084 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-03-15 15:58:25,085 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized
+2024-03-15 15:58:25,085 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-03-15 15:58:28,456 - root - INFO - post接口的响应时间==>3.370324
+2024-03-15 15:58:28,457 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/customized
+2024-03-15 15:58:28,457 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:28,457 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Customized path added'}
+2024-03-15 15:58:28,458 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-03-15 15:58:28,458 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:28,458 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-03-15 15:58:28,458 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-03-15 15:58:28,463 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:28,464 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:28,464 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'controlFunction': 'active', 'simulatorControl': 'start'}
+2024-03-15 15:58:28,465 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/simulatorcontrol
+2024-03-15 15:58:28,465 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'controlFunction': 'active', 'simulatorControl': 'start'}
+2024-03-15 15:58:28,505 - root - INFO - post接口的响应时间==>0.03894
+2024-03-15 15:58:28,505 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/simulatorcontrol
+2024-03-15 15:58:28,506 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:28,506 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Simulator started'}
+2024-03-15 15:58:28,506 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-03-15 15:58:28,507 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:28,508 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-03-15 15:58:28,508 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-03-15 15:58:28,534 - root - INFO - - - - - - - - - - - - - - - - - - - - - 自定义关键字[自定义关键字],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-15 15:58:58,751 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-03-15 15:59:00,760 - root - ERROR - [Errno 2] No such file or directory: 'd:\\BaiduSyncdisk\\project\\python\\skydel\\scene\\testsuits\\BD420023\\report\\allure\\report\\index.html'

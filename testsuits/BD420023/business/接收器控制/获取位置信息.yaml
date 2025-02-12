@@ -1,0 +1,17 @@
+business:
+- business: null
+  desc: 获取位置信息
+  params: 
+    位置信息结果:
+      value: result_json
+      path: $[0].params.result_json
+step:
+- action: HttpAction
+  method: request
+  desc: 获取位置信息：发送GET请求,返回json
+  params:
+    method: get
+    url: /receiver/location
+    headers: null
+    params: null
+    result_json: result_json

@@ -1,0 +1,46 @@
+2024-03-18 16:20:41,277 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-03-18 16:20:41,277 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-03-18 16:20:41,995 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:20:41,996 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:20:42,003 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-03-18 16:20:42,004 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/standard
+2024-03-18 16:20:42,004 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-03-18 16:20:46,110 - root - INFO - post接口的响应时间==>4.102766
+2024-03-18 16:20:46,110 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/standard
+2024-03-18 16:20:46,110 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:20:46,111 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Standard scene added'}
+2024-03-18 16:20:46,111 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-03-18 16:20:46,111 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:20:46,112 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-03-18 16:20:46,112 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-03-18 16:20:46,117 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:20:46,118 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:20:46,118 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'controlFunction': 'active', 'simulatorControl': 'start'}
+2024-03-18 16:20:46,118 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/simulatorcontrol
+2024-03-18 16:20:46,118 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'controlFunction': 'active', 'simulatorControl': 'start'}
+2024-03-18 16:20:46,127 - root - INFO - post接口的响应时间==>0.008384
+2024-03-18 16:20:46,127 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/simulatorcontrol
+2024-03-18 16:20:46,127 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:20:46,128 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Simulator started'}
+2024-03-18 16:20:46,128 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-03-18 16:20:46,129 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:20:46,129 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-03-18 16:20:46,129 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-03-18 16:20:46,148 - root - INFO - - - - - - - - - - - - - - - - - - - - - 自定义关键字[自定义关键字],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:21:16,307 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取Json中的值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:21:16,307 - root - INFO - 动态变量res替换成功,替换后的值==>{'status': 'error', 'time_start': 1710750046.1498995, 'time_diff': 30.157092094421387}
+2024-03-18 16:21:16,308 - root - INFO - 执行JsonAction.get_json_value方法，返回值status==>获取json中的值成功：error
+2024-03-18 16:21:16,308 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-18 16:21:16,308 - root - INFO - 动态变量status替换成功,替换后的值==>error
+2024-03-18 16:21:16,308 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：error==fail
+2024-03-18 16:21:16,348 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-03-18 16:21:16,353 - root - INFO - 正在生成报告
+2024-03-18 16:21:19,368 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

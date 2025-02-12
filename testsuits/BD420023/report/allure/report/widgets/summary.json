@@ -1,0 +1,20 @@
+{
+    "reportName": "BD420023 Report",
+    "testRuns": [],
+    "statistic": {
+        "failed": 1,
+        "broken": 0,
+        "skipped": 0,
+        "passed": 0,
+        "unknown": 0,
+        "total": 1
+    },
+    "time": {
+        "start": 1715308809235,
+        "stop": 1715308811825,
+        "duration": 2590,
+        "minDuration": 2590,
+        "maxDuration": 2590,
+        "sumDuration": 2590
+    }
+}

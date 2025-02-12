@@ -1,0 +1,2 @@
+INFO     root:parser.py:43 - - - - - - - - - - - - - - - - - - - - 基础关键字[绘制折线图],开始执行！- - - - - - - - - - - - - - - - - - - - 
+INFO     root:charts_base.py:31 [ChartsAction.add_line_chart]绘制折线图：测试 成功

@@ -1,0 +1,41 @@
+2023-12-06 16:56:57,995 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 16:56:57,997 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 16:56:58,938 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:58,942 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 16:56:58,943 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 16:56:58,943 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 16:56:58,968 - root - INFO - post接口的响应时间==>0.022149
+2023-12-06 16:56:58,968 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 16:56:58,986 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,新增文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:58,989 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 16:56:58,989 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 16:56:58,989 - root - INFO - post接口请求体data==>{'_20_cmd': 'add', '_20_redirect': '/group/10779/upload', '_20_folderId': '0', '_20_parentFolderId': '0', '_20_tabs1TabsScroll': '', '_20_name': '自动化文件夹名称', '_20_description': '自动化文件夹描述'}
+2023-12-06 16:56:59,013 - root - INFO - post接口的响应时间==>0.01254
+2023-12-06 16:56:59,014 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 16:56:59,045 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,查询文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:59,047 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 16:56:59,047 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 16:56:59,068 - root - INFO - post接口的响应时间==>0.008117
+2023-12-06 16:56:59,068 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 16:56:59,069 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配：文件夹信息],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:59,069 - root - INFO - 执行StrAction.re_match_str方法，返回值file_data==>字符串正则匹配成功：[]
+2023-12-06 16:56:59,069 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:59,069 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:59,069 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串拼接],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:59,070 - root - INFO - 执行StrAction.str_join方法，返回值_20_redirect==>字符串正则匹配成功：/group/10779/upload?p_p_id=20&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_20_struts_action=%2Fdocument_library%2Fview&_20_folderId=None
+2023-12-06 16:56:59,070 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取file目录文件路径],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:59,075 - root - INFO - 执行FileAction.get_file_joined_path方法，返回值file_path==>获取file目录文件路径成功：D:\01MyCode\01DemoCode\00temp00\autorunner\testsuits\02gjxt_http\testcase\casedata\file\upload_file.txt
+2023-12-06 16:56:59,075 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取文件对象],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:59,075 - root - INFO - 执行FileAction.get_file_object方法，返回值file_obj==>获取文件对象成功：<_io.TextIOWrapper name='D:\\01MyCode\\01DemoCode\\00temp00\\autorunner\\testsuits\\02gjxt_http\\testcase\\casedata\\file\\upload_file.txt' mode='r' encoding='cp936'>
+2023-12-06 16:56:59,075 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,文件上传,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 16:56:59,075 - root - ERROR - 接口请求失败！：cannot serialize '_io.TextIOWrapper' object
+2023-12-06 16:56:59,211 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 16:56:59,234 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

@@ -1,0 +1,1 @@
+设置变量: data={'simulatorIP': '127.0.0.1', 'startTime': [2024, 4, 28, 16, 0, 0], 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}

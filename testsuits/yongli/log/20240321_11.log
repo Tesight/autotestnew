@@ -1,0 +1,56 @@
+2024-03-21 11:43:55,267 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-03-21 11:43:55,270 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-03-21 11:43:56,938 - matplotlib.font_manager - INFO - generated new fontManager
+2024-03-21 11:43:57,293 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-21 11:43:57,294 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-21 11:43:57,294 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-03-21 11:43:57,295 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/standard
+2024-03-21 11:43:57,295 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-03-21 11:43:59,852 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2024 11:43:59] "POST /standard HTTP/1.1" 200 -
+2024-03-21 11:43:59,853 - root - INFO - post接口的响应时间==>2.55631
+2024-03-21 11:43:59,853 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/standard
+2024-03-21 11:43:59,853 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-21 11:43:59,853 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'failed', 'message': 'Simulator connect failed'}
+2024-03-21 11:43:59,853 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：failed
+2024-03-21 11:43:59,854 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-21 11:43:59,854 - root - INFO - 动态变量res替换成功,替换后的值==>failed
+2024-03-21 11:43:59,854 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：failed==success
+2024-03-21 11:43:59,869 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-03-21 11:43:59,874 - root - INFO - 正在生成报告
+2024-03-21 11:44:02,890 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2024-03-21 11:47:32,040 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-03-21 11:47:32,041 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-03-21 11:47:32,477 - matplotlib.font_manager - INFO - generated new fontManager
+2024-03-21 11:47:32,719 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-21 11:47:32,719 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-21 11:47:32,719 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-03-21 11:47:32,720 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/standard
+2024-03-21 11:47:32,720 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-03-21 11:47:35,262 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2024 11:47:35] "POST /standard HTTP/1.1" 200 -
+2024-03-21 11:47:35,263 - root - INFO - post接口的响应时间==>2.542648
+2024-03-21 11:47:35,263 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/standard
+2024-03-21 11:47:35,264 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-21 11:47:35,264 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'failed', 'message': 'Simulator connect failed'}
+2024-03-21 11:47:35,264 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：failed
+2024-03-21 11:47:35,265 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-21 11:47:35,265 - root - INFO - 动态变量res替换成功,替换后的值==>failed
+2024-03-21 11:47:35,265 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：failed==success
+2024-03-21 11:47:35,290 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-03-21 11:47:35,294 - root - INFO - 正在生成报告
+2024-03-21 11:47:38,309 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

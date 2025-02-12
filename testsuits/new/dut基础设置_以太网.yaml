@@ -1,0 +1,43 @@
+business:
+- business: null
+  desc: 接收器命令发送
+  params:
+    待测件IP地址:
+      value:127.0.0.1
+      path: $[0].params.value.dutip
+    待测件端口:
+      value: 8001
+      path: $[0].params.value.port
+step:
+- action: VariableAction
+  method: set_variable
+  desc: 接收器停止_生成控制命令json
+  params:
+    name: data
+    value:
+      dutip: 127.0.0.1
+      port: 8001
+- action: HttpAction
+  method: request
+  desc: 接收器停止_发送控制命令,返回json
+  params:
+    method: post
+    url: /receiver/sendint
+    headers: null
+    params: null
+    data: null
+    json: 'data'
+    result_json: result_json
+- action: JsonAction
+  method: get_json_value
+  desc: 接收器停止_获取设置状态
+  params:
+    json_data: ${result_json}
+    json_path: $.status
+    result: res
+- action: CheckAction
+  method: equal
+  desc: 接收器停止_判断设置是否成功
+  params:
+    real_value: ${res}
+    expect_value: success

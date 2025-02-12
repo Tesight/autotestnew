@@ -1,0 +1,68 @@
+info:
+- desc: 请填写用例信息
+  params:
+    id: '1'
+    title: '1'
+config:
+- policy: skip
+  desc: 是否跳过此用例
+  params:
+    flag: false
+    reason: null
+- policy: mark
+  desc: 是否给用例打标签
+  params:
+    flag: false
+    markname: http
+- policy: usefixtures
+  desc: 是否使用前置后置
+  params:
+    flag: false
+    fixtures: null
+- policy: parametrize
+  desc: 是否使用数据驱动
+  params:
+    flag: false
+    filename: null
+    sheetname: null
+step:
+- action: VariableAction
+  method: set_variable
+  desc: 设置变量
+  params:
+    name: name
+    value: pic1
+- action: ReportAction
+  method: save_screenshot
+  desc: 截图
+  params:
+    file_name: ${name}
+- action: ReportAction
+  method: add_screenshot
+  desc: 添加图片
+  params:
+    file_name: ${name}
+- function: python
+  desc: 自定义关键字
+  params:
+    py_name: fun_demo.py
+    func_name: say_hello
+    kwargs:
+      word: ${name}
+    result: result
+- action: CheckAction
+  method: equal
+  desc: 判断两个值相等
+  params:
+    real_value: ${result}
+    expect_value: pic12
+- action: TimeAction
+  method: time_sleep
+  desc: 等待时间（秒）
+  params:
+    second: 5
+- action: WindowsAction
+  method: open_file
+  desc: 打开文件
+  params:
+    filepath: D:\BaiduSyncdisk\project\python\skydel\scene\requirements.txt

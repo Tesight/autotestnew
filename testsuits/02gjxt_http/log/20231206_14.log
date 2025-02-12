@@ -1,0 +1,288 @@
+2023-12-06 14:18:59,494 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 14:18:59,495 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 14:19:00,440 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:19:00,442 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 14:19:00,443 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:19:00,443 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 14:19:00,493 - root - INFO - post接口的响应时间==>0.047781
+2023-12-06 14:19:00,493 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 14:19:00,513 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,新增文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:19:00,515 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:19:00,516 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:19:00,516 - root - INFO - post接口请求体data==>{'_20_cmd': 'add', '_20_redirect': '/group/10779/upload', '_20_folderId': '0', '_20_parentFolderId': '0', '_20_tabs1TabsScroll': '', '_20_name': '自动化文件夹名称', '_20_description': '自动化文件夹描述'}
+2023-12-06 14:19:00,538 - root - INFO - post接口的响应时间==>0.008326
+2023-12-06 14:19:00,539 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:19:00,547 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：1
+        失败用例数：0
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 100.0 %
+        
+2023-12-06 14:19:00,562 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 14:20:26,899 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 14:20:26,901 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 14:20:27,013 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:20:27,015 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 14:20:27,015 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:20:27,015 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 14:20:27,087 - root - INFO - post接口的响应时间==>0.031836
+2023-12-06 14:20:27,088 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 14:20:27,106 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,新增文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:20:27,107 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:20:27,108 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:20:27,108 - root - INFO - post接口请求体data==>{'_20_cmd': 'add', '_20_redirect': '/group/10779/upload', '_20_folderId': '0', '_20_parentFolderId': '0', '_20_tabs1TabsScroll': '', '_20_name': '自动化文件夹名称', '_20_description': '自动化文件夹描述'}
+2023-12-06 14:20:27,215 - root - INFO - post接口的响应时间==>0.048389
+2023-12-06 14:20:27,215 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:20:27,222 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：1
+        失败用例数：0
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 100.0 %
+        
+2023-12-06 14:20:27,234 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 14:26:30,484 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 14:26:30,485 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 14:26:30,602 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:26:30,604 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 14:26:30,605 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:26:30,605 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 14:26:30,657 - root - INFO - post接口的响应时间==>0.02263
+2023-12-06 14:26:30,658 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 14:26:30,675 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,新增文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:26:30,677 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:26:30,677 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:26:30,677 - root - INFO - post接口请求体data==>{'_20_cmd': 'add', '_20_redirect': '/group/10779/upload', '_20_folderId': '0', '_20_parentFolderId': '0', '_20_tabs1TabsScroll': '', '_20_name': '自动化文件夹名称', '_20_description': '自动化文件夹描述'}
+2023-12-06 14:26:30,714 - root - INFO - post接口的响应时间==>0.022503
+2023-12-06 14:26:30,715 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:26:30,722 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,查询文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:26:30,724 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:26:30,725 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:26:30,742 - root - INFO - post接口的响应时间==>0.015435
+2023-12-06 14:26:30,742 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:26:30,742 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配：id],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:26:30,742 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 14:26:30,742 - root - INFO - 执行StrAction.re_match_str方法，返回值id==>字符串正则匹配成功：[('54519', '自动化文件夹名称')]
+2023-12-06 14:26:30,743 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,删除文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:26:30,743 - root - INFO - 需要替换的动态变量有==>['id']
+2023-12-06 14:26:30,847 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 14:26:30,863 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 14:28:48,157 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 14:28:48,158 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 14:28:48,296 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:28:48,299 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 14:28:48,299 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:28:48,299 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 14:28:48,337 - root - INFO - post接口的响应时间==>0.022799
+2023-12-06 14:28:48,338 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 14:28:48,356 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,新增文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:28:48,357 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:28:48,357 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:28:48,358 - root - INFO - post接口请求体data==>{'_20_cmd': 'add', '_20_redirect': '/group/10779/upload', '_20_folderId': '0', '_20_parentFolderId': '0', '_20_tabs1TabsScroll': '', '_20_name': '自动化文件夹名称', '_20_description': '自动化文件夹描述'}
+2023-12-06 14:28:48,398 - root - INFO - post接口的响应时间==>0.023956
+2023-12-06 14:28:48,399 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:28:48,408 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,查询文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:28:48,410 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:28:48,410 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:28:48,428 - root - INFO - post接口的响应时间==>0.015725
+2023-12-06 14:28:48,428 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:28:48,429 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配：文件夹信息],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:28:48,430 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 14:28:48,430 - root - INFO - 执行StrAction.re_match_str方法，返回值file_data==>字符串正则匹配成功：[('54521', '自动化文件夹名称')]
+2023-12-06 14:28:48,430 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:28:48,430 - root - INFO - 需要替换的动态变量有==>['file_data']
+2023-12-06 14:28:48,430 - root - INFO - 动态变量file_data替换成功,替换后的值==>[('54521', '自动化文件夹名称')]
+2023-12-06 14:28:48,430 - root - INFO - 执行ListAction.get_list_value方法，返回值id_tup==>获取列表中值成功：('54521', '自动化文件夹名称')
+2023-12-06 14:28:48,430 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:28:48,430 - root - INFO - 需要替换的动态变量有==>['id_tup']
+2023-12-06 14:28:48,431 - root - INFO - 动态变量id_tup替换成功,替换后的值==>('54521', '自动化文件夹名称')
+2023-12-06 14:28:48,431 - root - INFO - 执行ListAction.get_list_value方法，返回值id==>获取列表中值成功：54521
+2023-12-06 14:28:48,431 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,删除文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 14:28:48,436 - root - INFO - 需要替换的动态变量有==>['id']
+2023-12-06 14:28:48,436 - root - INFO - 动态变量id替换成功,替换后的值==>54521
+2023-12-06 14:28:48,438 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:28:48,438 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 14:28:48,464 - root - INFO - post接口的响应时间==>0.01326
+2023-12-06 14:28:48,465 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 14:28:48,473 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：1
+        失败用例数：0
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 100.0 %
+        
+2023-12-06 14:28:48,485 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 15:03:37,483 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 15:03:37,484 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 15:03:38,458 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,462 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 15:03:38,462 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:03:38,462 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 15:03:38,486 - root - INFO - post接口的响应时间==>0.020863
+2023-12-06 15:03:38,486 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 15:03:38,504 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,新增文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,506 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:03:38,506 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:03:38,506 - root - INFO - post接口请求体data==>{'_20_cmd': 'add', '_20_redirect': '/group/10779/upload', '_20_folderId': '0', '_20_parentFolderId': '0', '_20_tabs1TabsScroll': '', '_20_name': '自动化文件夹名称', '_20_description': '自动化文件夹描述'}
+2023-12-06 15:03:38,527 - root - INFO - post接口的响应时间==>0.008616
+2023-12-06 15:03:38,527 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:03:38,558 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,查询文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,561 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:03:38,561 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:03:38,584 - root - INFO - post接口的响应时间==>0.013388
+2023-12-06 15:03:38,585 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:03:38,585 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配：文件夹信息],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,585 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 15:03:38,586 - root - INFO - 执行StrAction.re_match_str方法，返回值file_data==>字符串正则匹配成功：[]
+2023-12-06 15:03:38,586 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,586 - root - INFO - 需要替换的动态变量有==>['file_data']
+2023-12-06 15:03:38,586 - root - INFO - 动态变量file_data替换成功,替换后的值==>[]
+2023-12-06 15:03:38,587 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,587 - root - INFO - 需要替换的动态变量有==>['id_tup']
+2023-12-06 15:03:38,587 - root - INFO - 动态变量id_tup替换成功,替换后的值==>None
+2023-12-06 15:03:38,587 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串拼接],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,587 - root - INFO - 执行StrAction.str_join方法，返回值_20_redirect==>字符串正则匹配成功：/group/10779/upload?p_p_id=20&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_20_struts_action=%2Fdocument_library%2Fview&_20_folderId=id
+2023-12-06 15:03:38,587 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取file目录文件路径],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,590 - root - INFO - 执行FileAction.get_file_joined_path方法，返回值file_path==>获取file目录文件路径成功：D:\01MyCode\01DemoCode\00temp00\autorunner\testsuits\02gjxt_http\testcase\casedata\file\upload_file.txt
+2023-12-06 15:03:38,593 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取文件内容],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,593 - root - INFO - 需要替换的动态变量有==>['file_path']
+2023-12-06 15:03:38,593 - root - INFO - 动态变量file_path替换成功,替换后的值==>D:\01MyCode\01DemoCode\00temp00\autorunner\testsuits\02gjxt_http\testcase\casedata\file\upload_file.txt
+2023-12-06 15:03:38,594 - root - INFO - 执行FileAction.get_file_content方法，返回值file_content==>获取文件内容成功：b'\xe6\x96\x87\xe4\xbb\xb6\xe4\xb8\x8a\xe4\xbc\xa0\xe6\xb5\x8b\xe8\xaf\x95'
+2023-12-06 15:03:38,594 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,文件上传,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:03:38,594 - root - INFO - 需要替换的动态变量有==>['_20_redirect', 'id']
+2023-12-06 15:03:38,594 - root - INFO - 动态变量_20_redirect替换成功,替换后的值==>None
+2023-12-06 15:03:38,594 - root - INFO - 动态变量id替换成功,替换后的值==>None
+2023-12-06 15:03:38,594 - root - INFO - 需要替换的动态变量有==>['file_content']
+2023-12-06 15:03:38,701 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 15:03:38,721 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 15:04:48,535 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 15:04:48,536 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 15:04:48,651 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,653 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 15:04:48,653 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:04:48,654 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 15:04:48,728 - root - INFO - post接口的响应时间==>0.052046
+2023-12-06 15:04:48,729 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 15:04:48,747 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,新增文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,749 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:04:48,749 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:04:48,749 - root - INFO - post接口请求体data==>{'_20_cmd': 'add', '_20_redirect': '/group/10779/upload', '_20_folderId': '0', '_20_parentFolderId': '0', '_20_tabs1TabsScroll': '', '_20_name': '自动化文件夹名称', '_20_description': '自动化文件夹描述'}
+2023-12-06 15:04:48,791 - root - INFO - post接口的响应时间==>0.026215
+2023-12-06 15:04:48,792 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:04:48,824 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,查询文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,827 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:04:48,827 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:04:48,843 - root - INFO - post接口的响应时间==>0.013758
+2023-12-06 15:04:48,844 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:04:48,844 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配：文件夹信息],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,845 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 15:04:48,845 - root - INFO - 执行StrAction.re_match_str方法，返回值file_data==>字符串正则匹配成功：[('54526', '自动化文件夹名称')]
+2023-12-06 15:04:48,846 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,846 - root - INFO - 需要替换的动态变量有==>['file_data']
+2023-12-06 15:04:48,846 - root - INFO - 动态变量file_data替换成功,替换后的值==>[('54526', '自动化文件夹名称')]
+2023-12-06 15:04:48,846 - root - INFO - 执行ListAction.get_list_value方法，返回值id_tup==>获取列表中值成功：('54526', '自动化文件夹名称')
+2023-12-06 15:04:48,846 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,846 - root - INFO - 需要替换的动态变量有==>['id_tup']
+2023-12-06 15:04:48,846 - root - INFO - 动态变量id_tup替换成功,替换后的值==>('54526', '自动化文件夹名称')
+2023-12-06 15:04:48,846 - root - INFO - 执行ListAction.get_list_value方法，返回值id==>获取列表中值成功：54526
+2023-12-06 15:04:48,846 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串拼接],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,847 - root - INFO - 执行StrAction.str_join方法，返回值_20_redirect==>字符串正则匹配成功：/group/10779/upload?p_p_id=20&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_20_struts_action=%2Fdocument_library%2Fview&_20_folderId=id
+2023-12-06 15:04:48,847 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取file目录文件路径],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,851 - root - INFO - 执行FileAction.get_file_joined_path方法，返回值file_path==>获取file目录文件路径成功：D:\01MyCode\01DemoCode\00temp00\autorunner\testsuits\02gjxt_http\testcase\casedata\file\upload_file.txt
+2023-12-06 15:04:48,851 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取文件内容],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,851 - root - INFO - 需要替换的动态变量有==>['file_path']
+2023-12-06 15:04:48,851 - root - INFO - 动态变量file_path替换成功,替换后的值==>D:\01MyCode\01DemoCode\00temp00\autorunner\testsuits\02gjxt_http\testcase\casedata\file\upload_file.txt
+2023-12-06 15:04:48,851 - root - INFO - 执行FileAction.get_file_content方法，返回值file_content==>获取文件内容成功：b'\xe6\x96\x87\xe4\xbb\xb6\xe4\xb8\x8a\xe4\xbc\xa0\xe6\xb5\x8b\xe8\xaf\x95'
+2023-12-06 15:04:48,852 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,文件上传,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:04:48,852 - root - INFO - 需要替换的动态变量有==>['_20_redirect', 'id']
+2023-12-06 15:04:48,852 - root - INFO - 动态变量_20_redirect替换成功,替换后的值==>None
+2023-12-06 15:04:48,852 - root - INFO - 动态变量id替换成功,替换后的值==>54526
+2023-12-06 15:04:48,852 - root - INFO - 需要替换的动态变量有==>['file_content']
+2023-12-06 15:04:48,879 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 15:04:48,891 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 15:06:10,071 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 15:06:10,073 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 15:06:10,220 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,222 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 15:06:10,223 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:06:10,223 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 15:06:10,271 - root - INFO - post接口的响应时间==>0.017614
+2023-12-06 15:06:10,271 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 15:06:10,290 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,新增文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,292 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:06:10,292 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:06:10,292 - root - INFO - post接口请求体data==>{'_20_cmd': 'add', '_20_redirect': '/group/10779/upload', '_20_folderId': '0', '_20_parentFolderId': '0', '_20_tabs1TabsScroll': '', '_20_name': '自动化文件夹名称', '_20_description': '自动化文件夹描述'}
+2023-12-06 15:06:10,327 - root - INFO - post接口的响应时间==>0.01953
+2023-12-06 15:06:10,328 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:06:10,360 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,查询文件夹],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,362 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:06:10,362 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 15:06:10,380 - root - INFO - post接口的响应时间==>0.014863
+2023-12-06 15:06:10,381 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/upload
+2023-12-06 15:06:10,381 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配：文件夹信息],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,381 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 15:06:10,381 - root - INFO - 执行StrAction.re_match_str方法，返回值file_data==>字符串正则匹配成功：[('54527', '自动化文件夹名称')]
+2023-12-06 15:06:10,381 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,381 - root - INFO - 需要替换的动态变量有==>['file_data']
+2023-12-06 15:06:10,382 - root - INFO - 动态变量file_data替换成功,替换后的值==>[('54527', '自动化文件夹名称')]
+2023-12-06 15:06:10,382 - root - INFO - 执行ListAction.get_list_value方法，返回值id_tup==>获取列表中值成功：('54527', '自动化文件夹名称')
+2023-12-06 15:06:10,382 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,384 - root - INFO - 需要替换的动态变量有==>['id_tup']
+2023-12-06 15:06:10,385 - root - INFO - 动态变量id_tup替换成功,替换后的值==>('54527', '自动化文件夹名称')
+2023-12-06 15:06:10,385 - root - INFO - 执行ListAction.get_list_value方法，返回值id==>获取列表中值成功：54527
+2023-12-06 15:06:10,385 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串拼接],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,385 - root - INFO - 需要替换的动态变量有==>['id']
+2023-12-06 15:06:10,385 - root - INFO - 动态变量id替换成功,替换后的值==>54527
+2023-12-06 15:06:10,385 - root - INFO - 执行StrAction.str_join方法，返回值_20_redirect==>字符串正则匹配成功：/group/10779/upload?p_p_id=20&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_20_struts_action=%2Fdocument_library%2Fview&_20_folderId=54527
+2023-12-06 15:06:10,386 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取file目录文件路径],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,386 - root - INFO - 执行FileAction.get_file_joined_path方法，返回值file_path==>获取file目录文件路径成功：D:\01MyCode\01DemoCode\00temp00\autorunner\testsuits\02gjxt_http\testcase\casedata\file\upload_file.txt
+2023-12-06 15:06:10,386 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取文件内容],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,386 - root - INFO - 需要替换的动态变量有==>['file_path']
+2023-12-06 15:06:10,386 - root - INFO - 动态变量file_path替换成功,替换后的值==>D:\01MyCode\01DemoCode\00temp00\autorunner\testsuits\02gjxt_http\testcase\casedata\file\upload_file.txt
+2023-12-06 15:06:10,389 - root - INFO - 执行FileAction.get_file_content方法，返回值file_content==>获取文件内容成功：b'\xe6\x96\x87\xe4\xbb\xb6\xe4\xb8\x8a\xe4\xbc\xa0\xe6\xb5\x8b\xe8\xaf\x95'
+2023-12-06 15:06:10,389 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,文件上传,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 15:06:10,390 - root - INFO - 需要替换的动态变量有==>['_20_redirect', 'id']
+2023-12-06 15:06:10,390 - root - INFO - 动态变量_20_redirect替换成功,替换后的值==>None
+2023-12-06 15:06:10,390 - root - INFO - 动态变量id替换成功,替换后的值==>54527
+2023-12-06 15:06:10,390 - root - INFO - 需要替换的动态变量有==>['file_content']
+2023-12-06 15:06:10,415 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 15:06:10,429 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

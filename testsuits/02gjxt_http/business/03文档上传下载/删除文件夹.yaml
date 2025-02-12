@@ -1,0 +1,62 @@
+business:
+- business:
+  desc: 删除文件夹
+  params: {}
+step:
+- action: HttpAction
+  method: request
+  desc: 发送POST请求,查询文件夹
+  params:
+    method: post
+    url: /group/10779/upload
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like
+        Gecko
+    params:
+    data:
+    json:
+    result_text: result_text
+- action: StrAction
+  method: re_match_str
+  desc: 字符串正则匹配：文件夹信息
+  params:
+    str_value: ${result_text}
+    pattern: '&_20_struts_action=%2Fdocument_library%2Fview&_20_folderId=(.*?)">(.*?)</a>'
+    result: file_data
+- action: ListAction
+  method: get_list_value
+  desc: 获取列表中值
+  params:
+    list_value: ${file_data}
+    list_index: '0'
+    result: id_tup
+- action: ListAction
+  method: get_list_value
+  desc: 获取列表中值
+  params:
+    list_value: ${id_tup}
+    list_index: '0'
+    result: id
+- action: HttpAction
+  method: request
+  desc: 发送POST请求,删除文件夹
+  params:
+    method: post
+    url: /group/10779/upload
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like
+        Gecko
+    params:
+      p_p_id: '20'
+      p_p_lifecycle: '1'
+      p_p_state: maximized
+      p_p_mode: view
+      p_p_col_id: column-1
+      p_p_col_count: '1'
+      _20_struts_action: /document_library/edit_folder
+      _20_cmd: delete
+      _20_redirect: /group/10779/upload
+      _20_folderId: ${id}
+    data:
+    json:
+    result_text: result_text

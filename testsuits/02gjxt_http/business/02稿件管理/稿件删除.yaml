@@ -1,0 +1,88 @@
+business:
+- business:
+  desc: 稿件删除
+  params:
+    稿件标题:
+      value: 自动化测试新增
+      path: $[0].params.data._15_keywords
+step:
+- action: HttpAction
+  method: request
+  desc: 发送POST请求,稿件查询
+  params:
+    method: post
+    url: /group/10779/articles
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like
+        Gecko
+      Content-Type: application/x-www-form-urlencoded
+      Accept: text/html, application/xhtml+xml, image/jxr, */*
+      Referer: http://127.0.0.1/group/10779/articles
+    params:
+      p_p_id: '15'
+      p_p_lifecycle: '0'
+      p_p_state: maximized
+      p_p_mode: view
+      _15_struts_action: /journal/view
+      _15_tabs1: articles
+    data:
+      _15_cmd: ''
+      _15_tabs1TabsScroll: ''
+      _15_groupId: ''
+      _15_deleteArticleIds: ''
+      _15_expireArticleIds: ''
+      _15_advancedSearch: 'false'
+      _15_keywords: 自动化测试新增
+      _15_andOperator: '1'
+      _15_searchArticleId: ''
+      _15_version: ''
+      _15_title: ''
+      _15_content: ''
+    json:
+    result_text: result_text
+- action: StrAction
+  method: re_match_str
+  desc: 字符串正则匹配
+  params:
+    str_value: ${result_text}
+    pattern: '&_15_version=1.0">(.*?)</a>'
+    result: result
+- action: ListAction
+  method: get_list_value
+  desc: 获取列表中值：id
+  params:
+    list_value: ${result}
+    list_index: '0'
+    result: id
+- action: HttpAction
+  method: request
+  desc: 发送POST请求,稿件删除
+  params:
+    method: post
+    url: /group/10779/articles
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like
+        Gecko
+    params:
+      p_p_id: '15'
+      p_p_lifecycle: '1'
+      p_p_state: maximized
+      p_p_mode: view
+      _15_struts_action: /journal/edit_article
+      _15_redirect: /group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles
+    data:
+      _15_cmd: delete
+      _15_tabs1TabsScroll: ''
+      _15_groupId: '10780'
+      _15_deleteArticleIds: ${id}_version_1.0
+      _15_expireArticleIds: ''
+      _15_advancedSearch: 'false'
+      _15_keywords: ''
+      _15_andOperator: '1'
+      _15_searchArticleId: ''
+      _15_version: ''
+      _15_title: ''
+      _15_content: ''
+      _15_rowIds: ${id}_version_1.0
+    json:
+    result_text: result_text

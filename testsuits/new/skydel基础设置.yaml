@@ -1,0 +1,55 @@
+business:
+- business: null
+  desc: gnss模拟器连接参数
+  params:
+    设备IP地址:
+      value: 127.0.0.1
+      path: $[0].params.value.simulatorIP
+    设备类型:
+      value: gsg7
+      path: $[0].params.value.decivetype
+    设备序列号:
+      value: 1111
+      path: $[0].params.value.deviceserialnum
+    外部衰减:
+      value: 20
+      path: $[0].params.value.externalattenuation
+    隔直器安装:
+      value: null
+      path: $[0].params.value.dc_block_mounting 
+step:
+- action: VariableAction
+  method: set_variable
+  desc: gnss模拟器连接参数_生成连接命令json
+  params:
+    name: data
+    value:
+      simulatorIP: 127.0.0.1
+      decivetype: gsg7
+      deviceserialnum: 1111
+      externalattenuation: 20
+      dc_block_mounting: null
+- action: HttpAction
+  method: request
+  desc: 模拟器参数_发送控制命令,返回json
+  params:
+    method: post
+    url: /customized/connect
+    headers: null
+    params: null
+    data: null
+    json: 'data'
+    result_json: result_json
+- action: JsonAction
+  method: get_json_value
+  desc: 模拟器参数_获取设置状态
+  params:
+    json_data: 'result_json'
+    json_path: $.status
+    result: res
+- action: CheckAction
+  method: equal
+  desc: 模拟器参数_判断设置是否成功
+  params:
+    real_value: ${res}
+    expect_value: success

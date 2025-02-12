@@ -1,0 +1,82 @@
+info:
+- desc: 请填写用例信息
+  params:
+    id: 6
+    title: 6
+config:
+- policy: skip
+  desc: 是否跳过此用例
+  params:
+    flag: false
+    reason:
+- policy: mark
+  desc: 是否给用例打标签
+  params:
+    flag: false
+    markname:
+- policy: usefixtures
+  desc: 是否使用前置后置
+  params:
+    flag: false
+    fixtures:
+- policy: parametrize
+  desc: 是否使用数据驱动
+  params:
+    flag: false
+    filename:
+    sheetname:
+step:
+- business: 01登录/稿件系统登录.yaml
+  desc: 稿件系统登录
+  params:
+    用户名:
+      value: test01
+      path: $[1].params.data._58_login
+    密码:
+      value: '1111'
+      path: $[1].params.data._58_password
+- business: 03文档上传下载/新增文件夹.yaml
+  desc: 新建文件夹
+  params:
+    文件夹名称:
+      value: 自动化文件夹名称
+      path: $[0].params.data._20_name
+    文件夹描述:
+      value: 自动化文件夹描述
+      path: $[0].params.data._20_description
+- business: 03文档上传下载/文档上传.yaml
+  desc: 文档上传
+  params:
+    file目录下文档名:
+      value: upload_file.txt
+      path: $[5].params.file_name
+    文档重命名:
+      value: 文档重命名
+      path: $[7].params.data._20_title
+    说明:
+      value: 这是文档说明
+      path: $[7].params.data._20_description
+- action: StrAction
+  method: re_match_str
+  desc: 字符串正则匹配
+  params:
+    str_value: ${result_text}
+    pattern: '<input  id="_20_title" name="_20_title" style="width: 350px; " type="text"
+      value="(.*?)"'
+    result: result
+- action: ListAction
+  method: get_list_value
+  desc: 获取列表中值
+  params:
+    list_value: ${result}
+    list_index: '0'
+    result: title
+- action: CheckAction
+  method: equal
+  desc: 判断两个值相等
+  params:
+    real_value: ${title}
+    expect_value: 文档重命名
+- business: 03文档上传下载/删除文件夹.yaml
+  desc: 文档数据清除
+  params: {}

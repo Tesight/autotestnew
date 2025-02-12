@@ -1,0 +1,42 @@
+2024-05-07 13:21:31,703 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-05-07 13:21:31,703 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-05-07 13:21:33,449 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-05-07 13:21:33,450 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-05-07 13:21:33,453 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': [2024, 4, 28, 16, 0, 0], 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-05-07 13:21:33,453 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/standard
+2024-05-07 13:21:33,453 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': [2024, 4, 28, 16, 0, 0], 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-05-07 13:21:36,937 - werkzeug - INFO - 127.0.0.1 - - [07/May/2024 13:21:36] "POST /standard HTTP/1.1" 200 -
+2024-05-07 13:21:36,938 - root - INFO - post接口的响应时间==>3.484503
+2024-05-07 13:21:36,938 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/standard
+2024-05-07 13:21:36,939 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-05-07 13:21:36,939 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Standard scene added'}
+2024-05-07 13:21:36,940 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-05-07 13:21:36,940 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-05-07 13:21:36,940 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-05-07 13:21:36,941 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-05-07 13:21:36,967 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-05-07 13:21:36,968 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-05-07 13:21:36,968 - root - INFO - 动态变量data替换成功,替换后的值==>{'comPort': 'COM9', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 1}
+2024-05-07 13:21:36,969 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/receiver/set
+2024-05-07 13:21:36,969 - root - INFO - post接口请求体json==>{'comPort': 'COM9', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 1}
+2024-05-07 13:21:36,971 - werkzeug - INFO - 127.0.0.1 - - [07/May/2024 13:21:36] "POST /receiver/set HTTP/1.1" 200 -
+2024-05-07 13:21:36,972 - root - INFO - post接口的响应时间==>0.001556
+2024-05-07 13:21:36,972 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/receiver/set
+2024-05-07 13:21:36,972 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-05-07 13:21:36,973 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'failed', 'message': "could not open port 'COM9': FileNotFoundError(2, '系统找不到指定的文件。', None, 2)"}
+2024-05-07 13:21:36,973 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：failed
+2024-05-07 13:21:36,973 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-05-07 13:21:36,973 - root - INFO - 动态变量res替换成功,替换后的值==>failed
+2024-05-07 13:21:36,974 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：failed==success
+2024-05-07 13:21:37,023 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-05-07 13:21:37,029 - root - INFO - 正在生成报告
+2024-05-07 13:21:41,480 - root - INFO - b'Report successfully generated to d:\\BaiduSyncdisk\\project\\python\\skydel\\scene\\testsuits\\BD420023\\report\\allure\\report\r\n'
+2024-05-07 13:21:43,694 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

@@ -1,0 +1,742 @@
+2023-12-06 11:12:49,320 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:12:49,321 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:12:50,232 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:50,234 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:12:50,234 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:12:50,235 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:12:50,310 - root - INFO - post接口的响应时间==>0.072203
+2023-12-06 11:12:50,311 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:12:50,325 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:50,327 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:50,327 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:12:50,327 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:12:50,350 - root - INFO - post接口的响应时间==>0.008004
+2023-12-06 11:12:50,351 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:50,351 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:50,351 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:12:50,352 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:12:50,352 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:50,352 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:12:50,457 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:12:50,475 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:12:55,604 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:12:55,605 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:12:55,709 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:55,710 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:12:55,710 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:12:55,710 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:12:55,800 - root - INFO - post接口的响应时间==>0.045924
+2023-12-06 11:12:55,801 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:12:55,814 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:55,816 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:55,816 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:12:55,816 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:12:55,834 - root - INFO - post接口的响应时间==>0.014702
+2023-12-06 11:12:55,835 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:55,835 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:55,835 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:12:55,835 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:12:55,836 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:55,836 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:12:55,860 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:12:55,871 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:12:59,573 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:12:59,574 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:12:59,733 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,734 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:12:59,735 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:12:59,735 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:12:59,775 - root - INFO - post接口的响应时间==>0.016757
+2023-12-06 11:12:59,776 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:12:59,798 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,799 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:59,800 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:12:59,800 - root - INFO - post接口请求体data==>{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
+2023-12-06 11:12:59,844 - root - INFO - post接口的响应时间==>0.021713
+2023-12-06 11:12:59,845 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:59,859 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,860 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:59,861 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:12:59,861 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:12:59,877 - root - INFO - post接口的响应时间==>0.013655
+2023-12-06 11:12:59,878 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:59,878 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,878 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:12:59,878 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54501', '自动化测试新增', '1.0', '不批准', '23-12-6 上午11:12', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:12:59,879 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,879 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:12:59,879 - root - INFO - 动态变量result替换成功,替换后的值==>['54501', '自动化测试新增', '1.0', '不批准', '23-12-6 上午11:12', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:12:59,879 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：自动化测试新增
+2023-12-06 11:12:59,879 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,879 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:12:59,879 - root - INFO - 动态变量result替换成功,替换后的值==>自动化测试新增
+2023-12-06 11:12:59,879 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：自动化测试新增==自动化测试新增
+2023-12-06 11:12:59,899 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,901 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:59,901 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:12:59,901 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:12:59,917 - root - INFO - post接口的响应时间==>0.013089
+2023-12-06 11:12:59,918 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:59,918 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,918 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:12:59,918 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54501', '自动化测试新增', '1.0', '不批准', '23-12-6 上午11:12', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:12:59,919 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值：id],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,919 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:12:59,919 - root - INFO - 动态变量result替换成功,替换后的值==>['54501', '自动化测试新增', '1.0', '不批准', '23-12-6 上午11:12', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:12:59,919 - root - INFO - 执行ListAction.get_list_value方法，返回值id==>获取列表中值成功：54501
+2023-12-06 11:12:59,919 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件删除],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,919 - root - INFO - 需要替换的动态变量有==>['id', 'id']
+2023-12-06 11:12:59,919 - root - INFO - 动态变量id替换成功,替换后的值==>54501
+2023-12-06 11:12:59,921 - root - INFO - 动态变量id替换成功,替换后的值==>54501
+2023-12-06 11:12:59,923 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:59,923 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:12:59,923 - root - INFO - post接口请求体data==>{'_15_cmd': 'delete', '_15_tabs1TabsScroll': '', '_15_groupId': '10780', '_15_deleteArticleIds': '54501_version_1.0', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': '', '_15_rowIds': '54501_version_1.0'}
+2023-12-06 11:12:59,962 - root - INFO - post接口的响应时间==>0.015594
+2023-12-06 11:12:59,962 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:12:59,988 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:12:59,989 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:12:59,989 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:12:59,990 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:13:00,016 - root - INFO - post接口的响应时间==>0.011886
+2023-12-06 11:13:00,017 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:13:00,039 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,040 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,041 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:13:00,041 - root - INFO - post接口请求体data==>{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
+2023-12-06 11:13:00,074 - root - INFO - post接口的响应时间==>0.013622
+2023-12-06 11:13:00,074 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,092 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,095 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,095 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:13:00,095 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:13:00,113 - root - INFO - post接口的响应时间==>0.015753
+2023-12-06 11:13:00,114 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,114 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,115 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:13:00,115 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54506', '自动化测试新增', '1.0', '不批准', '23-12-6 上午11:13', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:13:00,115 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值：id],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,115 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:13:00,115 - root - INFO - 动态变量result替换成功,替换后的值==>['54506', '自动化测试新增', '1.0', '不批准', '23-12-6 上午11:13', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:13:00,117 - root - INFO - 执行ListAction.get_list_value方法，返回值id==>获取列表中值成功：54506
+2023-12-06 11:13:00,117 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件删除],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,117 - root - INFO - 需要替换的动态变量有==>['id', 'id']
+2023-12-06 11:13:00,118 - root - INFO - 动态变量id替换成功,替换后的值==>54506
+2023-12-06 11:13:00,118 - root - INFO - 动态变量id替换成功,替换后的值==>54506
+2023-12-06 11:13:00,121 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,121 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:13:00,121 - root - INFO - post接口请求体data==>{'_15_cmd': 'delete', '_15_tabs1TabsScroll': '', '_15_groupId': '10780', '_15_deleteArticleIds': '54506_version_1.0', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': '', '_15_rowIds': '54506_version_1.0'}
+2023-12-06 11:13:00,158 - root - INFO - post接口的响应时间==>0.014859
+2023-12-06 11:13:00,159 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,173 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,175 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,175 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:13:00,175 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:13:00,190 - root - INFO - post接口的响应时间==>0.012031
+2023-12-06 11:13:00,191 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,191 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,191 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:13:00,191 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:13:00,192 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,192 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:13:00,192 - root - INFO - 动态变量result替换成功,替换后的值==>[]
+2023-12-06 11:13:00,192 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：[]==[]
+2023-12-06 11:13:00,246 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,248 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:13:00,248 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:13:00,248 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:13:00,278 - root - INFO - post接口的响应时间==>0.014482
+2023-12-06 11:13:00,279 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:13:00,300 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,303 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,304 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:13:00,304 - root - INFO - post接口请求体data==>{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
+2023-12-06 11:13:00,339 - root - INFO - post接口的响应时间==>0.015174
+2023-12-06 11:13:00,339 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,373 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,376 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,376 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:13:00,376 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:13:00,392 - root - INFO - post接口的响应时间==>0.012629
+2023-12-06 11:13:00,393 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,393 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,393 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:13:00,393 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54511', '自动化测试新增', '1.0', '不批准', '23-12-6 上午11:13', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:13:00,393 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值：id],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,394 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:13:00,394 - root - INFO - 动态变量result替换成功,替换后的值==>['54511', '自动化测试新增', '1.0', '不批准', '23-12-6 上午11:13', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:13:00,394 - root - INFO - 执行ListAction.get_list_value方法，返回值id==>获取列表中值成功：54511
+2023-12-06 11:13:00,394 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件修改],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,394 - root - INFO - 需要替换的动态变量有==>['id', 'id', 'id']
+2023-12-06 11:13:00,394 - root - INFO - 动态变量id替换成功,替换后的值==>54511
+2023-12-06 11:13:00,394 - root - INFO - 动态变量id替换成功,替换后的值==>54511
+2023-12-06 11:13:00,395 - root - INFO - 动态变量id替换成功,替换后的值==>54511
+2023-12-06 11:13:00,398 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,398 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:13:00,398 - root - INFO - post接口请求体data==>{'_15_portletResource': '', '_15_cmd': 'update', '_15_tabs2': '', '_15_redirect': '/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles', '_15_originalRedirect': '/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '54511', '_15_version': '1.0', '_15_content': '自动化测试内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '54511_version_1.0', '_15_expireArticleIds': '54511_version_1.0', '_15_tabs1TabsScroll': '', '_15_title': '自动化测试修改', '_15_incrementVersion': 'false', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
+2023-12-06 11:13:00,436 - root - INFO - post接口的响应时间==>0.017617
+2023-12-06 11:13:00,437 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,451 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,453 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,453 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:13:00,453 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试修改', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:13:00,469 - root - INFO - post接口的响应时间==>0.013015
+2023-12-06 11:13:00,470 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,470 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,471 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:13:00,471 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54511', '自动化测试修改', '1.0', '不批准', '23-12-6 上午11:13', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:13:00,471 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,471 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:13:00,471 - root - INFO - 动态变量result替换成功,替换后的值==>['54511', '自动化测试修改', '1.0', '不批准', '23-12-6 上午11:13', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:13:00,471 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：自动化测试修改
+2023-12-06 11:13:00,472 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,472 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:13:00,472 - root - INFO - 动态变量result替换成功,替换后的值==>自动化测试修改
+2023-12-06 11:13:00,472 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：自动化测试修改==自动化测试修改
+2023-12-06 11:13:00,492 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,494 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,494 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:13:00,494 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试修改', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:13:00,509 - root - INFO - post接口的响应时间==>0.012363
+2023-12-06 11:13:00,510 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,511 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,511 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:13:00,511 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54511', '自动化测试修改', '1.0', '不批准', '23-12-6 上午11:13', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:13:00,511 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值：id],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,511 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:13:00,511 - root - INFO - 动态变量result替换成功,替换后的值==>['54511', '自动化测试修改', '1.0', '不批准', '23-12-6 上午11:13', '21-6-29 下午3:48', 'User test01']
+2023-12-06 11:13:00,512 - root - INFO - 执行ListAction.get_list_value方法，返回值id==>获取列表中值成功：54511
+2023-12-06 11:13:00,512 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件删除],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,512 - root - INFO - 需要替换的动态变量有==>['id', 'id']
+2023-12-06 11:13:00,512 - root - INFO - 动态变量id替换成功,替换后的值==>54511
+2023-12-06 11:13:00,513 - root - INFO - 动态变量id替换成功,替换后的值==>54511
+2023-12-06 11:13:00,517 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,517 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:13:00,517 - root - INFO - post接口请求体data==>{'_15_cmd': 'delete', '_15_tabs1TabsScroll': '', '_15_groupId': '10780', '_15_deleteArticleIds': '54511_version_1.0', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': '', '_15_rowIds': '54511_version_1.0'}
+2023-12-06 11:13:00,557 - root - INFO - post接口的响应时间==>0.018976
+2023-12-06 11:13:00,557 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,583 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,585 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:13:00,585 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:13:00,585 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:13:00,611 - root - INFO - post接口的响应时间==>0.011442
+2023-12-06 11:13:00,612 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:13:00,626 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,627 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,628 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:13:00,628 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:13:00,645 - root - INFO - post接口的响应时间==>0.014427
+2023-12-06 11:13:00,646 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,647 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,647 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:13:00,647 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:13:00,648 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,648 - root - INFO - 需要替换的动态变量有==>['result']
+2023-12-06 11:13:00,648 - root - INFO - 动态变量result替换成功,替换后的值==>[]
+2023-12-06 11:13:00,648 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：[]==[]
+2023-12-06 11:13:00,674 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,676 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:13:00,676 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:13:00,676 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:13:00,706 - root - INFO - post接口的响应时间==>0.014281
+2023-12-06 11:13:00,707 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:13:00,721 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,722 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,723 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:13:00,723 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:13:00,738 - root - INFO - post接口的响应时间==>0.011986
+2023-12-06 11:13:00,739 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:13:00,739 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,739 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:13:00,739 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:13:00,740 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:13:00,740 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:13:00,765 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：5
+        通过用例数：4
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 80.0 %
+        
+2023-12-06 11:13:00,777 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:14:14,231 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:14:14,232 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:14:15,136 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:14:15,139 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:14:15,139 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:14:15,139 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:14:15,190 - root - INFO - post接口的响应时间==>0.048403
+2023-12-06 11:14:15,191 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:14:15,204 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:14:15,205 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:14:15,206 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:14:15,206 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:14:15,229 - root - INFO - post接口的响应时间==>0.008719
+2023-12-06 11:14:15,230 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:14:15,231 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:14:15,231 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:14:15,231 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:14:15,232 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:14:15,232 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:14:15,331 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:14:15,347 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:14:23,125 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:14:23,126 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:14:23,230 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:14:23,231 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:14:23,232 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:14:23,232 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:14:23,287 - root - INFO - post接口的响应时间==>0.034362
+2023-12-06 11:14:23,287 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:14:23,300 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:14:23,302 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:14:23,302 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:14:23,304 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:14:23,324 - root - INFO - post接口的响应时间==>0.017114
+2023-12-06 11:14:23,324 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:14:23,325 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:14:23,325 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:14:23,325 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:14:23,325 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:14:23,325 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:14:23,349 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:14:23,360 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:19:12,793 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:19:12,794 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:19:13,698 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:19:13,701 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:19:13,701 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:19:13,701 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:19:13,752 - root - INFO - post接口的响应时间==>0.048566
+2023-12-06 11:19:13,753 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:19:13,768 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:19:13,769 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:19:13,770 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:19:13,770 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:19:13,791 - root - INFO - post接口的响应时间==>0.00894
+2023-12-06 11:19:13,793 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:19:13,793 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:19:13,794 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:19:13,794 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:19:13,794 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:19:13,794 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:19:13,896 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:19:13,911 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:20:09,448 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:20:09,450 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:20:10,366 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:20:10,369 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:20:10,369 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:20:10,369 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:20:10,417 - root - INFO - post接口的响应时间==>0.045854
+2023-12-06 11:20:10,418 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:20:10,432 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:20:10,435 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:20:10,435 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:20:10,435 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:20:10,455 - root - INFO - post接口的响应时间==>0.008073
+2023-12-06 11:20:10,456 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:20:10,457 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:20:10,457 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:20:10,457 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:20:10,457 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:20:10,458 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:20:10,561 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:20:10,576 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:21:21,472 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:21:21,473 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:21:22,381 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:21:22,385 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:21:22,385 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:21:22,385 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:21:22,437 - root - INFO - post接口的响应时间==>0.048804
+2023-12-06 11:21:22,439 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:21:22,456 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:21:22,458 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:21:22,458 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:21:22,458 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:21:22,483 - root - INFO - post接口的响应时间==>0.008101
+2023-12-06 11:21:22,485 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:21:22,486 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:21:22,486 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:21:22,486 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:21:22,486 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:21:22,486 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:21:22,603 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:21:22,623 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:22:14,833 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:22:14,834 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:22:15,722 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:22:15,726 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:22:15,726 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:22:15,726 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:22:15,775 - root - INFO - post接口的响应时间==>0.04629
+2023-12-06 11:22:15,776 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:22:15,792 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:22:15,794 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:22:15,794 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:22:15,795 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:22:15,818 - root - INFO - post接口的响应时间==>0.007953
+2023-12-06 11:22:15,821 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:22:15,822 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:22:15,822 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:22:15,822 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:22:15,823 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:22:15,823 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:22:15,942 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:22:15,962 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:23:39,873 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:23:39,874 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:23:40,770 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:23:40,774 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:23:40,774 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:23:40,774 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:23:40,823 - root - INFO - post接口的响应时间==>0.045836
+2023-12-06 11:23:40,825 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:23:40,841 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:23:40,844 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:23:40,844 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:23:40,845 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:23:40,868 - root - INFO - post接口的响应时间==>0.007758
+2023-12-06 11:23:40,869 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:23:40,872 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:23:40,873 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:23:40,873 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:23:40,873 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:23:40,873 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:23:40,982 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:23:41,001 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:25:16,346 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:25:16,346 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:25:17,264 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:25:17,269 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:25:17,269 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:25:17,270 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:25:17,319 - root - INFO - post接口的响应时间==>0.046685
+2023-12-06 11:25:17,321 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:25:17,337 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:25:17,341 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:25:17,341 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:25:17,341 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:25:17,365 - root - INFO - post接口的响应时间==>0.00827
+2023-12-06 11:25:17,368 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:25:17,368 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:25:17,368 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:25:17,369 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:25:17,369 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:25:17,369 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:25:17,486 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:25:17,506 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:26:25,218 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:26:25,219 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:26:26,130 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:26:26,133 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:26:26,133 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:26:26,133 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:26:26,184 - root - INFO - post接口的响应时间==>0.048156
+2023-12-06 11:26:26,187 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:26:26,203 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:26:26,207 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:26:26,208 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:26:26,208 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:26:26,233 - root - INFO - post接口的响应时间==>0.008938
+2023-12-06 11:26:26,236 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:26:26,236 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:26:26,236 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:26:26,237 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:26:26,237 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:26:26,237 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:26:26,348 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:26:26,369 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:33:23,554 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:33:23,555 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:33:24,486 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:33:24,490 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:33:24,490 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:33:24,490 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:33:24,541 - root - INFO - post接口的响应时间==>0.047743
+2023-12-06 11:33:24,543 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:33:24,558 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:33:24,561 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:33:24,562 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:33:24,562 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:33:24,586 - root - INFO - post接口的响应时间==>0.008851
+2023-12-06 11:33:24,587 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:33:24,592 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:33:24,592 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:33:24,592 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:33:24,593 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:33:24,593 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:33:24,705 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:33:24,725 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:34:29,361 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:34:29,362 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:34:30,293 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:34:30,296 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:34:30,296 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:34:30,297 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:34:30,344 - root - INFO - post接口的响应时间==>0.044912
+2023-12-06 11:34:30,346 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:34:30,361 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:34:30,365 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:34:30,366 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:34:30,366 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:34:30,393 - root - INFO - post接口的响应时间==>0.008748
+2023-12-06 11:34:30,395 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:34:30,396 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:34:30,396 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:34:30,396 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:34:30,397 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:34:30,397 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:34:30,511 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:34:30,530 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:34:58,704 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:34:58,704 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:34:59,614 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:34:59,618 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:34:59,618 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:34:59,618 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:34:59,648 - root - INFO - post接口的响应时间==>0.026837
+2023-12-06 11:34:59,650 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:34:59,667 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:34:59,670 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:34:59,671 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:34:59,671 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:34:59,695 - root - INFO - post接口的响应时间==>0.008237
+2023-12-06 11:34:59,698 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:34:59,699 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:34:59,699 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:34:59,700 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:34:59,700 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:34:59,700 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:34:59,817 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:34:59,838 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:38:30,507 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:38:30,508 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:38:31,417 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:38:31,420 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:38:31,420 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:38:31,421 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:38:31,468 - root - INFO - post接口的响应时间==>0.044837
+2023-12-06 11:38:31,471 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:38:31,486 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:38:31,489 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:38:31,489 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:38:31,489 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:38:31,516 - root - INFO - post接口的响应时间==>0.009464
+2023-12-06 11:38:31,516 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:38:31,517 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:38:31,521 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:38:31,524 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:38:31,524 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:38:31,525 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:38:31,635 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:38:31,655 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:40:09,705 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:40:09,706 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:40:10,614 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:40:10,618 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:40:10,618 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:40:10,619 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:40:10,664 - root - INFO - post接口的响应时间==>0.042678
+2023-12-06 11:40:10,665 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:40:10,681 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:40:10,684 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:40:10,684 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:40:10,684 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:40:10,710 - root - INFO - post接口的响应时间==>0.011103
+2023-12-06 11:40:10,712 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:40:10,712 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:40:10,712 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:40:10,713 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:40:10,713 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:40:10,713 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:40:10,827 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:40:10,847 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:42:41,515 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:42:41,516 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:42:42,421 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:42:42,425 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:42:42,425 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:42:42,425 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:42:42,470 - root - INFO - post接口的响应时间==>0.043363
+2023-12-06 11:42:42,470 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:42:42,486 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:42:42,489 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:42:42,489 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:42:42,489 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:42:42,516 - root - INFO - post接口的响应时间==>0.012051
+2023-12-06 11:42:42,517 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:42:42,518 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:42:42,518 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:42:42,527 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:42:42,528 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:42:42,528 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:42:42,635 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:42:42,655 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:45:04,522 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2023-12-06 11:45:04,523 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2023-12-06 11:45:05,421 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:45:05,425 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
+2023-12-06 11:45:05,426 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
+2023-12-06 11:45:05,426 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
+2023-12-06 11:45:05,471 - root - INFO - post接口的响应时间==>0.042218
+2023-12-06 11:45:05,472 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
+2023-12-06 11:45:05,485 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:45:05,487 - root - INFO - post接口调用开始==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:45:05,487 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
+2023-12-06 11:45:05,487 - root - INFO - post接口请求体data==>{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
+2023-12-06 11:45:05,512 - root - INFO - post接口的响应时间==>0.010834
+2023-12-06 11:45:05,514 - root - INFO - post接口调用完成==>http://127.0.0.1/group/10779/articles
+2023-12-06 11:45:05,514 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:45:05,514 - root - INFO - 需要替换的动态变量有==>['result_text']
+2023-12-06 11:45:05,515 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
+2023-12-06 11:45:05,515 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2023-12-06 11:45:05,515 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：1==2
+2023-12-06 11:45:05,618 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2023-12-06 11:45:05,636 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

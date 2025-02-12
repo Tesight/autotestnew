@@ -1,0 +1,46 @@
+business:
+- business:
+  desc: 设置全局功率偏置
+  params:
+    模拟器IP:
+      value: 127.0.0.1
+      path: $[0].params.value.simulatorIP
+    offset:
+      value: 0
+      path: $[0].params.value.value
+step:
+- action: VariableAction
+  method: set_variable
+  desc: 模拟器设置功率偏置_生成控制命令json
+  params:
+    name: data
+    value:
+      simulatorIP: null
+      system: null
+      svID: null
+      type: global
+      value: null
+- action: HttpAction
+  method: request
+  desc: 模拟器设置功率偏置_发送控制命令,返回json
+  params:
+    method: post
+    url: /signalpower
+    headers: null
+    params: null
+    data: null
+    json: ${data}
+    result_json: result_json
+- action: JsonAction
+  method: get_json_value
+  desc: 模拟器设置功率偏置_获取设置状态
+  params:
+    json_data: ${result_json}
+    json_path: $.status
+    result: res
+- action: CheckAction
+  method: equal
+  desc: 模拟器设置功率偏置_判断设置是否成功
+  params:
+    real_value: ${res}
+    expect_value: success

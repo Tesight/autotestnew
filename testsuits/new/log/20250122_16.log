@@ -1,0 +1,36 @@
+2025-01-22 16:05:56,944 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized/connect
+2025-01-22 16:05:58,955 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023416C3CCE0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:05:58,956 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023416C3CCE0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:06:37,636 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized/connect
+2025-01-22 16:06:39,670 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D1338430E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:06:39,671 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D1338430E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:08:20,755 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized/connect
+2025-01-22 16:08:22,801 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016B024FF8C0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:08:22,802 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016B024FF8C0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:08:50,409 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized/connect
+2025-01-22 16:08:52,441 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000237343C9610>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:08:52,441 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000237343C9610>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:11:29,602 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized/connect
+2025-01-22 16:11:31,642 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000269BF76F650>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:11:31,643 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=9988): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000269BF76F650>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:14:14,632 - root - INFO - post接口调用开始==>http://127.0.0.1:8080/customized/connect
+2025-01-22 16:14:16,659 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018FE501F7D0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:14:16,659 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018FE501F7D0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:20:57,487 - root - INFO - post接口调用开始==>http://127.0.0.1:4820/customized/connect
+2025-01-22 16:21:07,495 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=4820): Read timed out. (read timeout=10)
+2025-01-22 16:21:07,495 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=4820): Read timed out. (read timeout=10)
+2025-01-22 16:32:44,179 - root - INFO - post接口调用开始==>http://127.0.0.1/customized/connect
+2025-01-22 16:32:46,226 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000213F99B75C0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:32:46,226 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000213F99B75C0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:36:01,279 - root - INFO - post接口调用开始==>http://127.0.0.1:82/customized/connect
+2025-01-22 16:36:03,299 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=82): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BDBA14E480>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:36:03,299 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=82): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BDBA14E480>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-01-22 16:45:41,173 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-01-22 16:45:41,189 - root - INFO - post接口的响应时间==>0.002481
+2025-01-22 16:45:41,189 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-01-22 16:47:59,522 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-01-22 16:47:59,526 - root - INFO - post接口的响应时间==>0.002346
+2025-01-22 16:47:59,526 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-01-22 16:48:32,915 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-01-22 16:48:32,921 - root - INFO - post接口的响应时间==>0.003175
+2025-01-22 16:48:32,921 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect

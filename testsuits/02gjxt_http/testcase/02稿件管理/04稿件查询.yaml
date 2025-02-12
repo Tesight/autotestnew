@@ -1,0 +1,49 @@
+info:
+- desc: 请填写用例信息
+  params:
+    id: 5
+    title: 5
+config:
+- policy: skip
+  desc: 是否跳过此用例
+  params:
+    flag: false
+    reason:
+- policy: mark
+  desc: 是否给用例打标签
+  params:
+    flag: false
+    markname:
+- policy: usefixtures
+  desc: 是否使用前置后置
+  params:
+    flag: false
+    fixtures:
+- policy: parametrize
+  desc: 是否使用数据驱动
+  params:
+    flag: false
+    filename:
+    sheetname:
+step:
+- business: 01登录/稿件系统登录.yaml
+  desc: 稿件系统登录
+  params:
+    用户名:
+      value: test01
+      path: $[1].params.data._58_login
+    密码:
+      value: '1111'
+      path: $[1].params.data._58_password
+- business: 02稿件管理/稿件查询.yaml
+  desc: 稿件查询
+  params:
+    稿件标题:
+      value: 自动化测试新增
+      path: $[0].params.data._15_keywords
+- action: CheckAction
+  method: equal
+  desc: 判断两个值相等
+  params:
+    real_value: ${result}
+    expect_value: []

@@ -1,0 +1,695 @@
+2024-04-01 09:46:42,015 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-04-01 09:46:42,016 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-04-01 09:46:43,797 - matplotlib.font_manager - INFO - generated new fontManager
+2024-04-01 09:46:44,115 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:46:44,116 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:46:44,116 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-04-01 09:46:44,117 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/standard
+2024-04-01 09:46:44,117 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-04-01 09:46:54,130 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=9988): Read timed out. (read timeout=10)
+2024-04-01 09:46:54,130 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=9988): Read timed out. (read timeout=10)
+2024-04-01 09:46:54,156 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-04-01 09:46:54,163 - root - INFO - 正在生成报告
+2024-04-01 09:46:58,411 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2024-04-01 09:55:00,696 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-04-01 09:55:00,704 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-04-01 09:55:02,288 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:55:02,289 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:55:02,289 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-04-01 09:55:02,289 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/standard
+2024-04-01 09:55:02,290 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-04-01 09:55:12,305 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=9988): Read timed out. (read timeout=10)
+2024-04-01 09:55:12,317 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=9988): Read timed out. (read timeout=10)
+2024-04-01 09:55:25,344 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-04-01 09:55:26,290 - root - INFO - 正在生成报告
+2024-04-01 09:56:03,225 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
+2024-04-01 09:56:03,231 - root - ERROR - <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:22,788 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-04-01 09:56:22,789 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-04-01 09:56:23,455 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:23,456 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:23,456 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-04-01 09:56:23,457 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/customized
+2024-04-01 09:56:23,457 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'customized', 'env': 'None', 'signals': ['L1CA', 'L1C'], 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0, 'customizedPath': [{'type': 'straightLine', 'timeStep': 0.1, 'directionMatrix': [0, 1], 'initialVelocity': 2, 'finalVelocity': 2, 'accelerationDistance': 100, 'travelTime': 500}]}
+2024-04-01 09:56:25,189 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:25] "POST /customized HTTP/1.1" 200 -
+2024-04-01 09:56:25,190 - root - INFO - post接口的响应时间==>1.730688
+2024-04-01 09:56:25,190 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/customized
+2024-04-01 09:56:25,191 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:25,191 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Customized path added'}
+2024-04-01 09:56:25,191 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-04-01 09:56:25,192 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器直线轨迹设置_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:25,192 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-04-01 09:56:25,192 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-04-01 09:56:25,210 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:25,211 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:25,211 - root - INFO - 动态变量data替换成功,替换后的值==>{'comPort': 'COM9', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 1}
+2024-04-01 09:56:25,211 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/receiver/set
+2024-04-01 09:56:25,212 - root - INFO - post接口请求体json==>{'comPort': 'COM9', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 1}
+2024-04-01 09:56:25,215 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:25] "POST /receiver/set HTTP/1.1" 200 -
+2024-04-01 09:56:25,216 - root - INFO - post接口的响应时间==>0.003108
+2024-04-01 09:56:25,216 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/receiver/set
+2024-04-01 09:56:25,216 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:25,216 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'set successfully'}
+2024-04-01 09:56:25,217 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-04-01 09:56:25,217 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:25,217 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-04-01 09:56:25,217 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-04-01 09:56:25,225 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[接收器开始_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:25,226 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[接收器开始_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:25,226 - root - INFO - 动态变量data替换成功,替换后的值==>{'comPort': 'COM9', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 1}
+2024-04-01 09:56:25,227 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/receiver/start
+2024-04-01 09:56:25,227 - root - INFO - post接口请求体json==>{'comPort': 'COM9', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 1}
+2024-04-01 09:56:26,230 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:26] "POST /receiver/start HTTP/1.1" 200 -
+2024-04-01 09:56:26,231 - root - INFO - post接口的响应时间==>1.002949
+2024-04-01 09:56:26,231 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/receiver/start
+2024-04-01 09:56:26,231 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[接收器开始_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,232 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'start successfully'}
+2024-04-01 09:56:26,232 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-04-01 09:56:26,232 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[接收器开始_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,232 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-04-01 09:56:26,233 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-04-01 09:56:26,241 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,242 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,242 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'controlFunction': 'active', 'simulatorControl': 'start'}
+2024-04-01 09:56:26,242 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/simulatorcontrol
+2024-04-01 09:56:26,242 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'controlFunction': 'active', 'simulatorControl': 'start'}
+2024-04-01 09:56:26,261 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:26] "POST /simulatorcontrol HTTP/1.1" 200 -
+2024-04-01 09:56:26,262 - root - INFO - post接口的响应时间==>0.018061
+2024-04-01 09:56:26,262 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/simulatorcontrol
+2024-04-01 09:56:26,263 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,263 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Simulator started'}
+2024-04-01 09:56:26,263 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-04-01 09:56:26,263 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器开始_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,264 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-04-01 09:56:26,264 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-04-01 09:56:26,282 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器设置功率偏置_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,283 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器设置功率偏置_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,283 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'system': 'GPS', 'svID': 0, 'type': 'svid', 'value': 0}
+2024-04-01 09:56:26,284 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/signalpower
+2024-04-01 09:56:26,284 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'system': 'GPS', 'svID': 0, 'type': 'svid', 'value': 0}
+2024-04-01 09:56:26,420 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:26] "POST /signalpower HTTP/1.1" 200 -
+2024-04-01 09:56:26,421 - root - INFO - post接口的响应时间==>0.136843
+2024-04-01 09:56:26,421 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/signalpower
+2024-04-01 09:56:26,422 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器设置功率偏置_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,422 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Manual power offset set'}
+2024-04-01 09:56:26,422 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-04-01 09:56:26,423 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器设置功率偏置_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:26,423 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-04-01 09:56:26,423 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-04-01 09:56:26,448 - root - INFO - - - - - - - - - - - - - - - - - - - - - 自定义关键字[自定义关键字],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:56:27,452 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:27] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:27,454 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:27] "GET /receiver/location HTTP/1.1" 200 -
+2024-04-01 09:56:28,456 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:28] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:28,459 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:28] "GET /receiver/location HTTP/1.1" 200 -
+2024-04-01 09:56:29,464 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:29] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:29,466 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:29] "GET /receiver/location HTTP/1.1" 200 -
+2024-04-01 09:56:30,470 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:30] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:30,472 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:30] "GET /receiver/location HTTP/1.1" 200 -
+2024-04-01 09:56:31,474 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:31] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:31,477 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:31] "GET /receiver/location HTTP/1.1" 200 -
+2024-04-01 09:56:32,483 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:32] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:32,486 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:32] "GET /receiver/location HTTP/1.1" 200 -
+2024-04-01 09:56:33,490 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:33] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:33,492 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:33] "GET /receiver/location HTTP/1.1" 200 -
+2024-04-01 09:56:34,495 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:34] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:34,526 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:35,537 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:35] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:35,538 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:36,546 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:36] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:36,548 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:37,556 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:37] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:37,556 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:38,562 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:38] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:38,563 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:39,569 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:39] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:39,569 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:40,574 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:40] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:40,575 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:41,580 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:41] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:41,580 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:42,586 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:42] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:42,586 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:43,592 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:43] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:43,593 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:44,598 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:44] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:44,599 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:45,605 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:45] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:45,605 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:56:46,610 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2024 09:56:46] "GET /vehicleinfo HTTP/1.1" 200 -
+2024-04-01 09:56:46,610 - werkzeug - ERROR - Error on request:
+Exception: 
+Error:     [1005]
+Command:   get_y_scroll_max
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Item not found: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 325, in execute
+    write(data)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 262, in write
+    self.send_response(code, msg)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\http\server.py", line 491, in send_response
+    self.log_request(code)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 426, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\serving.py", line 438, in log
+    *args,
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\werkzeug\_internal.py", line 224, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1514, in _log
+    self.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1524, in handle
+    self.callHandlers(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\hongke\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 894, in handle
+    self.emit(record)
+  File "d:\BaiduSyncdisk\project\python\skydel\scene\common\logger.py", line 91, in emit
+    y_max = dpg.get_y_scroll_max(self.parent_tag)
+  File "D:\BaiduSyncdisk\project\python\skydel\scene\.venv\lib\site-packages\dearpygui\dearpygui.py", line 8549, in get_y_scroll_max
+    return internal_dpg.get_y_scroll_max(item, **kwargs)
+SystemError: <built-in function get_y_scroll_max> returned a result with an error set
+2024-04-01 09:57:00,915 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-04-01 09:57:00,915 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-04-01 09:57:01,567 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:57:01,567 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-04-01 09:57:01,568 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-04-01 09:57:01,568 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/standard
+2024-04-01 09:57:01,568 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-04-01 09:57:11,581 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=9988): Read timed out. (read timeout=10)
+2024-04-01 09:57:11,599 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=9988): Read timed out. (read timeout=10)
+2024-04-01 09:57:21,359 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-04-01 09:57:21,721 - root - INFO - 正在生成报告
+2024-04-01 09:57:50,303 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

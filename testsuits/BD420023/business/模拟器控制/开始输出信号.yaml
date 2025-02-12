@@ -1,0 +1,41 @@
+business:
+- business: null
+  desc: 模拟器开始
+  params:
+    模拟器IP:
+      value: 127.0.0.2
+      path: $[0].params.value.simulatorIP
+step:
+- action: VariableAction
+  method: set_variable
+  desc: 模拟器开始_生成控制命令json
+  params:
+    name: data
+    value:
+      simulatorIP: null
+      controlFunction: active
+      simulatorControl: start
+- action: HttpAction
+  method: request
+  desc: 模拟器开始_发送控制命令,返回json
+  params:
+    method: post
+    url: /simulatorcontrol
+    headers: null
+    params: null
+    data: null
+    json: ${data}
+    result_json: result_json
+- action: JsonAction
+  method: get_json_value
+  desc: 模拟器开始_获取设置状态
+  params:
+    json_data: ${result_json}
+    json_path: $.status
+    result: res
+- action: CheckAction
+  method: equal
+  desc: 模拟器开始_判断设置是否成功
+  params:
+    real_value: ${res}
+    expect_value: success

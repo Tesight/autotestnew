@@ -1,0 +1,82 @@
+business:
+- business: null
+  desc: 生成模拟器场景参数设置json
+  params:
+    起始时间:
+      value: null
+      path: $[0].params.value.startTime
+    持续时间(s):
+      value: null
+      path: $[0].params.value.duration
+    传播模型(是/否):
+      value: null
+      path: $[0].params.value.propagation_model
+    星座:
+      value: None
+      path: $[0].params.value.standardScene
+    运动模式(static/dynamic):
+      value: static
+      path: $[0].params.value.pathTrajectory
+    起始坐标(deg),[lat,long,alt]:
+      value:
+      - 23
+      - 113
+      - 1.0
+      path: $[0].params.value.startLla
+    姿态(deg),[yaw,pitch,roll]:
+      value:
+      - 0
+      - 0
+      - 0
+      path: $[0].params.value.orientation
+    SDR类型(NoneRT, DTA-2115B,DTA-2116 X300 or N310):
+      value: NoneRT
+      path: $[0].params.value.radioType
+    信号功率模型使能:
+      value: false
+      path: $[0].params.value.signalStrengthModel
+    全局功率偏置:
+      value: 0.0
+      path: $[0].params.value.GlobalPowerOffset
+step:
+- action: VariableAction
+  method: set_variable
+  desc: 模拟器参数_生成控制命令json
+  params:
+    name: data
+    value:
+      simulatorIP: null
+      startTime: null
+      mode: null
+      standardSignal: null
+      standardScene: null
+      pathTrajectory: null
+      startLla: null
+      orientation: null
+      radioType: null
+      signalStrengthModel: null
+      GlobalPowerOffset: null
+- action: HttpAction
+  method: request
+  desc: 模拟器参数_发送控制命令,返回json
+  params:
+    method: post
+    url: /customized/scenario
+    headers: null
+    params: null
+    data: null
+    json: ${data}
+    result_json: result_json
+- action: JsonAction
+  method: get_json_value
+  desc: 模拟器参数_获取设置状态
+  params:
+    json_data: ${result_json}
+    json_path: $.status
+    result: res
+- action: CheckAction
+  method: equal
+  desc: 模拟器参数_判断设置是否成功
+  params:
+    real_value: ${res}
+    expect_value: success

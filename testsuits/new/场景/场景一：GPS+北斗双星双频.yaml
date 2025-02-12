@@ -1,0 +1,75 @@
+business:
+- business: null
+  desc: 场景设计
+  params:
+    Band:
+      value: L1,L2
+      path: $[0].params.value.band
+    Constellation:
+      value: GPS
+      path: $[0].params.value.constellation
+    Con_num:
+      value: 
+       GPS_num:0
+       BeiDou_num:0
+       Galileo_num:0
+       GLONASS_num:0
+      path: $[0].params.value.constellation_num
+    Simulation_frequency:
+      value:
+       GPS_frequency:0
+       BeiDou_frequency:0
+       Galileo_frequency:0
+       GLONASS_frequency:0
+      path: $[0].params.value.simulation_frequency
+    Propagation_model:
+      value: 否
+      path: $[0].params.value.propagation_model
+    Start_time:
+      value: 2024/12/24 12:00:00
+      path: $[0].params.value.start_time
+    Duration_time:
+      value: 0
+      path: $[0].params.value.duration 
+    Signals: 
+      value: 
+      - L1CA
+      - L1C
+      path: $[0].params.value.signals
+
+step:
+- action: VariableAction
+  method: set_variable
+  desc: 接收器停止_生成控制命令json
+  params:
+    name: data
+    value:
+      band: L1,L2
+      constellation: GPS
+      constellation_num:
+       GPS_num:0
+       BeiDou_num:0
+       Galileo_num:0
+       GLONASS_num:0
+      simulation_frequency:
+       GPS_frequency:0
+       BeiDou_frequency:0
+       Galileo_frequency:0
+       GLONASS_frequency:0
+      propagation_model: 否
+      start_time: [2024,12,24,12,0,0]
+      duration_time: 0
+      signals: [L1CA,L1C]
+      
+- action: HttpAction
+  method: request
+  desc: 接收器停止_发送控制命令,返回json
+  params:
+    method: post
+    url: /customized/frequencyset
+    headers: null
+    params: null
+    data: null
+    json: 'data'
+    result_json: result_json
+

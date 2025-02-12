@@ -1,0 +1,85 @@
+info:
+- desc: 请填写用例信息
+  params:
+    id: 1
+    title: 1
+config:
+- policy: skip
+  desc: 是否跳过此用例
+  params:
+    flag: false
+    reason:
+- policy: mark
+  desc: 是否给用例打标签
+  params:
+    flag: false
+    markname:
+- policy: usefixtures
+  desc: 是否使用前置后置
+  params:
+    flag: false
+    fixtures:
+- policy: parametrize
+  desc: 是否使用数据驱动
+  params:
+    flag: false
+    filename:
+    sheetname:
+step:
+- action: TemplateClientAction
+  method: click_picture
+  desc: 图片点击操作：双击QQ图标
+  params:
+    el: qq_icon
+    clicks: 2
+    button: left
+- action: TimeAction
+  method: time_sleep
+  desc: 等待时间（秒）
+  params:
+    second: 3
+- action: TemplateClientAction
+  method: rel_picture_click
+  desc: 图片相对位置点击：用户名输入框
+  params:
+    el: qq_user
+    rel_x: 100
+    rel_y: 0
+    clicks: 2
+    button: left
+- action: TemplateClientAction
+  method: press
+  desc: 键盘单个按键按下：删除键
+  params:
+    key: backspace
+- action: TemplateClientAction
+  method: keyboard_write
+  desc: 键盘输入非中文文本：用户名
+  params:
+    content: 'xxxxxx'
+- action: TemplateClientAction
+  method: rel_picture_click
+  desc: 图片相对位置点击：密码输入框
+  params:
+    el: qq_psw
+    rel_x: 100
+    rel_y: 0
+    clicks: 2
+    button: left
+- action: TemplateClientAction
+  method: press
+  desc: 键盘单个按键按下：删除键
+  params:
+    key: backspace
+- action: TemplateClientAction
+  method: keyboard_write
+  desc: 键盘输入非中文文本：密码
+  params:
+    content: xxxxxx
+- action: TemplateClientAction
+  method: click_picture
+  desc: 图片点击操作：登录按钮
+  params:
+    el: qq_login
+    clicks: 1
+    button: left

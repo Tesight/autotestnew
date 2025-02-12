@@ -1,0 +1,41 @@
+2024-03-20 11:52:51,402 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
+2024-03-20 11:52:51,402 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
+2024-03-20 11:52:52,957 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-20 11:52:52,957 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-20 11:52:52,965 - root - INFO - 动态变量data替换成功,替换后的值==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-03-20 11:52:52,966 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/standard
+2024-03-20 11:52:52,966 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'startTime': None, 'mode': 'standard', 'standardSignal': 'Full', 'standardScene': 'None', 'pathTrajectory': 'static', 'startLla': [23, 113, 1.0], 'orientation': [0, 0, 0], 'radioType': 'NoneRT', 'signalStrengthModel': False, 'GlobalPowerOffset': 0.0}
+2024-03-20 11:52:57,895 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2024 11:52:57] "POST /standard HTTP/1.1" 200 -
+2024-03-20 11:52:57,896 - root - INFO - post接口的响应时间==>4.928086
+2024-03-20 11:52:57,897 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/standard
+2024-03-20 11:52:57,897 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-20 11:52:57,898 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'success', 'message': 'Standard scene added'}
+2024-03-20 11:52:57,898 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：success
+2024-03-20 11:52:57,898 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[模拟器参数_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-20 11:52:57,899 - root - INFO - 动态变量res替换成功,替换后的值==>success
+2024-03-20 11:52:57,899 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：success==success
+2024-03-20 11:52:57,917 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_生成控制命令json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-20 11:52:57,917 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_发送控制命令,返回json],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-20 11:52:57,918 - root - INFO - 动态变量data替换成功,替换后的值==>{'comPort': 'COM6', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 1}
+2024-03-20 11:52:57,918 - root - INFO - post接口调用开始==>http://127.0.0.1:9988/receiver/set
+2024-03-20 11:52:57,919 - root - INFO - post接口请求体json==>{'comPort': 'COM6', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 1}
+2024-03-20 11:52:57,921 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2024 11:52:57] "POST /receiver/set HTTP/1.1" 200 -
+2024-03-20 11:52:57,930 - root - INFO - post接口的响应时间==>0.010112
+2024-03-20 11:52:57,930 - root - INFO - post接口调用完成==>http://127.0.0.1:9988/receiver/set
+2024-03-20 11:52:57,930 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_获取设置状态],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-20 11:52:57,930 - root - INFO - 动态变量result_json替换成功,替换后的值==>{'status': 'failed', 'message': "could not open port 'COM6': FileNotFoundError(2, '系统找不到指定的文件。', None, 2)"}
+2024-03-20 11:52:57,930 - root - INFO - 执行JsonAction.get_json_value方法，返回值res==>获取json中的值成功：failed
+2024-03-20 11:52:57,931 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[设置接收器参数_判断设置是否成功],开始执行！- - - - - - - - - - - - - - - - - - - - 
+2024-03-20 11:52:57,931 - root - INFO - 动态变量res替换成功,替换后的值==>failed
+2024-03-20 11:52:57,932 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：failed==success
+2024-03-20 11:52:57,978 - root - INFO - 
+        本次执行情况如下：
+        总用例数为：1
+        通过用例数：0
+        失败用例数：1
+        错误用例数：0
+        跳过用例数：0
+        通过率为： 0.0 %
+        
+2024-03-20 11:52:57,982 - root - INFO - 正在生成报告
+2024-03-20 11:53:01,000 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

@@ -1,0 +1,172 @@
+info:
+- desc: 请填写用例信息
+  params:
+    id: '01'
+    title: 冷启动定位时间测试
+config:
+- policy: skip
+  desc: 是否跳过此用例
+  params:
+    flag: false
+    reason: null
+- policy: mark
+  desc: 是否给用例打标签
+  params:
+    flag: false
+    markname: null
+- policy: usefixtures
+  desc: 是否使用前置后置
+  params:
+    flag: false
+    fixtures: null
+- policy: parametrize
+  desc: 是否使用数据驱动
+  params:
+    flag: false
+    filename: null
+    sheetname: null
+step:
+- business: 模拟器轨迹控制\设置直线轨迹.yaml
+  desc: 模拟器设置直线轨迹
+  params:
+    模拟器IP:
+      value: 127.0.0.1
+      path: $[0].params.value.simulatorIP
+    模拟器时间:
+      value: null
+      path: $[0].params.value.startTime
+    环境类型(ClearSky/UrbanCanyon/'None'):
+      value: None
+      path: $[0].params.value.env
+    起始坐标(deg),[lat,long,alt]:
+      value:
+      - 23
+      - 113
+      - 1.0
+      path: $[0].params.value.startLla
+    姿态(deg),[yaw,pitch,roll]:
+      value:
+      - 0
+      - 0
+      - 0
+      path: $[0].params.value.orientation
+    SDR类型(NoneRT, DTA-2115B,DTA-2116 X300 or N310):
+      value: NoneRT
+      path: $[0].params.value.radioType
+    信号功率模型使能:
+      value: false
+      path: $[0].params.value.signalStrengthModel
+    全局功率偏置:
+      value: 0.0
+      path: $[0].params.value.GlobalPowerOffset
+    启用信号列表[L1CA,L1C......]:
+      value:
+      - L1CA
+      - L1C
+      path: $[0].params.value.signals
+    直线运动初速度(m/s):
+      value: 2
+      path: $[0].params.value.customizedPath[0].initialVelocity
+    直线运动末速度(m/s):
+      value: 2
+      path: $[0].params.value.customizedPath[0].finalVelocity
+    直线运动加速距离(m):
+      value: 100
+      path: $[0].params.value.customizedPath[0].accelerationDistance
+    直线运动时间(s):
+      value: 500
+      path: $[0].params.value.customizedPath[0].travelTime
+- business: 接收器控制\设置接收器参数.yaml
+  desc: 设置接收器参数
+  params:
+    窗口资源名:
+      value: COM9
+      path: $[0].params.value.comPort
+    波特率:
+      value: 9600
+      path: $[0].params.value.baudRate
+    byteSize:
+      value: 8
+      path: $[0].params.value.byteSize
+    停止位:
+      value: 1
+      path: $[0].params.value.stopBite
+- business: 接收器控制\接收器开始接收.yaml
+  desc: 接收器开始接收数据
+  params:
+    窗口资源名:
+      value: COM9
+      path: $[0].params.value.comPort
+- business: 模拟器控制\开始输出信号.yaml
+  desc: 模拟器开始
+  params:
+    模拟器IP:
+      value: 127.0.0.1
+      path: $[0].params.value.simulatorIP
+- business: 设置模拟器参数\设置功率偏置.yaml
+  desc: 设置功率偏置
+  params:
+    模拟器IP:
+      value: 127.0.0.1
+      path: $[0].params.value.simulatorIP
+    system(GPS,BeiDou,GLONASS,Galileo,SBAS,QZSS,Navic):
+      value: GPS
+      path: $[0].params.value.system
+    svID(0 for all):
+      value: 0
+      path: $[0].params.value.svID
+    offset:
+      value: 0
+      path: $[0].params.value.value
+- business: 测试功能\定位距离循环读取.yaml
+  desc: 循环读取定位数据，条件退出
+  params:
+    超时时间(s):
+      value: 300
+      path: $[0].params.kwargs.max_test_time
+    循环间隔时间(s):
+      value: 1
+      path: $[0].params.kwargs.step
+    连续小于定位阈值次数:
+      value: 10
+      path: $[0].params.kwargs.continuous_length
+    定位阈值(m):
+      value: 10
+      path: $[0].params.kwargs.distance_threshold
+    接口地址(IP:port):
+      value: 127.0.0.1:9988
+      path: $[0].params.kwargs.address
+    结果变量名称:
+      value: res
+      path: $[0].params.result
+- business: 模拟器控制\停止输出信号.yaml
+  desc: 模拟器停止
+  params:
+    模拟器IP:
+      value: 127.0.0.1
+      path: $[0].params.value.simulatorIP
+- action: JsonAction
+  method: get_json_value
+  desc: 获取Json中的值
+  params:
+    json_data: ${res}
+    json_path: $.status
+    result: status
+- action: CheckAction
+  method: equal
+  desc: 判断两个值相等
+  params:
+    real_value: ${status}
+    expect_value: success
+- action: JsonAction
+  method: get_json_value
+  desc: 获取Json中的值
+  params:
+    json_data: ${res}
+    json_path: $.located_time
+    result: located_time
+- action: VariableAction
+  method: print_variable
+  desc: 打印变量
+  params:
+    name: ${located_time}

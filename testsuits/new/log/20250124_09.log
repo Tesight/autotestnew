@@ -1,0 +1,8 @@
+2025-01-24 09:28:20,946 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-01-24 09:28:20,947 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-01-24 09:28:20,971 - root - INFO - post接口的响应时间==>0.020802
+2025-01-24 09:28:20,971 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-01-24 09:28:20,982 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-01-24 09:28:20,982 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-01-24 09:28:20,985 - root - INFO - post接口的响应时间==>0.002503
+2025-01-24 09:28:20,986 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser

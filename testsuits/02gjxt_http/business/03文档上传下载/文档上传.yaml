@@ -1,0 +1,100 @@
+business:
+- business:
+  desc: 文档上传
+  params:
+    file目录下文档名:
+      value: upload_file.txt
+      path: $[5].params.file_name
+    文档重命名:
+      value: 文档重命名
+      path: $[7].params.data._20_title
+    说明:
+      value: 这是文档说明
+      path: $[7].params.data._20_description
+step:
+- action: HttpAction
+  method: request
+  desc: 发送POST请求,查询文件夹
+  params:
+    method: post
+    url: /group/10779/upload
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like
+        Gecko
+    params:
+    data:
+    json:
+    result_text: result_text
+- action: StrAction
+  method: re_match_str
+  desc: 字符串正则匹配：文件夹信息
+  params:
+    str_value: ${result_text}
+    pattern: '&_20_struts_action=%2Fdocument_library%2Fview&_20_folderId=(.*?)">(.*?)</a>'
+    result: file_data
+- action: ListAction
+  method: get_list_value
+  desc: 获取列表中值
+  params:
+    list_value: ${file_data}
+    list_index: '0'
+    result: id_tup
+- action: ListAction
+  method: get_list_value
+  desc: 获取列表中值
+  params:
+    list_value: ${id_tup}
+    list_index: '0'
+    result: id
+- action: StrAction
+  method: str_join
+  desc: 字符串拼接
+  params:
+    str_var1: /group/10779/upload?p_p_id=20&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_20_struts_action=%2Fdocument_library%2Fview&_20_folderId=
+    str_var2: ${id}
+    result: _20_redirect
+- action: FileAction
+  method: get_file_joined_path
+  desc: 获取file目录文件路径
+  params:
+    file_name: upload_file.txt
+    result: file_path
+- action: FileAction
+  method: get_file_object
+  desc: 获取文件对象
+  params:
+    file_path: ${file_path}
+    mode: r
+    result: file_obj
+- action: HttpAction
+  method: request
+  desc: 发送POST请求,文件上传,返回text
+  params:
+    method: post
+    url: /group/10779/upload
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like
+        Gecko
+    params:
+      p_p_id: '20'
+      p_p_lifecycle: '1'
+      p_p_state: pop_up
+      p_p_mode: view
+      _20_struts_action: /document_library/edit_file_entry
+    data:
+      _20_cmd: add
+      _20_redirect: ${_20_redirect}
+      _20_referringPortletResource: ''
+      _20_uploadProgressId: dlFileEntryUploadProgress
+      _20_folderId: ${id}
+      _20_newFolderId: ''
+      _20_name: ''
+      _20_title: 文档重命名
+      _20_description: 这是文档说明
+    json:
+    files:
+      _20_file:
+      - upload_file.txt
+      - ${file_obj}
+      - text/plain
+    result_text: result_text
