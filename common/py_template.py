@@ -170,7 +170,6 @@ step:
       longitude: {{ longitude }}
       latitude: {{ latitude }}
       altitude: {{ altitude }}
-      radius: {{ radius }}
       customizedPath: 
       - type: {{type}}
         timeStep: {{timeStep}}
@@ -181,6 +180,7 @@ step:
         finalVelocity: {{finalVelocity}}
         accelerationDistance: {{accelerationDistance}}
         travelTime: {{travelTime}}
+        radius: {{ radius }}
 - action: HttpAction
   method: request
   desc: 模拟器参数_发送控制命令,返回json
@@ -278,8 +278,6 @@ step:
       longitude: {{ longitude }}
       latitude: {{ latitude }}
       altitude: {{ altitude }}
-      width: {{ width }}
-      height: {{ height }}
       customizedPath: 
       - type: {{ type }}
         timeStep: {{ timeStep }}
@@ -290,6 +288,10 @@ step:
         finalVelocity: {{ finalVelocity }}
         accelerationDistance: {{accelerationDistance}}
         travelTime: {{travelTime}}
+        width: {{ width }}
+        length: {{ length }}
+        rotationDirection: {{ rotationDirection }}
+        turnRadius: {{ turnRadius }}
 - action: HttpAction
   method: request
   desc: 模拟器参数_发送控制命令,返回json

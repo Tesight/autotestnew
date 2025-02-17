@@ -216,11 +216,12 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
     
     @marshal_with(resource_fields)
     def post(self,data):        
-
-            
         parser = reqparse.RequestParser()
         parser.add_argument("simulatorIP",type=str,help="simulator IP address is necessary")  
-        parser.add_argument("startLla",type=float, help="start lla:[latitude,longitude,altitude]", action='append')
+        # parser.add_argument("startLla",type=float, help="start lla:[latitude,longitude,altitude]", action='append')
+        parser.add_argument("longitude",type=float,help="longitude")
+        parser.add_argument("latitude",type=float,help="latitude")
+        parser.add_argument("altitude",type=float,help="altitude")
         parser.add_argument("startTime",type = int,help="start time:unix timestamp,None for current time",action = 'append')
         parser.add_argument("env",type=str,help="env:ClearSky/UrbanCanyon/None")
         parser.add_argument("signals",
@@ -241,6 +242,7 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
         parser.add_argument("externalattenuation",type=float, help="externalattenuation")
         parser.add_argument("dc_block_mounting",type = int,help="dc_block_mounting")
         parser.add_argument("output_reference_power",type = int,help="output_reference_power")#输出基准功率
+
 
         args = parser.parse_args()
         if data == "connect":
@@ -301,74 +303,79 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                 return {"status":"failed","message":"Wrong input of output_reference_power"}
             try:
                 sim.output_reference_power=args["output_reference_power"]
-                sim.setGlobalPowerOffset(args["output_reference_power"])
+                if sim.signalStrengthModel == False:
+                    signals = sim.LOWERL+sim.UPPERL
+                    signals.remove("SBASL5")
+                    signals.remove("SBASL1")
+                    sim.setSignalPowerOffset(signals,0)
+                sim.getSignalPowerOffset2()
                 return {"status":"success","message":"skydel offset set successfully"}
             except Exception as e:
                 traceback.print_exc(e)
                 return {"status":"failed","message":"Error: "+str(e)}
+        
+
 
 
         elif data == "trajectory":
             if not verification(args,"customizedPath"):
                 return {"status":"failed","message":"Wrong input of customizedPath"}
-            if args["mode"] != "customized":
-                return {"status":"failed","message":"Only support customized mode"} 
-            if verification(args, "startLla") == False:
-                return {"status":"failed","message":"Wrong input of startLla"} 
+            # if args["mode"] != "customized":
+            #     return {"status":"failed","message":"Only support customized mode"} 
+            # if verification(args, "startLla") == False:
+            #     return {"status":"failed","message":"Wrong input of startLla"} 
             
-        
-        try:
-            sim.skydelIpAddress = args["simulatorIP"]
+            
             try:
-                sim.simulator_disconnect()
-            except Exception as e:
-                pass    
-            if not sim.simulator.isConnected():  
-                if not sim.simulator_connect():
-                    return {"status":"failed","message":"Simulator connect failed"}
-            try:
-                sim.simulator.stop()
-            except Exception as e:
-                pass
-            sim.radioType = args["radioType"]   
-            sim.startTime = args['startTime'] if args['startTime'][0] != None else None    
-            
-            if args["signalStrengthModel"]  != None:
-                sim.signalStrengthModel = args["signalStrengthModel"] 
-            
-            sim.setSignals(args["signals"])
-            
-            
-            
-            if sim.signalStrengthModel == False:
-                signals = sim.LOWERL+sim.UPPERL
-                signals.remove("SBASL5")
-                signals.remove("SBASL1")
+                # try:
+                #     sim.simulator_disconnect()
+                # except Exception as e:
+                #     pass    
+                if not sim.simulator.isConnected():  
+                    if not sim.simulator_connect():
+                        return {"status":"failed","message":"Simulator connect failed"}
+                # try:
+                #     sim.simulator.stop()
+                # except Exception as e:
+                #     pass
+                # sim.radioType = args["radioType"]   
+                # sim.startTime = args['startTime'] if args['startTime'][0] != None else None    
                 
-                sim.setSignalPowerOffset(signals,0)
-            
+                # if args["signalStrengthModel"]  != None:
+                #     sim.signalStrengthModel = args["signalStrengthModel"] 
                 
-            sim.pathTrajectoryGenerator.LAT = args["startLla"][0]
-            sim.pathTrajectoryGenerator.LONG = args["startLla"][1]
-            sim.pathTrajectoryGenerator.ALT = args["startLla"][2]
+                # sim.setSignals(args["signals"])
+                
+                
+                
+                # if sim.signalStrengthModel == False:
+                #     signals = sim.LOWERL+sim.UPPERL
+                #     signals.remove("SBASL5")
+                #     signals.remove("SBASL1")
+                    
+                #     sim.setSignalPowerOffset(signals,0)
+                    
+                sim.pathTrajectoryGenerator.LAT = args["longitude"]
+                sim.pathTrajectoryGenerator.LONG = args["latitude"]
+                sim.pathTrajectoryGenerator.ALT = args["altitude"]
 
 
-            if args['env'] == "ClearSky":
-                sim.setAntennaClearSky()
-            elif args['env'] == "UrbanCanyon":
-                sim.setAntennaUrbanCanyon()
-            elif args['env'] == "None":
-                sim.setAntennaNone()
-            sim.setGlobalPowerOffset(args["GlobalPowerOffset"])
-            sim.customizedTest(args["customizedPath"])
+                # if args['env'] == "ClearSky":
+                #     sim.setAntennaClearSky()
+                # elif args['env'] == "UrbanCanyon":
+                #     sim.setAntennaUrbanCanyon()
+                # elif args['env'] == "None":
+                #     sim.setAntennaNone()
 
-            # sim.simulator_disconnect()
-            return {"status":"success","message":"Customized path added"}
+                sim.customizedTest(args["customizedPath"])
 
-        except Exception as e:
-            # sim.simulator_disconnect()
-            traceback.print_exc(e)
-            return {"status":"failed","message":"Error: "+str(e)}
+                # sim.simulator_disconnect()
+                return {"status":"success","message":"Customized path added"}
+
+            except Exception as e:
+                # sim.simulator_disconnect()
+                traceback.print_exc(e)
+                return {"status":"failed","message":"Error: "+str(e)}
         
 class SimulatorControl(Resource):#控制skydel仿真器
     resource_fields = {
@@ -378,7 +385,6 @@ class SimulatorControl(Resource):#控制skydel仿真器
     @marshal_with(resource_fields)
     def post(self):
         parser = reqparse.RequestParser()
-        parser.add_argument("simulatorIP",type=str,help="simulator IP address is necessary",required=True) 
         parser.add_argument("controlFunction",type = str,help="controlFunction:active",required=True)
         parser.add_argument("simulatorControl",type=str,help="simulatorControl:start/stop")
         parser.add_argument("Offset",type =  int,help="Offset:-45~30dB or -45~10dB")
@@ -388,7 +394,6 @@ class SimulatorControl(Resource):#控制skydel仿真器
         if verification(args,"controlFunction") == False:
             return {"status":"failed","message":"Wrong input of controlFunction"}   
         try:
-            sim.skydelIpAddress = args["simulatorIP"]
             if not sim.simulator.isConnected():  
                 if not sim.simulator_connect():
                     return {"status":"failed","message":"Simulator connect failed"}
@@ -428,10 +433,11 @@ class VehicleInfo(Resource):#获取skydel模拟数据
             if not sim.simulator_connect():
                 return {"status":"failed","message":"Simulator connect failed"}
         try:
-            lla,odometer,speed,yaw,pitch,roll = sim.getVehicleInfo()
+            lla,odometer,speed,yaw,pitch,roll,pc,time = sim.getVehicleInfo()
             # sim.simulator_disconnect()
             return {"status":"success",
                     "message":{
+                        'sim_current_time':time,
                         "latitude":lla.latDeg(),#纬度
                         "longitude":lla.lonDeg(),#经度
                         "altitude":lla.alt,#高度
@@ -439,7 +445,8 @@ class VehicleInfo(Resource):#获取skydel模拟数据
                         "speed":speed,#速度
                         "yaw":yaw,#偏航角
                         "pitch":pitch,#俯仰角
-                        "roll":roll #滚转角
+                        "roll":roll, #滚转角
+                        "pc":pc#输出基准功率
                         },
 
                     }
@@ -463,7 +470,8 @@ class SimulatorInfo(Resource):#获取可见卫星svid
         #         return {"status":"failed","message":"Simulator connect failed"}
         try:       
             svids = sim.getVisiableSV(args["system"])
-            return {"status":"success","message":svids} 
+            numSV=len(svids)
+            return {"status":"success","message":svids,"numSV":numSV} 
         
         except Exception as e:
             # sim.simulator_disconnect()
@@ -567,25 +575,25 @@ class SignalPowerInfo(Resource):#获取skydel全局，特定星座，特定星�
                 return {"status":"failed","message":"Simulator connect failed"}
         try:
             if args["type"] == "global":    
-                offset = sim.getGlobalPowerOffset()
+                offset = sim.getGlobalPowerOffset()#获取全局功率偏移
                 # sim.simulator_disconnect()
                 return {"status":"success","message":offset}
             
             elif args["type"] == "signal":
-                offset = sim.getSignalPowerOffset(args["signal"]) 
+                offset = sim.getSignalPowerOffset(args["signal"]) #获取特定信号功率偏移
                 # sim.simulator_disconnect()
                 return {"status":"success","message":offset}
             
             elif args["type"] == "svid":
                 if args['svID'] == 0:
-                    svid = sim.getVisiableSV(args["system"])   
+                    svid = sim.getVisiableSV(args["system"])   #获取可见卫星svid
                     infoList = []
                     for i in svid:
                         infoList.append(sim.getManualPowerOffsetForSV(args["system"],i)) 
                     # sim.simulator_disconnect()
                     return {"status":"success","message":infoList}   
                 else:
-                    offset = sim.getManualPowerOffsetForSV(args["system"],args["svID"]) 
+                    offset = sim.getManualPowerOffsetForSV(args["system"],args["svID"]) #获取特定卫星功率偏移
                     # sim.simulator_disconnect()
                     return {"status":"success","message":offset}
         except Exception as e:

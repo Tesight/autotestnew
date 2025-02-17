@@ -24,7 +24,7 @@ step:
     headers: null
     params: null
     data: null
-    json: ${data}
+    json: 'data'
     result_json: result_json
 - action: JsonAction
   method: get_json_value

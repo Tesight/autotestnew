@@ -3,7 +3,7 @@ from skydelsdx.units import Enu
 from skydelsdx.units import toRadian
 from skydelsdx.commands import *
 from skydelsdx.commandexception import CommandException 
-from datetime import datetime   
+from datetime import datetime , timedelta  
 from serial import Serial
 
 import skydelsdx
@@ -33,8 +33,8 @@ class PathTrajectory:#路径轨迹类
         self.lastY = 0
         self.lastZ = 0
     
-        self.path_list_deg = []
-        self.push_list_radian = []
+        self.path_list_deg = []#路径列表
+        self.push_list_radian = []#推送列表
         # 统计总路径行驶时间
         self.runningTime = 0
     
@@ -132,7 +132,57 @@ class PathTrajectory:#路径轨迹类
             
             
             i+= timeStep
-        
+    def __RectangleTrajectory(self, speed, length, width, turn_radius, rotation_direction, time_step, direction_matrix):
+        """生成矩形轨迹（含圆角）
+    
+        Args:
+        speed (float): 匀速运动速度（m/s）
+        length (float): 长边长度（m）
+        width (float): 宽边长度（m）
+        turn_radius (float): 转弯半径（m）
+        rotation_direction (str): 转弯方向（'left'或'right'）
+        time_step (float): 时间步长（s）
+        direction_matrix (tuple): 初始方向向量（如东方向为(1,0)）
+     """
+        def rotate_direction(current_dir, rotation):
+            """根据旋转方向更新方向矩阵"""
+            x, y = current_dir
+            if rotation.lower() == 'right':
+            # 右转90度：新方向向量为 (y, -x)
+                return (y, -x)
+            else:
+            # 左转90度：新方向向量为 (-y, x)
+                return (-y, x)
+    
+        current_dir = direction_matrix  # 当前方向
+    
+        # 生成四条边及四个转角
+        for i in range(4):
+            # 计算当前边长度（交替长和宽）
+            current_length = length if i % 2 == 0 else width
+            
+            # 匀速直线运动
+            travel_time = current_length / speed
+            self.__StraightLineTrajectory(
+                initialVelocity=speed,
+                finalVelocity=speed,
+                accelerationDistance=0,
+                travelTime=travel_time,
+                timeStep=time_step,
+                directionMatrix=current_dir
+            )
+            
+            # 90度圆弧转弯（最后一边后无需转弯）
+            if i < 3:
+                self.__uniformArcTrajectory(
+                    speed=speed,
+                    radius=turn_radius,
+                    rotationDirection=rotation_direction,
+                    timeStep=time_step,
+                    lastDirectionMatrix=current_dir
+                )
+                # 更新方向
+                current_dir = rotate_direction(current_dir, rotation_direction)    
     
     
     
@@ -211,22 +261,31 @@ class PathTrajectory:#路径轨迹类
             # print(route)
             if type(route) == str:
                route = json.loads(route.replace("'",'"'))
-            if route['type'] == 'straightLine':
+            if route['type'] == 'straightLine':#匀速直线轨迹
                 self.__StraightLineTrajectory(initialVelocity=route['initialVelocity'],
                                               finalVelocity=route['finalVelocity'],
                                               accelerationDistance=route['accelerationDistance'],
                                               travelTime=route['travelTime'],
                                               timeStep=route['timeStep'],
                                               directionMatrix=route['directionMatrix'])
-            elif route['type'] == 'arc':
+            elif route['type'] == 'arc':#圆形轨迹
                 self.__uniformArcTrajectory(speed=route['initialVelocity'],
                                             radius=route['radius'],
                                             rotationDirection=route['rotationDirection'],
                                             timeStep=route['timeStep'],
                                             lastDirectionMatrix=route['lastDirectionMatrix'])   
-            elif route['type'] == 'static':
+            elif route['type'] == 'static':#静态轨迹
                 self.__StaticTrajectory(travelTime=route['travelTime'],
                                         timeStep=route['timeStep'])
+            elif route['type'] == 'rectangle':#矩形轨迹
+                # 初始方向向东，生成顺时针矩形轨迹
+                self.__RectangleTrajectory(speed=route['initialVelocity'], 
+                                            length=route['length'], 
+                                            width=route['width'], 
+                                            turn_radius=route['turnRadius'], 
+                                            rotation_direction=route['rotationDirection'], 
+                                            timeStep=route['timeStep'],
+                                            directionMatrix=route['directionMatrix'])
     def saveToCSV(self,filename):
         with open(filename, 'w', newline='') as file:
             writer = csv.writer(file)
@@ -282,7 +341,7 @@ class MySimulator:#模拟器类
         self.startTime = None
         self.signalStrengthModel = False#信号强度模型
         self.skydel_Benchmark_Power = -130 #Skydel基准功率
-        self.output_reference_power =  0  #输出基准功率
+        self.output_reference_power =  -130  #输出基准功率pc
 
         self.gain = 0 #SDR增益
         self.globaloffset=0#全局偏移
@@ -308,7 +367,7 @@ class MySimulator:#模拟器类
 
         self.decivetype=None#gnss设备类型
         self.deviceserialnum=None#gnss设备序列号
-        self.externalattenuation=None#外部衰减
+        self.externalattenuation=0#外部衰减
         self.dc_block_mounting=None#直流阻塞安装
         
 
@@ -618,19 +677,21 @@ class MySimulator:#模拟器类
             speed: 速度 
         """
         if self.simulator.hasVehicleInfo():
+            time = self.get_current_simulation_time()
             info = self.simulator.lastVehicleInfo()
             lla = info.ecef.toLla()
             yaw = info.attitude.yawDeg()
             pitch = info.attitude.pitchDeg()
             roll = info.attitude.rollDeg()  
+            pc=self.output_reference_power
         
         
-            return lla,info.odometer,info.speed,yaw,pitch,roll
+            return time,lla,info.odometer,info.speed,yaw,pitch,roll,pc
         else:
             raise Exception("No VehicleInfo,maybe the simulator didn't start.") 
 
     def customizedTest(self,routeList):
-        self.__resetStartPoint()
+        self.__resetStartPoint()#重置起点为弧度制
         
         self.pathTrajectoryGenerator.generateCustomerRoute(routeList)
         # print(self.pathTrajectoryGenerator.push_list_radian)
@@ -642,7 +703,7 @@ class MySimulator:#模拟器类
         #-45---30
         self.simulator.call(SetGlobalPowerOffset(offset))
     
-    def getSignalPowerOffset(self):
+    def getSignalPowerOffset2(self):#获取信号功率偏移
         self.globaloffset=-(-self.output_reference_power+self.skydel_Benchmark_Power-self.externalattenuation+self.gain)
         if self.globaloffset < -45 or self.globaloffset > 30:
             raise Exception("Global Power Offset out of range")
@@ -733,6 +794,18 @@ class MySimulator:#模拟器类
     def getVisiableSV(self,system):
         visibles = self.simulator.call(GetVisibleSV(system))
         return visibles.svId()
+
+
+    def get_current_simulation_time(self):#获取当前模拟时间
+        # 获取模拟器已运行的毫秒数
+        elapsed_milliseconds = self.simulator.call(GetSimulationElapsedTime())
+        
+        # 将毫秒转换为时间增量（timedelta）
+        delta = timedelta(milliseconds=elapsed_milliseconds)
+        
+        # 计算当前模拟时间
+        current_time = self.startTime + delta
+        return current_time
     
     
 
@@ -866,7 +939,7 @@ class Receiver:#dut类
         self.message_thread.start() 
 
     def parse_GGA(self,msg):
-        self.location_dict['update_time'] = time.time()
+        self.location_dict['update_time'] = msg.datetime
         self.location_dict['receiver_running'] = self.running
         self.location_dict['lat_deg'] = msg.latitude
         self.location_dict['lon_deg'] = msg.longitude
@@ -878,7 +951,7 @@ class Receiver:#dut类
         self.location_dict['speed'] = msg.spd_over_grnd  # 提取速度信息
 
     def parse_RMC(self,msg):
-        self.location_dict['update_time'] = time.time()
+        self.location_dict['update_time'] = msg.datetime
         
         self.location_dict['receiver_running'] = self.running
         self.location_dict['lat_deg'] = msg.latitude
@@ -891,7 +964,7 @@ class Receiver:#dut类
         self.location_dict['speed'] = msg.spd_over_grnd  # 提取速度信息
         
     def parse_GLL(self,msg):
-        self.location_dict['update_time'] = time.time()
+        self.location_dict['update_time'] = msg.datetime
         
         self.location_dict['receiver_running'] = self.running
         self.location_dict['lat_deg'] = msg.latitude
@@ -914,7 +987,7 @@ class Receiver:#dut类
         elif 'GA' in line:
             self.GSV_info['num_sv_in_view']['GLONASS'] = num_sv_in_view 
             
-        self.GSV_info['update_time'] = time.time()
+        self.GSV_info['update_time'] = msg.datetime
         
         self.GSV_info['num_sv_in_view']['all'] = self.GSV_info['num_sv_in_view']['GPS']+self.GSV_info['num_sv_in_view']['BeiDou']+self.GSV_info['num_sv_in_view']['Galileo']+self.GSV_info['num_sv_in_view']['GLONASS']
     
