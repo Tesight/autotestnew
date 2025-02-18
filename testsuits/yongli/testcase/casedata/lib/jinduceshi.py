@@ -12,7 +12,7 @@ Pi    = 3.1415926535898 # Pi used in the GPS coordinate
 
 
    #静态定位误差
-def static_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''):#time_step取数间隔时间，addressIP地址,point为坐标
+def static_position_bias(data_num =900,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
     return_message = {'status':None}
     res_list = []#存储ENU坐标
     result_bias=[]#存储平均坐标误差
@@ -84,6 +84,15 @@ def static_position_bias(data_num =900,wait_time=180,time_step = 1,address = '')
                 else:
                   return_message['status'] = 'fail'
                   return return_message
+                data = {
+                              '测试项目': '静态定位精度',
+                              '测试数据': biasx,#平均误差
+                              '标准要求值': standard,
+                              '测试结果': 'PASS' if biasx <= standard else 'FAIL'
+                          }
+                with FileLock("测试报告.yaml.lock"):
+                  with open('测试报告.yaml', 'w') as file:
+                    yaml.dump(data, file)
                 return_message['result_current_bias']=time_result_bias
                 return_message['result_static_bias']=result_bias
                 return_message['status'] = 'success'
@@ -95,7 +104,7 @@ def static_position_bias(data_num =900,wait_time=180,time_step = 1,address = '')
         return return_message
 
       #动态定位误差
-def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''):#time_step取数间隔时间，addressIP地址,point为坐标
+def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
     return_message = {'status':None}
     result_bias=[]#存储坐标误差
     result_mbias=[]#存储平均坐标误差
@@ -167,7 +176,15 @@ def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''
           else:
             return_message['status'] = 'fail'
             return return_message
-
+        data = {
+                              '测试项目': '动态定位精度',
+                              '测试数据': xbias,#平均误差
+                              '标准要求值': standard,
+                              '测试结果': 'PASS' if xbias <= standard else 'FAIL'
+                          }
+        with FileLock("测试报告.yaml.lock"):
+                  with open('测试报告.yaml', 'w') as file:
+                    yaml.dump(data, file)
         return_message['result_dynamic_bias']=result_bias
         return_message['result_dynamic_mbias']=result_mbias
         return_message['status'] = 'success'
@@ -179,7 +196,7 @@ def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''
         return return_message
 
     #测速偏差
-def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = ''):#time_step取数间隔时间，addressIP地址,point为坐标
+def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
     return_message = {'status':None}
     res_listv = []#储存及时速度差
     result_v = []#存储误差均值
@@ -237,6 +254,15 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
             else:
               return_message['status'] = 'fail'
               return return_message
+        data = {
+                              '测试项目': '测数精度',
+                              '测试数据': v_bias,#平均误差
+                              '标准要求值': standard,
+                              '测试结果': 'PASS' if v_bias <= standard else 'FAIL'
+                          }
+        with FileLock("测试报告.yaml.lock"):
+                  with open('测试报告.yaml', 'w') as file:
+                    yaml.dump(data, file)
         return_message['result_v']=res_listv
         return_message['result_mv'] = result_v
         return_message['status'] = 'success'
@@ -249,7 +275,7 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
         return return_message
 
 #里程偏差
-def mileage_bias(data_num=900, wait_time=180,time_step=1, address=''):
+def mileage_bias(data_num=900, wait_time=180,time_step=1, address='',standard=15):
     return_message = {'status': None}
     sum_sim_distance = 0.0
     sum_rsv_distance = 0.0
@@ -348,7 +374,15 @@ def mileage_bias(data_num=900, wait_time=180,time_step=1, address=''):
             else:
                 return_message['status'] = 'fail'
                 return return_message
-
+        data = {
+                              '测试项目': '里程偏差',
+                              '测试数据': average_bias,#平均误差
+                              '标准要求值': standard,
+                              '测试结果': 'PASS' if average_bias <= standard else 'FAIL'
+                          }
+        with FileLock("测试报告.yaml.lock"):
+                  with open('测试报告.yaml', 'w') as file:
+                    yaml.dump(data, file)
         return_message['status'] = 'success'
         return_message['current_bias'] = result_bias
         return_message['average_bias'] = result_mbias
@@ -362,7 +396,7 @@ def mileage_bias(data_num=900, wait_time=180,time_step=1, address=''):
         return return_message
 
 #捕获灵敏度
-def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,address = ''):#time_step取数间隔时间，addressIP地址,point为坐标
+def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
     return_message = {'status':None}
     count=0
     output_reference_power = 0
@@ -433,6 +467,15 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
                       if bias>100 :
                           break
                       if count==10:
+                        data = {
+                              '测试项目': '捕获灵敏度',
+                              '测试数据': output_reference_power,#平均误差
+                              '标准要求值': standard,
+                              '测试结果': 'PASS' if output_reference_power <= standard else 'FAIL'
+                          }
+                        with FileLock("测试报告.yaml.lock"):
+                          with open('测试报告.yaml', 'w') as file:
+                            yaml.dump(data, file)
                           return_message['status'] = 'success'
                           return_message['result_static_mbias'] = bias
                           return_message['pc'] = output_reference_power
@@ -453,7 +496,7 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
         return return_message
 
 #跟踪灵敏度
-def tracking_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,address = ''):#time_step取数间隔时间，addressIP地址,point为坐标
+def tracking_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
     return_message = {'status':None}
     count=0
     output_reference_power = 0
@@ -530,6 +573,15 @@ def tracking_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,ad
                           response = requests.post(url, json=data)
                           Log().logger.info(response)
                       output_reference_power=output_reference_power+1
+                      data = {
+                              '测试项目': '跟踪灵敏度',
+                              '测试数据': output_reference_power,#平均误差
+                              '标准要求值': standard,
+                              '测试结果': 'PASS' if output_reference_power <= standard else 'FAIL'
+                          }
+                      with FileLock("测试报告.yaml.lock"):
+                          with open('测试报告.yaml', 'w') as file:
+                            yaml.dump(data, file)
                       return_message['status'] = 'success'
                       return_message['result_static_mbias'] = bias
                       return_message['pc'] = output_reference_power
