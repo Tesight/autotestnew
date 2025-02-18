@@ -588,10 +588,12 @@ class SignalPowerInfo(Resource):#获取skydel全局，特定星座，特定星�
                 if args['svID'] == 0:
                     svid = sim.getVisiableSV(args["system"])   #获取可见卫星svid
                     infoList = []
+                    num=0
                     for i in svid:
                         infoList.append(sim.getManualPowerOffsetForSV(args["system"],i)) 
+                        num=i
                     # sim.simulator_disconnect()
-                    return {"status":"success","message":infoList}   
+                    return {"status":"success","message":infoList,"svidnum":num}   
                 else:
                     offset = sim.getManualPowerOffsetForSV(args["system"],args["svID"]) #获取特定卫星功率偏移
                     # sim.simulator_disconnect()
