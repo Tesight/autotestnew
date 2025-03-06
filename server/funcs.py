@@ -78,8 +78,8 @@ class PathTrajectory:#路径轨迹类
                     self.path_list_deg.append([speed,llaPos.latDeg(),llaPos.lonDeg(),llaPos.alt])
                     self.push_list_radian.append([speed,llaPos.lat,llaPos.lon,llaPos.alt])
                 i+=timeStep
-        # print(self.path_list_deg)
-    def __uniformArcTrajectory(self,speed,radius,rotationDirection,timeStep,lastDirectionMatrix):
+
+    def __uniformArcTrajectory(self,speed,radius,rotationDirection,timeStep,lastDirectionMatrix,circle=False):
         """_summary_
         生成弧形轨迹
 
@@ -110,17 +110,19 @@ class PathTrajectory:#路径轨迹类
         x0 = self.lastX + radius*directionMatrix[0]
         y0 = self.lastY + radius*directionMatrix[1]
         angular = 0
+        target_angle = 2 * math.pi if circle else math.pi / 2  # 目标角度
         while True:
             angular+=vr*timeStep
             self.runningTime+=timeStep  
-            if abs(angular) >=  math.pi/2:
-                break  
+            if abs(angular) >= target_angle:
+                break
             self.lastX = x0 + radius * math.sin(r+r_offset+angular)
             self.lastY = y0 + radius * math.cos(r+r_offset+angular)
             llaPos = self.ORIGIN.addEnu(Enu(self.lastX, self.lastY, self.lastZ))
             if speed!=0:
                 self.path_list_deg.append([speed,llaPos.latDeg(),llaPos.lonDeg(),llaPos.alt])
                 self.push_list_radian.append([speed,llaPos.lat,llaPos.lon,llaPos.alt])
+
     def __StaticTrajectory(self,travelTime,timeStep):
         speed = 0
         i = 0.0
@@ -132,6 +134,7 @@ class PathTrajectory:#路径轨迹类
             
             
             i+= timeStep
+
     def __RectangleTrajectory(self, speed, length, width, turn_radius, rotation_direction, time_step, direction_matrix):
         """生成矩形轨迹（含圆角）
     
@@ -273,7 +276,8 @@ class PathTrajectory:#路径轨迹类
                                             radius=route['radius'],
                                             rotationDirection=route['rotationDirection'],
                                             timeStep=route['timeStep'],
-                                            lastDirectionMatrix=route['lastDirectionMatrix'])   
+                                            lastDirectionMatrix=route['lastDirectionMatrix'],
+                                            circle=True)   
             elif route['type'] == 'static':#静态轨迹
                 self.__StaticTrajectory(travelTime=route['travelTime'],
                                         timeStep=route['timeStep'])
@@ -342,10 +346,12 @@ class MySimulator:#模拟器类
         self.signalStrengthModel = False#信号强度模型
         self.skydel_Benchmark_Power = -130 #Skydel基准功率
         self.output_reference_power =  -130  #输出基准功率pc
+        self.contorl = False#是否启用传播模型
 
         self.gain = 0 #SDR增益
         self.globaloffset=0#全局偏移
         self.enabledSignal = []
+        self.duration_time=0#持续时间
         
         self.skydelIpAddress = targetIPAddress  # Skydel的IP地址，如果脚本不在Skydel的PC上运行，需要设置为Skydel的PC的IP地址
         
@@ -418,13 +424,14 @@ class MySimulator:#模拟器类
                 self.simulator.call(SetModulationTarget(self.radioType, "",  "", True, self.uniqueRadioId[index]))
                 # 设置信号参数
                 self.simulator.call(ChangeModulationTargetSignals(0, 12500000, 100000000, band, signalList[index], 50, False, self.uniqueRadioId[index]))
-
-        self.simulator.call(EnableSignalStrengthModel(self.signalStrengthModel))    # 关闭信号强度模型
-        self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L1, "Basic Antenna"))#设置天线增益为none
-        self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L2, "Basic Antenna"))
-        self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L5, "Basic Antenna"))
-        self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.E6, "Basic Antenna"))
-        self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.S, "Basic Antenna"))
+        
+        if self.contorl==False:
+            self.simulator.call(EnableSignalStrengthModel(self.signalStrengthModel))    # 关闭信号强度模型
+            self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L1, "Basic Antenna"))#设置天线增益为none
+            self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L2, "Basic Antenna"))
+            self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L5, "Basic Antenna"))
+            self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.E6, "Basic Antenna"))
+            self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.S, "Basic Antenna"))
 
         # 启用日志记录
         self.simulator.call(EnableLogRaw(False))  # 可以启用原始日志记录并进行比较（接收器位置信息特别有用）
@@ -441,6 +448,7 @@ class MySimulator:#模拟器类
             sim_time = datetime(self.startTime[0],self.startTime[1],self.startTime[2],self.startTime[3],self.startTime[4],self.startTime[5])
             self.simulator.call(SetStartTimeMode("Custom"))
             self.simulator.call(SetGpsStartTime(sim_time))
+        self.simulator.call(SetDuration(self.duration_time))#设置持续时间
             
     def __set_multiPath(self,constellation,level):
         # 
@@ -562,7 +570,7 @@ class MySimulator:#模拟器类
                                                     toRadian(self.pathTrajectoryGenerator.PITCH),
                                                     toRadian(self.pathTrajectoryGenerator.ROLL)
                                                     )) 
-        # self.simulator.call(SetDuration(3600))
+        self.simulator.call(SetDuration(self.duration_time))
         self.simulator.arm()
         
     def setDynamic(self):
@@ -626,7 +634,7 @@ class MySimulator:#模拟器类
         if signalListL:
             bandList.append("LowerL")
             signalList.append(",".join(signalListL))    
-        
+
         self.__simulator_init_new_config(bandList, signalList)
         self.__setStartTime()
         
@@ -852,7 +860,7 @@ class Receiver:#dut类
             'speed':0#速度（节）
         }
 
-    def reset_com(self):
+    def reset_com(self):#重置串口
         if self.serialPort is not None:
             if self.serialPort.isOpen():
                 self.serialPort.close() 
@@ -863,7 +871,7 @@ class Receiver:#dut类
         except Exception as e:
             return e
         
-    def reset_ip(self):
+    def reset_ip(self):#重置IP
         if self.socket is not None:
             try:
                 self.socket.close()

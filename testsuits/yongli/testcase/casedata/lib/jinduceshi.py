@@ -4,12 +4,13 @@ import yaml
 import requests
 from common.logger import Log
 from filelock import FileLock
+
 ESMAJ = 6378137.0 # Semi-major axis of Earth, meters
 EFLAT = 0.00335281066474
 ESMIN = ESMAJ * (1.0 - EFLAT)
 EECC_SQUARED = (((ESMAJ*ESMAJ) - (ESMIN*ESMIN)) / (ESMAJ*ESMAJ))
 Pi    = 3.1415926535898 # Pi used in the GPS coordinate
-
+yaml_file = 'c:/baidunetdiskdownload/mysence/testsuits/yongli/testcase/casedata/lib/测试报告.yaml'
 
    #静态定位误差
 def static_position_bias(data_num =900,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
@@ -90,9 +91,13 @@ def static_position_bias(data_num =900,wait_time=180,time_step = 1,address = '',
                               '标准要求值': standard,
                               '测试结果': 'PASS' if biasx <= standard else 'FAIL'
                           }
-                with FileLock("测试报告.yaml.lock"):
-                  with open('测试报告.yaml', 'w') as file:
-                    yaml.dump(data, file)
+                if append_test_item(yaml_file, data):
+                    print(f"测试项目已添加到测试项目列表中")
+                    Log().logger.info(f"静态定位误差结果已经添加到列表中")
+                else:
+                    print(f"添加测试项目失败")
+                    Log().logger.error(f"添加静态定位误差测试项目失败")
+
                 return_message['result_current_bias']=time_result_bias
                 return_message['result_static_bias']=result_bias
                 return_message['status'] = 'success'
@@ -182,9 +187,12 @@ def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''
                               '标准要求值': standard,
                               '测试结果': 'PASS' if xbias <= standard else 'FAIL'
                           }
-        with FileLock("测试报告.yaml.lock"):
-                  with open('测试报告.yaml', 'w') as file:
-                    yaml.dump(data, file)
+        if append_test_item(yaml_file, data):
+            print(f"测试项目已添加到测试项目列表中")
+            Log().logger.info(f"动态定位误差结果已经添加到列表中")
+        else:
+            print(f"添加测试项目失败")
+            Log().logger.error(f"添加动态定位误差测试项目失败")
         return_message['result_dynamic_bias']=result_bias
         return_message['result_dynamic_mbias']=result_mbias
         return_message['status'] = 'success'
@@ -260,9 +268,10 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
                               '标准要求值': standard,
                               '测试结果': 'PASS' if v_bias <= standard else 'FAIL'
                           }
-        with FileLock("测试报告.yaml.lock"):
-                  with open('测试报告.yaml', 'w') as file:
-                    yaml.dump(data, file)
+        if append_test_item(yaml_file, data):
+            Log().logger.info(f"测速偏差结果已经添加到列表中")
+        else:
+            Log().logger.error(f"添加测速偏差测试项目失败") 
         return_message['result_v']=res_listv
         return_message['result_mv'] = result_v
         return_message['status'] = 'success'
@@ -380,9 +389,10 @@ def mileage_bias(data_num=900, wait_time=180,time_step=1, address='',standard=15
                               '标准要求值': standard,
                               '测试结果': 'PASS' if average_bias <= standard else 'FAIL'
                           }
-        with FileLock("测试报告.yaml.lock"):
-                  with open('测试报告.yaml', 'w') as file:
-                    yaml.dump(data, file)
+        if append_test_item(yaml_file, data):
+            Log().logger.info(f"里程偏差结果已经添加到列表中")
+        else:
+            Log().logger.error(f"添加里程偏差测试项目失败")
         return_message['status'] = 'success'
         return_message['current_bias'] = result_bias
         return_message['average_bias'] = result_mbias
@@ -473,9 +483,10 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
                               '标准要求值': standard,
                               '测试结果': 'PASS' if output_reference_power <= standard else 'FAIL'
                           }
-                        with FileLock("测试报告.yaml.lock"):
-                          with open('测试报告.yaml', 'w') as file:
-                            yaml.dump(data, file)
+                      if append_test_item(yaml_file, data):
+                          Log().logger.info(f"捕获灵敏度结果已经添加到列表中")
+                      else:
+                          Log().logger.error(f"添加捕获灵敏度测试项目失败")
                           return_message['status'] = 'success'
                           return_message['result_static_mbias'] = bias
                           return_message['pc'] = output_reference_power
@@ -579,9 +590,12 @@ def tracking_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,ad
                               '标准要求值': standard,
                               '测试结果': 'PASS' if output_reference_power <= standard else 'FAIL'
                           }
-                      with FileLock("测试报告.yaml.lock"):
-                          with open('测试报告.yaml', 'w') as file:
-                            yaml.dump(data, file)
+                      if append_test_item(yaml_file, data):
+                          print(f"测试项目已添加到测试项目列表中")
+                          Log().logger.info(f"跟踪灵敏度结果已经添加到列表中")
+                      else:
+                          print(f"添加测试项目失败")
+                          Log().logger.error(f"添加跟踪灵敏度测试项目失败")
                       return_message['status'] = 'success'
                       return_message['result_static_mbias'] = bias
                       return_message['pc'] = output_reference_power
@@ -804,7 +818,104 @@ class Attitude:
   def rollDeg(self):
     return toDegree(self.roll)
 
+def read_yaml_file(yaml_path):
+    """读取yaml文件"""
+    if not os.path.isfile(yaml_path):
+        raise FileNotFoundError("文件路径不存在，请检查路径是否正确：%s" % yaml_path)
+    with open(yaml_path, 'r', encoding='utf-8') as doc:
+        content = yaml.load(doc, Loader=yaml.Loader)
+    return content
 
+
+def write_yaml_file(yaml_path, data):
+    """写入yaml文件"""
+    if not os.path.isfile(yaml_path):
+        raise FileNotFoundError("文件路径不存在，请检查路径是否正确：%s" % yaml_path)
+    with open(yaml_path, 'w', encoding='utf-8') as f:
+        yaml.dump(data, f, Dumper=yaml.Dumper, allow_unicode=True,sort_keys=False)
+
+def append_test_item(yaml_file, test_item, test_info=None):
+    """
+    向YAML测试报告文件添加新的测试项
+    
+    参数:
+        yaml_file (str): YAML文件路径
+        test_item (dict): 要添加的测试项数据，如 {'测试项目': '动态定位精度', ...}
+        test_info (dict, optional): 测试基本信息，仅在需要创建新结构时使用
+        
+    返回:
+        bool: 操作成功返回True，否则返回False
+    """
+    # 如果未提供测试基本信息，使用默认值
+    if test_info is None:
+        test_info = {
+            '测试编号': 'TEST-2025-0228',
+            '测试时间': '2025-02-28 14:30:00',
+            '测试人': '车载接收机',
+            '环境温度': '25°C',
+            '环境湿度': '65%',
+            '备注': '在开阔场地进行测试，天气晴朗，无电磁干扰'
+        }
+    
+    try:
+        # 确保文件存在
+        if not os.path.exists(yaml_file):
+            with open(yaml_file, 'w', encoding='utf-8') as f:
+                pass
+                
+        with FileLock(f"{yaml_file}.lock"):
+            # 读取现有数据
+            try:
+                data = read_yaml_file(yaml_file)
+            except FileNotFoundError:
+                # 如果文件不存在但路径有效，创建空文件
+                with open(yaml_file, 'w', encoding='utf-8') as f:
+                    pass
+                data = None
+            
+            if data is None or not isinstance(data, list) or len(data) == 0:
+                # 如果文件为空或格式不正确，创建新的结构
+                data = [{
+                    '测试基本信息': test_info,
+                    '测试项目列表': [test_item]
+                }]
+            else:
+                # 寻找包含"测试项目列表"的条目
+                found = False
+                for item in data:
+                    if isinstance(item, dict) and '测试项目列表' in item:
+                        # 找到了测试项目列表，追加新测试项
+                        item['测试项目列表'].append(test_item)
+                        found = True
+                        break
+                        
+                # 如果没有找到测试项目列表，检查第一个条目是否有测试基本信息
+                if not found and len(data) > 0 and isinstance(data[0], dict) and '测试基本信息' in data[0]:
+                    # 在第一个条目中添加测试项目列表
+                    data[0]['测试项目列表'] = data[0].get('测试项目列表', []) + [test_item]
+                    found = True
+                    
+                # 如果还是没找到合适的位置，删除可能存在的顶层测试项并添加到正确的结构中
+                if not found:
+                    # 过滤掉可能是单独测试项的顶层条目
+                    data = [item for item in data if not (isinstance(item, dict) and '测试项目' in item)]
+                    # 如果第一个条目是字典且没有测试基本信息，添加基本信息和测试项目列表
+                    if len(data) > 0 and isinstance(data[0], dict):
+                        data[0]['测试项目列表'] = data[0].get('测试项目列表', []) + [test_item]
+                    else:
+                        # 创建新的结构
+                        data.insert(0, {
+                            '测试基本信息': test_info,
+                            '测试项目列表': [test_item]
+                        })
+
+            # 写回文件
+            write_yaml_file(yaml_file, data)
+            return True
+            
+    except Exception as e:
+        print(f"添加测试项目时出错: {str(e)}")
+        return False
 
 
 

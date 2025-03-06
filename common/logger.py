@@ -41,7 +41,7 @@ class Log(object):
 
 
 
-    def add_run_log_handler(self):
+    def add_run_log_handler(self):#添加日志文件
         if CommonData.RUN_DATA['project_name']:
             self.run_handler = logging.FileHandler(os.path.join(CommonData().get_log_path(), rq), 'a', encoding='utf-8')
             self.run_handler.setLevel(CommonData().get_config_data()['日志打印配置']['level'])

@@ -7,6 +7,7 @@ from flask import Flask,request
 from flask_restful import Api,Resource,fields,marshal_with,reqparse
 from funcs import * 
 import json,traceback
+import common.logger as Log
 
 sim = MySimulator()
 pathTrajectory = PathTrajectory()
@@ -236,7 +237,8 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                             action = 'append')  
         parser.add_argument("radioType",type=str,help="radioType:NoneRT, DTA-2115B,DTA-2116")
         parser.add_argument("GlobalPowerOffset",type=float,help="GlobalPowerOffset:dBm")
-
+        parser.add_argument("propagation_model",type=str)#传播模型
+        parser.add_argument("duration_time",type=int,help="duration_time")#持续时间
         parser.add_argument("decivetype",type=bool,help="decivetype")
         parser.add_argument("deviceserialnum",type=str,help="deviceserialnum")  
         parser.add_argument("externalattenuation",type=float, help="externalattenuation")
@@ -254,6 +256,7 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                     pass    
                 if not sim.simulator.isConnected():  # 如果仿真器未连接
                     if not sim.simulator_connect():  # 连接仿真器，如果返回 False，表示连接失败。
+                        Log().logger.error(f"服务器连接skydel仿真器失败")
                         return {"status":"failed","message":"Simulator connect failed"}
                 try:
                     sim.simulator.stop()
@@ -269,37 +272,47 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                 elif sim.decivetype=='SSE':
                     sim.radioType='NoneRT'
                 else:
+                    Log().logger.error(f"GNSS设备类型错误,应该为GSG-7C,GSG-8C,GSG-8Gen2,SSE")
                     return {"status":"failed","message":"decivetype error: "}
                 sim.deviceserialnum=args["deviceserialnum"]
                 sim.externalattenuation=args["externalattenuation"]
                 sim.dc_block_mounting=args["dc_block_mounting"]
+                Log().logger.info(f"skydel仿真器连接成功,设备序列号：{sim.deviceserialnum},外部衰减：{sim.externalattenuation},隔直器安装：{sim.dc_block_mounting}")
                 return {"status":"success","message":"skydel connect successfully"}
             except Exception as e:
             # sim.simulator_disconnect()
                 traceback.print_exc(e)
+                Log().logger.error(f"skydel连接失败:{str(e)}")
                 return {"status":"failed","message":"Error: "+str(e)}
             
         elif data == "frequencyset":
             if verification(args, "signals") == False:
+                Log().logger.error(f"信号源设置错误，应该为L1CA,L1C,L1P,G1,E1,B1,B1C,SBASL1,QZSSL1CA,QZSSL1CB,QZSSL1C,QZSSL1S,L2C,L2P,L5,G2,E5a,E5b,B2,B2a,B3I,SBASL5,QZSSL2C,QZSSL5,QZSSL5S,NAVICL5")
                 return {"status":"failed","message":"Wrong input of signals"}   
             if verification(args,'startTime') == False:
+                Log().logger.error(f"startTime设置错误")
                 return {"status":"failed","message":"Wrong input of startTime"} 
             
             try:
                 if not sim.simulator.isConnected():  
                     if not sim.simulator_connect():
+                        Log().logger.error(f"skydel连接断开")
                         return {"status":"failed","message":"Simulator connect failed"}
-                    
+                sim.duration_time=args["duration_time"]
+                sim.contorl=args["propagation_model"]
                 sim.startTime = args['startTime'] if args['startTime'][0] != None else None    
                 sim.setSignals(args["signals"])
+                Log().logger.info(f"信号频点设置成功")
                 return {"status":"success","message":"skydel frequency set successfully"}
             except Exception as e:
             # sim.simulator_disconnect()
                 traceback.print_exc(e)
+                Log().logger.error(f"信号频点设置失败:{str(e)}")
                 return {"status":"failed","message":"Error: "+str(e)}
             
         elif data == "offset":
             if not verification(args,"output_reference_power"):
+                Log().logger.error(f"输出基准功率设置错误")
                 return {"status":"failed","message":"Wrong input of output_reference_power"}
             try:
                 sim.output_reference_power=args["output_reference_power"]
@@ -309,9 +322,11 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                     signals.remove("SBASL1")
                     sim.setSignalPowerOffset(signals,0)
                 sim.getSignalPowerOffset2()
+                Log().logger.info(f"输出基准功率设置成功")
                 return {"status":"success","message":"skydel offset set successfully"}
             except Exception as e:
                 traceback.print_exc(e)
+                Log().logger.error(f"输出基准功率设置失败:{str(e)}")
                 return {"status":"failed","message":"Error: "+str(e)}
         
 
@@ -319,6 +334,7 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
 
         elif data == "trajectory":
             if not verification(args,"customizedPath"):
+                Log().logger.error(f"自定义路径设置错误")
                 return {"status":"failed","message":"Wrong input of customizedPath"}
             # if args["mode"] != "customized":
             #     return {"status":"failed","message":"Only support customized mode"} 
@@ -333,6 +349,7 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                 #     pass    
                 if not sim.simulator.isConnected():  
                     if not sim.simulator_connect():
+                        Log().logger.error(f"skydel连接断开")
                         return {"status":"failed","message":"Simulator connect failed"}
                 # try:
                 #     sim.simulator.stop()
@@ -370,11 +387,13 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                 sim.customizedTest(args["customizedPath"])
 
                 # sim.simulator_disconnect()
+                Log().logger.info(f"自定义路径设置成功")
                 return {"status":"success","message":"Customized path added"}
 
             except Exception as e:
                 # sim.simulator_disconnect()
                 traceback.print_exc(e)
+                Log().logger.error(f"自定义路径设置失败:{str(e)}")
                 return {"status":"failed","message":"Error: "+str(e)}
         
 class SimulatorControl(Resource):#控制skydel仿真器
@@ -392,6 +411,7 @@ class SimulatorControl(Resource):#控制skydel仿真器
         parser.add_argument("system",type=str,help = "system:GPS/GLONASS/Galileo/BeiDou")
         args = parser.parse_args()
         if verification(args,"controlFunction") == False:
+            Log().logger.error(f"controlFunction设置错误")
             return {"status":"failed","message":"Wrong input of controlFunction"}   
         try:
             if not sim.simulator.isConnected():  
@@ -401,29 +421,37 @@ class SimulatorControl(Resource):#控制skydel仿真器
                 if args["simulatorControl"] == "start":
                     try:
                         sim.startSimulation()
+                        Log().logger.info(f"仿真器启动成功")
                         return {"status":"success","message":"Simulator started"}
                     except Exception as e:
                         # sim.simulator_disconnect()
+                        Log().logger.error(f"仿真器启动失败:{str(e)}")
                         return {"status":"failed","message":"Error: "+str(e)}   
                 elif args["simulatorControl"] == "stop":
                     sim.stopSimulation()
                     sim.simulator_disconnect()  
+                    Log().logger.info(f"仿真器停止成功")
                     return {"status":"success","message":"Simulator stopped"}   
                 else:
+                    Log().logger.error(f"simulatorControl设置错误")
                     return {"status":"failed","message":"Wrong input of simulatorControl"}
             elif args["controlFunction"] == "globalPowerOffset":
                 sim.setGlobalPowerOffset(args["Offset"])
                 sim.simulator_disconnect()
+                Log().logger.info(f"全局功率偏移设置成功")
                 return {"status":"success","message":"Global power offset set"}
             elif args["controlFunction"] == "setManualPowerOffsetForSV":
                 sim.setManualPowerOffsetForSV(args["system"],args["svID"],args["Offset"])
                 sim.simulator_disconnect()
+                Log().logger.info(f"{args["system"]}星座{args["svID"]}号功率偏移设置成功")
                 return {"status":"success","message":"Manual power offset set"}
             else:
+                Log().logger.error(f"controlFunction设置错误")
                 return {"status":"failed","message":"Wrong input of controlFunction"}
         except Exception as e:
             if sim.simulator.isConnected():
                 sim.simulator_disconnect()
+            Log().logger.error(f"仿真器操作失败:{str(e)}")
             return {"status":"failed","message":"Error: "+str(e)}
  
 class VehicleInfo(Resource):#获取skydel模拟数据
@@ -431,6 +459,7 @@ class VehicleInfo(Resource):#获取skydel模拟数据
     def get(self):
         if not sim.simulator.isConnected():  
             if not sim.simulator_connect():
+                Log().logger.error(f"skydel连接断开")
                 return {"status":"failed","message":"Simulator connect failed"}
         try:
             lla,odometer,speed,yaw,pitch,roll,pc,time = sim.getVehicleInfo()
@@ -452,6 +481,7 @@ class VehicleInfo(Resource):#获取skydel模拟数据
                     }
         except Exception as e:
             # sim.simulator_disconnect()
+            Log().logger.error(f"获取skydel模拟数据失败:{str(e)}")
             return {"status":"failed","message":"Error: "+str(e)}
                    
 class SimulatorInfo(Resource):#获取可见卫星svid
@@ -471,10 +501,12 @@ class SimulatorInfo(Resource):#获取可见卫星svid
         try:       
             svids = sim.getVisiableSV(args["system"])
             numSV=len(svids)
+            Log().logger.info(f"可见卫星svid获取成功")
             return {"status":"success","message":svids,"numSV":numSV} 
         
         except Exception as e:
             # sim.simulator_disconnect()
+            Log().logger.error(f"可见卫星svid获取失败:{str(e)}")
             return {"status":"failed","message":"Error: "+str(e)}    
 
 class SignalPower(Resource):#设置skydel全局，特定星座，特定星座的某颗卫星信号功率
@@ -510,34 +542,40 @@ class SignalPower(Resource):#设置skydel全局，特定星座，特定星座的
         parser.add_argument("system",type=str,help = "system:GPS/GLONASS/Galileo/BeiDou")   
         args = parser.parse_args()
         if SignalPower.verify(args,"type") == False:
+            Log().logger.error(f"type设置错误")
             return {"status":"failed","message":"Wrong input of type"}  
         
     
         if SignalPower.verify(args,"system") == False:
+            Log().logger.error(f"system设置错误")
             return {"status":"failed","message":"Wrong input of system"}    
 
             
         sim.skydelIpAddress = args["simulatorIP"]  
         if not sim.simulator.isConnected():  
             if not sim.simulator_connect():
+                Log().logger.error(f"skydel连接断开")
                 return {"status":"failed","message":"Simulator connect failed"}
         try:
             if args["type"] == "global":    
                 sim.setGlobalPowerOffset(args["value"]) 
                 # sim.simulator_disconnect()
+                Log().logger.info(f"全局功率偏移设置成功")
                 return {"status":"success","message":"Global power offset set"}
             elif args["type"] == "signal":
                 sim.setSignalPowerOffset(args["signalList"],args["value"])    
                 # sim.simulator_disconnect()  
+                Log().logger.info(f"信号功率设置成功")
                 return {"status":"success","message":"Signal power set"}    
             elif args["type"] == "svid":    
                 sim.setManualPowerOffsetForSV(args["system"],args["svID"],args["value"])    
                 # sim.simulator_disconnect()
+                Log().logger.info(f"{args["system"]}星座{args["svID"]}号功率偏移设置成功")
                 return {"status":"success","message":"Manual power offset set"} 
         except Exception as e:
             # sim.simulator_disconnect()
             # traceback.print_exc(e)
-            
+            Log().logger.error(f"功率设置失败:{str(e)}")
             return {"status":"failed","message":"Error: "+str(e)}   
 
 class SignalPowerInfo(Resource):#获取skydel全局，特定星座，特定星座的某颗卫星信号功率
@@ -567,21 +605,25 @@ class SignalPowerInfo(Resource):#获取skydel全局，特定星座，特定星�
         parser.add_argument("system",type=str,help = "system:GPS/GLONASS/Galileo/BeiDou")   
         args = parser.parse_args()       
         if SignalPowerInfo.verify(args,"type") == False:
+            Log().logger.error(f"type设置错误")
             return {"status":"failed","message":"Wrong input of type"}  
           
         sim.skydelIpAddress = args["simulatorIP"]  
         if not sim.simulator.isConnected():  
             if not sim.simulator_connect():
+                Log().logger.error(f"skydel连接断开")
                 return {"status":"failed","message":"Simulator connect failed"}
         try:
             if args["type"] == "global":    
                 offset = sim.getGlobalPowerOffset()#获取全局功率偏移
                 # sim.simulator_disconnect()
+                Log().logger.info(f"全局功率偏移获取成功")
                 return {"status":"success","message":offset}
             
             elif args["type"] == "signal":
                 offset = sim.getSignalPowerOffset(args["signal"]) #获取特定信号功率偏移
                 # sim.simulator_disconnect()
+                Log().logger.info(f"{args["signal"]}信号功率偏移获取成功")
                 return {"status":"success","message":offset}
             
             elif args["type"] == "svid":
@@ -593,13 +635,16 @@ class SignalPowerInfo(Resource):#获取skydel全局，特定星座，特定星�
                         infoList.append(sim.getManualPowerOffsetForSV(args["system"],i)) 
                         num=i
                     # sim.simulator_disconnect()
+                    Log().logger.info(f"{args["system"]}星座卫星功率偏移获取成功")
                     return {"status":"success","message":infoList,"svidnum":num}   
                 else:
                     offset = sim.getManualPowerOffsetForSV(args["system"],args["svID"]) #获取特定卫星功率偏移
                     # sim.simulator_disconnect()
+                    Log().logger.info(f"{args["system"]}星座{args["svID"]}号功率偏移获取成功")
                     return {"status":"success","message":offset}
         except Exception as e:
             # sim.simulator_disconnect()
+            Log().logger.error(f"功率获取失败:{str(e)}")
             return  {"status":"failed","message":"Error: "+str(e)}  
         
 class ExReceiver(Resource):#接收器设置
@@ -610,6 +655,7 @@ class ExReceiver(Resource):#接收器设置
         else:
             info_dict  = rsv.get_location_dict()
 
+        Log().logger.info(f"接收器信息获取成功")
         return {"status":"success","message":info_dict} 
         
     def post(self,data):
@@ -629,11 +675,13 @@ class ExReceiver(Resource):#接收器设置
         parser.add_argument('byteSize',type = float,help = 'byteSize')
         parser.add_argument('stopBite',type = int,help = 'stopBite')
         parser.add_argument('message',type = str,help = 'message to send')
+        parser.add_argument('dutip',type = str,help = 'dutip')
+        parser.add_argument('port',type = int,help = 'port')
         
         args = parser.parse_args()
         
     
-        if data == "setser":
+        if data == "setser":#设置接收器串口
             try: 
                comPort = args.get('comPort')
                baudRate = args.get('baudRate')
@@ -647,14 +695,18 @@ class ExReceiver(Resource):#接收器设置
                    
                    err = rsv.reset_com()
                    if err:
+                       Log().logger.error(f"接收器串口设置失败")
                        return {"status":"failed","message":str(err)} 
+                   Log().logger.info(f"接收器串口设置成功")
                    return {"status":"success","message":"dut serial set successfully"} 
                else:
+                   Log().logger.error(f"接收器串口设置错误")
                    return {"status":"failed","message":"Wrong input of params"}
             except Exception as e:
+                Log().logger.error(f"接收器串口设置失败:{str(e)}")
                 return {"status":"failed","message":e}    
         
-        elif data == "setint":
+        elif data == "setint":#设置接收器IP
             try: 
                dut_IP = args.get('dutip')
                dut_port = args.get('port')
@@ -665,11 +717,15 @@ class ExReceiver(Resource):#接收器设置
                    
                    err = rsv.reset_ip()
                    if err:
+                       Log().logger.error(f"接收器连接失败")
                        return {"status":"failed","message":str(err)} 
+                   Log().logger.info(f"接收器连接成功")
                    return {"status":"success","message":"dut http set successfully"} 
-               else:
+               else:   
+                   Log().logger.error(f"接收器IP设置错误")
                    return {"status":"failed","message":"Wrong input of params"}
             except Exception as e:
+                Log().logger.error(f"接收器连接失败:{str(e)}")
                 return {"status":"failed","message":e}               
         elif data == 'start':
             try:
@@ -677,21 +733,28 @@ class ExReceiver(Resource):#接收器设置
                     rsv.startReceiveMessage()
                     time.sleep(1)
                     if rsv.message_thread.is_alive():
+                        Log().logger.info(f"接收器成功接受数据")
                         return {"status":"success","message":"start successfully"}  
                     else:
+                        Log().logger.error(f"接收器接受数据失败")
                         return{"status":"failed","message":"failed to start"}   
                 else:
+                    Log().logger.error(f"接收器串口未初始化")
                     return {"status":"failed","message":"Serial port is not initialized"}       
             except Exception as e:
+                Log().logger.error(f"接收器接受数据失败:{str(e)}")
                 return {"status":"failed","message":str(e)}  
         elif data == 'stop':
             rsv.running = False
+            Log().logger.info(f"接收器停止接受数据")
             return {"status":"success","message":"stop successfully"}   
         elif data == 'send':
             msg = args['message']
             rsv.sendMessage(msg)
+            Log().logger.info(f"给接收器发送数据成功")
             return {"status":"success","message":"send successfully"}   
         else:
+            Log().logger.error(f"接收器设置错误")
             return {"status":"failed","message":"Wrong input of function"}  
 
 
