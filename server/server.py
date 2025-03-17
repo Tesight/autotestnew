@@ -7,7 +7,7 @@ from flask import Flask,request
 from flask_restful import Api,Resource,fields,marshal_with,reqparse
 from funcs import * 
 import json,traceback
-import common.logger as Log
+from common.logger import Log
 
 sim = MySimulator()
 pathTrajectory = PathTrajectory()
@@ -239,7 +239,7 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
         parser.add_argument("GlobalPowerOffset",type=float,help="GlobalPowerOffset:dBm")
         parser.add_argument("propagation_model",type=str)#传播模型
         parser.add_argument("duration_time",type=int,help="duration_time")#持续时间
-        parser.add_argument("decivetype",type=bool,help="decivetype")
+        parser.add_argument("decivetype",type=str,help="decivetype")
         parser.add_argument("deviceserialnum",type=str,help="deviceserialnum")  
         parser.add_argument("externalattenuation",type=float, help="externalattenuation")
         parser.add_argument("dc_block_mounting",type = int,help="dc_block_mounting")
@@ -673,7 +673,7 @@ class ExReceiver(Resource):#接收器设置
         parser.add_argument("comPort",type=str,help="comPort")
         parser.add_argument('baudRate',type = int,help = 'baudRate')
         parser.add_argument('byteSize',type = float,help = 'byteSize')
-        parser.add_argument('stopBite',type = int,help = 'stopBite')
+        parser.add_argument('stopBites',type = int,help = 'stopBites')
         parser.add_argument('message',type = str,help = 'message to send')
         parser.add_argument('dutip',type = str,help = 'dutip')
         parser.add_argument('port',type = int,help = 'port')
@@ -686,12 +686,14 @@ class ExReceiver(Resource):#接收器设置
                comPort = args.get('comPort')
                baudRate = args.get('baudRate')
                byteSize = args.get('byteSize')
-               stopBite = args.get('stopBite')
-               if comPort and baudRate and byteSize and stopBite:
+               stopBites = args.get('stopBites')
+               print(comPort,baudRate,byteSize,stopBites)
+               if comPort and baudRate and byteSize and stopBites:
+                   
                    rsv.comPort = comPort
                    rsv.baudRate = baudRate
                    rsv.byteSize = byteSize
-                   rsv.stopBit = stopBite
+                   rsv.stopBit = stopBites
                    
                    err = rsv.reset_com()
                    if err:

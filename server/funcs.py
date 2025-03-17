@@ -5,6 +5,7 @@ from skydelsdx.commands import *
 from skydelsdx.commandexception import CommandException 
 from datetime import datetime , timedelta  
 from serial import Serial
+from common.logger import Log
 
 import skydelsdx
 import math
@@ -38,7 +39,7 @@ class PathTrajectory:#路径轨迹类
         # 统计总路径行驶时间
         self.runningTime = 0
     
-    def __StraightLineTrajectory(self,initialVelocity,finalVelocity,accelerationDistance,travelTime,timeStep,directionMatrix):
+    def __StraightLineTrajectory(self,initialVelocity,finalVelocity=600,accelerationDistance=0,travelTime=0,timeStep=0,directionMatrix=(0,0),flag=0,acceleration=0):
         """_summary_
         生成直线轨迹
         Args:
@@ -62,22 +63,35 @@ class PathTrajectory:#路径轨迹类
                     self.path_list_deg.append([speed,llaPos.latDeg(),llaPos.lonDeg(),llaPos.alt])
                     self.push_list_radian.append([speed,llaPos.lat,llaPos.lon,llaPos.alt])
                 i+=timeStep         
-        else:
+        elif flag == 1:
             a = (finalVelocity**2 - initialVelocity**2) / (2 * accelerationDistance) #加速度
             # 计算直线加速轨迹
             t = (finalVelocity-initialVelocity)/a
             self.runningTime+=t
             i = 0.0
             while i<t:
-              
-                speed = initialVelocity + a * i
-                self.lastX += ((speed - a * timeStep) * timeStep + 0.5 * a * timeStep*timeStep) * directionMatrix[0]
-                self.lastY += ((speed - a * timeStep) * timeStep + 0.5 * a * timeStep*timeStep) * directionMatrix[1]
+                speed = initialVelocity + a * i#
+                avg_speed = speed - 0.5 * a * timeStep
+                self.lastX += avg_speed * timeStep * directionMatrix[0]
+                self.lastY += avg_speed * timeStep * directionMatrix[1]
                 llaPos = self.ORIGIN.addEnu(Enu(self.lastX, self.lastY, self.lastZ))
                 if speed!=0:
                     self.path_list_deg.append([speed,llaPos.latDeg(),llaPos.lonDeg(),llaPos.alt])
                     self.push_list_radian.append([speed,llaPos.lat,llaPos.lon,llaPos.alt])
                 i+=timeStep
+        else:
+            a = acceleration
+            t = (finalVelocity - initialVelocity) / a
+            steps = int(t / timeStep)
+            for i in range(steps):
+                current_time = i * timeStep
+                speed = initialVelocity + a * current_time
+                dx = speed * timeStep + 0.5 * a * timeStep**2
+                lastx += dx * directionMatrix[0]
+                lasty += dx * directionMatrix[1]
+                llaPos = self.ORIGIN.addEnu(Enu(self.lastx, self.lasty, self.lastz))
+                self.path_list_deg.append([speed, llaPos.latDeg(), llaPos.lonDeg(), llaPos.alt])
+                self.push_list_radian.append([speed, llaPos.lat, llaPos.lon, llaPos.alt])
 
     def __uniformArcTrajectory(self,speed,radius,rotationDirection,timeStep,lastDirectionMatrix,circle=False):
         """_summary_
@@ -187,7 +201,86 @@ class PathTrajectory:#路径轨迹类
                 # 更新方向
                 current_dir = rotate_direction(current_dir, rotation_direction)    
     
-    
+    def generate_standard_rectangle_trajectory(self, time_step=0.1):
+        """
+        生成标准矩形轨迹，带有圆角
+        
+        轨迹特点：
+        1) 起始位置静止3min，北向
+        2) 250m内匀加速至100km/h
+        3) 保持100km/h运动300s
+        4) 250m内减速到20km/h
+        5) 顺时针90°转弯，转弯半径r=20m，保持时速20km/h
+        6) 重复2-5步完成矩形路径
+        
+        参数:
+            length (float): 矩形长度（米）
+            width (float): 矩形宽度（米）
+            time_step (float): 时间步长（秒）
+        """
+        # 速度转换（km/h 到 m/s）
+        v_high = 100 / 3.6  # 100 km/h = 27.78 m/s
+        v_low = 20 / 3.6    # 20 km/h = 5.56 m/s
+        acc_distance = 250   # 加速/减速距离（米）
+        turn_radius = 20     # 转弯半径（米）
+        cruise_time = 300    # 巡航时间（秒）
+        static_time = 180    # 初始静止时间（秒）
+        time_step = 0.1      # 时间步长（秒）
+        
+        # 方向矩阵，表示四个方向 (北, 东, 南, 西)
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        
+        # 1. 起始位置静止3min
+        self.__StaticTrajectory(static_time, time_step)
+        
+        # 进行一个完整的矩形轨迹
+        for i in range(4):
+            current_dir = directions[i]
+            
+            # 2. 加速到高速（0到100km/h或20到100km/h）
+            initial_v = 0 if i == 0 else v_low
+            self.__StraightLineTrajectory(
+                initialVelocity=initial_v,
+                finalVelocity=v_high,
+                accelerationDistance=acc_distance,
+                travelTime=0,  # 加速时间由加速度自动计算
+                timeStep=time_step,
+                directionMatrix=current_dir,
+                flag=1
+            )
+            
+            # 3. 保持高速运行300秒
+            self.__StraightLineTrajectory(
+                initialVelocity=v_high,
+                finalVelocity=v_high,
+                accelerationDistance=0,
+                travelTime=cruise_time,
+                timeStep=time_step,
+                directionMatrix=current_dir
+            )
+            
+            # 4. 减速到低速（100到20km/h）
+            self.__StraightLineTrajectory(
+                initialVelocity=v_high,
+                finalVelocity=v_low,
+                accelerationDistance=acc_distance,
+                travelTime=0,  # 减速时间由减速度自动计算
+                timeStep=time_step,
+                directionMatrix=current_dir,
+                flag=1
+            )
+            
+            # 5. 90度顺时针转弯
+            if i < 3:  # 最后一边之后不需要转弯
+                self.__uniformArcTrajectory(
+                    speed=v_low,
+                    radius=turn_radius,
+                    rotationDirection="right",
+                    timeStep=time_step,
+                    lastDirectionMatrix=current_dir
+                )
+        
+        # 如果需要继续重复运动轨迹，可以再次调用此方法
     
     
     
@@ -241,7 +334,7 @@ class PathTrajectory:#路径轨迹类
         self.__StraightLineTrajectory(v,u,250,0,timeSteep,(-1,0))
         self.__uniformArcTrajectory(u,20,"right",timeSteep,(-1,0))
 
-    def generateCustomerRoute(self,routeList):
+    def generateCustomerRoute(self,routeList,time):
         """_summary_
         用户自定义轨迹
 
@@ -265,12 +358,37 @@ class PathTrajectory:#路径轨迹类
             if type(route) == str:
                route = json.loads(route.replace("'",'"'))
             if route['type'] == 'straightLine':#匀速直线轨迹
-                self.__StraightLineTrajectory(initialVelocity=route['initialVelocity'],
-                                              finalVelocity=route['finalVelocity'],
-                                              accelerationDistance=route['accelerationDistance'],
-                                              travelTime=route['travelTime'],
-                                              timeStep=route['timeStep'],
-                                              directionMatrix=route['directionMatrix'])
+                if route['initialVelocity'] == route['finalVelocity']:
+                    self.__StraightLineTrajectory(initialVelocity=route['initialVelocity'],
+                                                    finalVelocity=route['finalVelocity'],
+                                                    travelTime=route['travelTime'],
+                                                    timeStep=route['timeStep'],
+                                                    directionMatrix=route['directionMatrix'])
+                elif time>(abs(route['initialVelocity']-route['finalVelocity'])/route['acceleration']):
+                    T=time-(abs(route['initialVelocity']-route['finalVelocity'])/route['acceleration'])
+                    self.__StraightLineTrajectory(initialVelocity=route['initialVelocity'],
+                                                    finalVelocity=route['finalVelocity'],
+                                                    travelTime=route['travelTime'],
+                                                    timeStep=route['timeStep'],
+                                                    directionMatrix=route['directionMatrix'],
+                                                    flag=0,
+                                                    acceleration=route['acceleration'])
+                    
+                    self.__StraightLineTrajectory(initialVelocity=600,
+                                                    finalVelocity=600,
+                                                    travelTime=T,
+                                                    timeStep=route['timeStep'],
+                                                    directionMatrix=route['directionMatrix'],
+                                                    )
+                else:
+                    self.__StraightLineTrajectory(initialVelocity=route['initialVelocity'],
+                                                    finalVelocity=600,
+                                                    travelTime=route['travelTime'],
+                                                    timeStep=route['timeStep'],
+                                                    directionMatrix=route['directionMatrix'],
+                                                    acceleration=route['acceleration'],
+                                                    flag=1
+                                                    )
             elif route['type'] == 'arc':#圆形轨迹
                 self.__uniformArcTrajectory(speed=route['initialVelocity'],
                                             radius=route['radius'],
@@ -283,13 +401,9 @@ class PathTrajectory:#路径轨迹类
                                         timeStep=route['timeStep'])
             elif route['type'] == 'rectangle':#矩形轨迹
                 # 初始方向向东，生成顺时针矩形轨迹
-                self.__RectangleTrajectory(speed=route['initialVelocity'], 
-                                            length=route['length'], 
-                                            width=route['width'], 
-                                            turn_radius=route['turnRadius'], 
-                                            rotation_direction=route['rotationDirection'], 
-                                            timeStep=route['timeStep'],
-                                            directionMatrix=route['directionMatrix'])
+                self.generate_standard_rectangle_trajectory(time_step=route['timeStep'])
+            else:
+                Log().logger.error(f"不支持的轨迹类型: {route['type']}")
     def saveToCSV(self,filename):
         with open(filename, 'w', newline='') as file:
             writer = csv.writer(file)
@@ -701,7 +815,7 @@ class MySimulator:#模拟器类
     def customizedTest(self,routeList):
         self.__resetStartPoint()#重置起点为弧度制
         
-        self.pathTrajectoryGenerator.generateCustomerRoute(routeList)
+        self.pathTrajectoryGenerator.generateCustomerRoute(routeList,self.duration_time)
         # print(self.pathTrajectoryGenerator.push_list_radian)
         
         self.pushRouteNode(self.pathTrajectoryGenerator.push_list_radian)

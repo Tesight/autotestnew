@@ -1,0 +1,64 @@
+2025-03-10 17:00:40,752 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 17:00:40,752 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:00:40,758 - root - INFO - post接口的响应时间==>0.003673
+2025-03-10 17:00:40,758 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 17:00:40,761 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 17:00:40,761 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 17:00:40,775 - root - INFO - post接口的响应时间==>0.002146
+2025-03-10 17:00:40,776 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 17:01:27,984 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setser
+2025-03-10 17:01:27,985 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:01:27,990 - root - INFO - post接口的响应时间==>0.002748
+2025-03-10 17:01:27,990 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setser
+2025-03-10 17:01:27,993 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 17:01:27,993 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 17:01:27,995 - root - INFO - post接口的响应时间==>0.001694
+2025-03-10 17:01:27,996 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 17:01:46,695 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setser
+2025-03-10 17:01:46,695 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:01:46,722 - root - INFO - post接口的响应时间==>0.024927
+2025-03-10 17:01:46,722 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setser
+2025-03-10 17:01:46,726 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 17:01:46,726 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 17:01:46,729 - root - INFO - post接口的响应时间==>0.002102
+2025-03-10 17:01:46,729 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 17:02:17,823 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:02:17,823 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:02:17,827 - root - INFO - post接口的响应时间==>0.002449
+2025-03-10 17:02:17,828 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:02:17,831 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 17:02:17,831 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 17:02:17,834 - root - INFO - post接口的响应时间==>0.002111
+2025-03-10 17:02:17,834 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 17:38:34,850 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:38:34,851 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:38:34,856 - root - INFO - post接口的响应时间==>0.002724
+2025-03-10 17:38:34,856 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:38:34,864 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:38:34,864 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 17:38:34,867 - root - INFO - post接口的响应时间==>0.002305
+2025-03-10 17:38:34,867 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:51:34,226 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:51:34,227 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:51:34,231 - root - INFO - post接口的响应时间==>0.002766
+2025-03-10 17:51:34,232 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:51:34,235 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:51:34,235 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 17:51:34,238 - root - INFO - post接口的响应时间==>0.002193
+2025-03-10 17:51:34,238 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:51:57,446 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:51:57,446 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:51:57,451 - root - INFO - post接口的响应时间==>0.003477
+2025-03-10 17:51:57,452 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:52:56,330 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:52:56,330 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:52:56,335 - root - INFO - post接口的响应时间==>0.002698
+2025-03-10 17:52:56,335 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:53:47,042 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setser
+2025-03-10 17:53:47,042 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 17:53:47,151 - root - INFO - post接口的响应时间==>0.106601
+2025-03-10 17:53:47,151 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setser
+2025-03-10 17:54:10,992 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-10 17:54:10,992 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 17:54:10,998 - root - INFO - post接口的响应时间==>0.003895
+2025-03-10 17:54:10,999 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint

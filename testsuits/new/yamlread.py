@@ -39,7 +39,22 @@ def execute_yaml_steps(yaml_data):
             json_data = GlobalManager.get_value(params['json'])
             result_json = params['result_json']
             response = HttpAction.request(method, url, headers=headers, data=data, json=json_data, result_json=result_json)
-            return response.json()
+ 
+            
+           # 尝试输出JSON格式的响应
+            try:
+                json_data = response.json()
+                print(f"JSON响应: {json_data}")
+                GlobalManager.set_value(result_json, json_data)
+            except requests.exceptions.JSONDecodeError:
+                # 如果不是JSON，输出文本内容
+                print(f"文本响应: {response.text}")
+                GlobalManager.set_value(result_json, {"error": True, "text": response.text})
+            
+            # 如果需要查看原始二进制内容
+            # print(f"二进制内容前100字节: {response.content[:100]}")
+            
+            return response
         else:
             pass
         # elif action == 'JsonAction' and method == 'get_json_value':
@@ -54,13 +69,13 @@ def execute_yaml_steps(yaml_data):
         #     assert real_value == expect_value, f"Expected {expect_value}, but got {real_value}"
 
 if __name__ == "__main__":
-    with open('C:/baidunetdiskdownload/mysence/testsuits/new/skydel基础设置.yaml', 'r', encoding='utf-8') as file:
-        yaml_data = yaml.safe_load(file)
-    execute_yaml_steps(yaml_data)
+    # with open('C:/baidunetdiskdownload/mysence/testsuits/new/skydel基础设置.yaml', 'r', encoding='utf-8') as file:
+    #     yaml_data = yaml.safe_load(file)
+    # execute_yaml_steps(yaml_data)
     with open('C:/baidunetdiskdownload/mysence/testsuits/new/dut基础设置_串口.yaml', 'r', encoding='utf-8') as file:
         yaml_data = yaml.safe_load(file)
     execute_yaml_steps(yaml_data)
-    with open('C:/baidunetdiskdownload/mysence/testsuits/new/dut基础设置_以太网.yaml', 'r', encoding='utf-8') as file:
-        yaml_data = yaml.safe_load(file)
-    execute_yaml_steps(yaml_data)
+    # with open('C:/baidunetdiskdownload/mysence/testsuits/new/dut基础设置_以太网.yaml', 'r', encoding='utf-8') as file:
+    #     yaml_data = yaml.safe_load(file)
+    # execute_yaml_steps(yaml_data)
 

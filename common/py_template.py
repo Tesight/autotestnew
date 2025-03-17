@@ -251,6 +251,7 @@ step:
         initialVelocity: {{ initialVelocity }}
         finalVelocity: {{ finalVelocity }}
         accelerationDistance: {{accelerationDistance}}
+        acceleration: {{ acceleration }}
         travelTime: {{travelTime}}
 - action: HttpAction
   method: request

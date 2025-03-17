@@ -1,0 +1,8 @@
+2025-03-13 10:47:29,256 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-13 10:47:29,256 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-13 10:47:31,290 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /receiver/setint (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021D68113C80>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-13 10:47:31,290 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /receiver/setint (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021D68113C80>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-13 10:49:18,398 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/setint
+2025-03-13 10:49:18,399 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-13 10:49:18,416 - root - INFO - post接口的响应时间==>0.015803
+2025-03-13 10:49:18,416 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/setint

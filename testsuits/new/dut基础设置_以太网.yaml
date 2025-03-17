@@ -3,7 +3,7 @@ business:
   desc: 接收器命令发送
   params:
     待测件IP地址:
-      value:127.0.0.1
+      value: 127.0.0.1
       path: $[0].params.value.dutip
     待测件端口:
       value: 8001
@@ -22,7 +22,7 @@ step:
   desc: 接收器停止_发送控制命令,返回json
   params:
     method: post
-    url: /receiver/sendint
+    url: /receiver/setint
     headers: null
     params: null
     data: null

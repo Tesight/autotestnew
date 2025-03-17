@@ -1,0 +1,5 @@
+# 切换到项目根目录
+cd c:\baidunetdiskdownload\mysence
+
+# 运行服务器
+python server/server.py

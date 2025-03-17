@@ -1,0 +1,128 @@
+2025-03-10 16:06:19,412 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:06:19,412 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:06:21,442 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002347FA2F5C0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-10 16:06:21,455 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002347FA2F5C0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-10 16:07:02,137 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:07:02,137 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:07:04,180 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A5950EB260>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-10 16:07:04,181 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A5950EB260>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-10 16:08:07,288 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:08:07,288 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:08:09,323 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /receiver/sendser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E244BCF140>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-10 16:08:09,324 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /receiver/sendser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E244BCF140>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-10 16:08:38,944 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:08:38,945 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:08:40,981 - root - ERROR - 捕获异常信息：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CC73D85400>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-10 16:08:40,982 - root - ERROR - 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /customized/connect (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CC73D85400>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2025-03-10 16:12:35,700 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:12:35,700 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:12:35,729 - root - INFO - post接口的响应时间==>0.02591
+2025-03-10 16:12:35,729 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:12:40,624 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:12:40,624 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:12:41,637 - root - INFO - post接口的响应时间==>1.01045
+2025-03-10 16:12:41,638 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:13:17,190 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:13:17,190 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:13:17,205 - root - INFO - post接口的响应时间==>0.012035
+2025-03-10 16:13:17,205 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:14:50,542 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:14:50,542 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:14:50,552 - root - INFO - post接口的响应时间==>0.006954
+2025-03-10 16:14:50,552 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:17:26,901 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:17:26,901 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:17:26,911 - root - INFO - post接口的响应时间==>0.007152
+2025-03-10 16:17:26,911 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:18:14,328 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:18:14,328 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:18:14,338 - root - INFO - post接口的响应时间==>0.006819
+2025-03-10 16:18:14,338 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:18:34,494 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:18:34,495 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:18:34,506 - root - INFO - post接口的响应时间==>0.007749
+2025-03-10 16:18:34,507 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:18:59,620 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:18:59,620 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:18:59,630 - root - INFO - post接口的响应时间==>0.007381
+2025-03-10 16:18:59,630 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:20:48,577 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:20:48,578 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:20:48,588 - root - INFO - post接口的响应时间==>0.007323
+2025-03-10 16:20:48,588 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:22:28,159 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:22:28,160 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:22:28,167 - root - INFO - post接口的响应时间==>0.004973
+2025-03-10 16:22:28,167 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:22:28,176 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 16:22:28,177 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 16:22:28,182 - root - INFO - post接口的响应时间==>0.004543
+2025-03-10 16:22:28,183 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 16:23:20,919 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:23:20,919 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:23:20,934 - root - INFO - post接口的响应时间==>0.012712
+2025-03-10 16:23:20,935 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:25:36,108 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:25:36,109 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:25:36,128 - root - INFO - post接口的响应时间==>0.015362
+2025-03-10 16:25:36,128 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:25:59,590 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:25:59,590 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:25:59,606 - root - INFO - post接口的响应时间==>0.013298
+2025-03-10 16:25:59,607 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:26:26,356 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:26:26,356 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:26:26,372 - root - INFO - post接口的响应时间==>0.01306
+2025-03-10 16:26:26,372 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:29:15,675 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:29:15,675 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:29:15,692 - root - INFO - post接口的响应时间==>0.014602
+2025-03-10 16:29:15,693 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:31:18,922 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:31:18,923 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'gsg7', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:31:18,940 - root - INFO - post接口的响应时间==>0.013964
+2025-03-10 16:31:18,940 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:33:04,817 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:33:04,818 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'GSG-7C', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:33:05,834 - root - INFO - post接口的响应时间==>1.013722
+2025-03-10 16:33:05,834 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:34:41,382 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:34:41,382 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'GSG-7C', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:34:41,394 - root - INFO - post接口的响应时间==>0.009784
+2025-03-10 16:34:41,394 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:35:57,096 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:35:57,096 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'GSG-7C', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:35:58,109 - root - INFO - post接口的响应时间==>1.010321
+2025-03-10 16:35:58,109 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:37:05,214 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:37:05,214 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'GSG-7C', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:37:05,227 - root - INFO - post接口的响应时间==>0.010653
+2025-03-10 16:37:05,227 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:37:40,817 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:37:40,817 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'GSG-7C', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:37:40,836 - root - INFO - post接口的响应时间==>0.01575
+2025-03-10 16:37:40,836 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:38:05,397 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:38:05,397 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'GSG-7C', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:38:05,411 - root - INFO - post接口的响应时间==>0.0111
+2025-03-10 16:38:05,411 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:41:43,214 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:41:43,218 - root - INFO - post接口请求体json==>{'simulatorIP': '127.0.0.1', 'decivetype': 'GSG-7C', 'deviceserialnum': 1111, 'externalattenuation': 20, 'dc_block_mounting': None}
+2025-03-10 16:41:43,233 - root - INFO - post接口的响应时间==>0.012732
+2025-03-10 16:41:43,233 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/customized/connect
+2025-03-10 16:42:55,677 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:42:55,677 - root - INFO - post接口请求体json==>{'comPort': 'COM3', 'baudRate': 9600, 'byteSize': 8, 'stopBite': 2, 'message': ''}
+2025-03-10 16:42:55,683 - root - INFO - post接口的响应时间==>0.003688
+2025-03-10 16:42:55,683 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:42:55,687 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 16:42:55,687 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 16:42:55,714 - root - INFO - post接口的响应时间==>0.026093
+2025-03-10 16:42:55,715 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 16:57:18,009 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:57:18,009 - root - INFO - post接口请求体json==>{'comPort': 'COM11', 'baudRate': 38400, 'byteSize': 8, 'stopBites': 2, 'message': ''}
+2025-03-10 16:57:18,014 - root - INFO - post接口的响应时间==>0.00254
+2025-03-10 16:57:18,014 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendser
+2025-03-10 16:57:18,017 - root - INFO - post接口调用开始==>http://127.0.0.1:5000/receiver/sendint
+2025-03-10 16:57:18,017 - root - INFO - post接口请求体json==>{'dutip': '127.0.0.1', 'port': 8001}
+2025-03-10 16:57:18,020 - root - INFO - post接口的响应时间==>0.002076
+2025-03-10 16:57:18,020 - root - INFO - post接口调用完成==>http://127.0.0.1:5000/receiver/sendint

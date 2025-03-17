@@ -3,17 +3,17 @@ business:
   desc: 接收器命令发送
   params:
     COM口:
-      value: COM3
+      value: COM11
       path: $[0].params.value.comPort
     波特率:
-      value: 9600
+      value: 38400
       path: $[0].params.value.baudRate
     数据位:
       value: 8
       path: $[0].params.value.byteSize
     停止位:
       value: 2
-      path: $[0].params.value.stopBite  
+      path: $[0].params.value.stopBites  
     要发送的信息:
       value: ''
       path: $[0].params.value.message
@@ -24,17 +24,17 @@ step:
   params:
     name: data
     value:
-      comPort: COM3
-      baudRate: 9600
+      comPort: COM11
+      baudRate: 38400
       byteSize: 8
-      stopBite: 2
+      stopBites: 2
       message: ''
 - action: HttpAction
   method: request
   desc: 接收器停止_发送控制命令,返回json
   params:
     method: post
-    url: /receiver/sendser
+    url: /receiver/setser
     headers: null
     params: null
     data: null

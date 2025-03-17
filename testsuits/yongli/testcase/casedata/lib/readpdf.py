@@ -3,16 +3,45 @@ from pathlib import Path
 from fpdf import FPDF
 from datetime import datetime
 from contextlib import contextmanager
+import imghdr
 
 class PDF(FPDF):
     def __init__(self):
         super().__init__()
         self.add_font('OPPOSans', '', 'C:/baidunetdiskdownload/mysence/font/OPPOSans-B.ttf', uni=True)
-    
+        self.logo_path = 'C:/baidunetdiskdownload/mysence/logo/favicon.png'  # 默认 logo 路径
+
     def header(self):
+        # 设置页面宽度
+        page_width = self.w
+        
+        # 设置字体和标题
         self.set_font('OPPOSans', '', 16)
-        self.cell(0, 10, '自动化测试报告', 0, 1, 'C')
-        self.ln(5)
+        title = '自动化测试报告'
+        title_width = self.get_string_width(title)
+        
+        # 固定 logo 尺寸
+        logo_width = 13
+        logo_height = 13
+        
+        # 计算标题居中位置（不包含logo宽度）
+        center_without_logo = page_width / 2
+        title_x = center_without_logo - title_width / 2
+        
+        # 绘制标题
+        self.set_x(title_x)
+        self.cell(title_width, 10, title, 0, 0, 'C')  # 不换行
+        
+        # 在标题右侧放置logo
+        logo_x = title_x + title_width + 50  # 标题右侧5mm处
+        
+        try:
+            if hasattr(self, 'logo_path') and Path(self.logo_path).exists():
+                self.image(self.logo_path, x=logo_x, y=8, w=logo_width, h=logo_height)
+        except Exception as e:
+            print(f"无法加载logo: {e}")
+        
+        self.ln(30)  # 添加足够的空间
     
     def footer(self):
         self.set_y(-15)
@@ -26,7 +55,7 @@ def text_color(pdf, r, g, b):
     yield
     pdf.set_text_color(r,b,g)
 
-def yaml_to_pdf(yaml_file_path, pdf_file_path=None):
+def yaml_to_pdf(yaml_file_path, pdf_file_path=None, logo_path=None):
     try:
         yaml_path = Path(yaml_file_path)
         if not yaml_path.exists():
@@ -36,6 +65,14 @@ def yaml_to_pdf(yaml_file_path, pdf_file_path=None):
             data = yaml.safe_load(f)
         
         pdf = PDF()
+        if logo_path:
+            # 检查是否是有效的图像类型
+            img_type = imghdr.what(logo_path)
+            if img_type in ['png', 'jpeg', 'jpg', 'gif','ico']:
+                pdf.logo_path = logo_path
+            else:
+                print(f"警告: 忽略不支持的图像格式: {logo_path} (类型: {img_type})")
+    
         pdf.add_page()
         pdf.set_font('OPPOSans', '', 12)
 
@@ -100,7 +137,8 @@ def yaml_to_pdf(yaml_file_path, pdf_file_path=None):
 
 if __name__ == "__main__":
     yaml_file = "C:/baidunetdiskdownload/mysence/testsuits/yongli/testcase/casedata/lib/测试报告.yaml"
-    pdf_path = yaml_to_pdf(yaml_file)
+    logo_path = "C:/baidunetdiskdownload/mysence/logo/favicon.png"
+    pdf_path = yaml_to_pdf(yaml_file,logo_path=logo_path)
     if pdf_path:
         print(f"PDF 文件已生成: {pdf_path}")
     else:

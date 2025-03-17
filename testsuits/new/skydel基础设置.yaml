@@ -6,7 +6,7 @@ business:
       value: 127.0.0.1
       path: $[0].params.value.simulatorIP
     设备类型:
-      value: gsg7
+      value: GSG-7C
       path: $[0].params.value.decivetype
     设备序列号:
       value: 1111
@@ -25,7 +25,7 @@ step:
     name: data
     value:
       simulatorIP: 127.0.0.1
-      decivetype: gsg7
+      decivetype: 'GSG-7C'
       deviceserialnum: 1111
       externalattenuation: 20
       dc_block_mounting: null
