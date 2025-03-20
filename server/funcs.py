@@ -489,6 +489,7 @@ class MySimulator:#模拟器类
         self.deviceserialnum=None#gnss设备序列号
         self.externalattenuation=0#外部衰减
         self.dc_block_mounting=None#直流阻塞安装
+        self.systemnum=[]#卫星数量
         
 
 
@@ -751,6 +752,65 @@ class MySimulator:#模拟器类
 
         self.__simulator_init_new_config(bandList, signalList)
         self.__setStartTime()
+
+    def setSystemnum(self):
+        if(self.systemnum[0]!=0):
+            gps=self.getVisiableSV('GPS')  
+            num_satellites = max(0, min(num_satellites, len(gps)))
+            # 选择要启用的卫星
+            satellites_to_enable = gps[:num_satellites]
+            satellites_to_disable = gps[num_satellites:]
+            
+            # 启用选定的卫星
+            for sv_id in satellites_to_enable:
+                self.simulator.call(EnableRFOutputForSV('GPS', sv_id, True))
+                
+            # 禁用其余卫星
+            for sv_id in satellites_to_disable:
+                self.simulator.call(EnableRFOutputForSV('GPS', sv_id, False))
+        
+        if(self.systemnum[1]!=0):
+            bei=self.getVisiableSV('BeiDou') 
+            num_satellites = max(0, min(num_satellites, len(bei)))
+            satellites_to_enable = bei[:num_satellites]
+            satellites_to_disable = bei[num_satellites:]
+            
+            # 启用选定的卫星
+            for sv_id in satellites_to_enable:
+                self.simulator.call(EnableRFOutputForSV('BeiDou', sv_id, True))
+                
+            # 禁用其余卫星
+            for sv_id in satellites_to_disable:
+                self.simulator.call(EnableRFOutputForSV('BeiDou', sv_id, False))
+        
+        if(self.systemnum[2]!=0):
+            galileo=self.getVisiableSV('Galileo') 
+            num_satellites = max(0, min(num_satellites, len(galileo)))
+                        # 选择要启用的卫星
+            satellites_to_enable = galileo[:num_satellites]
+            satellites_to_disable = galileo[num_satellites:]
+            
+            # 启用选定的卫星
+            for sv_id in satellites_to_enable:
+                self.simulator.call(EnableRFOutputForSV('Galileo', sv_id, True))
+                
+            # 禁用其余卫星
+            for sv_id in satellites_to_disable:
+                self.simulator.call(EnableRFOutputForSV('Galileo', sv_id, False))
+        
+        if(self.systemnum[3]!=0):
+            glonass=self.getVisiableSV('GLONASS') 
+            num_satellites = max(0, min(num_satellites, len(glonass)))
+            satellites_to_enable = glonass[:num_satellites]
+            satellites_to_disable = glonass[num_satellites:]
+            
+            # 启用选定的卫星
+            for sv_id in satellites_to_enable:
+                self.simulator.call(EnableRFOutputForSV('GLONASS', sv_id, True))
+                
+            # 禁用其余卫星
+            for sv_id in satellites_to_disable:
+                self.simulator.call(EnableRFOutputForSV('GLONASS', sv_id, False))
         
     def pushRouteNode(self,pushRouteNode):
         self.simulator.call(SetVehicleTrajectory("Route"))

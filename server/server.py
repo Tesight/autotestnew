@@ -219,7 +219,6 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
     def post(self,data):        
         parser = reqparse.RequestParser()
         parser.add_argument("simulatorIP",type=str,help="simulator IP address is necessary")  
-        # parser.add_argument("startLla",type=float, help="start lla:[latitude,longitude,altitude]", action='append')
         parser.add_argument("longitude",type=float,help="longitude")
         parser.add_argument("latitude",type=float,help="latitude")
         parser.add_argument("altitude",type=float,help="altitude")
@@ -227,13 +226,11 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
         parser.add_argument("env",type=str,help="env:ClearSky/UrbanCanyon/None")
         parser.add_argument("signals",
                             type=str,
-                            help="signal:L1CA,L1C,L1P,G1,E1,B1,B1C,SBASL1,QZSSL1CA,QZSSL1CB,QZSSL1C,QZSSL1S,L2C,L2P,L5,G2,E5a,E5b,B2,B2a,B3I,SBASL5,QZSSL2C,QZSSL5,QZSSL5S,NAVICL5",
-                            
+                            help="signal:L1CA,L1C,L1P,G1,E1,B1,B1C,SBASL1,QZSSL1CA,QZSSL1CB,QZSSL1C,QZSSL1S,L2C,L2P,L5,G2,E5a,E5b,B2,B2a,B3I,SBASL5,QZSSL2C,QZSSL5,QZSSL5S,NAVICL5",   
                             action='append')
         parser.add_argument("customizedPath",
                             type=str,
                             help='customizedPath:[{"type":"straightLine/arc/static","timeStep":0.1,"directionMatrix":[0,1],"initialVelocity":30,"finalVelocity":30,"accelerationDistance":0,"travelTime":300,"radius":20,"rotationDirection":"left/right","lastDirectionMatrix":[0,1]}]',
-                            
                             action = 'append')  
         parser.add_argument("radioType",type=str,help="radioType:NoneRT, DTA-2115B,DTA-2116")
         parser.add_argument("GlobalPowerOffset",type=float,help="GlobalPowerOffset:dBm")
@@ -244,6 +241,7 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
         parser.add_argument("externalattenuation",type=float, help="externalattenuation")
         parser.add_argument("dc_block_mounting",type = int,help="dc_block_mounting")
         parser.add_argument("output_reference_power",type = int,help="output_reference_power")#输出基准功率
+        parser.add_argument("system",type = int,help="system's num")#卫星数量
 
 
         args = parser.parse_args()
@@ -300,14 +298,17 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                         return {"status":"failed","message":"Simulator connect failed"}
                 sim.duration_time=args["duration_time"]
                 sim.contorl=args["propagation_model"]
-                sim.startTime = args['startTime'] if args['startTime'][0] != None else None    
+                sim.startTime = args['startTime'] if args['startTime'][0] != None else None
+                sim.systemnum=args["systemnum"]    
                 sim.setSignals(args["signals"])
                 Log().logger.info(f"信号频点设置成功")
+                sim.setSystemnum()
+                Log().logger.info(f"卫星数量设置成功")
                 return {"status":"success","message":"skydel frequency set successfully"}
             except Exception as e:
             # sim.simulator_disconnect()
                 traceback.print_exc(e)
-                Log().logger.error(f"信号频点设置失败:{str(e)}")
+                Log().logger.error(f"信号频点或卫星数量设置失败:{str(e)}")
                 return {"status":"failed","message":"Error: "+str(e)}
             
         elif data == "offset":
@@ -329,8 +330,6 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                 Log().logger.error(f"输出基准功率设置失败:{str(e)}")
                 return {"status":"failed","message":"Error: "+str(e)}
         
-
-
 
         elif data == "trajectory":
             if not verification(args,"customizedPath"):
@@ -477,7 +476,6 @@ class VehicleInfo(Resource):#获取skydel模拟数据
                         "roll":roll, #滚转角
                         "pc":pc#输出基准功率
                         },
-
                     }
         except Exception as e:
             # sim.simulator_disconnect()
@@ -485,7 +483,6 @@ class VehicleInfo(Resource):#获取skydel模拟数据
             return {"status":"failed","message":"Error: "+str(e)}
                    
 class SimulatorInfo(Resource):#获取可见卫星svid
-    
     def get(self):
         pass
     def post(self):
