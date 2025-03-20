@@ -756,7 +756,7 @@ class MySimulator:#模拟器类
     def setSystemnum(self):
         if(self.systemnum[0]!=0):
             gps=self.getVisiableSV('GPS')  
-            num_satellites = max(0, min(num_satellites, len(gps)))
+            num_satellites = max(0, min(self.systemnum[0], len(gps)))
             # 选择要启用的卫星
             satellites_to_enable = gps[:num_satellites]
             satellites_to_disable = gps[num_satellites:]
@@ -771,7 +771,7 @@ class MySimulator:#模拟器类
         
         if(self.systemnum[1]!=0):
             bei=self.getVisiableSV('BeiDou') 
-            num_satellites = max(0, min(num_satellites, len(bei)))
+            num_satellites = max(0, min(self.systemnum[1], len(bei)))
             satellites_to_enable = bei[:num_satellites]
             satellites_to_disable = bei[num_satellites:]
             
@@ -785,7 +785,7 @@ class MySimulator:#模拟器类
         
         if(self.systemnum[2]!=0):
             galileo=self.getVisiableSV('Galileo') 
-            num_satellites = max(0, min(num_satellites, len(galileo)))
+            num_satellites = max(0, min(self.systemnum[2], len(galileo)))
                         # 选择要启用的卫星
             satellites_to_enable = galileo[:num_satellites]
             satellites_to_disable = galileo[num_satellites:]
@@ -800,7 +800,7 @@ class MySimulator:#模拟器类
         
         if(self.systemnum[3]!=0):
             glonass=self.getVisiableSV('GLONASS') 
-            num_satellites = max(0, min(num_satellites, len(glonass)))
+            num_satellites = max(0, min(self.systemnum[3], len(glonass)))
             satellites_to_enable = glonass[:num_satellites]
             satellites_to_disable = glonass[num_satellites:]
             
