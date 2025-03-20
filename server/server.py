@@ -241,7 +241,7 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
         parser.add_argument("externalattenuation",type=float, help="externalattenuation")
         parser.add_argument("dc_block_mounting",type = int,help="dc_block_mounting")
         parser.add_argument("output_reference_power",type = int,help="output_reference_power")#输出基准功率
-        parser.add_argument("system",type = int,help="system's num")#卫星数量
+        parser.add_argument("systemnum",type = int,help="system's num")#卫星数量
 
 
         args = parser.parse_args()
