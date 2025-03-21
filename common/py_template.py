@@ -293,6 +293,7 @@ step:
         length: {{ length }}
         rotationDirection: {{ rotationDirection }}
         turnRadius: {{ turnRadius }}
+        repeat: {{ repeat }}
 - action: HttpAction
   method: request
   desc: 模拟器参数_发送控制命令,返回json

@@ -302,13 +302,11 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                 sim.systemnum=args["systemnum"]    
                 sim.setSignals(args["signals"])
                 Log().logger.info(f"信号频点设置成功")
-                sim.setSystemnum()
-                Log().logger.info(f"卫星数量设置成功")
                 return {"status":"success","message":"skydel frequency set successfully"}
             except Exception as e:
             # sim.simulator_disconnect()
                 traceback.print_exc(e)
-                Log().logger.error(f"信号频点或卫星数量设置失败:{str(e)}")
+                Log().logger.error(f"信号频点设置失败:{str(e)}")
                 return {"status":"failed","message":"Error: "+str(e)}
             
         elif data == "offset":
@@ -371,8 +369,8 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                     
                 #     sim.setSignalPowerOffset(signals,0)
                     
-                sim.pathTrajectoryGenerator.LAT = args["longitude"]
-                sim.pathTrajectoryGenerator.LONG = args["latitude"]
+                sim.pathTrajectoryGenerator.LAT = args["latitude"]
+                sim.pathTrajectoryGenerator.LONG = args["longitude"]
                 sim.pathTrajectoryGenerator.ALT = args["altitude"]
 
 
@@ -431,6 +429,10 @@ class SimulatorControl(Resource):#控制skydel仿真器
                     sim.simulator_disconnect()  
                     Log().logger.info(f"仿真器停止成功")
                     return {"status":"success","message":"Simulator stopped"}   
+                elif args["simulatorControl"] == "systemnum":
+                    sim.setSystemnum() 
+                    Log().logger.info(f"仿真器停止成功")
+                    return {"status":"success","message":"Simulator system num setting"}   
                 else:
                     Log().logger.error(f"simulatorControl设置错误")
                     return {"status":"failed","message":"Wrong input of simulatorControl"}

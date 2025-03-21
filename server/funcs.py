@@ -58,6 +58,7 @@ class PathTrajectory:#路径轨迹类
             while i< travelTime:
                 self.lastX += speed * timeStep * directionMatrix[0]
                 self.lastY += speed * timeStep * directionMatrix[1]
+                print()
                 llaPos = self.ORIGIN.addEnu(Enu(self.lastX, self.lastY, self.lastZ))
                 if speed != 0:
                     self.path_list_deg.append([speed,llaPos.latDeg(),llaPos.lonDeg(),llaPos.alt])
@@ -271,7 +272,7 @@ class PathTrajectory:#路径轨迹类
             )
             
             # 5. 90度顺时针转弯
-            if i < 3:  # 最后一边之后不需要转弯
+            if i < 4:  # 最后一边之后不需要转弯
                 self.__uniformArcTrajectory(
                     speed=v_low,
                     radius=turn_radius,
@@ -401,7 +402,8 @@ class PathTrajectory:#路径轨迹类
                                         timeStep=route['timeStep'])
             elif route['type'] == 'rectangle':#矩形轨迹
                 # 初始方向向东，生成顺时针矩形轨迹
-                self.generate_standard_rectangle_trajectory(time_step=route['timeStep'])
+                for i in range(route['repeat']):
+                    self.generate_standard_rectangle_trajectory(time_step=route['timeStep'])
             else:
                 Log().logger.error(f"不支持的轨迹类型: {route['type']}")
     def saveToCSV(self,filename):
@@ -546,7 +548,7 @@ class MySimulator:#模拟器类
             self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L2, "Basic Antenna"))
             self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L5, "Basic Antenna"))
             self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.E6, "Basic Antenna"))
-            self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.S, "Basic Antenna"))
+            #self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.S, "Basic Antenna"))
 
         # 启用日志记录
         self.simulator.call(EnableLogRaw(False))  # 可以启用原始日志记录并进行比较（接收器位置信息特别有用）
@@ -754,7 +756,7 @@ class MySimulator:#模拟器类
         self.__setStartTime()
 
     def setSystemnum(self):
-        if(self.systemnum[0]!=0):
+        if(self.systemnum[0]!=0 and self.systemnum[0]>4):
             gps=self.getVisiableSV('GPS')  
             num_satellites = max(0, min(self.systemnum[0], len(gps)))
             # 选择要启用的卫星
