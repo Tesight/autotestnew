@@ -63,7 +63,7 @@ class PathTrajectory:#路径轨迹类
                 if speed != 0:
                     self.path_list_deg.append([speed,llaPos.latDeg(),llaPos.lonDeg(),llaPos.alt])
                     self.push_list_radian.append([speed,llaPos.lat,llaPos.lon,llaPos.alt])
-                i+=timeStep         
+                i+=timeStep
         elif flag == 1:
             a = (finalVelocity**2 - initialVelocity**2) / (2 * accelerationDistance) #加速度
             # 计算直线加速轨迹
@@ -88,9 +88,9 @@ class PathTrajectory:#路径轨迹类
                 current_time = i * timeStep
                 speed = initialVelocity + a * current_time
                 dx = speed * timeStep + 0.5 * a * timeStep**2
-                lastx += dx * directionMatrix[0]
-                lasty += dx * directionMatrix[1]
-                llaPos = self.ORIGIN.addEnu(Enu(self.lastx, self.lasty, self.lastz))
+                self.lastX += dx * directionMatrix[0]
+                self.lastY += dx * directionMatrix[1]
+                llaPos = self.ORIGIN.addEnu(Enu(self.lastX, self.lastY, self.lastZ))
                 self.path_list_deg.append([speed, llaPos.latDeg(), llaPos.lonDeg(), llaPos.alt])
                 self.push_list_radian.append([speed, llaPos.lat, llaPos.lon, llaPos.alt])
 
@@ -144,7 +144,7 @@ class PathTrajectory:#路径轨迹类
         while True:
             if i > travelTime:
                 break
-            self.push_list_radian.append(speed,self.ORIGIN.lat,self.ORIGIN.lon,self.ORIGIN.alt)
+            self.push_list_radian.append([speed,self.ORIGIN.lat,self.ORIGIN.lon,self.ORIGIN.alt])
             self.path_list_deg.append([speed,self.ORIGIN.latDeg(),self.ORIGIN.lonDeg(),self.ORIGIN.alt])
             
             
@@ -222,17 +222,17 @@ class PathTrajectory:#路径轨迹类
         # 速度转换（km/h 到 m/s）
         v_high = 100 / 3.6  # 100 km/h = 27.78 m/s
         v_low = 20 / 3.6    # 20 km/h = 5.56 m/s
-        acc_distance = 250   # 加速/减速距离（米）
+        acc_distance = 10   # 加速/减速距离（米）
         turn_radius = 20     # 转弯半径（米）
-        cruise_time = 300    # 巡航时间（秒）
-        static_time = 180    # 初始静止时间（秒）
+        cruise_time = 10    # 巡航时间（秒）
+        static_time = 10    # 初始静止时间（秒）
         time_step = 0.1      # 时间步长（秒）
         
         # 方向矩阵，表示四个方向 (北, 东, 南, 西)
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         
         # 1. 起始位置静止3min
-        self.__StaticTrajectory(static_time, time_step)
+        # self.__StaticTrajectory(static_time, time_step)
         
         # 进行一个完整的矩形轨迹
         for i in range(4):
@@ -360,6 +360,7 @@ class PathTrajectory:#路径轨迹类
                route = json.loads(route.replace("'",'"'))
             if route['type'] == 'straightLine':#匀速直线轨迹
                 if route['initialVelocity'] == route['finalVelocity']:
+
                     self.__StraightLineTrajectory(initialVelocity=route['initialVelocity'],
                                                     finalVelocity=route['finalVelocity'],
                                                     travelTime=route['travelTime'],
@@ -462,7 +463,7 @@ class MySimulator:#模拟器类
         self.signalStrengthModel = False#信号强度模型
         self.skydel_Benchmark_Power = -130 #Skydel基准功率
         self.output_reference_power =  -130  #输出基准功率pc
-        self.contorl = False#是否启用传播模型
+        self.control = False#是否启用传播模型
 
         self.gain = 0 #SDR增益
         self.globaloffset=0#全局偏移
@@ -542,13 +543,14 @@ class MySimulator:#模拟器类
                 # 设置信号参数
                 self.simulator.call(ChangeModulationTargetSignals(0, 12500000, 100000000, band, signalList[index], 50, False, self.uniqueRadioId[index]))
         
-        if self.contorl==False:
+        if self.control==False:
             self.simulator.call(EnableSignalStrengthModel(self.signalStrengthModel))    # 关闭信号强度模型
             self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L1, "Basic Antenna"))#设置天线增益为none
             self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L2, "Basic Antenna"))
             self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.L5, "Basic Antenna"))
             self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.E6, "Basic Antenna"))
             #self.simulator.call(SetVehicleAntennaGainCSV("", AntennaPatternType.AntennaNone, GNSSBand.S, "Basic Antenna"))
+
 
         # 启用日志记录
         self.simulator.call(EnableLogRaw(False))  # 可以启用原始日志记录并进行比较（接收器位置信息特别有用）
@@ -820,6 +822,7 @@ class MySimulator:#模拟器类
         for node in pushRouteNode:
             self.simulator.pushRouteLla(node[0],Lla(node[1],node[2],node[3]))    
         self.simulator.endRouteDefinition()
+
     
     def __setAntennaModelNone(self):
         try:

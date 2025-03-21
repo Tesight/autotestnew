@@ -234,14 +234,14 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                             action = 'append')  
         parser.add_argument("radioType",type=str,help="radioType:NoneRT, DTA-2115B,DTA-2116")
         parser.add_argument("GlobalPowerOffset",type=float,help="GlobalPowerOffset:dBm")
-        parser.add_argument("propagation_model",type=str)#传播模型
+        parser.add_argument("propagation_model",type=bool)#传播模型
         parser.add_argument("duration_time",type=int,help="duration_time")#持续时间
         parser.add_argument("decivetype",type=str,help="decivetype")
         parser.add_argument("deviceserialnum",type=str,help="deviceserialnum")  
         parser.add_argument("externalattenuation",type=float, help="externalattenuation")
-        parser.add_argument("dc_block_mounting",type = int,help="dc_block_mounting")
+        parser.add_argument("dc_block_mounting",type = int,help="dc_block_mounting") # problem1
         parser.add_argument("output_reference_power",type = int,help="output_reference_power")#输出基准功率
-        parser.add_argument("systemnum",type = int,help="system's num")#卫星数量
+        parser.add_argument("systemnum",type = int, help="system's num", action='append')#卫星数量
 
 
         args = parser.parse_args()
@@ -286,10 +286,10 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
         elif data == "frequencyset":
             if verification(args, "signals") == False:
                 Log().logger.error(f"信号源设置错误，应该为L1CA,L1C,L1P,G1,E1,B1,B1C,SBASL1,QZSSL1CA,QZSSL1CB,QZSSL1C,QZSSL1S,L2C,L2P,L5,G2,E5a,E5b,B2,B2a,B3I,SBASL5,QZSSL2C,QZSSL5,QZSSL5S,NAVICL5")
-                return {"status":"failed","message":"Wrong input of signals"}   
-            if verification(args,'startTime') == False:
-                Log().logger.error(f"startTime设置错误")
-                return {"status":"failed","message":"Wrong input of startTime"} 
+                return {"status":"failed","message":"Wrong input of signals"}
+            # if verification(args,'startTime') == False:
+            #     Log().logger.error(f"startTime设置错误")
+            #     return {"status":"failed","message":"Wrong input of startTime"}
             
             try:
                 if not sim.simulator.isConnected():  
@@ -297,9 +297,9 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                         Log().logger.error(f"skydel连接断开")
                         return {"status":"failed","message":"Simulator connect failed"}
                 sim.duration_time=args["duration_time"]
-                sim.contorl=args["propagation_model"]
-                sim.startTime = args['startTime'] if args['startTime'][0] != None else None
-                sim.systemnum=args["systemnum"]    
+                sim.control=args["propagation_model"]
+                sim.startTime = args['startTime'] if args['startTime'] != None else None
+                sim.systemnum=args["systemnum"]
                 sim.setSignals(args["signals"])
                 Log().logger.info(f"信号频点设置成功")
                 return {"status":"success","message":"skydel frequency set successfully"}
