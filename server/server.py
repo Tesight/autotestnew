@@ -431,7 +431,7 @@ class SimulatorControl(Resource):#控制skydel仿真器
                     return {"status":"success","message":"Simulator stopped"}   
                 elif args["simulatorControl"] == "systemnum":
                     sim.setSystemnum() 
-                    Log().logger.info(f"仿真器停止成功")
+                    Log().logger.info(f"仿真器卫星数量设置成功")
                     return {"status":"success","message":"Simulator system num setting"}   
                 else:
                     Log().logger.error(f"simulatorControl设置错误")
