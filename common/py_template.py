@@ -131,19 +131,19 @@ step:
   params:
     name: data
     value:
-      longitude: {{ longitude }}
-      latitude: {{ latitude }}
-      altitude: {{ altitude }}
-      customizedPath: 
-      - type: {{type}}
-        timeStep: {{timeStep}}
-        directionMatrix:
-        - {{x}}
-        - {{y}}
-        initialVelocity: {{ initialVelocity }}
-        finalVelocity: {{finalVelocity}}
-        accelerationDistance: {{accelerationDistance}}
-        travelTime: {{travelTime}}
+          longitude: {{ longitude }}
+          latitude: {{ latitude }}
+          altitude: {{ altitude }}
+          customizedPath: 
+          - type: {{type}}
+            timeStep: {{timeStep}}
+            directionMatrix:
+            - {{x}}
+            - {{y}}
+            initialVelocity: {{ initialVelocity }}
+            finalVelocity: {{finalVelocity}}
+            accelerationDistance: {{accelerationDistance}}
+            travelTime: {{travelTime}}
 - action: HttpAction
   method: request
   desc: 模拟器参数_发送控制命令,返回json

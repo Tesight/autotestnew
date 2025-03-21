@@ -1,0 +1,32 @@
+2025-03-21 13:23:23,602 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：10.0,隔直器安装：None
+2025-03-21 13:23:23,602 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:23:23] "POST /customized/connect HTTP/1.1" 200 -
+2025-03-21 13:23:34,206 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:23:34] "[35m[1mPOST /customized/frequencyset HTTP/1.1[0m" 500 -
+2025-03-21 13:25:01,580 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:25:01] "[35m[1mPOST /customized/frequencyset HTTP/1.1[0m" 500 -
+2025-03-21 13:25:56,168 - werkzeug - INFO -  * Detected change in 'D:\\PyProjects\\autotestnew\\server\\funcs.py', reloading
+2025-03-21 13:25:57,390 - root - INFO - 信号频点设置成功
+2025-03-21 13:25:57,390 - root - INFO - 卫星数量设置成功
+2025-03-21 13:25:57,391 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:25:57] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-03-21 13:27:49,720 - root - INFO - 输出基准功率设置成功
+2025-03-21 13:27:49,721 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:27:49] "POST /customized/offset HTTP/1.1" 200 -
+2025-03-21 13:28:22,012 - root - ERROR - GNSS设备类型错误,应该为GSG-7C,GSG-8C,GSG-8Gen2,SSE
+2025-03-21 13:28:22,012 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:28:22] "POST /customized/connect HTTP/1.1" 200 -
+2025-03-21 13:28:47,298 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：10.0,隔直器安装：None
+2025-03-21 13:28:47,298 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:28:47] "POST /customized/connect HTTP/1.1" 200 -
+2025-03-21 13:28:51,244 - root - INFO - 信号频点设置成功
+2025-03-21 13:28:51,244 - root - INFO - 卫星数量设置成功
+2025-03-21 13:28:51,244 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:28:51] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-03-21 13:29:10,087 - root - INFO - 输出基准功率设置成功
+2025-03-21 13:29:10,087 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:29:10] "POST /customized/offset HTTP/1.1" 200 -
+2025-03-21 13:41:50,813 - werkzeug - INFO -  * Detected change in 'D:\\PyProjects\\autotestnew\\common\\py_template.py', reloading
+2025-03-21 13:52:19,549 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：10.0,隔直器安装：None
+2025-03-21 13:52:19,549 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:52:19] "POST /customized/connect HTTP/1.1" 200 -
+2025-03-21 13:52:22,484 - root - INFO - 信号频点设置成功
+2025-03-21 13:52:22,484 - root - INFO - 卫星数量设置成功
+2025-03-21 13:52:22,484 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:52:22] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-03-21 13:52:24,937 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:52:24] "[35m[1mPOST /customized/offset HTTP/1.1[0m" 500 -
+2025-03-21 13:52:41,203 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:52:41] "[35m[1mPOST /customized/offset HTTP/1.1[0m" 500 -
+2025-03-21 13:53:06,390 - root - INFO - 输出基准功率设置成功
+2025-03-21 13:53:06,391 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:53:06] "POST /customized/offset HTTP/1.1" 200 -
+2025-03-21 13:53:10,583 - root - INFO - 自定义路径设置成功
+2025-03-21 13:53:10,584 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 13:53:10] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-03-21 14:01:05,198 - werkzeug - INFO -  * Detected change in 'D:\\PyProjects\\autotestnew\\server\\funcs.py', reloading
