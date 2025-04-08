@@ -1,659 +1,0 @@
-2023-12-06 18:03:36,643 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:03:36,644 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:03:37,570 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:03:37,696 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:03:37,741 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:03:37,774 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：0
-        失败用例数：3
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 0.0 %
-        
-2023-12-06 18:03:37,794 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:03:59,657 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:03:59,657 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:04:00,601 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:04:00,728 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:04:00,773 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:04:00,805 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：0
-        失败用例数：3
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 0.0 %
-        
-2023-12-06 18:04:00,824 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:04:23,786 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:04:23,787 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:04:25,138 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:07:50,729 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:07:50,731 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:07:51,693 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:07:51,826 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:07:51,874 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:07:51,906 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：0
-        失败用例数：3
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 0.0 %
-        
-2023-12-06 18:07:51,925 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:08:32,132 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:08:32,133 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:08:33,506 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:08:38,526 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:08:40,082 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:08:41,700 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：0
-        失败用例数：3
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 0.0 %
-        
-2023-12-06 18:08:41,726 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:08:51,566 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:08:51,567 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:08:51,842 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:08:54,963 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:09:03,042 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:09:29,235 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：0
-        失败用例数：3
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 0.0 %
-        
-2023-12-06 18:09:29,251 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:09:32,655 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:09:32,657 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:09:32,902 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:10:28,336 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:10:28,337 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:10:29,282 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:10:29,408 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:10:29,455 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:10:29,487 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：0
-        失败用例数：3
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 0.0 %
-        
-2023-12-06 18:10:29,507 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:10:48,010 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:10:48,013 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:10:49,394 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:03,393 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:12:03,394 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:12:04,353 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,354 - root - INFO - 数据驱动变量[DataDriver.用户名]替换成功,替换后的值==>test01a
-2023-12-06 18:12:04,357 - root - INFO - 数据驱动变量[DataDriver.密码]替换成功,替换后的值==>1111
-2023-12-06 18:12:04,358 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
-2023-12-06 18:12:04,359 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-06 18:12:04,359 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'DataDriver.用户名', '_58_password': 'DataDriver.密码'}
-2023-12-06 18:12:04,435 - root - INFO - post接口的响应时间==>0.074059
-2023-12-06 18:12:04,436 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
-2023-12-06 18:12:04,437 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,437 - root - INFO - 动态变量result_text替换成功,替换后的值==><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 登录</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" type="text/css" rel="stylesheet" /><style type="text/css">#p_p_id_58_ .portlet {
-background-color: #FFFFFF;
-border-width: 2px;
-border-style:;
-margin-top: 0px;
-margin-right: 120px;
-margin-bottom: 0px;
-margin-left: 120px;
-text-align: left
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10686";},getGroupId: function() {return "14";},getUserId: function() {return "5";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/web/guest/home";},isPrivateLayout: function() {return "false";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return false;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "2B7C20D5A41F28E9C6EC65A6CC251322";}};// ]]></script><script src="/html/js/barebone_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update';Liferay.currentURLEncoded = '%2Fweb%2Fguest%2Fhome%3Fp_p_id%3D58%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26saveLastPath%3D0%26_58_struts_action%3D%252Flogin%252Fview%26_58_cmd%3Dupdate';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['58'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701823411997" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701857524365) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-visible">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1/;jsessionid=2B7C20D5A41F28E9C6EC65A6CC251322">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-in">
-<a href="/c/portal/login?p_l_id=10686">登录</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/web/guest/home;jsessionid=2B7C20D5A41F28E9C6EC65A6CC251322" ><span>登录</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_58_" class="portlet-boundary portlet-boundary_58_  portlet-login" ><a name="p_58"></a><div class="portlet" id="portlet-wrapper-58">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/login/icon.png" /> 登录
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_58">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><span class="portlet-msg-error">您输入了无效资料。请再尝试。</span><form action="http://127.0.0.1/web/guest/home;jsessionid=2B7C20D5A41F28E9C6EC65A6CC251322?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update" method="post" name="_58_fm"><input name="_58_redirect" type="hidden" value="" /><span class="portlet-msg-error">认证失败了。请使能浏览器曲奇饼和再尝试。</span><table class="lfr-table"><tr><td>用户名</td><td><input name="_58_login" style="width: 120px;" type="text" value="DataDriver.用户名" /></td></tr><tr><td>密码</td><td><input id="_58_password" name="_58_password" style="width: 120px;" type="password" value="" /><span id="_58_passwordCapsLockSpan" style="display: none;">大写键打开。</span></td></tr></table><br /><input type="submit" value="登录" /></form><script type="text/javascript">jQuery(function() {jQuery('#_58_password').keypress(function(event) {Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');});});</script></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_58_',portletId: '58'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form></body>
-</html>
-
-2023-12-06 18:12:04,450 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
-2023-12-06 18:12:04,451 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,451 - root - INFO - 动态变量result替换成功,替换后的值==>[]
-2023-12-06 18:12:04,451 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,451 - root - INFO - 动态变量result替换成功,替换后的值==>None
-2023-12-06 18:12:04,451 - root - INFO - 数据驱动变量[DataDriver.预期结果]替换成功,替换后的值==>测试比对样品 - 登录
-2023-12-06 18:12:04,451 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：${result}==DataDriver.预期结果
-2023-12-06 18:12:04,577 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,578 - root - INFO - 数据驱动变量[DataDriver.用户名]替换成功,替换后的值==>test01
-2023-12-06 18:12:04,578 - root - INFO - 数据驱动变量[DataDriver.密码]替换成功,替换后的值==>1111a
-2023-12-06 18:12:04,580 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
-2023-12-06 18:12:04,581 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-06 18:12:04,581 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'DataDriver.用户名', '_58_password': 'DataDriver.密码'}
-2023-12-06 18:12:04,595 - root - INFO - post接口的响应时间==>0.011004
-2023-12-06 18:12:04,596 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
-2023-12-06 18:12:04,596 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,596 - root - INFO - 动态变量result_text替换成功,替换后的值==><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 登录</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" type="text/css" rel="stylesheet" /><style type="text/css">#p_p_id_58_ .portlet {
-background-color: #FFFFFF;
-border-width: 2px;
-border-style:;
-margin-top: 0px;
-margin-right: 120px;
-margin-bottom: 0px;
-margin-left: 120px;
-text-align: left
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10686";},getGroupId: function() {return "14";},getUserId: function() {return "5";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/web/guest/home";},isPrivateLayout: function() {return "false";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return false;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "2B7C20D5A41F28E9C6EC65A6CC251322";}};// ]]></script><script src="/html/js/barebone_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update';Liferay.currentURLEncoded = '%2Fweb%2Fguest%2Fhome%3Fp_p_id%3D58%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26saveLastPath%3D0%26_58_struts_action%3D%252Flogin%252Fview%26_58_cmd%3Dupdate';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['58'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701823411997" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701857524365) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-visible">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-in">
-<a href="/c/portal/login?p_l_id=10686">登录</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/web/guest/home" ><span>登录</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_58_" class="portlet-boundary portlet-boundary_58_  portlet-login" ><a name="p_58"></a><div class="portlet" id="portlet-wrapper-58">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/login/icon.png" /> 登录
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_58">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><span class="portlet-msg-error">您输入了无效资料。请再尝试。</span><form action="http://127.0.0.1/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update" method="post" name="_58_fm"><input name="_58_redirect" type="hidden" value="" /><span class="portlet-msg-error">请输入有效的登入。</span><table class="lfr-table"><tr><td>用户名</td><td><input name="_58_login" style="width: 120px;" type="text" value="DataDriver.用户名" /></td></tr><tr><td>密码</td><td><input id="_58_password" name="_58_password" style="width: 120px;" type="password" value="" /><span id="_58_passwordCapsLockSpan" style="display: none;">大写键打开。</span></td></tr></table><br /><input type="submit" value="登录" /></form><script type="text/javascript">jQuery(function() {jQuery('#_58_password').keypress(function(event) {Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');});});</script></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_58_',portletId: '58'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form></body>
-</html>
-
-2023-12-06 18:12:04,609 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
-2023-12-06 18:12:04,609 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,611 - root - INFO - 动态变量result替换成功,替换后的值==>[]
-2023-12-06 18:12:04,611 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,611 - root - INFO - 动态变量result替换成功,替换后的值==>None
-2023-12-06 18:12:04,611 - root - INFO - 数据驱动变量[DataDriver.预期结果]替换成功,替换后的值==>测试比对样品 - 登录
-2023-12-06 18:12:04,611 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：${result}==DataDriver.预期结果
-2023-12-06 18:12:04,658 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,659 - root - INFO - 数据驱动变量[DataDriver.用户名]替换成功,替换后的值==>test01
-2023-12-06 18:12:04,659 - root - INFO - 数据驱动变量[DataDriver.密码]替换成功,替换后的值==>1111
-2023-12-06 18:12:04,660 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
-2023-12-06 18:12:04,661 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-06 18:12:04,661 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'DataDriver.用户名', '_58_password': 'DataDriver.密码'}
-2023-12-06 18:12:04,675 - root - INFO - post接口的响应时间==>0.012346
-2023-12-06 18:12:04,675 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
-2023-12-06 18:12:04,676 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,677 - root - INFO - 动态变量result_text替换成功,替换后的值==><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 登录</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" type="text/css" rel="stylesheet" /><style type="text/css">#p_p_id_58_ .portlet {
-background-color: #FFFFFF;
-border-width: 2px;
-border-style:;
-margin-top: 0px;
-margin-right: 120px;
-margin-bottom: 0px;
-margin-left: 120px;
-text-align: left
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10686";},getGroupId: function() {return "14";},getUserId: function() {return "5";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/web/guest/home";},isPrivateLayout: function() {return "false";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return false;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "2B7C20D5A41F28E9C6EC65A6CC251322";}};// ]]></script><script src="/html/js/barebone_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update';Liferay.currentURLEncoded = '%2Fweb%2Fguest%2Fhome%3Fp_p_id%3D58%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26saveLastPath%3D0%26_58_struts_action%3D%252Flogin%252Fview%26_58_cmd%3Dupdate';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['58'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701823411997" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701857524365) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-visible">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-in">
-<a href="/c/portal/login?p_l_id=10686">登录</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/web/guest/home" ><span>登录</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_58_" class="portlet-boundary portlet-boundary_58_  portlet-login" ><a name="p_58"></a><div class="portlet" id="portlet-wrapper-58">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/login/icon.png" /> 登录
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_58">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><span class="portlet-msg-error">您输入了无效资料。请再尝试。</span><form action="http://127.0.0.1/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update" method="post" name="_58_fm"><input name="_58_redirect" type="hidden" value="" /><span class="portlet-msg-error">请输入有效的登入。</span><table class="lfr-table"><tr><td>用户名</td><td><input name="_58_login" style="width: 120px;" type="text" value="DataDriver.用户名" /></td></tr><tr><td>密码</td><td><input id="_58_password" name="_58_password" style="width: 120px;" type="password" value="" /><span id="_58_passwordCapsLockSpan" style="display: none;">大写键打开。</span></td></tr></table><br /><input type="submit" value="登录" /></form><script type="text/javascript">jQuery(function() {jQuery('#_58_password').keypress(function(event) {Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');});});</script></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_58_',portletId: '58'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form></body>
-</html>
-
-2023-12-06 18:12:04,689 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
-2023-12-06 18:12:04,690 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,690 - root - INFO - 动态变量result替换成功,替换后的值==>[]
-2023-12-06 18:12:04,691 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:12:04,691 - root - INFO - 动态变量result替换成功,替换后的值==>None
-2023-12-06 18:12:04,691 - root - INFO - 数据驱动变量[DataDriver.预期结果]替换成功,替换后的值==>测试比对样品 - 稿件管理
-2023-12-06 18:12:04,693 - root - ERROR - [CheckAction.equal]校验两个值相等，验证失败：${result}==DataDriver.预期结果
-2023-12-06 18:12:04,720 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：0
-        失败用例数：3
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 0.0 %
-        
-2023-12-06 18:12:04,738 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:14:25,610 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-06 18:14:25,611 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-06 18:14:26,564 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,567 - root - INFO - 数据驱动变量[DataDriver.用户名]替换成功,替换后的值==>test01a
-2023-12-06 18:14:26,567 - root - INFO - 数据驱动变量[DataDriver.密码]替换成功,替换后的值==>1111
-2023-12-06 18:14:26,568 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
-2023-12-06 18:14:26,568 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-06 18:14:26,568 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01a', '_58_password': '1111'}
-2023-12-06 18:14:26,615 - root - INFO - post接口的响应时间==>0.044224
-2023-12-06 18:14:26,616 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
-2023-12-06 18:14:26,617 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,617 - root - INFO - 动态变量result_text替换成功,替换后的值==><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 登录</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" type="text/css" rel="stylesheet" /><style type="text/css">#p_p_id_58_ .portlet {
-background-color: #FFFFFF;
-border-width: 2px;
-border-style:;
-margin-top: 0px;
-margin-right: 120px;
-margin-bottom: 0px;
-margin-left: 120px;
-text-align: left
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10686";},getGroupId: function() {return "14";},getUserId: function() {return "5";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/web/guest/home";},isPrivateLayout: function() {return "false";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return false;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "1088CCFA47ABD405F772B455567D75BB";}};// ]]></script><script src="/html/js/barebone_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update';Liferay.currentURLEncoded = '%2Fweb%2Fguest%2Fhome%3Fp_p_id%3D58%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26saveLastPath%3D0%26_58_struts_action%3D%252Flogin%252Fview%26_58_cmd%3Dupdate';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['58'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701823411997" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701857524365) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-visible">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1/;jsessionid=1088CCFA47ABD405F772B455567D75BB">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-in">
-<a href="/c/portal/login?p_l_id=10686">登录</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/web/guest/home;jsessionid=1088CCFA47ABD405F772B455567D75BB" ><span>登录</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_58_" class="portlet-boundary portlet-boundary_58_  portlet-login" ><a name="p_58"></a><div class="portlet" id="portlet-wrapper-58">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/login/icon.png" /> 登录
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_58">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><span class="portlet-msg-error">您输入了无效资料。请再尝试。</span><form action="http://127.0.0.1/web/guest/home;jsessionid=1088CCFA47ABD405F772B455567D75BB?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update" method="post" name="_58_fm"><input name="_58_redirect" type="hidden" value="" /><span class="portlet-msg-error">认证失败了。请使能浏览器曲奇饼和再尝试。</span><table class="lfr-table"><tr><td>用户名</td><td><input name="_58_login" style="width: 120px;" type="text" value="test01a" /></td></tr><tr><td>密码</td><td><input id="_58_password" name="_58_password" style="width: 120px;" type="password" value="" /><span id="_58_passwordCapsLockSpan" style="display: none;">大写键打开。</span></td></tr></table><br /><input type="submit" value="登录" /></form><script type="text/javascript">jQuery(function() {jQuery('#_58_password').keypress(function(event) {Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');});});</script></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_58_',portletId: '58'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form></body>
-</html>
-
-2023-12-06 18:14:26,628 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['测试比对样品 - 登录']
-2023-12-06 18:14:26,629 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,629 - root - INFO - 动态变量result替换成功,替换后的值==>['测试比对样品 - 登录']
-2023-12-06 18:14:26,629 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：测试比对样品 - 登录
-2023-12-06 18:14:26,629 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,629 - root - INFO - 动态变量result替换成功,替换后的值==>测试比对样品 - 登录
-2023-12-06 18:14:26,629 - root - INFO - 数据驱动变量[DataDriver.预期结果]替换成功,替换后的值==>测试比对样品 - 登录
-2023-12-06 18:14:26,630 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：测试比对样品 - 登录==测试比对样品 - 登录
-2023-12-06 18:14:26,660 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,660 - root - INFO - 数据驱动变量[DataDriver.用户名]替换成功,替换后的值==>test01
-2023-12-06 18:14:26,661 - root - INFO - 数据驱动变量[DataDriver.密码]替换成功,替换后的值==>1111a
-2023-12-06 18:14:26,663 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
-2023-12-06 18:14:26,663 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-06 18:14:26,663 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111a'}
-2023-12-06 18:14:26,693 - root - INFO - post接口的响应时间==>0.026823
-2023-12-06 18:14:26,694 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
-2023-12-06 18:14:26,694 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,694 - root - INFO - 动态变量result_text替换成功,替换后的值==><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 登录</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" type="text/css" rel="stylesheet" /><style type="text/css">#p_p_id_58_ .portlet {
-background-color: #FFFFFF;
-border-width: 2px;
-border-style:;
-margin-top: 0px;
-margin-right: 120px;
-margin-bottom: 0px;
-margin-left: 120px;
-text-align: left
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10686";},getGroupId: function() {return "14";},getUserId: function() {return "5";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/web/guest/home";},isPrivateLayout: function() {return "false";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return false;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "1088CCFA47ABD405F772B455567D75BB";}};// ]]></script><script src="/html/js/barebone_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update';Liferay.currentURLEncoded = '%2Fweb%2Fguest%2Fhome%3Fp_p_id%3D58%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26saveLastPath%3D0%26_58_struts_action%3D%252Flogin%252Fview%26_58_cmd%3Dupdate';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['58'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701823411997" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701857524365) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-visible">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-in">
-<a href="/c/portal/login?p_l_id=10686">登录</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/web/guest/home" ><span>登录</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_58_" class="portlet-boundary portlet-boundary_58_  portlet-login" ><a name="p_58"></a><div class="portlet" id="portlet-wrapper-58">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/login/icon.png" /> 登录
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_58">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><span class="portlet-msg-error">您输入了无效资料。请再尝试。</span><form action="http://127.0.0.1/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update" method="post" name="_58_fm"><input name="_58_redirect" type="hidden" value="" /><span class="portlet-msg-error">登入认证失败。请再试试。</span><table class="lfr-table"><tr><td>用户名</td><td><input name="_58_login" style="width: 120px;" type="text" value="test01" /></td></tr><tr><td>密码</td><td><input id="_58_password" name="_58_password" style="width: 120px;" type="password" value="" /><span id="_58_passwordCapsLockSpan" style="display: none;">大写键打开。</span></td></tr></table><br /><input type="submit" value="登录" /></form><script type="text/javascript">jQuery(function() {jQuery('#_58_password').keypress(function(event) {Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');});});</script></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_58_',portletId: '58'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form></body>
-</html>
-
-2023-12-06 18:14:26,704 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['测试比对样品 - 登录']
-2023-12-06 18:14:26,705 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,705 - root - INFO - 动态变量result替换成功,替换后的值==>['测试比对样品 - 登录']
-2023-12-06 18:14:26,706 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：测试比对样品 - 登录
-2023-12-06 18:14:26,706 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,706 - root - INFO - 动态变量result替换成功,替换后的值==>测试比对样品 - 登录
-2023-12-06 18:14:26,706 - root - INFO - 数据驱动变量[DataDriver.预期结果]替换成功,替换后的值==>测试比对样品 - 登录
-2023-12-06 18:14:26,706 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：测试比对样品 - 登录==测试比对样品 - 登录
-2023-12-06 18:14:26,733 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,734 - root - INFO - 数据驱动变量[DataDriver.用户名]替换成功,替换后的值==>test01
-2023-12-06 18:14:26,735 - root - INFO - 数据驱动变量[DataDriver.密码]替换成功,替换后的值==>1111
-2023-12-06 18:14:26,736 - root - INFO - post接口调用开始==>http://127.0.0.1/web/guest/home
-2023-12-06 18:14:26,737 - root - INFO - post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-06 18:14:26,737 - root - INFO - post接口请求体data==>{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-06 18:14:26,813 - root - INFO - post接口的响应时间==>0.036896
-2023-12-06 18:14:26,813 - root - INFO - post接口调用完成==>http://127.0.0.1/web/guest/home
-2023-12-06 18:14:26,815 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,815 - root - INFO - 动态变量result_text替换成功,替换后的值==><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 稿件管理</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" type="text/css" rel="stylesheet" /><link href="/html/portlet/journal/css.jsp?themeId=classic&amp;colorSchemeId=01&amp;t=1701823411537" rel="stylesheet" type="text/css" /><style type="text/css">#p_p_id_15_ .portlet {
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10830";},getGroupId: function() {return "10780";},getUserId: function() {return "11904";},getUserName: function() {return "\u0055\u0073\u0065\u0072\u0020\u0074\u0065\u0073\u0074\u0030\u0031";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/group/10779/articles";},isPrivateLayout: function() {return "true";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return true;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "894669226F27208084E7312D0F0231D5";}};// ]]></script><script src="/html/js/everything_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/group/10779/articles';Liferay.currentURLEncoded = '%2Fgroup%2F10779%2Farticles';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['15'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}Liferay._editControlsState = 'hidden';if (Liferay.Util) {Liferay.Util.toggleControls();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701823411997" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701823411997" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701857524365) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-hidden">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome test01!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-out">
-<a href="/c/portal/logout">退出</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/group/10779/articles" ><span>稿件管理</span></a>
-</li>
-<li class="">
-<a href="/group/10779/upload" ><span>文档上传下载</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_15_" class="portlet-boundary portlet-boundary_15_  portlet-journal" ><a name="p_15"></a><div class="portlet" id="portlet-wrapper-15">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/journal/icon.png" /> 稿件管理
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_15">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><script type="text/javascript">function _15_deleteArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles");}}function _15_deleteFeeds() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u9972\u6599\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteFeedIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_feed&_15_redirect=%2Fgroup%2F10779%2Farticles");}}function _15_deleteStructures() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u7ed3\u6784\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteStructureIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_structure&_15_redirect=%2Fgroup%2F10779%2Farticles");}}function _15_deleteTemplates() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6a21\u677f\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteTemplateIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_template&_15_redirect=%2Fgroup%2F10779%2Farticles");}}function _15_expireArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5230\u671f\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "expire";document._15_fm._15_groupId.value = "10780";document._15_fm._15_expireArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles");}}</script><form action="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles" method="post" name="_15_fm" onSubmit="submitForm(this); return false;"><input name="_15_cmd" type="hidden" value="" /><input name="_15_tabs1TabsScroll" type="hidden" /><ul class="tabs ui-tabs"><li class="current first last" id="_15_tabs1articlesTabsId"><span>稿件</span></li></ul><script type="text/javascript">Liferay.Portal.Tabs.show("_15_tabs1", ['articles'], "articles");</script><input name="_15_groupId" type="hidden" value="" /><input name="_15_deleteArticleIds" type="hidden" value="" /><input name="_15_expireArticleIds" type="hidden" value="" /><script type="text/javascript">var toggle_id_journal_article_searchcurClickValue = "basic";function toggle_id_journal_article_searchtoggleSearch() {jQuery("#toggle_id_journal_article_searchbasic").toggle();jQuery("#toggle_id_journal_article_searchadvanced").toggle();var advancedSearchObj = jQuery("#toggle_id_journal_article_searchadvancedSearch");if (toggle_id_journal_article_searchcurClickValue == "basic") {toggle_id_journal_article_searchcurClickValue = "advanced";advancedSearchObj.val(true);}else {toggle_id_journal_article_searchcurClickValue = "basic";advancedSearchObj.val(false);}jQuery.ajax({url: 'portal/session_click',data: {'toggle_id_journal_article_search': toggle_id_journal_article_searchcurClickValue}});}</script><input id="toggle_id_journal_article_searchadvancedSearch" name="_15_advancedSearch" type="hidden" value="false" /><div id="toggle_id_journal_article_searchbasic" style="display: block;"><label for="toggle_id_journal_article_searchkeywords">查询</label><input id="toggle_id_journal_article_searchkeywords" name="_15_keywords" size="30" type="text" value="" />&nbsp;<a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1" >高级 &raquo;</a></div><div id="toggle_id_journal_article_searchadvanced" style="display: none;">匹配下列<select name="_15_andOperator"><option selected value="1">所有</option><option value="0">任何</option></select>查询条件：<br /><br /><table class="lfr-table"><tr><td>编号</td><td>版本</td><td>标题</td><td>内容</td></tr><tr><td><input name="_15_searchArticleId" size="20" type="text" value="" /></td><td><input name="_15_version" size="20" type="text" value="" /></td><td><input name="_15_title" size="20" type="text" value="" /></td><td><input name="_15_content" size="20" type="text" value="" /></td></tr></table><br /><a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1">&laquo; 基本</a></div><br /><div><input type="submit" value="查询稿件" /><input type="button" value="增加稿件" onClick="_15_addArticle();" /></div><script type="text/javascript">function _15_addArticle() {var url = 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles';if (toggle_id_journal_article_searchcurClickValue == 'basic') {url += '&_15_title=' + document._15_fm._15_keywords.value;submitForm(document.hrefFm, url);}else {document._15_fm.method = 'post';submitForm(document._15_fm, url);}}</script></form></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_15_',portletId: '15'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form><script type="text/javascript">Liferay.Session.init({autoExtend: false,timeout: 30,timeoutWarning: 1,redirectOnExpiration: false});</script></body>
-</html>
-
-2023-12-06 18:14:26,831 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['测试比对样品 - 稿件管理']
-2023-12-06 18:14:26,833 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,833 - root - INFO - 动态变量result替换成功,替换后的值==>['测试比对样品 - 稿件管理']
-2023-12-06 18:14:26,833 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：测试比对样品 - 稿件管理
-2023-12-06 18:14:26,833 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-06 18:14:26,833 - root - INFO - 动态变量result替换成功,替换后的值==>测试比对样品 - 稿件管理
-2023-12-06 18:14:26,833 - root - INFO - 数据驱动变量[DataDriver.预期结果]替换成功,替换后的值==>测试比对样品 - 稿件管理
-2023-12-06 18:14:26,834 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：测试比对样品 - 稿件管理==测试比对样品 - 稿件管理
-2023-12-06 18:14:26,844 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：3
-        失败用例数：0
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 100.0 %
-        
-2023-12-06 18:14:26,859 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

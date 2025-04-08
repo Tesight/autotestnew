@@ -1,982 +1,0 @@
-2023-12-05 11:16:28,108 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 11:16:28,109 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-05 11:16:29,137 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,140 - root - INFO - 需要动态替换的数据驱动变量为：['用户名', '密码']
-2023-12-05 11:16:29,141 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 11:16:29,142 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 11:16:29,142 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01a', '_58_password': '1111'}
-2023-12-05 11:16:29,217 - root - INFO - post接口的响应时间：0.072732
-2023-12-05 11:16:29,220 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 11:16:29,220 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,221 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 11:16:29,221 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 登录</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><style type="text/css">#p_p_id_58_ .portlet {
-background-color: #FFFFFF;
-border-width: 2px;
-border-style:;
-margin-top: 0px;
-margin-right: 120px;
-margin-bottom: 0px;
-margin-left: 120px;
-text-align: left
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10686";},getGroupId: function() {return "14";},getUserId: function() {return "5";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/web/guest/home";},isPrivateLayout: function() {return "false";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return false;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "F181EA6D0512DE05A2FCACAB4DC2B204";}};// ]]></script><script src="/html/js/barebone_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update';Liferay.currentURLEncoded = '%2Fweb%2Fguest%2Fhome%3Fp_p_id%3D58%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26saveLastPath%3D0%26_58_struts_action%3D%252Flogin%252Fview%26_58_cmd%3Dupdate';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['58'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701746189148) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-visible">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1/;jsessionid=F181EA6D0512DE05A2FCACAB4DC2B204">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-in">
-<a href="/c/portal/login?p_l_id=10686">登录</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/web/guest/home;jsessionid=F181EA6D0512DE05A2FCACAB4DC2B204" ><span>登录</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_58_" class="portlet-boundary portlet-boundary_58_  portlet-login" ><a name="p_58"></a><div class="portlet" id="portlet-wrapper-58">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/login/icon.png" /> 登录
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_58">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><span class="portlet-msg-error">您输入了无效资料。请再尝试。</span><form action="http://127.0.0.1/web/guest/home;jsessionid=F181EA6D0512DE05A2FCACAB4DC2B204?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update" method="post" name="_58_fm"><input name="_58_redirect" type="hidden" value="" /><span class="portlet-msg-error">认证失败了。请使能浏览器曲奇饼和再尝试。</span><table class="lfr-table"><tr><td>用户名</td><td><input name="_58_login" style="width: 120px;" type="text" value="test01a" /></td></tr><tr><td>密码</td><td><input id="_58_password" name="_58_password" style="width: 120px;" type="password" value="" /><span id="_58_passwordCapsLockSpan" style="display: none;">大写键打开。</span></td></tr></table><br /><input type="submit" value="登录" /></form><script type="text/javascript">jQuery(function() {jQuery('#_58_password').keypress(function(event) {Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');});});</script></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_58_',portletId: '58'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form></body>
-</html>
-
-2023-12-05 11:16:29,241 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['测试比对样品 - 登录']
-2023-12-05 11:16:29,241 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,253 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 11:16:29,253 - root - INFO - 动态变量result替换成功：['测试比对样品 - 登录']
-2023-12-05 11:16:29,253 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：测试比对样品 - 登录
-2023-12-05 11:16:29,253 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,253 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 11:16:29,253 - root - INFO - 动态变量result替换成功：测试比对样品 - 登录
-2023-12-05 11:16:29,254 - root - INFO - 需要动态替换的数据驱动变量为：['预期结果']
-2023-12-05 11:16:29,254 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：测试比对样品 - 登录==测试比对样品 - 登录
-2023-12-05 11:16:29,373 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,374 - root - INFO - 需要动态替换的数据驱动变量为：['用户名', '密码']
-2023-12-05 11:16:29,396 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 11:16:29,396 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 11:16:29,396 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111a'}
-2023-12-05 11:16:29,452 - root - INFO - post接口的响应时间：0.023786
-2023-12-05 11:16:29,464 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 11:16:29,465 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,465 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 11:16:29,465 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 登录</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><style type="text/css">#p_p_id_58_ .portlet {
-background-color: #FFFFFF;
-border-width: 2px;
-border-style:;
-margin-top: 0px;
-margin-right: 120px;
-margin-bottom: 0px;
-margin-left: 120px;
-text-align: left
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10686";},getGroupId: function() {return "14";},getUserId: function() {return "5";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/web/guest/home";},isPrivateLayout: function() {return "false";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return false;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "F181EA6D0512DE05A2FCACAB4DC2B204";}};// ]]></script><script src="/html/js/barebone_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update';Liferay.currentURLEncoded = '%2Fweb%2Fguest%2Fhome%3Fp_p_id%3D58%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26saveLastPath%3D0%26_58_struts_action%3D%252Flogin%252Fview%26_58_cmd%3Dupdate';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['58'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701746189148) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-visible">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-in">
-<a href="/c/portal/login?p_l_id=10686">登录</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/web/guest/home" ><span>登录</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_58_" class="portlet-boundary portlet-boundary_58_  portlet-login" ><a name="p_58"></a><div class="portlet" id="portlet-wrapper-58">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/login/icon.png" /> 登录
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_58">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><span class="portlet-msg-error">您输入了无效资料。请再尝试。</span><form action="http://127.0.0.1/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update" method="post" name="_58_fm"><input name="_58_redirect" type="hidden" value="" /><span class="portlet-msg-error">登入认证失败。请再试试。</span><table class="lfr-table"><tr><td>用户名</td><td><input name="_58_login" style="width: 120px;" type="text" value="test01" /></td></tr><tr><td>密码</td><td><input id="_58_password" name="_58_password" style="width: 120px;" type="password" value="" /><span id="_58_passwordCapsLockSpan" style="display: none;">大写键打开。</span></td></tr></table><br /><input type="submit" value="登录" /></form><script type="text/javascript">jQuery(function() {jQuery('#_58_password').keypress(function(event) {Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');});});</script></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_58_',portletId: '58'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form></body>
-</html>
-
-2023-12-05 11:16:29,504 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['测试比对样品 - 登录']
-2023-12-05 11:16:29,526 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,551 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 11:16:29,551 - root - INFO - 动态变量result替换成功：['测试比对样品 - 登录']
-2023-12-05 11:16:29,551 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：测试比对样品 - 登录
-2023-12-05 11:16:29,552 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,552 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 11:16:29,552 - root - INFO - 动态变量result替换成功：测试比对样品 - 登录
-2023-12-05 11:16:29,552 - root - INFO - 需要动态替换的数据驱动变量为：['预期结果']
-2023-12-05 11:16:29,552 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：测试比对样品 - 登录==测试比对样品 - 登录
-2023-12-05 11:16:29,803 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:29,803 - root - INFO - 需要动态替换的数据驱动变量为：['用户名', '密码']
-2023-12-05 11:16:29,831 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 11:16:29,856 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 11:16:29,856 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-05 11:16:30,004 - root - INFO - post接口的响应时间：0.034852
-2023-12-05 11:16:30,005 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 11:16:30,057 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:30,058 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 11:16:30,058 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 稿件管理</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><link href="/html/portlet/journal/css.jsp?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507269" rel="stylesheet" type="text/css" /><style type="text/css">#p_p_id_15_ .portlet {
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10830";},getGroupId: function() {return "10780";},getUserId: function() {return "11904";},getUserName: function() {return "\u0055\u0073\u0065\u0072\u0020\u0074\u0065\u0073\u0074\u0030\u0031";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/group/10779/articles";},isPrivateLayout: function() {return "true";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return true;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "F4CD06B2CC8C6567AE9C56A0292C2FAB";}};// ]]></script><script src="/html/js/everything_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/group/10779/articles';Liferay.currentURLEncoded = '%2Fgroup%2F10779%2Farticles';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['15'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}Liferay._editControlsState = 'hidden';if (Liferay.Util) {Liferay.Util.toggleControls();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701746189148) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-hidden">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome test01!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-out">
-<a href="/c/portal/logout">退出</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/group/10779/articles" ><span>稿件管理</span></a>
-</li>
-<li class="">
-<a href="/group/10779/upload" ><span>文档上传下载</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_15_" class="portlet-boundary portlet-boundary_15_  portlet-journal" ><a name="p_15"></a><div class="portlet" id="portlet-wrapper-15">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/journal/icon.png" /> 稿件管理
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_15">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><script type="text/javascript">function _15_deleteArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles");}}function _15_deleteFeeds() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u9972\u6599\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteFeedIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_feed&_15_redirect=%2Fgroup%2F10779%2Farticles");}}function _15_deleteStructures() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u7ed3\u6784\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteStructureIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_structure&_15_redirect=%2Fgroup%2F10779%2Farticles");}}function _15_deleteTemplates() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6a21\u677f\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteTemplateIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_template&_15_redirect=%2Fgroup%2F10779%2Farticles");}}function _15_expireArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5230\u671f\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "expire";document._15_fm._15_groupId.value = "10780";document._15_fm._15_expireArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles");}}</script><form action="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles" method="post" name="_15_fm" onSubmit="submitForm(this); return false;"><input name="_15_cmd" type="hidden" value="" /><input name="_15_tabs1TabsScroll" type="hidden" /><ul class="tabs ui-tabs"><li class="current first last" id="_15_tabs1articlesTabsId"><span>稿件</span></li></ul><script type="text/javascript">Liferay.Portal.Tabs.show("_15_tabs1", ['articles'], "articles");</script><input name="_15_groupId" type="hidden" value="" /><input name="_15_deleteArticleIds" type="hidden" value="" /><input name="_15_expireArticleIds" type="hidden" value="" /><script type="text/javascript">var toggle_id_journal_article_searchcurClickValue = "basic";function toggle_id_journal_article_searchtoggleSearch() {jQuery("#toggle_id_journal_article_searchbasic").toggle();jQuery("#toggle_id_journal_article_searchadvanced").toggle();var advancedSearchObj = jQuery("#toggle_id_journal_article_searchadvancedSearch");if (toggle_id_journal_article_searchcurClickValue == "basic") {toggle_id_journal_article_searchcurClickValue = "advanced";advancedSearchObj.val(true);}else {toggle_id_journal_article_searchcurClickValue = "basic";advancedSearchObj.val(false);}jQuery.ajax({url: 'portal/session_click',data: {'toggle_id_journal_article_search': toggle_id_journal_article_searchcurClickValue}});}</script><input id="toggle_id_journal_article_searchadvancedSearch" name="_15_advancedSearch" type="hidden" value="false" /><div id="toggle_id_journal_article_searchbasic" style="display: block;"><label for="toggle_id_journal_article_searchkeywords">查询</label><input id="toggle_id_journal_article_searchkeywords" name="_15_keywords" size="30" type="text" value="" />&nbsp;<a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1" >高级 &raquo;</a></div><div id="toggle_id_journal_article_searchadvanced" style="display: none;">匹配下列<select name="_15_andOperator"><option selected value="1">所有</option><option value="0">任何</option></select>查询条件：<br /><br /><table class="lfr-table"><tr><td>编号</td><td>版本</td><td>标题</td><td>内容</td></tr><tr><td><input name="_15_searchArticleId" size="20" type="text" value="" /></td><td><input name="_15_version" size="20" type="text" value="" /></td><td><input name="_15_title" size="20" type="text" value="" /></td><td><input name="_15_content" size="20" type="text" value="" /></td></tr></table><br /><a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1">&laquo; 基本</a></div><br /><div><input type="submit" value="查询稿件" /><input type="button" value="增加稿件" onClick="_15_addArticle();" /></div><script type="text/javascript">function _15_addArticle() {var url = 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles';if (toggle_id_journal_article_searchcurClickValue == 'basic') {url += '&_15_title=' + document._15_fm._15_keywords.value;submitForm(document.hrefFm, url);}else {document._15_fm.method = 'post';submitForm(document._15_fm, url);}}</script></form></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_15_',portletId: '15'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form><script type="text/javascript">Liferay.Session.init({autoExtend: false,timeout: 30,timeoutWarning: 1,redirectOnExpiration: false});</script></body>
-</html>
-
-2023-12-05 11:16:30,108 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['测试比对样品 - 稿件管理']
-2023-12-05 11:16:30,109 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:30,109 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 11:16:30,109 - root - INFO - 动态变量result替换成功：['测试比对样品 - 稿件管理']
-2023-12-05 11:16:30,109 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：测试比对样品 - 稿件管理
-2023-12-05 11:16:30,109 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:16:30,110 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 11:16:30,110 - root - INFO - 动态变量result替换成功：测试比对样品 - 稿件管理
-2023-12-05 11:16:30,110 - root - INFO - 需要动态替换的数据驱动变量为：['预期结果']
-2023-12-05 11:16:30,110 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：测试比对样品 - 稿件管理==测试比对样品 - 稿件管理
-2023-12-05 11:16:30,750 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：3
-        通过用例数：3
-        失败用例数：0
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 100.0 %
-        
-2023-12-05 11:16:30,813 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 11:25:22,696 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 11:25:22,697 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-05 11:25:22,934 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:25:22,995 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 11:25:22,995 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 11:25:22,995 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-05 11:25:23,227 - root - INFO - post接口的响应时间：0.022797
-2023-12-05 11:25:23,287 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 11:25:23,367 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 11:25:23,428 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 11:25:23,429 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 11:25:23,429 - root - INFO - post接口请求体data:{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试-内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试-新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
-2023-12-05 11:25:23,642 - root - INFO - post接口的响应时间：0.014049
-2023-12-05 11:25:23,642 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 11:25:23,769 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：1
-        通过用例数：1
-        失败用例数：0
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 100.0 %
-        
-2023-12-05 11:25:23,843 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:17:50,612 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:17:50,614 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-05 17:17:51,671 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:17:51,675 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 17:17:51,675 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:17:51,675 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-05 17:17:51,712 - root - INFO - post接口的响应时间：0.034585
-2023-12-05 17:17:51,715 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 17:17:51,737 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:17:51,739 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:17:51,740 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:17:51,740 - root - INFO - post接口请求体data:{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试-内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试-新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
-2023-12-05 17:17:51,770 - root - INFO - post接口的响应时间：0.013054
-2023-12-05 17:17:51,770 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:17:51,789 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:17:51,792 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:17:51,793 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
-2023-12-05 17:17:51,793 - root - INFO - post接口请求体data:{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
-2023-12-05 17:17:51,819 - root - INFO - post接口的响应时间：0.009029
-2023-12-05 17:17:51,820 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:17:51,824 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:17:51,824 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 17:17:51,824 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 登录</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><style type="text/css">#p_p_id_58_ .portlet {
-background-color: #FFFFFF;
-border-width: 2px;
-border-style:;
-margin-top: 0px;
-margin-right: 120px;
-margin-bottom: 0px;
-margin-left: 120px;
-text-align: left
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10686";},getGroupId: function() {return "14";},getUserId: function() {return "5";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/web/guest/home";},isPrivateLayout: function() {return "false";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return false;},isStateExclusive: function() {return false;},isStateMaximized: function() {return false;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "5D7EEFE3C675CD5204BCD37D7C0F8D02";}};// ]]></script><script src="/html/js/barebone_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/web/guest/home';Liferay.currentURLEncoded = '%2Fweb%2Fguest%2Fhome';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});Liferay.Portlet.list = ['58'];if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701767666959) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-visible">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-in">
-<a href="/c/portal/login?p_l_id=10686">登录</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/web/guest/home" ><span>登录</span></a>
-</li>
-</ul>
-</div>	
-<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_  " ><a name="p_103"></a><script type="text/javascript"></script></div><div class="columns-1" id="content-wrapper"><div class="lfr-column" id="column-1"><div class="lfr-portlet-column" id="layout-column_column-1"><div id="p_p_id_58_" class="portlet-boundary portlet-boundary_58_  portlet-login" ><a name="p_58"></a><div class="portlet" id="portlet-wrapper-58">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/login/icon.png" /> 登录
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_58">
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><form action="http://127.0.0.1/web/guest/home?p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Fview&_58_cmd=update" method="post" name="_58_fm"><input name="_58_redirect" type="hidden" value="" /><table class="lfr-table"><tr><td>用户名</td><td><input name="_58_login" style="width: 120px;" type="text" value="" /></td></tr><tr><td>密码</td><td><input id="_58_password" name="_58_password" style="width: 120px;" type="password" value="" /><span id="_58_passwordCapsLockSpan" style="display: none;">大写键打开。</span></td></tr></table><br /><input type="submit" value="登录" /></form><script type="text/javascript">jQuery(function() {jQuery('#_58_password').keypress(function(event) {Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');});});</script></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_58_',portletId: '58'});</script></div></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form></body>
-</html>
-
-2023-12-05 17:17:51,848 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
-2023-12-05 17:17:51,849 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:17:51,850 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 17:17:51,850 - root - INFO - 动态变量result替换成功：[]
-2023-12-05 17:17:51,905 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：1
-        通过用例数：1
-        失败用例数：0
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 100.0 %
-        
-2023-12-05 17:17:51,926 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:19:08,457 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:19:08,469 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-05 17:19:08,596 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:19:08,611 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 17:19:08,612 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:19:08,612 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-05 17:19:08,721 - root - INFO - post接口的响应时间：0.057296
-2023-12-05 17:19:08,734 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 17:19:08,766 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:19:08,780 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:19:08,780 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:19:08,780 - root - INFO - post接口请求体data:{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试-内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试-新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
-2023-12-05 17:19:08,853 - root - INFO - post接口的响应时间：0.015675
-2023-12-05 17:19:08,865 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:19:08,893 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:19:08,906 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:19:08,906 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
-2023-12-05 17:19:08,906 - root - INFO - post接口请求体data:{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
-2023-12-05 17:19:08,946 - root - INFO - post接口的响应时间：0.038063
-2023-12-05 17:19:08,947 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:19:08,947 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:19:08,947 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 17:19:08,947 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 稿件管理</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><link href="/html/portlet/journal/css.jsp?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507269" rel="stylesheet" type="text/css" /><style type="text/css">#p_p_id_15_ .portlet {
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10830";},getGroupId: function() {return "10780";},getUserId: function() {return "11904";},getUserName: function() {return "\u0055\u0073\u0065\u0072\u0020\u0074\u0065\u0073\u0074\u0030\u0031";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/group/10779/articles";},isPrivateLayout: function() {return "true";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return true;},isStateExclusive: function() {return false;},isStateMaximized: function() {return true;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "0E5828DAEB044F33EC447109F5BF15B4";}};// ]]></script><script src="/html/js/everything_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles';Liferay.currentURLEncoded = '%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}Liferay._editControlsState = 'hidden';if (Liferay.Util) {Liferay.Util.toggleControls();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701767666959) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-hidden">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome test01!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-out">
-<a href="/c/portal/logout">退出</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/group/10779/articles" ><span>稿件管理</span></a>
-</li>
-<li class="">
-<a href="/group/10779/upload" ><span>文档上传下载</span></a>
-</li>
-</ul>
-</div>	
-<div class="columns-max" id="content-wrapper"><div class="lfr-column" id="column-1"><div id="p_p_id_15_" class="portlet-boundary portlet-boundary_15_  portlet-journal" ><a name="p_15"></a><div class="portlet" id="portlet-wrapper-15">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/journal/icon.png" /> 稿件管理
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_15">
-<a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=normal" class="portlet-icon-back">返回首页</a>
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><script type="text/javascript">function _15_deleteArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteFeeds() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u9972\u6599\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteFeedIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_feed&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteStructures() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u7ed3\u6784\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteStructureIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_structure&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteTemplates() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6a21\u677f\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteTemplateIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_template&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_expireArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5230\u671f\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "expire";document._15_fm._15_groupId.value = "10780";document._15_fm._15_expireArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}</script><form action="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles" method="post" name="_15_fm" onSubmit="submitForm(this); return false;"><input name="_15_cmd" type="hidden" value="" /><input name="_15_tabs1TabsScroll" type="hidden" /><ul class="tabs ui-tabs"><li class="current first last" id="_15_tabs1articlesTabsId"><span>稿件</span></li></ul><script type="text/javascript">Liferay.Portal.Tabs.show("_15_tabs1", ['articles'], "articles");</script><input name="_15_groupId" type="hidden" value="" /><input name="_15_deleteArticleIds" type="hidden" value="" /><input name="_15_expireArticleIds" type="hidden" value="" /><script type="text/javascript">var toggle_id_journal_article_searchcurClickValue = "basic";function toggle_id_journal_article_searchtoggleSearch() {jQuery("#toggle_id_journal_article_searchbasic").toggle();jQuery("#toggle_id_journal_article_searchadvanced").toggle();var advancedSearchObj = jQuery("#toggle_id_journal_article_searchadvancedSearch");if (toggle_id_journal_article_searchcurClickValue == "basic") {toggle_id_journal_article_searchcurClickValue = "advanced";advancedSearchObj.val(true);}else {toggle_id_journal_article_searchcurClickValue = "basic";advancedSearchObj.val(false);}jQuery.ajax({url: 'portal/session_click',data: {'toggle_id_journal_article_search': toggle_id_journal_article_searchcurClickValue}});}</script><input id="toggle_id_journal_article_searchadvancedSearch" name="_15_advancedSearch" type="hidden" value="false" /><div id="toggle_id_journal_article_searchbasic" style="display: block;"><label for="toggle_id_journal_article_searchkeywords">查询</label><input id="toggle_id_journal_article_searchkeywords" name="_15_keywords" size="30" type="text" value="自动化测试" />&nbsp;<a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1" >高级 &raquo;</a></div><div id="toggle_id_journal_article_searchadvanced" style="display: none;">匹配下列<select name="_15_andOperator"><option selected value="1">所有</option><option value="0">任何</option></select>查询条件：<br /><br /><table class="lfr-table"><tr><td>编号</td><td>版本</td><td>标题</td><td>内容</td></tr><tr><td><input name="_15_searchArticleId" size="20" type="text" value="" /></td><td><input name="_15_version" size="20" type="text" value="" /></td><td><input name="_15_title" size="20" type="text" value="" /></td><td><input name="_15_content" size="20" type="text" value="" /></td></tr></table><br /><a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1">&laquo; 基本</a></div><br /><div><input type="submit" value="查询稿件" /><input type="button" value="增加稿件" onClick="_15_addArticle();" /></div><script type="text/javascript">function _15_addArticle() {var url = 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';if (toggle_id_journal_article_searchcurClickValue == 'basic') {url += '&_15_title=' + document._15_fm._15_keywords.value;submitForm(document.hrefFm, url);}else {document._15_fm.method = 'post';submitForm(document._15_fm, url);}}Liferay.Util.focusFormField(document._15_fm._15_searchArticleId);Liferay.Util.focusFormField(document._15_fm._15_keywords);</script><div class="separator"><!-- --></div><input type="button" value="到期" onClick="_15_expireArticles();" /><input type="button" value="删除" onClick="_15_deleteArticles();" /><br /><br /><div class="taglib-search-iterator-page-iterator-top"><script type="text/javascript">function _15_submitPageIterator() {var curValue = jQuery("option:selected", this).val();if (true) {var href = "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&cur" + "=" + curValue + "";location.href = href;}else {document._15_fm.cur.value = curValue;null;}}jQuery(function() {jQuery('._15_pageIteratorValue').change(_15_submitPageIterator);});</script><div class="taglib-page-iterator"><div class="search-results">显示1条结果。</div></div></div><div class="results-grid"><table class="taglib-search-iterator"><tr class="portlet-section-header results-header"><th class="col-1"><input name="_15_allRowIds" type="checkbox" onClick="Liferay.Util.checkAll(_15_fm, '_15_rowIds', this);"></th><th class="col-2"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=id&_15_orderByType=desc">编号</a></th><th class="col-3"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=title&_15_orderByType=desc">标题</a></th><th class="col-4"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=version&_15_orderByType=desc">版本</a></th><th class="col-5">状态</th><th class="col-6"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=modified-date&_15_orderByType=asc"><i>修改过的日期</i></a></th><th class="col-7"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=display-date&_15_orderByType=desc">显示日期</a></th><th class="col-8">作者</th><th class="col-9">&nbsp;</th></tr><tr class="portlet-section-body results-row"onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"><td align="left" class="col-1" colspan="1" valign="middle"><input name="_15_rowIds" type="checkbox" value="54246_version_1.0" onClick="Liferay.Util.checkAllBox(_15_fm, '_15_rowIds', _15_allRowIds);"></td><td align="left" class="col-2" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54246&_15_version=1.0">54246</a></td><td align="left" class="col-3" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54246&_15_version=1.0">自动化测试&#045;新增</a></td><td align="left" class="col-4" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54246&_15_version=1.0">1.0</a></td><td align="left" class="col-5" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54246&_15_version=1.0">不批准</a></td><td align="left" class="col-6" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54246&_15_version=1.0">23-12-5 下午5:19</a></td><td align="left" class="col-7" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54246&_15_version=1.0">21-6-29 下午3:48</a></td><td align="left" class="col-8" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54246&_15_version=1.0">User test01</a></td></tr></table></div></form></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_15_',portletId: '15'});</script></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form><script type="text/javascript">Liferay.Session.init({autoExtend: false,timeout: 30,timeoutWarning: 1,redirectOnExpiration: false});</script></body>
-</html>
-
-2023-12-05 17:19:08,974 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54246', '自动化测试&#045;新增', '1.0', '不批准', '23-12-5 下午5:19', '21-6-29 下午3:48', 'User test01']
-2023-12-05 17:19:09,061 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:19:09,113 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 17:19:09,113 - root - INFO - 动态变量result替换成功：['54246', '自动化测试&#045;新增', '1.0', '不批准', '23-12-5 下午5:19', '21-6-29 下午3:48', 'User test01']
-2023-12-05 17:19:09,276 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：1
-        通过用例数：1
-        失败用例数：0
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 100.0 %
-        
-2023-12-05 17:19:09,330 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:20:28,760 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:20:28,821 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-05 17:20:29,001 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:29,064 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 17:20:29,064 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:20:29,065 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-05 17:20:29,314 - root - INFO - post接口的响应时间：0.035977
-2023-12-05 17:20:29,315 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 17:20:29,459 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:29,522 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:20:29,523 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:20:29,523 - root - INFO - post接口请求体data:{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
-2023-12-05 17:20:29,736 - root - INFO - post接口的响应时间：0.01522
-2023-12-05 17:20:29,799 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:20:29,875 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:29,938 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:20:29,938 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
-2023-12-05 17:20:29,938 - root - INFO - post接口请求体data:{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
-2023-12-05 17:20:30,064 - root - INFO - post接口的响应时间：0.062269
-2023-12-05 17:20:30,124 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:20:30,186 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:30,186 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 17:20:30,186 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 稿件管理</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><link href="/html/portlet/journal/css.jsp?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507269" rel="stylesheet" type="text/css" /><style type="text/css">#p_p_id_15_ .portlet {
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10830";},getGroupId: function() {return "10780";},getUserId: function() {return "11904";},getUserName: function() {return "\u0055\u0073\u0065\u0072\u0020\u0074\u0065\u0073\u0074\u0030\u0031";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/group/10779/articles";},isPrivateLayout: function() {return "true";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return true;},isStateExclusive: function() {return false;},isStateMaximized: function() {return true;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "0E5828DAEB044F33EC447109F5BF15B4";}};// ]]></script><script src="/html/js/everything_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles';Liferay.currentURLEncoded = '%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}Liferay._editControlsState = 'hidden';if (Liferay.Util) {Liferay.Util.toggleControls();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701767666959) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-hidden">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome test01!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-out">
-<a href="/c/portal/logout">退出</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/group/10779/articles" ><span>稿件管理</span></a>
-</li>
-<li class="">
-<a href="/group/10779/upload" ><span>文档上传下载</span></a>
-</li>
-</ul>
-</div>	
-<div class="columns-max" id="content-wrapper"><div class="lfr-column" id="column-1"><div id="p_p_id_15_" class="portlet-boundary portlet-boundary_15_  portlet-journal" ><a name="p_15"></a><div class="portlet" id="portlet-wrapper-15">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/journal/icon.png" /> 稿件管理
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_15">
-<a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=normal" class="portlet-icon-back">返回首页</a>
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><script type="text/javascript">function _15_deleteArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteFeeds() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u9972\u6599\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteFeedIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_feed&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteStructures() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u7ed3\u6784\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteStructureIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_structure&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteTemplates() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6a21\u677f\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteTemplateIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_template&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_expireArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5230\u671f\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "expire";document._15_fm._15_groupId.value = "10780";document._15_fm._15_expireArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}</script><form action="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles" method="post" name="_15_fm" onSubmit="submitForm(this); return false;"><input name="_15_cmd" type="hidden" value="" /><input name="_15_tabs1TabsScroll" type="hidden" /><ul class="tabs ui-tabs"><li class="current first last" id="_15_tabs1articlesTabsId"><span>稿件</span></li></ul><script type="text/javascript">Liferay.Portal.Tabs.show("_15_tabs1", ['articles'], "articles");</script><input name="_15_groupId" type="hidden" value="" /><input name="_15_deleteArticleIds" type="hidden" value="" /><input name="_15_expireArticleIds" type="hidden" value="" /><script type="text/javascript">var toggle_id_journal_article_searchcurClickValue = "basic";function toggle_id_journal_article_searchtoggleSearch() {jQuery("#toggle_id_journal_article_searchbasic").toggle();jQuery("#toggle_id_journal_article_searchadvanced").toggle();var advancedSearchObj = jQuery("#toggle_id_journal_article_searchadvancedSearch");if (toggle_id_journal_article_searchcurClickValue == "basic") {toggle_id_journal_article_searchcurClickValue = "advanced";advancedSearchObj.val(true);}else {toggle_id_journal_article_searchcurClickValue = "basic";advancedSearchObj.val(false);}jQuery.ajax({url: 'portal/session_click',data: {'toggle_id_journal_article_search': toggle_id_journal_article_searchcurClickValue}});}</script><input id="toggle_id_journal_article_searchadvancedSearch" name="_15_advancedSearch" type="hidden" value="false" /><div id="toggle_id_journal_article_searchbasic" style="display: block;"><label for="toggle_id_journal_article_searchkeywords">查询</label><input id="toggle_id_journal_article_searchkeywords" name="_15_keywords" size="30" type="text" value="自动化测试新增" />&nbsp;<a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1" >高级 &raquo;</a></div><div id="toggle_id_journal_article_searchadvanced" style="display: none;">匹配下列<select name="_15_andOperator"><option selected value="1">所有</option><option value="0">任何</option></select>查询条件：<br /><br /><table class="lfr-table"><tr><td>编号</td><td>版本</td><td>标题</td><td>内容</td></tr><tr><td><input name="_15_searchArticleId" size="20" type="text" value="" /></td><td><input name="_15_version" size="20" type="text" value="" /></td><td><input name="_15_title" size="20" type="text" value="" /></td><td><input name="_15_content" size="20" type="text" value="" /></td></tr></table><br /><a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1">&laquo; 基本</a></div><br /><div><input type="submit" value="查询稿件" /><input type="button" value="增加稿件" onClick="_15_addArticle();" /></div><script type="text/javascript">function _15_addArticle() {var url = 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';if (toggle_id_journal_article_searchcurClickValue == 'basic') {url += '&_15_title=' + document._15_fm._15_keywords.value;submitForm(document.hrefFm, url);}else {document._15_fm.method = 'post';submitForm(document._15_fm, url);}}Liferay.Util.focusFormField(document._15_fm._15_searchArticleId);Liferay.Util.focusFormField(document._15_fm._15_keywords);</script><div class="separator"><!-- --></div><input type="button" value="到期" onClick="_15_expireArticles();" /><input type="button" value="删除" onClick="_15_deleteArticles();" /><br /><br /><div class="taglib-search-iterator-page-iterator-top"><script type="text/javascript">function _15_submitPageIterator() {var curValue = jQuery("option:selected", this).val();if (true) {var href = "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&cur" + "=" + curValue + "";location.href = href;}else {document._15_fm.cur.value = curValue;null;}}jQuery(function() {jQuery('._15_pageIteratorValue').change(_15_submitPageIterator);});</script><div class="taglib-page-iterator"><div class="search-results">显示1条结果。</div></div></div><div class="results-grid"><table class="taglib-search-iterator"><tr class="portlet-section-header results-header"><th class="col-1"><input name="_15_allRowIds" type="checkbox" onClick="Liferay.Util.checkAll(_15_fm, '_15_rowIds', this);"></th><th class="col-2"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=id&_15_orderByType=desc">编号</a></th><th class="col-3"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=title&_15_orderByType=desc">标题</a></th><th class="col-4"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=version&_15_orderByType=desc">版本</a></th><th class="col-5">状态</th><th class="col-6"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=modified-date&_15_orderByType=asc"><i>修改过的日期</i></a></th><th class="col-7"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=display-date&_15_orderByType=desc">显示日期</a></th><th class="col-8">作者</th><th class="col-9">&nbsp;</th></tr><tr class="portlet-section-body results-row"onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"><td align="left" class="col-1" colspan="1" valign="middle"><input name="_15_rowIds" type="checkbox" value="54251_version_1.0" onClick="Liferay.Util.checkAllBox(_15_fm, '_15_rowIds', _15_allRowIds);"></td><td align="left" class="col-2" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54251&_15_version=1.0">54251</a></td><td align="left" class="col-3" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54251&_15_version=1.0">自动化测试新增</a></td><td align="left" class="col-4" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54251&_15_version=1.0">1.0</a></td><td align="left" class="col-5" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54251&_15_version=1.0">不批准</a></td><td align="left" class="col-6" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54251&_15_version=1.0">23-12-5 下午5:20</a></td><td align="left" class="col-7" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54251&_15_version=1.0">21-6-29 下午3:48</a></td><td align="left" class="col-8" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54251&_15_version=1.0">User test01</a></td></tr></table></div></form></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_15_',portletId: '15'});</script></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form><script type="text/javascript">Liferay.Session.init({autoExtend: false,timeout: 30,timeoutWarning: 1,redirectOnExpiration: false});</script></body>
-</html>
-
-2023-12-05 17:20:30,250 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54251', '自动化测试新增', '1.0', '不批准', '23-12-5 下午5:20', '21-6-29 下午3:48', 'User test01']
-2023-12-05 17:20:30,251 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:30,312 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 17:20:30,523 - root - INFO - 动态变量result替换成功：['54251', '自动化测试新增', '1.0', '不批准', '23-12-5 下午5:20', '21-6-29 下午3:48', 'User test01']
-2023-12-05 17:20:31,106 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：1
-        通过用例数：1
-        失败用例数：0
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 100.0 %
-        
-2023-12-05 17:20:31,262 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:20:50,688 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:20:50,812 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-05 17:20:51,050 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:51,174 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 17:20:51,174 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:20:51,174 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-05 17:20:51,589 - root - INFO - post接口的响应时间：0.030745
-2023-12-05 17:20:51,712 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 17:20:51,857 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:51,981 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:20:51,982 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:20:51,982 - root - INFO - post接口请求体data:{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
-2023-12-05 17:20:52,381 - root - INFO - post接口的响应时间：0.013604
-2023-12-05 17:20:52,504 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:20:52,643 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:52,644 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:20:52,644 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
-2023-12-05 17:20:52,645 - root - INFO - post接口请求体data:{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
-2023-12-05 17:20:53,028 - root - INFO - post接口的响应时间：0.132925
-2023-12-05 17:20:53,151 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:20:53,151 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:53,275 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 17:20:53,276 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 稿件管理</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><link href="/html/portlet/journal/css.jsp?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507269" rel="stylesheet" type="text/css" /><style type="text/css">#p_p_id_15_ .portlet {
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10830";},getGroupId: function() {return "10780";},getUserId: function() {return "11904";},getUserName: function() {return "\u0055\u0073\u0065\u0072\u0020\u0074\u0065\u0073\u0074\u0030\u0031";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/group/10779/articles";},isPrivateLayout: function() {return "true";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return true;},isStateExclusive: function() {return false;},isStateMaximized: function() {return true;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "0E5828DAEB044F33EC447109F5BF15B4";}};// ]]></script><script src="/html/js/everything_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles';Liferay.currentURLEncoded = '%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}Liferay._editControlsState = 'hidden';if (Liferay.Util) {Liferay.Util.toggleControls();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701767666959) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-hidden">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome test01!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-out">
-<a href="/c/portal/logout">退出</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/group/10779/articles" ><span>稿件管理</span></a>
-</li>
-<li class="">
-<a href="/group/10779/upload" ><span>文档上传下载</span></a>
-</li>
-</ul>
-</div>	
-<div class="columns-max" id="content-wrapper"><div class="lfr-column" id="column-1"><div id="p_p_id_15_" class="portlet-boundary portlet-boundary_15_  portlet-journal" ><a name="p_15"></a><div class="portlet" id="portlet-wrapper-15">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/journal/icon.png" /> 稿件管理
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_15">
-<a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=normal" class="portlet-icon-back">返回首页</a>
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><script type="text/javascript">function _15_deleteArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteFeeds() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u9972\u6599\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteFeedIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_feed&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteStructures() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u7ed3\u6784\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteStructureIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_structure&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteTemplates() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6a21\u677f\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteTemplateIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_template&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_expireArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5230\u671f\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "expire";document._15_fm._15_groupId.value = "10780";document._15_fm._15_expireArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}</script><form action="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles" method="post" name="_15_fm" onSubmit="submitForm(this); return false;"><input name="_15_cmd" type="hidden" value="" /><input name="_15_tabs1TabsScroll" type="hidden" /><ul class="tabs ui-tabs"><li class="current first last" id="_15_tabs1articlesTabsId"><span>稿件</span></li></ul><script type="text/javascript">Liferay.Portal.Tabs.show("_15_tabs1", ['articles'], "articles");</script><input name="_15_groupId" type="hidden" value="" /><input name="_15_deleteArticleIds" type="hidden" value="" /><input name="_15_expireArticleIds" type="hidden" value="" /><script type="text/javascript">var toggle_id_journal_article_searchcurClickValue = "basic";function toggle_id_journal_article_searchtoggleSearch() {jQuery("#toggle_id_journal_article_searchbasic").toggle();jQuery("#toggle_id_journal_article_searchadvanced").toggle();var advancedSearchObj = jQuery("#toggle_id_journal_article_searchadvancedSearch");if (toggle_id_journal_article_searchcurClickValue == "basic") {toggle_id_journal_article_searchcurClickValue = "advanced";advancedSearchObj.val(true);}else {toggle_id_journal_article_searchcurClickValue = "basic";advancedSearchObj.val(false);}jQuery.ajax({url: 'portal/session_click',data: {'toggle_id_journal_article_search': toggle_id_journal_article_searchcurClickValue}});}</script><input id="toggle_id_journal_article_searchadvancedSearch" name="_15_advancedSearch" type="hidden" value="false" /><div id="toggle_id_journal_article_searchbasic" style="display: block;"><label for="toggle_id_journal_article_searchkeywords">查询</label><input id="toggle_id_journal_article_searchkeywords" name="_15_keywords" size="30" type="text" value="自动化测试新增" />&nbsp;<a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1" >高级 &raquo;</a></div><div id="toggle_id_journal_article_searchadvanced" style="display: none;">匹配下列<select name="_15_andOperator"><option selected value="1">所有</option><option value="0">任何</option></select>查询条件：<br /><br /><table class="lfr-table"><tr><td>编号</td><td>版本</td><td>标题</td><td>内容</td></tr><tr><td><input name="_15_searchArticleId" size="20" type="text" value="" /></td><td><input name="_15_version" size="20" type="text" value="" /></td><td><input name="_15_title" size="20" type="text" value="" /></td><td><input name="_15_content" size="20" type="text" value="" /></td></tr></table><br /><a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1">&laquo; 基本</a></div><br /><div><input type="submit" value="查询稿件" /><input type="button" value="增加稿件" onClick="_15_addArticle();" /></div><script type="text/javascript">function _15_addArticle() {var url = 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';if (toggle_id_journal_article_searchcurClickValue == 'basic') {url += '&_15_title=' + document._15_fm._15_keywords.value;submitForm(document.hrefFm, url);}else {document._15_fm.method = 'post';submitForm(document._15_fm, url);}}Liferay.Util.focusFormField(document._15_fm._15_searchArticleId);Liferay.Util.focusFormField(document._15_fm._15_keywords);</script><div class="separator"><!-- --></div><input type="button" value="到期" onClick="_15_expireArticles();" /><input type="button" value="删除" onClick="_15_deleteArticles();" /><br /><br /><div class="taglib-search-iterator-page-iterator-top"><script type="text/javascript">function _15_submitPageIterator() {var curValue = jQuery("option:selected", this).val();if (true) {var href = "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&cur" + "=" + curValue + "";location.href = href;}else {document._15_fm.cur.value = curValue;null;}}jQuery(function() {jQuery('._15_pageIteratorValue').change(_15_submitPageIterator);});</script><div class="taglib-page-iterator"><div class="search-results">显示1条结果。</div></div></div><div class="results-grid"><table class="taglib-search-iterator"><tr class="portlet-section-header results-header"><th class="col-1"><input name="_15_allRowIds" type="checkbox" onClick="Liferay.Util.checkAll(_15_fm, '_15_rowIds', this);"></th><th class="col-2"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=id&_15_orderByType=desc">编号</a></th><th class="col-3"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=title&_15_orderByType=desc">标题</a></th><th class="col-4"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=version&_15_orderByType=desc">版本</a></th><th class="col-5">状态</th><th class="col-6"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=modified-date&_15_orderByType=asc"><i>修改过的日期</i></a></th><th class="col-7"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=display-date&_15_orderByType=desc">显示日期</a></th><th class="col-8">作者</th><th class="col-9">&nbsp;</th></tr><tr class="portlet-section-body results-row"onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"><td align="left" class="col-1" colspan="1" valign="middle"><input name="_15_rowIds" type="checkbox" value="54256_version_1.0" onClick="Liferay.Util.checkAllBox(_15_fm, '_15_rowIds', _15_allRowIds);"></td><td align="left" class="col-2" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54256&_15_version=1.0">54256</a></td><td align="left" class="col-3" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54256&_15_version=1.0">自动化测试新增</a></td><td align="left" class="col-4" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54256&_15_version=1.0">1.0</a></td><td align="left" class="col-5" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54256&_15_version=1.0">不批准</a></td><td align="left" class="col-6" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54256&_15_version=1.0">23-12-5 下午5:20</a></td><td align="left" class="col-7" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54256&_15_version=1.0">21-6-29 下午3:48</a></td><td align="left" class="col-8" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54256&_15_version=1.0">User test01</a></td></tr></table></div></form></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_15_',portletId: '15'});</script></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form><script type="text/javascript">Liferay.Session.init({autoExtend: false,timeout: 30,timeoutWarning: 1,redirectOnExpiration: false});</script></body>
-</html>
-
-2023-12-05 17:20:53,399 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54256', '自动化测试新增', '1.0', '不批准', '23-12-5 下午5:20', '21-6-29 下午3:48', 'User test01']
-2023-12-05 17:20:53,400 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:20:53,400 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 17:20:53,400 - root - INFO - 动态变量result替换成功：['54256', '自动化测试新增', '1.0', '不批准', '23-12-5 下午5:20', '21-6-29 下午3:48', 'User test01']
-2023-12-05 17:20:53,400 - root - INFO - 执行ListAction.get_list_value方法，返回值result==>获取列表中值成功：自动化测试新增
-2023-12-05 17:20:55,029 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：1
-        通过用例数：1
-        失败用例数：0
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 100.0 %
-        
-2023-12-05 17:20:55,265 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:25:23,400 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:25:23,623 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-05 17:25:23,965 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:25:24,191 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 17:25:24,191 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:25:24,191 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-05 17:25:24,932 - root - INFO - post接口的响应时间：0.05345
-2023-12-05 17:25:25,157 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 17:25:25,395 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:25:25,396 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:25:25,396 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
-2023-12-05 17:25:25,397 - root - INFO - post接口请求体data:{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
-2023-12-05 17:25:26,302 - root - INFO - post接口的响应时间：0.677463
-2023-12-05 17:25:26,303 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:25:26,303 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:25:26,303 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 17:25:26,303 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 稿件管理</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><link href="/html/portlet/journal/css.jsp?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507269" rel="stylesheet" type="text/css" /><style type="text/css">#p_p_id_15_ .portlet {
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10830";},getGroupId: function() {return "10780";},getUserId: function() {return "11904";},getUserName: function() {return "\u0055\u0073\u0065\u0072\u0020\u0074\u0065\u0073\u0074\u0030\u0031";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/group/10779/articles";},isPrivateLayout: function() {return "true";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return true;},isStateExclusive: function() {return false;},isStateMaximized: function() {return true;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "0E5828DAEB044F33EC447109F5BF15B4";}};// ]]></script><script src="/html/js/everything_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles';Liferay.currentURLEncoded = '%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}Liferay._editControlsState = 'hidden';if (Liferay.Util) {Liferay.Util.toggleControls();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701767666959) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-hidden">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome test01!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-out">
-<a href="/c/portal/logout">退出</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/group/10779/articles" ><span>稿件管理</span></a>
-</li>
-<li class="">
-<a href="/group/10779/upload" ><span>文档上传下载</span></a>
-</li>
-</ul>
-</div>	
-<div class="columns-max" id="content-wrapper"><div class="lfr-column" id="column-1"><div id="p_p_id_15_" class="portlet-boundary portlet-boundary_15_  portlet-journal" ><a name="p_15"></a><div class="portlet" id="portlet-wrapper-15">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/journal/icon.png" /> 稿件管理
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_15">
-<a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=normal" class="portlet-icon-back">返回首页</a>
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><script type="text/javascript">function _15_deleteArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteFeeds() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u9972\u6599\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteFeedIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_feed&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteStructures() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u7ed3\u6784\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteStructureIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_structure&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteTemplates() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6a21\u677f\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteTemplateIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_template&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_expireArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5230\u671f\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "expire";document._15_fm._15_groupId.value = "10780";document._15_fm._15_expireArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}</script><form action="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles" method="post" name="_15_fm" onSubmit="submitForm(this); return false;"><input name="_15_cmd" type="hidden" value="" /><input name="_15_tabs1TabsScroll" type="hidden" /><ul class="tabs ui-tabs"><li class="current first last" id="_15_tabs1articlesTabsId"><span>稿件</span></li></ul><script type="text/javascript">Liferay.Portal.Tabs.show("_15_tabs1", ['articles'], "articles");</script><input name="_15_groupId" type="hidden" value="" /><input name="_15_deleteArticleIds" type="hidden" value="" /><input name="_15_expireArticleIds" type="hidden" value="" /><script type="text/javascript">var toggle_id_journal_article_searchcurClickValue = "basic";function toggle_id_journal_article_searchtoggleSearch() {jQuery("#toggle_id_journal_article_searchbasic").toggle();jQuery("#toggle_id_journal_article_searchadvanced").toggle();var advancedSearchObj = jQuery("#toggle_id_journal_article_searchadvancedSearch");if (toggle_id_journal_article_searchcurClickValue == "basic") {toggle_id_journal_article_searchcurClickValue = "advanced";advancedSearchObj.val(true);}else {toggle_id_journal_article_searchcurClickValue = "basic";advancedSearchObj.val(false);}jQuery.ajax({url: 'portal/session_click',data: {'toggle_id_journal_article_search': toggle_id_journal_article_searchcurClickValue}});}</script><input id="toggle_id_journal_article_searchadvancedSearch" name="_15_advancedSearch" type="hidden" value="false" /><div id="toggle_id_journal_article_searchbasic" style="display: block;"><label for="toggle_id_journal_article_searchkeywords">查询</label><input id="toggle_id_journal_article_searchkeywords" name="_15_keywords" size="30" type="text" value="自动化测试新增" />&nbsp;<a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1" >高级 &raquo;</a></div><div id="toggle_id_journal_article_searchadvanced" style="display: none;">匹配下列<select name="_15_andOperator"><option selected value="1">所有</option><option value="0">任何</option></select>查询条件：<br /><br /><table class="lfr-table"><tr><td>编号</td><td>版本</td><td>标题</td><td>内容</td></tr><tr><td><input name="_15_searchArticleId" size="20" type="text" value="" /></td><td><input name="_15_version" size="20" type="text" value="" /></td><td><input name="_15_title" size="20" type="text" value="" /></td><td><input name="_15_content" size="20" type="text" value="" /></td></tr></table><br /><a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1">&laquo; 基本</a></div><br /><div><input type="submit" value="查询稿件" /><input type="button" value="增加稿件" onClick="_15_addArticle();" /></div><script type="text/javascript">function _15_addArticle() {var url = 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';if (toggle_id_journal_article_searchcurClickValue == 'basic') {url += '&_15_title=' + document._15_fm._15_keywords.value;submitForm(document.hrefFm, url);}else {document._15_fm.method = 'post';submitForm(document._15_fm, url);}}Liferay.Util.focusFormField(document._15_fm._15_searchArticleId);Liferay.Util.focusFormField(document._15_fm._15_keywords);</script><div class="separator"><!-- --></div><input type="button" value="到期" onClick="_15_expireArticles();" /><input type="button" value="删除" onClick="_15_deleteArticles();" /><br /><br /><div class="taglib-search-iterator-page-iterator-top"><script type="text/javascript">function _15_submitPageIterator() {var curValue = jQuery("option:selected", this).val();if (true) {var href = "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&cur" + "=" + curValue + "";location.href = href;}else {document._15_fm.cur.value = curValue;null;}}jQuery(function() {jQuery('._15_pageIteratorValue').change(_15_submitPageIterator);});</script><div class="taglib-page-iterator"><div class="search-results">显示0条结果。</div></div></div><div class="results-grid"><table class="taglib-search-iterator"><tr class="portlet-section-header results-header"><th class="col-1"><input name="_15_allRowIds" type="checkbox" onClick="Liferay.Util.checkAll(_15_fm, '_15_rowIds', this);"></th><th class="col-2"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=id&_15_orderByType=desc">编号</a></th><th class="col-3"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=title&_15_orderByType=desc">标题</a></th><th class="col-4"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=version&_15_orderByType=desc">版本</a></th><th class="col-5">状态</th><th class="col-6"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=modified-date&_15_orderByType=asc"><i>修改过的日期</i></a></th><th class="col-7"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%B0%E5%A2%9E&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=display-date&_15_orderByType=desc">显示日期</a></th><th class="col-8">作者</th><th class="col-9">&nbsp;</th></tr><tr class="portlet-section-body results-row"><td align="center" colspan="9">文章未被发现。</td></tr></table></div></form></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_15_',portletId: '15'});</script></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form><script type="text/javascript">Liferay.Session.init({autoExtend: false,timeout: 30,timeoutWarning: 1,redirectOnExpiration: false});</script></body>
-</html>
-
-2023-12-05 17:25:26,529 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：[]
-2023-12-05 17:25:27,211 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:25:27,531 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 17:25:27,532 - root - INFO - 动态变量result替换成功：[]
-2023-12-05 17:25:27,532 - root - INFO - [CheckAction.equal]校验两个值相等，验证成功：[]==[]
-2023-12-05 17:25:29,144 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：1
-        通过用例数：1
-        失败用例数：0
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 100.0 %
-        
-2023-12-05 17:25:29,479 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:31:29,025 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试开始】* * * * * * * * * * * * * * * * * * * * 
-2023-12-05 17:31:29,026 - root - INFO - 加载运行设置 ==> 自动化测试类型：http，测试报告类型：allure，项目测试地址：http://127.0.0.1，是否发送邮件：no
-2023-12-05 17:31:29,797 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:30,121 - root - INFO - post接口调用开始:http://127.0.0.1/web/guest/home
-2023-12-05 17:31:30,121 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:31:30,122 - root - INFO - post接口请求体data:{'_58_redirect': '', '_58_login': 'test01', '_58_password': '1111'}
-2023-12-05 17:31:31,196 - root - INFO - post接口的响应时间：0.032465
-2023-12-05 17:31:31,196 - root - INFO - post接口调用完成:http://127.0.0.1/web/guest/home
-2023-12-05 17:31:31,923 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,返回text],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:32,281 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:31:32,282 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:31:32,282 - root - INFO - post接口请求体data:{'_15_portletResource': '', '_15_cmd': 'add', '_15_tabs2': '', '_15_redirect': '/group/10779/articles', '_15_originalRedirect': '/group/10779/articles', '_15_referringPortletResource': '', '_15_groupId': '10780', '_15_articleId': '', '_15_version': '1.0', '_15_content': '自动化测试内容', '_15_articleURL': 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article', '_15_approve': '', '_15_saveAndContinue': '', '_15_deleteArticleIds': '_version_1.0', '_15_expireArticleIds': '_version_1.0', '_15_tabs1TabsScroll': '', '_15_newArticleId': '', '_15_autoArticleId': 'true', '_15_title': '自动化测试新增', '_15_structureId': '', '_15_templateId': '', '_15_type': 'general', '_15_tagsEntries': '', '_15_indexable': 'true', '_15_indexableCheckbox': 'on', '_15_displayDateMonth': '5', '_15_displayDateDay': '29', '_15_displayDateYear': '2021', '_15_displayDateHour': '3', '_15_displayDateMinute': '48', '_15_displayDateAmPm': '1', '_15_neverExpire': 'true', '_15_neverExpireCheckbox': 'on', '_15_neverReview': 'true', '_15_neverReviewCheckbox': 'on'}
-2023-12-05 17:31:33,366 - root - INFO - post接口的响应时间：0.013188
-2023-12-05 17:31:33,720 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:31:34,094 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:34,453 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:31:34,453 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
-2023-12-05 17:31:34,453 - root - INFO - post接口请求体data:{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试新增', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
-2023-12-05 17:31:35,528 - root - INFO - post接口的响应时间：0.358273
-2023-12-05 17:31:35,529 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:31:35,529 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值：id],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:35,530 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 17:31:35,530 - root - INFO - 动态变量result替换成功：None
-2023-12-05 17:31:35,530 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[获取列表中值：title],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:35,530 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 17:31:35,530 - root - INFO - 动态变量result替换成功：None
-2023-12-05 17:31:35,530 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件删除],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:35,530 - root - INFO - 需要动态替换的变量为：['id', 'id']
-2023-12-05 17:31:35,531 - root - INFO - 动态变量id替换成功：None
-2023-12-05 17:31:35,531 - root - INFO - 动态变量id替换成功：None
-2023-12-05 17:31:35,887 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:31:35,888 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-2023-12-05 17:31:35,888 - root - INFO - post接口请求体data:{'_15_cmd': 'delete', '_15_tabs1TabsScroll': '', '_15_groupId': '10780', '_15_deleteArticleIds': 'None_version_1.0', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': '', '_15_rowIds': 'None_version_1.0'}
-2023-12-05 17:31:38,371 - root - INFO - post接口的响应时间：1.064374
-2023-12-05 17:31:39,090 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:31:40,885 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件查询],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:41,600 - root - INFO - post接口调用开始:http://127.0.0.1/group/10779/articles
-2023-12-05 17:31:41,600 - root - INFO - post接口请求头headers:{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'text/html, application/xhtml+xml, image/jxr, */*', 'Referer': 'http://127.0.0.1/group/10779/articles'}
-2023-12-05 17:31:41,600 - root - INFO - post接口请求体data:{'_15_cmd': '', '_15_tabs1TabsScroll': '', '_15_groupId': '', '_15_deleteArticleIds': '', '_15_expireArticleIds': '', '_15_advancedSearch': 'false', '_15_keywords': '自动化测试', '_15_andOperator': '1', '_15_searchArticleId': '', '_15_version': '', '_15_title': '', '_15_content': ''}
-2023-12-05 17:31:43,028 - root - INFO - post接口的响应时间：0.35844
-2023-12-05 17:31:43,029 - root - INFO - post接口调用完成:http://127.0.0.1/group/10779/articles
-2023-12-05 17:31:43,029 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[字符串正则匹配],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:43,029 - root - INFO - 需要动态替换的变量为：['result_text']
-2023-12-05 17:31:43,030 - root - INFO - 动态变量result_text替换成功：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="nojs" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>测试比对样品 - 稿件管理</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><link rel="Shortcut Icon" href="/html/themes/classic/images/liferay.ico" /><link href="/c/portal/css_cached?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" type="text/css" rel="stylesheet" /><link href="/html/portlet/journal/css.jsp?themeId=classic&amp;colorSchemeId=01&amp;t=1701735507269" rel="stylesheet" type="text/css" /><style type="text/css">#p_p_id_15_ .portlet {
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px
-}
-</style><script type="text/javascript">// <![CDATAvar themeDisplay = {getCompanyId: function() {return "1";},getDoAsUserIdEncoded: function() {return "";},getPlid: function() {return "10830";},getGroupId: function() {return "10780";},getUserId: function() {return "11904";},getUserName: function() {return "\u0055\u0073\u0065\u0072\u0020\u0074\u0065\u0073\u0074\u0030\u0031";},getLayoutId: function() {return "1";},getLayoutURL: function() {return "/group/10779/articles";},isPrivateLayout: function() {return "true";},getParentLayoutId: function() {return "0";},getLanguageId: function() {return "zh_CN";},isFreeformLayout: function() {return false;},isSignedIn: function() {return true;},isStateExclusive: function() {return false;},isStateMaximized: function() {return true;},isStatePopUp: function() {return false;},getPathContext: function() {return "";},getPathImage: function() {return "/image";},getPathMain: function() {return "/c";},getPathThemeImages: function() {return "/html/themes/classic/images";},getPathThemeRoot: function() {return "/html/themes/classic";},getURLHome: function() {return "http://127.0.0.1";},getSessionId: function() {return "0E5828DAEB044F33EC447109F5BF15B4";}};// ]]></script><script src="/html/js/everything_packed.js?bn=5101" type="text/javascript"></script><script type="text/javascript">// <![CDATALiferay.currentURL = '/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles';Liferay.currentURLEncoded = '%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';jQuery(function() {Liferay.Util.addInputType();Liferay.Util.addInputFocus();});Liferay.Portlet.ready(function(portletId, jQueryObj) {Liferay.Util.addInputType(portletId, jQueryObj);if (Liferay.Menu) {new Liferay.Menu({button: '.lfr-actions',context: jQueryObj[0],trigger: '.lfr-trigger'});}});if (jQuery.ui && jQuery.ui.tabs) {jQuery.extend(jQuery.ui.tabs.defaults,{navClass: 'ui-tabs tabs',selectedClass: 'current'});}jQuery(function() {if (Liferay.Dock) {Liferay.Dock.init();}if (Liferay.Menu) {new Liferay.Menu({trigger: '.lfr-trigger',button: '.lfr-actions'});}if (Liferay.Notice) {Liferay.Notice.prototype.setClosing();}Liferay._editControlsState = 'hidden';if (Liferay.Util) {Liferay.Util.toggleControls();}});// ]]></script><link class="lfr-css-file" href="/html/themes/classic/css/everything_packed.css?companyId=1&amp;languageId=zh_CN&amp;themeId=classic&amp;colorSchemeId=01&amp;t=1701735507739" id="mainLiferayThemeCSS" rel="stylesheet" type="text/css" /><script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="/html/themes/classic/javascript/javascript.js?t=1701735507739" type="text/javascript"></script><script type="text/javascript">
-// <![CDATA
-// ]]>
-</script>
-<style type="text/css">
-/* <![CDATA[ */
-#banner .logo {
-padding: 0.52em 0.6em 0.53em;
-}
-#banner .logo a {
-background: url(/image/company_logo?img_id=11926&t=1701767666959) no-repeat;
-display: block;
-font-size: 0;
-height: 51px;
-text-indent: -9999em;
-width: 636px;
-}
-/* ]]> */
-</style>
-</head>
-<body class="blue controls-hidden">
-<div id="wrapper">
-<div id="banner">
-<h1 class="logo">
-<a class="png" href="http://127.0.0.1">测试比对样品</a>
-</h1>
-<div class="lfr-dock interactive-mode">
-<h2 class="user-greeting">
-<span>Welcome test01!</span>
-</h2>
-<ul class="lfr-dock-list">
-<li class="sign-out">
-<a href="/c/portal/logout">退出</a>
-</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="sort-pages modify-pages">
-<ul>
-<li class="selected">
-<a href="/group/10779/articles" ><span>稿件管理</span></a>
-</li>
-<li class="">
-<a href="/group/10779/upload" ><span>文档上传下载</span></a>
-</li>
-</ul>
-</div>	
-<div class="columns-max" id="content-wrapper"><div class="lfr-column" id="column-1"><div id="p_p_id_15_" class="portlet-boundary portlet-boundary_15_  portlet-journal" ><a name="p_15"></a><div class="portlet" id="portlet-wrapper-15">
-<div class="portlet-topper">
-<span class="portlet-title">
-<img alt="" src="/html/portlet/journal/icon.png" /> 稿件管理
-</span>
-<div class="portlet-icons" id="portlet-small-icon-bar_15">
-<a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=normal" class="portlet-icon-back">返回首页</a>
-</div>
-</div>
-<div class="portlet-content">
-<div class="portlet-content-container" style=""><div><script type="text/javascript">function _15_deleteArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteFeeds() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u9972\u6599\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteFeedIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_feed&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteStructures() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u7ed3\u6784\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteStructureIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_structure&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_deleteTemplates() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5220\u9664\u9009\u62e9\u7684\u6a21\u677f\u5417\u003f')) {document._15_fm._15_cmd.value = "delete";document._15_fm._15_groupId.value = "10780";document._15_fm._15_deleteTemplateIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_template&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}function _15_expireArticles() {if (confirm('\u662f\u5426\u786e\u5b9e\u8981\u5230\u671f\u9009\u62e9\u7684\u6587\u7ae0\u5417\u003f')) {document._15_fm._15_cmd.value = "expire";document._15_fm._15_groupId.value = "10780";document._15_fm._15_expireArticleIds.value = Liferay.Util.listCheckedExcept(document._15_fm, "_15_allRowIds");submitForm(document._15_fm, "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=1&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles");}}</script><form action="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles" method="post" name="_15_fm" onSubmit="submitForm(this); return false;"><input name="_15_cmd" type="hidden" value="" /><input name="_15_tabs1TabsScroll" type="hidden" /><ul class="tabs ui-tabs"><li class="current first last" id="_15_tabs1articlesTabsId"><span>稿件</span></li></ul><script type="text/javascript">Liferay.Portal.Tabs.show("_15_tabs1", ['articles'], "articles");</script><input name="_15_groupId" type="hidden" value="" /><input name="_15_deleteArticleIds" type="hidden" value="" /><input name="_15_expireArticleIds" type="hidden" value="" /><script type="text/javascript">var toggle_id_journal_article_searchcurClickValue = "basic";function toggle_id_journal_article_searchtoggleSearch() {jQuery("#toggle_id_journal_article_searchbasic").toggle();jQuery("#toggle_id_journal_article_searchadvanced").toggle();var advancedSearchObj = jQuery("#toggle_id_journal_article_searchadvancedSearch");if (toggle_id_journal_article_searchcurClickValue == "basic") {toggle_id_journal_article_searchcurClickValue = "advanced";advancedSearchObj.val(true);}else {toggle_id_journal_article_searchcurClickValue = "basic";advancedSearchObj.val(false);}jQuery.ajax({url: 'portal/session_click',data: {'toggle_id_journal_article_search': toggle_id_journal_article_searchcurClickValue}});}</script><input id="toggle_id_journal_article_searchadvancedSearch" name="_15_advancedSearch" type="hidden" value="false" /><div id="toggle_id_journal_article_searchbasic" style="display: block;"><label for="toggle_id_journal_article_searchkeywords">查询</label><input id="toggle_id_journal_article_searchkeywords" name="_15_keywords" size="30" type="text" value="自动化测试" />&nbsp;<a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1" >高级 &raquo;</a></div><div id="toggle_id_journal_article_searchadvanced" style="display: none;">匹配下列<select name="_15_andOperator"><option selected value="1">所有</option><option value="0">任何</option></select>查询条件：<br /><br /><table class="lfr-table"><tr><td>编号</td><td>版本</td><td>标题</td><td>内容</td></tr><tr><td><input name="_15_searchArticleId" size="20" type="text" value="" /></td><td><input name="_15_version" size="20" type="text" value="" /></td><td><input name="_15_title" size="20" type="text" value="" /></td><td><input name="_15_content" size="20" type="text" value="" /></td></tr></table><br /><a href="javascript: toggle_id_journal_article_searchtoggleSearch();" tabindex="-1">&laquo; 基本</a></div><br /><div><input type="submit" value="查询稿件" /><input type="button" value="增加稿件" onClick="_15_addArticle();" /></div><script type="text/javascript">function _15_addArticle() {var url = 'http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles';if (toggle_id_journal_article_searchcurClickValue == 'basic') {url += '&_15_title=' + document._15_fm._15_keywords.value;submitForm(document.hrefFm, url);}else {document._15_fm.method = 'post';submitForm(document._15_fm, url);}}Liferay.Util.focusFormField(document._15_fm._15_searchArticleId);Liferay.Util.focusFormField(document._15_fm._15_keywords);</script><div class="separator"><!-- --></div><input type="button" value="到期" onClick="_15_expireArticles();" /><input type="button" value="删除" onClick="_15_deleteArticles();" /><br /><br /><div class="taglib-search-iterator-page-iterator-top"><script type="text/javascript">function _15_submitPageIterator() {var curValue = jQuery("option:selected", this).val();if (true) {var href = "http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&cur" + "=" + curValue + "";location.href = href;}else {document._15_fm.cur.value = curValue;null;}}jQuery(function() {jQuery('._15_pageIteratorValue').change(_15_submitPageIterator);});</script><div class="taglib-page-iterator"><div class="search-results">显示1条结果。</div></div></div><div class="results-grid"><table class="taglib-search-iterator"><tr class="portlet-section-header results-header"><th class="col-1"><input name="_15_allRowIds" type="checkbox" onClick="Liferay.Util.checkAll(_15_fm, '_15_rowIds', this);"></th><th class="col-2"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=id&_15_orderByType=desc">编号</a></th><th class="col-3"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=title&_15_orderByType=desc">标题</a></th><th class="col-4"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=version&_15_orderByType=desc">版本</a></th><th class="col-5">状态</th><th class="col-6"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=modified-date&_15_orderByType=asc"><i>修改过的日期</i></a></th><th class="col-7"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fview&_15_tabs1=articles&_15_keywords=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&_15_advancedSearch=false&_15_andOperator=true&_15_groupId=10780&_15_version=0.0&_15_orderByCol=display-date&_15_orderByType=desc">显示日期</a></th><th class="col-8">作者</th><th class="col-9">&nbsp;</th></tr><tr class="portlet-section-body results-row"onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"><td align="left" class="col-1" colspan="1" valign="middle"><input name="_15_rowIds" type="checkbox" value="54261_version_1.0" onClick="Liferay.Util.checkAllBox(_15_fm, '_15_rowIds', _15_allRowIds);"></td><td align="left" class="col-2" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54261&_15_version=1.0">54261</a></td><td align="left" class="col-3" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54261&_15_version=1.0">自动化测试新增</a></td><td align="left" class="col-4" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54261&_15_version=1.0">1.0</a></td><td align="left" class="col-5" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54261&_15_version=1.0">不批准</a></td><td align="left" class="col-6" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54261&_15_version=1.0">23-12-5 下午5:31</a></td><td align="left" class="col-7" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54261&_15_version=1.0">21-6-29 下午3:48</a></td><td align="left" class="col-8" colspan="1" valign="middle"><a href="http://127.0.0.1/group/10779/articles?p_p_id=15&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_15_struts_action=%2Fjournal%2Fedit_article&_15_redirect=%2Fgroup%2F10779%2Farticles%3Fp_p_id%3D15%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_15_struts_action%3D%252Fjournal%252Fview%26_15_tabs1%3Darticles&_15_groupId=10780&_15_articleId=54261&_15_version=1.0">User test01</a></td></tr></table></div></form></div></div></div>
-</div><script type="text/javascript">Liferay.Portlet.onLoad({canEditTitle: false,columnPos: 0,isStatic: 'end',namespacedId: 'p_p_id_15_',portletId: '15'});</script></div></div></div><div id="footer"></div>
-</div>
-<form action="" method="post" name="hrefFm"></form><script type="text/javascript">Liferay.Session.init({autoExtend: false,timeout: 30,timeoutWarning: 1,redirectOnExpiration: false});</script></body>
-</html>
-
-2023-12-05 17:31:44,101 - root - INFO - 执行StrAction.re_match_str方法，返回值result==>字符串正则匹配成功：['54261', '自动化测试新增', '1.0', '不批准', '23-12-5 下午5:31', '21-6-29 下午3:48', 'User test01']
-2023-12-05 17:31:44,462 - root - INFO - - - - - - - - - - - - - - - - - - - - - 基础关键字[判断两个值相等],开始执行！- - - - - - - - - - - - - - - - - - - - 
-2023-12-05 17:31:44,988 - root - INFO - 需要动态替换的变量为：['result']
-2023-12-05 17:31:44,988 - root - INFO - 动态变量result替换成功：['54261', '自动化测试新增', '1.0', '不批准', '23-12-5 下午5:31', '21-6-29 下午3:48', 'User test01']
-2023-12-05 17:31:47,176 - root - INFO - 
-        本次执行情况如下：
-        总用例数为：1
-        通过用例数：0
-        失败用例数：1
-        错误用例数：0
-        跳过用例数：0
-        通过率为： 0.0 %
-        
-2023-12-05 17:31:47,707 - root - INFO - * * * * * * * * * * * * * * * * * * * * 【自动化测试结束】* * * * * * * * * * * * * * * * * * * * 

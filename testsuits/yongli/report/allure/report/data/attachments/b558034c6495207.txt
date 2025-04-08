@@ -1,1 +1,0 @@
-[CheckAction.equal]校验两个值相等，验证失败：failed==success

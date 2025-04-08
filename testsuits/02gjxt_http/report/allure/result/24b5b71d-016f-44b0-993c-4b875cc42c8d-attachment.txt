@@ -1,4 +1,0 @@
-INFO     root:parser.py:43 - - - - - - - - - - - - - - - - - - - - 基础关键字[发送POST请求,稿件系统home],开始执行！- - - - - - - - - - - - - - - - - - - - 
-INFO     root:http_base.py:24 post接口调用开始==>http://127.0.0.1/web/guest/home
-INFO     root:http_base.py:52 post接口请求头headers==>{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-ERROR    root:http_base.py:31 接口请求失败！：HTTPConnectionPool(host='127.0.0.1', port=4780): Max retries exceeded with url: http://127.0.0.1/web/guest/home (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')))

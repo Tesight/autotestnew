@@ -1,3 +1,0 @@
-class DictAction(object):
-    pass
-
