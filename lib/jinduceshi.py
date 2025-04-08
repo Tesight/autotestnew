@@ -5,7 +5,7 @@ import os
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../../'))
 from common.logger import Log
 from filelock import FileLock
-
+import math
 ESMAJ = 6378137.0 # Semi-major axis of Earth, meters
 EFLAT = 0.00335281066474
 ESMIN = ESMAJ * (1.0 - EFLAT)
@@ -13,7 +13,7 @@ EECC_SQUARED = (((ESMAJ*ESMAJ) - (ESMIN*ESMIN)) / (ESMAJ*ESMAJ))
 Pi    = 3.1415926535898 # Pi used in the GPS coordinate
 yaml_file = '测试报告.yaml'
 
-   #静态定位误差
+#静态定位误差
 def static_position_bias(data_num =900,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
     return_message = {'status':None}
     result_bias=[]#存储平均坐标误差
@@ -411,14 +411,17 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
     count=0
     output_reference_power = 0
     sum=0
+    wait=False
     try:
         for i in range(wait_time):
+            print("等待接收机定位...")
             time.sleep(time_step)
             rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
             is_valid = rsv_location['message'].get('isValid')
             if is_valid:
+               wait=True
                break
-        while True:
+        while wait:
             count=0
             sum=0
             sim_location = requests.get(url='http://'+address+'/vehicleinfo').json()
@@ -507,6 +510,9 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
                   return_message['status'] = 'fail'
                   return_message['message'] = '捕获灵敏度测试项目失败,误差全部大于100米'
                   return return_message
+        return_message['status'] = 'fail'
+        return_message['message'] = '捕获灵敏度测试项目失败,接收机未定位成功'
+        return return_message
     except Exception as e:
         return_message['status'] = 'error'
         return_message['message'] = str(e)
@@ -665,7 +671,6 @@ def toRadian(degree):
 def toDegree(radian):
   return radian / Pi * 180.0
 
-import math
 
 def geodetic_to_ecef(lat, lon, h):
     lat_rad = math.radians(lat)  # 纬度转弧度

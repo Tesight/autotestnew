@@ -121,96 +121,96 @@ def verification(args,param):
     
     return True   
 
-class StandardScene(Resource):#标准skydel模拟器参数设置
+# class StandardScene(Resource):#标准skydel模拟器参数设置
     
-    resource_fields = {
-        'status': fields.String,
-        'message': fields.String}
+#     resource_fields = {
+#         'status': fields.String,
+#         'message': fields.String}
 
-    @marshal_with(resource_fields)
-    def post(self):
-        parser = reqparse.RequestParser()
-        parser.add_argument("mode",type=str,help="mode: standard/customized",required=True)  
-        parser.add_argument("simulatorIP",type=str,help="simulator IP address is necessary",required=True)  
-        parser.add_argument("standardScene",type=str,help="standard scene:ClearSky/UrbanCanyon/None",required=True)
-        parser.add_argument("pathTrajectory",type=str,help="path trajectory:static/dynamic",required=True)
-        parser.add_argument("startLla",type=float, help="start lla:[latitude,longitude,altitude]",required=True, action='append')
-        parser.add_argument("startTime",type = int,help="start time:unix timestamp,None for current time",action = 'append')
-        parser.add_argument("orientation",type = float,help="orientation:[yaw,pitch,roll]",action='append') 
-        parser.add_argument("radioType",type=str,help="radioType:NoneRT, DTA-2115B,DTA-2116 X300 or N310")
-        parser.add_argument("signalStrengthModel",type=bool,help="signalStrengthModel:True/False")
-        parser.add_argument("standardSignal",type=str,help="standardSignal:Full,BeiDou" )
-        parser.add_argument("GlobalPowerOffset",type=float,help="GlobalPowerOffset:dBm")    
+#     @marshal_with(resource_fields)
+#     def post(self):
+#         parser = reqparse.RequestParser()
+#         parser.add_argument("mode",type=str,help="mode: standard/customized",required=True)  
+#         parser.add_argument("simulatorIP",type=str,help="simulator IP address is necessary",required=True)  
+#         parser.add_argument("standardScene",type=str,help="standard scene:ClearSky/UrbanCanyon/None",required=True)
+#         parser.add_argument("pathTrajectory",type=str,help="path trajectory:static/dynamic",required=True)
+#         parser.add_argument("startLla",type=float, help="start lla:[latitude,longitude,altitude]",required=True, action='append')
+#         parser.add_argument("startTime",type = int,help="start time:unix timestamp,None for current time",action = 'append')
+#         parser.add_argument("orientation",type = float,help="orientation:[yaw,pitch,roll]",action='append') 
+#         parser.add_argument("radioType",type=str,help="radioType:NoneRT, DTA-2115B,DTA-2116 X300 or N310")
+#         parser.add_argument("signalStrengthModel",type=bool,help="signalStrengthModel:True/False")
+#         parser.add_argument("standardSignal",type=str,help="standardSignal:Full,BeiDou" )
+#         parser.add_argument("GlobalPowerOffset",type=float,help="GlobalPowerOffset:dBm")    
         
-        args = parser.parse_args()
-        # print(args) 
-        if args["mode"] != "standard":
-            return {"status":"failed","message":"Only support standard mode"}
+#         args = parser.parse_args()
+#         # print(args) 
+#         if args["mode"] != "standard":
+#             return {"status":"failed","message":"Only support standard mode"}
          
-        if verification(args, "standardScene") == False:
-            return {"status":"failed","message":"Wrong input of StandardScene"} 
-        if verification(args, "pathTrajectory") == False:
-            return {"status":"failed","message":"Wrong input of pathTrajectory"}
-        if verification(args, "startLla") == False:
-            return {"status":"failed","message":"Wrong input of startLla"} 
-        if verification(args,"radioType") == False: 
-            return {"status":"failed","message":"Wrong input of radioType"} 
-        if verification(args,'startTime') == False:
-            return {"status":"failed","message":"Wrong input of startTime"} 
+#         if verification(args, "standardScene") == False:
+#             return {"status":"failed","message":"Wrong input of StandardScene"} 
+#         if verification(args, "pathTrajectory") == False:
+#             return {"status":"failed","message":"Wrong input of pathTrajectory"}
+#         if verification(args, "startLla") == False:
+#             return {"status":"failed","message":"Wrong input of startLla"} 
+#         if verification(args,"radioType") == False: 
+#             return {"status":"failed","message":"Wrong input of radioType"} 
+#         if verification(args,'startTime') == False:
+#             return {"status":"failed","message":"Wrong input of startTime"} 
          
-        try:
-            sim.skydelIpAddress = args["simulatorIP"]
-            if not sim.simulator.isConnected():  
-                if not sim.simulator_connect():
-                    return {"status":"failed","message":"Simulator connect failed"}
-            try:
-                sim.simulator.stop()
-            except Exception as e:
-                pass
-            sim.radioType = args["radioType"]   
-            if args["signalStrengthModel"]  != None:
-                sim.signalStrengthModel = args["signalStrengthModel"]   
-            sim.pathTrajectoryGenerator.LAT = args["startLla"][0]
-            sim.pathTrajectoryGenerator.LONG = args["startLla"][1]
-            sim.pathTrajectoryGenerator.ALT = args["startLla"][2]
-            sim.startTime = args['startTime'] if args['startTime'][0] != None else None    
+#         try:
+#             sim.skydelIpAddress = args["simulatorIP"]
+#             if not sim.simulator.isConnected():  
+#                 if not sim.simulator_connect():
+#                     return {"status":"failed","message":"Simulator connect failed"}
+#             try:
+#                 sim.simulator.stop()
+#             except Exception as e:
+#                 pass
+#             sim.radioType = args["radioType"]   
+#             if args["signalStrengthModel"]  != None:
+#                 sim.signalStrengthModel = args["signalStrengthModel"]   
+#             sim.pathTrajectoryGenerator.LAT = args["startLla"][0]
+#             sim.pathTrajectoryGenerator.LONG = args["startLla"][1]
+#             sim.pathTrajectoryGenerator.ALT = args["startLla"][2]
+#             sim.startTime = args['startTime'] if args['startTime'][0] != None else None    
 
             
-            if args['standardSignal'] == "Full":
-                sim.setSignalFull()
-            elif args['standardSignal'] == "BeiDou":
-                sim.setSignalBeiDou()      
+#             if args['standardSignal'] == "Full":
+#                 sim.setSignalFull()
+#             elif args['standardSignal'] == "BeiDou":
+#                 sim.setSignalBeiDou()      
 
-            if sim.signalStrengthModel == False:
-                signals = sim.LOWERL+sim.UPPERL
-                signals.remove("SBASL5")
-                signals.remove("SBASL1")
+#             if sim.signalStrengthModel == False:
+#                 signals = sim.LOWERL+sim.UPPERL
+#                 signals.remove("SBASL5")
+#                 signals.remove("SBASL1")
                 
-                sim.setSignalPowerOffset(signals,0)
-            if args['standardScene'] == "ClearSky":
-                sim.setAntennaClearSky()
-            elif args['standardScene'] == "UrbanCanyon":
-                sim.setAntennaUrbanCanyon()
-            elif args['standardScene'] == "None":
-                sim.setAntennaNone()
+#                 sim.setSignalPowerOffset(signals,0)
+#             if args['standardScene'] == "ClearSky":
+#                 sim.setAntennaClearSky()
+#             elif args['standardScene'] == "UrbanCanyon":
+#                 sim.setAntennaUrbanCanyon()
+#             elif args['standardScene'] == "None":
+#                 sim.setAntennaNone()
             
 
 
-            if args['pathTrajectory'] == "dynamic":
-                sim.setDynamic()
-            elif args['pathTrajectory'] == "static":
-                if verification(args,"orientation"):
-                    sim.pathTrajectoryGenerator.YAW = args["orientation"][0]
-                    sim.pathTrajectoryGenerator.PITCH = args["orientation"][1]
-                    sim.pathTrajectoryGenerator.ROLL = args["orientation"][2]
-                sim.setStatic() 
-            sim.setGlobalPowerOffset(args["GlobalPowerOffset"])
-            # sim.simulator_disconnect()
-            return {"status":"success","message":"Standard scene added"}
+#             if args['pathTrajectory'] == "dynamic":
+#                 sim.setDynamic()
+#             elif args['pathTrajectory'] == "static":
+#                 if verification(args,"orientation"):
+#                     sim.pathTrajectoryGenerator.YAW = args["orientation"][0]
+#                     sim.pathTrajectoryGenerator.PITCH = args["orientation"][1]
+#                     sim.pathTrajectoryGenerator.ROLL = args["orientation"][2]
+#                 sim.setStatic() 
+#             sim.setGlobalPowerOffset(args["GlobalPowerOffset"])
+#             # sim.simulator_disconnect()
+#             return {"status":"success","message":"Standard scene added"}
 
-        except Exception as e:
-            # sim.simulator_disconnect()
-            return {"status":"failed","message":"Error: "+str(e)}   
+#         except Exception as e:
+#             # sim.simulator_disconnect()
+#             return {"status":"failed","message":"Error: "+str(e)}   
             
 class CustomizedPath(Resource):#定制skydel模拟器参数
     resource_fields = {
@@ -461,7 +461,7 @@ class SimulatorControl(Resource):#控制skydel仿真器
             elif args["controlFunction"] == "setManualPowerOffsetForSV":
                 sim.setManualPowerOffsetForSV(args["system"],args["svID"],args["Offset"])
                 sim.simulator_disconnect()
-                Log().logger.info(f"{args["system"]}星座{args["svID"]}号功率偏移设置成功")
+                Log().logger.info(f'{args["system"]}星座{args["svID"]}号功率偏移设置成功')
                 return {"status":"success","message":"Manual power offset set"}
             else:
                 Log().logger.error(f"controlFunction设置错误")
@@ -598,7 +598,7 @@ class SignalPower(Resource):#设置skydel全局，特定星座，特定星座的
             elif args["type"] == "svid":    
                 sim.setManualPowerOffsetForSV(args["system"],args["svID"],args["value"])    
                 # sim.simulator_disconnect()
-                Log().logger.info(f"{args["system"]}星座{args["svID"]}号功率偏移设置成功")
+                Log().logger.info(f'{args["system"]}星座{args["svID"]}号功率偏移设置成功')
                 return {"status":"success","message":"Manual power offset set"} 
         except Exception as e:
             # sim.simulator_disconnect()
@@ -651,7 +651,7 @@ class SignalPowerInfo(Resource):#获取skydel全局，特定星座，特定星�
             elif args["type"] == "signal":
                 offset = sim.getSignalPowerOffset(args["signal"]) #获取特定信号功率偏移
                 # sim.simulator_disconnect()
-                Log().logger.info(f"{args["signal"]}信号功率偏移获取成功")
+                Log().logger.info(f'{args["signal"]}信号功率偏移获取成功')
                 return {"status":"success","message":offset}
             
             elif args["type"] == "svid":
@@ -663,12 +663,12 @@ class SignalPowerInfo(Resource):#获取skydel全局，特定星座，特定星�
                         infoList.append(sim.getManualPowerOffsetForSV(args["system"],i)) 
                         num=i
                     # sim.simulator_disconnect()
-                    Log().logger.info(f"{args["system"]}星座卫星功率偏移获取成功")
+                    Log().logger.info(f'{args["system"]}星座卫星功率偏移获取成功')
                     return {"status":"success","message":infoList,"svidnum":num}   
                 else:
                     offset = sim.getManualPowerOffsetForSV(args["system"],args["svID"]) #获取特定卫星功率偏移
                     # sim.simulator_disconnect()
-                    Log().logger.info(f"{args["system"]}星座{args["svID"]}号功率偏移获取成功")
+                    Log().logger.info(f'{args["system"]}星座{args["svID"]}号功率偏移获取成功')
                     return {"status":"success","message":offset}
         except Exception as e:
             # sim.simulator_disconnect()
@@ -793,7 +793,7 @@ class ExReceiver(Resource):#接收器设置
 
 
 
-api.add_resource(StandardScene, '/standard',endpoint = 'standard')
+# api.add_resource(StandardScene, '/standard',endpoint = 'standard')
 api.add_resource(SimulatorControl, '/simulatorcontrol',endpoint = 'simulatorcontrol')
 api.add_resource(CustomizedPath, '/customized/<string:data>',endpoint = 'customized') 
 api.add_resource(VehicleInfo, '/vehicleinfo',endpoint = 'vehicleinfo')  

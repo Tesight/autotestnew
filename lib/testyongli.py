@@ -2,12 +2,12 @@
 import sys
 import os
 import yaml
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../../'))
+# Set project root to one directory up from the current file
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(project_root)
 
-# 然后导入模块
+# Then import using the project structure
 from lib.jinduceshi import capture_sensitivity, tracking_sensitivity
-
 def test_static_position_bias():
     standard=-130
     # 设置静态位置
