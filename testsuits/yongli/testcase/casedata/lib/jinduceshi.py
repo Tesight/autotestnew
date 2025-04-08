@@ -1,7 +1,8 @@
 import requests,json,time,math
-import josn
 import yaml
-import requests
+import sys
+import os
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../../'))
 from common.logger import Log
 from filelock import FileLock
 
@@ -15,94 +16,98 @@ yaml_file = 'c:/baidunetdiskdownload/mysence/testsuits/yongli/testcase/casedata/
    #静态定位误差
 def static_position_bias(data_num =900,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
     return_message = {'status':None}
-    res_list = []#存储ENU坐标
     result_bias=[]#存储平均坐标误差
     time_result_bias=[]#存储实时坐标误差
     count=0
+    sum=0
     try:
-        for i in range(wait_time):
-            time.sleep(time_step)
-            rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
-            is_valid = rsv_location['message'].get('isValid')
-            if is_valid:
-               break
-        for i in range(data_num):
-                time.sleep(time_step)
-                sim_location = requests.get(url='http://'+address+'/vehicleinfo').json()
-                rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
-                is_valid = rsv_location['message'].get('isValid')#判断是否有效
-                if sim_location['status'] == 'success' and is_valid:
-                  sim_lla = Lla(
-                        lat=toRadian(sim_location['message']['latitude']),
-                        lon = toRadian(sim_location['message']['longitude']),
-                        alt = sim_location['message']['altitude'])
-
-                  # 将数据存储在 YAML 文件中
-                  data = {        'sim_current_time':sim_location['message']['time'],
-                                  'sim_lat': sim_location['message']['latitude'],
-                                  'sim_lon': sim_location['message']['longitude'],
-                                  'sim_alt': sim_location['message']['altitude'],
-                                  'sim_v': 0,
-
-                              }
-                  with FileLock("静态定位精度参数.yaml.lock"):
-                    with open('静态定位精度参数.yaml', 'w') as file:
-                      yaml.dump(data, file)
-                      rsv_lla = Lla(
-                          lat=toRadian(rsv_location['message']['lat_deg']),
-                          lon=toRadian(rsv_location['message']['lon_deg']),
-                          alt=rsv_location['message']['alt'])
-                      enu_res = rsv_lla.toEnu(sim_lla)
-                      # res_list.append(enu_res)
-                      # 将数据存储在 YAML 文件中
-                      data = {
-                              'dut_current_time':rsv_location['message']['datetime'],
-                              'dut_lat': rsv_location['message']['lat_deg'],
-                              'dut_lon': rsv_location['message']['lon_deg'],
-                              'dut_alt': rsv_location['message']['alt'],
-                              'dut_v': 0,
-                          }
-                      with FileLock("静态定位精度参数.yaml.lock"):
-                        with open('静态定位精度参数.yaml', 'w') as file:
-                          yaml.dump(data, file)
-                      h=enu_res.east**2+enu_res.north**2
-                      v=enu_res.up**2
-                      bias=math.sqrt(h+v)
-                      sum+=bias
-                      biasx=bias/(count+1)
-                      count=count+1
-                      data = {
-                              'count': count,
-                              'time': rsv_location['message']['datetime'],
-                              'bias':  bias,#即时误差
-                              'biasx': biasx,#平均误差
-                          }
-                      with FileLock("静态定位计算数据.yaml.lock"):
-                        with open('静态定位计算数据.yaml', 'w') as file:
-                          yaml.dump(data, file)
-                      time_result_bias.append(bias)
-                      result_bias.append(biasx)
-                else:
-                  return_message['status'] = 'fail'
-                  return return_message
-                data = {
-                              '测试项目': '静态定位精度',
-                              '测试数据': biasx,#平均误差
-                              '标准要求值': standard,
-                              '测试结果': 'PASS' if biasx <= standard else 'FAIL'
-                          }
-                if append_test_item(yaml_file, data):
-                    print(f"测试项目已添加到测试项目列表中")
-                    Log().logger.info(f"静态定位误差结果已经添加到列表中")
-                else:
-                    print(f"添加测试项目失败")
-                    Log().logger.error(f"添加静态定位误差测试项目失败")
-
-                return_message['result_current_bias']=time_result_bias
-                return_message['result_static_bias']=result_bias
-                return_message['status'] = 'success'
-                return_message['result_static_mbias'] = biasx#平均误差
-                return return_message
+      for i in range(wait_time):
+          time.sleep(time_step)
+          rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
+          # print(rsv_location)
+          is_valid = rsv_location['message'].get('isValid')
+          if is_valid:
+              break
+      for i in range(data_num):
+        time.sleep(time_step)
+        sim_location = requests.get(url='http://'+address+'/vehicleinfo').json()
+        rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
+        is_valid = rsv_location['message'].get('isValid')#判断是否有效
+        if sim_location['status'] == 'success' and is_valid:
+          sim_lla = Lla(
+                lat=toRadian(sim_location['message']['latitude']),
+                lon = toRadian(sim_location['message']['longitude']),
+                alt = sim_location['message']['altitude'])
+          # 将数据存储在 YAML 文件中
+          data = {    
+             'sim_current_time':sim_location['message']['sim_current_time'],
+              'sim_lat': sim_location['message']['latitude'],
+              'sim_lon': sim_location['message']['longitude'],
+              'sim_alt': sim_location['message']['altitude'],
+              'sim_v': 0,
+              }
+          print(data)
+          with FileLock("静态定位精度参数.yaml.lock"):
+            with open('静态定位精度参数.yaml', 'w') as file:
+              yaml.dump(data, file)
+          rsv_lla = Lla(
+              lat=toRadian(rsv_location['message']['lat_deg']),
+              lon=toRadian(rsv_location['message']['lon_deg']),
+              alt=rsv_location['message']['alt'])
+          enu_res = rsv_lla.toEnu(sim_lla)
+              # res_list.append(enu_res)
+              # 将数据存储在 YAML 文件中
+          data = {
+              'dut_current_time':rsv_location['message']['datetime'],
+              'dut_lat': rsv_location['message']['lat_deg'],
+              'dut_lon': rsv_location['message']['lon_deg'],
+              'dut_alt': rsv_location['message']['alt'],
+              'dut_v': 0,
+              }
+          print(data)
+          with FileLock("静态定位精度参数.yaml.lock"):
+            with open('静态定位精度参数.yaml', 'w') as file:
+              yaml.dump(data, file)
+          h=enu_res.east**2+enu_res.north**2
+          v=enu_res.up**2
+          bias=math.sqrt(h+v)
+          sum+=bias
+          biasx=sum/(count+1)
+          count=count+1
+          data = {
+            'count': count,
+            'time': rsv_location['message']['datetime'],
+            'bias':  bias,#即时误差
+            'biasx': biasx,#平均误差
+            }
+          print(data)
+          with FileLock("静态定位计算数据.yaml.lock"):
+            with open('静态定位计算数据.yaml', 'w') as file:
+              yaml.dump(data, file)
+          time_result_bias.append(bias)
+          result_bias.append(biasx)
+        # else:
+        #   return_message['status'] = 'fail'
+        #   return_message['message'] = str(e)
+        #   return return_message
+      data = {
+          '测试项目': '静态定位精度',
+          '测试数据': biasx,#平均误差
+          '标准要求值': standard,
+          '测试结果': 'PASS' if biasx <= standard else 'FAIL'
+        }
+      print(data)
+      if append_test_item(yaml_file, data):
+          print(f"测试项目已添加到测试项目列表中")
+          Log().logger.info(f"静态定位误差结果已经添加到列表中")
+      else:
+          print(f"添加测试项目失败")
+          Log().logger.error(f"添加静态定位误差测试项目失败")
+      return_message['result_current_bias']=time_result_bias
+      return_message['result_static_bias']=result_bias
+      return_message['status'] = 'success'
+      return_message['result_static_mbias'] = biasx#平均误差
+      return return_message
     except Exception as e:
         return_message['status'] = 'error'
         return_message['message'] = str(e)
@@ -113,8 +118,8 @@ def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''
     return_message = {'status':None}
     result_bias=[]#存储坐标误差
     result_mbias=[]#存储平均坐标误差
-    time_result_bias=[]#存储实时坐标误差
     count=0
+    mtamp=0
     try:
         for i in range(wait_time):
             time.sleep(time_step)
@@ -133,7 +138,7 @@ def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''
                   lon = toRadian(sim_location['message']['longitude']),
                   alt = sim_location['message']['altitude'])
 
-            data = {        'sim_current_time':sim_location['message']['time'],
+            data = {        'sim_current_time':sim_location['message']['sim_current_time'],
                             'sim_lat': sim_location['message']['latitude'],
                             'sim_lon': sim_location['message']['longitude'],
                             'sim_alt': sim_location['message']['altitude'],
@@ -159,7 +164,6 @@ def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''
               with open('动态定位精度参数.yaml', 'w') as file:
                 yaml.dump(data, file)
             enu_res = rsv_lla.toEnu(sim_lla)
-            mtamp=0
             x = enu_res.east**2
             y = enu_res.north**2
             z = enu_res.up**2
@@ -178,14 +182,14 @@ def dunamic_position_bias(data_num =900,wait_time=180,time_step = 1,address = ''
                 yaml.dump(data, file)
             result_bias.append(bias)
             result_mbias.append(xbias)
-          else:
-            return_message['status'] = 'fail'
-            return return_message
+          # else:
+          #   return_message['status'] = 'fail'
+          #   return return_message
         data = {
-                              '测试项目': '动态定位精度',
-                              '测试数据': xbias,#平均误差
-                              '标准要求值': standard,
-                              '测试结果': 'PASS' if xbias <= standard else 'FAIL'
+                  '测试项目': '动态定位精度',
+                  '测试数据': xbias,#平均误差
+                  '标准要求值': standard,
+                  '测试结果': 'PASS' if xbias <= standard else 'FAIL'
                           }
         if append_test_item(yaml_file, data):
             print(f"测试项目已添加到测试项目列表中")
@@ -209,6 +213,7 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
     res_listv = []#储存及时速度差
     result_v = []#存储误差均值
     count=0
+    sum_v=0
     try:
         for i in range(wait_time):
             time.sleep(time_step)
@@ -223,7 +228,7 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
             is_valid = rsv_location['message'].get('isValid')#判断是否有效
             if sim_location['status'] == 'success' and is_valid:
               sim_v=sim_location['message']['speed']
-              data = {      'sim_current_time':sim_location['message']['time'],
+              data = {      'sim_current_time':sim_location['message']['sim_current_time'],
                             'sim_lat': sim_location['message']['latitude'],
                             'sim_lon': sim_location['message']['longitude'],
                             'sim_alt': sim_location['message']['altitude'],
@@ -232,7 +237,6 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
               with FileLock("测速精度参数.yaml.lock"):
                 with open('测速精度参数.yaml', 'w') as file:
                   yaml.dump(data, file)
-
               rsv_v=rsv_location['message']['speed']*(1852/3600)#转换为m/s
               data = {        'dut_current_time':rsv_location['message']['datetime'],
                               'dut_lat': rsv_location['message']['lat_deg'],
@@ -247,7 +251,6 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
               sum_v+=v
               v_bias=sum_v/(count+1)
               count=count+1
-
               data = {
                             'count': count,
                             'time': rsv_location['message']['datetime'],
@@ -259,14 +262,14 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
                 yaml.dump(data, file)
               res_listv.append(v)
               result_v.append(v_bias)
-            else:
-              return_message['status'] = 'fail'
-              return return_message
+            # else:
+            #   return_message['status'] = 'fail'
+            #   return return_message
         data = {
-                              '测试项目': '测数精度',
-                              '测试数据': v_bias,#平均误差
-                              '标准要求值': standard,
-                              '测试结果': 'PASS' if v_bias <= standard else 'FAIL'
+                  '测试项目': '测数精度',
+                  '测试数据': v_bias,#平均误差
+                  '标准要求值': standard,
+                  '测试结果': 'PASS' if v_bias <= standard else 'FAIL'
                           }
         if append_test_item(yaml_file, data):
             Log().logger.info(f"测速偏差结果已经添加到列表中")
@@ -276,7 +279,6 @@ def speed_measurement_bias(data_num =900,wait_time=180,time_step = 1,address = '
         return_message['result_mv'] = result_v
         return_message['status'] = 'success'
         return_message['result_sumv'] = v_bias
-
         return return_message
     except Exception as e:
         return_message['status'] = 'error'
@@ -293,7 +295,6 @@ def mileage_bias(data_num=900, wait_time=180,time_step=1, address='',standard=15
     result_bias = []
     result_mbias = []#存储平均坐标误差
     count = 0
-
     try:
         for i in range(wait_time):
             time.sleep(time_step)
@@ -303,7 +304,6 @@ def mileage_bias(data_num=900, wait_time=180,time_step=1, address='',standard=15
                break
         for i in range(data_num):
             time.sleep(time_step)
-
             # 获取模拟器和接收机数据
             sim_location = requests.get(url='http://'+address+'/vehicleinfo').json()
             rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
@@ -312,11 +312,12 @@ def mileage_bias(data_num=900, wait_time=180,time_step=1, address='',standard=15
             if sim_location['status'] == 'success' and is_valid:
                 # 转换模拟器坐标
               sim_v=sim_location['message']['speed']
-              data = {      'sim_current_time':sim_location['message']['time'],
-                            'sim_lat': sim_location['message']['latitude'],
-                            'sim_lon': sim_location['message']['longitude'],
-                            'sim_alt': sim_location['message']['altitude'],
-                            'sim_v': sim_v,#速度
+              data = {      
+                 'sim_current_time':sim_location['message']['sim_current_time'],
+                  'sim_lat': sim_location['message']['latitude'],
+                  'sim_lon': sim_location['message']['longitude'],
+                  'sim_alt': sim_location['message']['altitude'],
+                  'sim_v': sim_v,#速度
                         }
               with FileLock("里程精度参数.yaml.lock"):
                 with open('里程精度参数.yaml', 'w') as file:
@@ -333,62 +334,62 @@ def mileage_bias(data_num=900, wait_time=180,time_step=1, address='',standard=15
                 with open('里程精度参数.yaml', 'w') as file:
                   yaml.dump(data, file)
 
-                sim_ecef = geodetic_to_ecef(
-                    sim_location['message']['latitude'],
-                    sim_location['message']['longitude'],
-                    sim_location['message']['altitude']
-                )
+              sim_ecef = geodetic_to_ecef(
+                  sim_location['message']['latitude'],
+                  sim_location['message']['longitude'],
+                  sim_location['message']['altitude']
+              )
 
-                # 转换接收机坐标
-                rsv_ecef = geodetic_to_ecef(
-                    rsv_location['message']['lat_deg'],
-                    rsv_location['message']['lon_deg'],
-                    rsv_location['message']['alt']
-                )
+              # 转换接收机坐标
+              rsv_ecef = geodetic_to_ecef(
+                  rsv_location['message']['lat_deg'],
+                  rsv_location['message']['lon_deg'],
+                  rsv_location['message']['alt']
+              )
 
-                # 计算模拟器里程
-                if prev_sim_ecef:
-                    sim_distance = distance_3d(prev_sim_ecef, sim_ecef)
-                    sum_sim_distance += sim_distance
+              # 计算模拟器里程
+              if prev_sim_ecef:
+                  sim_distance = distance_3d(prev_sim_ecef, sim_ecef)
+                  sum_sim_distance += sim_distance
 
-                # 计算接收机里程
-                if prev_rsv_ecef:
-                    rsv_distance = distance_3d(prev_rsv_ecef, rsv_ecef)
-                    sum_rsv_distance += rsv_distance
+              # 计算接收机里程
+              if prev_rsv_ecef:
+                  rsv_distance = distance_3d(prev_rsv_ecef, rsv_ecef)
+                  sum_rsv_distance += rsv_distance
 
-                # 更新前一点坐标
-                prev_sim_ecef = sim_ecef
-                prev_rsv_ecef = rsv_ecef
+              # 更新前一点坐标
+              prev_sim_ecef = sim_ecef
+              prev_rsv_ecef = rsv_ecef
 
-                # 计算里程偏差
-                current_bias = sum_rsv_distance - sum_sim_distance
-                average_bias = current_bias / (count + 1) if count > 0 else 0
-                count += 1
+              # 计算里程偏差
+              current_bias = sum_rsv_distance - sum_sim_distance
+              average_bias = current_bias / (count + 1) if count > 0 else 0
+              count += 1
 
-                # 保存结果
-                data = {
-                    'count': count,
-                    'time': rsv_location['message']['datetime'],
-                    'sim_mileage': sum_sim_distance,
-                    'rsv_mileage': sum_rsv_distance,
-                    'current_bias': current_bias,
-                    'average_bias': average_bias
-                }
-                with FileLock("里程偏差数据.yaml.lock"):
-                    with open('里程偏差数据.yaml', 'w') as file:
-                        yaml.dump(data, file)
+              # 保存结果
+              data = {
+                  'count': count,
+                  'time': rsv_location['message']['datetime'],
+                  'sim_mileage': sum_sim_distance,
+                  'rsv_mileage': sum_rsv_distance,
+                  'current_bias': current_bias,
+                  'average_bias': average_bias
+              }
+              with FileLock("里程偏差数据.yaml.lock"):
+                  with open('里程偏差数据.yaml', 'w') as file:
+                      yaml.dump(data, file)
 
-                result_bias.append(current_bias)
-                result_mbias.append(average_bias)
-            else:
-                return_message['status'] = 'fail'
-                return return_message
+              result_bias.append(current_bias)
+              result_mbias.append(average_bias)
+            # else:
+            #     return_message['status'] = 'fail'
+            #     return return_message
         data = {
-                              '测试项目': '里程偏差',
-                              '测试数据': average_bias,#平均误差
-                              '标准要求值': standard,
-                              '测试结果': 'PASS' if average_bias <= standard else 'FAIL'
-                          }
+                '测试项目': '里程偏差',
+                '测试数据': average_bias,#平均误差
+                '标准要求值': standard,
+                '测试结果': 'PASS' if average_bias <= standard else 'FAIL'
+                }
         if append_test_item(yaml_file, data):
             Log().logger.info(f"里程偏差结果已经添加到列表中")
         else:
@@ -396,10 +397,9 @@ def mileage_bias(data_num=900, wait_time=180,time_step=1, address='',standard=15
         return_message['status'] = 'success'
         return_message['current_bias'] = result_bias
         return_message['average_bias'] = result_mbias
-        return_message['total_sim_mileage'] = sum_sim_distance
-        return_message['total_rsv_mileage'] = sum_rsv_distance
+        return_message['total_sim_mileage'] = sum_sim_distance     #模拟器里程
+        return_message['total_rsv_mileage'] = sum_rsv_distance     #接收机里程
         return return_message
-
     except Exception as e:
         return_message['status'] = 'error'
         return_message['message'] = str(e)
@@ -410,6 +410,7 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
     return_message = {'status':None}
     count=0
     output_reference_power = 0
+    sum=0
     try:
         for i in range(wait_time):
             time.sleep(time_step)
@@ -417,12 +418,13 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
             is_valid = rsv_location['message'].get('isValid')
             if is_valid:
                break
-
         while True:
+            count=0
+            sum=0
             sim_location = requests.get(url='http://'+address+'/vehicleinfo').json()
             if sim_location['status'] == 'success':
               # 将数据存储在 YAML 文件中
-              data = {      'sim_current_time':sim_location['message']['time'],
+              data = {      'sim_current_time':sim_location['message']['sim_current_time'],
                             'sim_lat': sim_location['message']['latitude'],
                             'sim_lon': sim_location['message']['longitude'],
                             'sim_alt': sim_location['message']['altitude'],
@@ -462,7 +464,7 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
                       v=enu_res.up**2
                       bias=math.sqrt(h+v)
                       sum+=bias
-                      biasx=bias/(count+1)
+                      biasx=sum/(count+1)
                       count=count+1
                       data = {
                               'count': count,
@@ -475,7 +477,7 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
                         with open('捕获灵敏计算数据.yaml', 'w') as file:
                           yaml.dump(data, file)
                       if bias>100 :
-                          break
+                          count=0
                       if count==10:
                         data = {
                               '测试项目': '捕获灵敏度',
@@ -483,24 +485,28 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
                               '标准要求值': standard,
                               '测试结果': 'PASS' if output_reference_power <= standard else 'FAIL'
                           }
-                      if append_test_item(yaml_file, data):
-                          Log().logger.info(f"捕获灵敏度结果已经添加到列表中")
-                      else:
-                          Log().logger.error(f"添加捕获灵敏度测试项目失败")
-                          return_message['status'] = 'success'
-                          return_message['result_static_mbias'] = bias
-                          return_message['pc'] = output_reference_power
-                          return return_message
+                        if append_test_item(yaml_file, data):
+                            Log().logger.info(f"捕获灵敏度结果已经添加到列表中")
+                        else:
+                            Log().logger.error(f"添加捕获灵敏度测试项目失败")
+                        return_message['status'] = 'success'
+                        return_message['result_static_mbias'] = bias
+                        return_message['pc'] = output_reference_power
+                        return return_message
               output_reference_power=output_reference_power+1
-              url = "http://localhost:5000/CustomizedPath/offset"
+              url = "http://127.0.0.1:5000/customized/offset2"
               data = {
                 "output_reference_power": output_reference_power,
                 }
               response = requests.post(url, json=data)
               Log().logger.info(response)
-            else:
-                return_message['status'] = 'fail'
-                return return_message
+              if response.status_code == 200:
+                  Log().logger.info("成功发送请求")
+              if response.status_code == 500:
+                  Log().logger.info("检测失败")
+                  return_message['status'] = 'fail'
+                  return_message['message'] = '捕获灵敏度测试项目失败,误差全部大于100米'
+                  return return_message
     except Exception as e:
         return_message['status'] = 'error'
         return_message['message'] = str(e)
@@ -510,100 +516,126 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
 def tracking_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,address = '',standard=15):#time_step取数间隔时间，addressIP地址,point为坐标
     return_message = {'status':None}
     count=0
+    sum=0
     output_reference_power = 0
     try:
         for i in range(wait_time):
+          time.sleep(time_step)
+          rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
+          is_valid = rsv_location['message'].get('isValid')
+          if is_valid:
+              break
+        while True:
+          count=0
+          sum=0
+          over=True
+          for i in range(data_num):
             time.sleep(time_step)
-            rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
-            is_valid = rsv_location['message'].get('isValid')
-            if is_valid:
-               break
-        for i in range(data_num):
-                time.sleep(time_step)
-                sim_location = requests.get(url='http://'+address+'/vehicleinfo').json()
-                if sim_location['status'] == 'success':
-                # 将数据存储在 YAML 文件中
-                  data = {      'sim_current_time':sim_location['message']['time'],
-                                'sim_lat': sim_location['message']['latitude'],
-                                'sim_lon': sim_location['message']['longitude'],
-                                'sim_alt': sim_location['message']['altitude'],
-                                'sim_v': 0,
-                          }
+            sim_location = requests.get(url='http://'+address+'/vehicleinfo').json()
+            if sim_location['status'] == 'success':
+            # 将数据存储在 YAML 文件中
+              data = {    
+                  'sim_current_time':sim_location['message']['sim_current_time'],
+                    'sim_lat': sim_location['message']['latitude'],
+                    'sim_lon': sim_location['message']['longitude'],
+                    'sim_alt': sim_location['message']['altitude'],
+                    'sim_v': 0,
+                      }
+              with FileLock("跟踪灵敏度参数.yaml.lock"):
+                with open('跟踪灵敏度参数.yaml', 'w') as file:
+                  yaml.dump(data, file)
+              sim_lla = Lla(
+                  lat=toRadian(sim_location['message']['latitude']),
+                  lon = toRadian(sim_location['message']['longitude']),
+                  alt = sim_location['message']['altitude'])
+              output_reference_power = sim_location['message']['pc']
+              rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
+              is_valid = rsv_location['message'].get('isValid')#判断是否有效
+              if is_valid:
+                  rsv_lla = Lla(
+                      lat=toRadian(rsv_location['message']['lat_deg']),
+                      lon=toRadian(rsv_location['message']['lon_deg']),
+                      alt=rsv_location['message']['alt'])
+                  enu_res = rsv_lla.toEnu(sim_lla)
+                  # res_list.append(enu_res)
+                  # 将数据存储在 YAML 文件中
+                  data = {
+                          'dut_current_time':rsv_location['message']['datetime'],
+                          'dut_lat': rsv_location['message']['lat_deg'],
+                          'dut_lon': rsv_location['message']['lon_deg'],
+                          'dut_alt': rsv_location['message']['alt'],
+                          'dut_v': 0,
+                      }
                   with FileLock("跟踪灵敏度参数.yaml.lock"):
                     with open('跟踪灵敏度参数.yaml', 'w') as file:
                       yaml.dump(data, file)
-                  sim_lla = Lla(
-                      lat=toRadian(sim_location['message']['latitude']),
-                      lon = toRadian(sim_location['message']['longitude']),
-                      alt = sim_location['message']['altitude'])
-                  output_reference_power = sim_location['message']['pc']
-                  rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
-                  is_valid = rsv_location['message'].get('isValid')#判断是否有效
-                  if is_valid:
-                      rsv_lla = Lla(
-                          lat=toRadian(rsv_location['message']['lat_deg']),
-                          lon=toRadian(rsv_location['message']['lon_deg']),
-                          alt=rsv_location['message']['alt'])
-                      enu_res = rsv_lla.toEnu(sim_lla)
-                      # res_list.append(enu_res)
-                      # 将数据存储在 YAML 文件中
+                  h=enu_res.east**2+enu_res.north**2
+                  v=enu_res.up**2
+                  bias=math.sqrt(h+v)
+                  sum+=bias
+                  biasx=sum/(count+1)
+                  count=count+1
+                  data = {
+                          'count': count,
+                          'time': rsv_location['message']['datetime'],
+                          'bias':  bias,#即时误差
+                          'biasx': biasx,#平均误差
+                          'pc':output_reference_power#输出参考功率
+                      }
+                  with FileLock("跟踪灵敏度计算数据.yaml.lock"):
+                    with open('跟踪灵敏度计算数据.yaml', 'w') as file:
+                      yaml.dump(data, file)
+                  if bias>100 :
+                      count=0
+                  if count==10:
+                      over=False
+                      output_reference_power=output_reference_power-1
+                      url = "http://127.0.0.1:5000/customized/offset2"
                       data = {
-                              'dut_current_time':rsv_location['message']['datetime'],
-                              'dut_lat': rsv_location['message']['lat_deg'],
-                              'dut_lon': rsv_location['message']['lon_deg'],
-                              'dut_alt': rsv_location['message']['alt'],
-                              'dut_v': 0,
-                          }
-                      with FileLock("跟踪灵敏度参数.yaml.lock"):
-                        with open('跟踪灵敏度参数.yaml', 'w') as file:
-                          yaml.dump(data, file)
-                      h=enu_res.east**2+enu_res.north**2
-                      v=enu_res.up**2
-                      bias=math.sqrt(h+v)
-                      sum+=bias
-                      biasx=bias/(count+1)
-                      count=count+1
-                      data = {
-                              'count': count,
-                              'time': rsv_location['message']['datetime'],
-                              'bias':  bias,#即时误差
-                              'biasx': biasx,#平均误差
-                              'pc':output_reference_power#输出参考功率
-                          }
-                      with FileLock("跟踪灵敏度计算数据.yaml.lock"):
-                        with open('跟踪灵敏度计算数据.yaml', 'w') as file:
-                          yaml.dump(data, file)
-                      if bias>100 :
-                          break
-                      if count%10==0:
-                          output_reference_power=output_reference_power-1
-                          url = "http://localhost:5000/CustomizedPath/offset"
-                          data = {
-                            "output_reference_power": output_reference_power,
+                        "output_reference_power": output_reference_power,
+                        }
+                      response = requests.post(url, json=data)
+                      Log().logger.info(response)
+                      if response.status_code == 200:
+                        Log().logger.info("成功发送请求，当前pc为"+str(output_reference_power))
+                        break
+                      if response.status_code == 500:
+                        Log().logger.info("检测成功")
+                        return_message['status'] = 'success'
+                        return_message['result_static_mbias'] = bias
+                        return_message['pc'] = output_reference_power
+                        output_reference_power=output_reference_power+1
+                        data = {
+                                '测试项目': '跟踪灵敏度',
+                                '测试数据': output_reference_power,#平均误差
+                                '标准要求值': standard,
+                                '测试结果': 'PASS' if output_reference_power <= standard else 'FAIL'
                             }
-                          response = requests.post(url, json=data)
-                          Log().logger.info(response)
-                      output_reference_power=output_reference_power+1
-                      data = {
-                              '测试项目': '跟踪灵敏度',
-                              '测试数据': output_reference_power,#平均误差
-                              '标准要求值': standard,
-                              '测试结果': 'PASS' if output_reference_power <= standard else 'FAIL'
-                          }
-                      if append_test_item(yaml_file, data):
-                          print(f"测试项目已添加到测试项目列表中")
-                          Log().logger.info(f"跟踪灵敏度结果已经添加到列表中")
-                      else:
-                          print(f"添加测试项目失败")
-                          Log().logger.error(f"添加跟踪灵敏度测试项目失败")
-                      return_message['status'] = 'success'
-                      return_message['result_static_mbias'] = bias
-                      return_message['pc'] = output_reference_power
-                      return return_message
-
-                else:
-                      return_message['status'] = 'fail'
-                      return return_message
+                        if append_test_item(yaml_file, data):
+                            print(f"测试项目已添加到测试项目列表中")
+                            Log().logger.info(f"跟踪灵敏度结果已经添加到列表中")
+                        else:
+                            print(f"添加测试项目失败")
+                            Log().logger.error(f"添加跟踪灵敏度测试项目失败")
+                        return return_message
+          if over:
+            output_reference_power=output_reference_power+1
+            data = {
+                    '测试项目': '跟踪灵敏度',
+                    '测试数据': output_reference_power,#平均误差
+                    '标准要求值': standard,
+                    '测试结果': 'PASS' if output_reference_power <= standard else 'FAIL'
+                }
+            if append_test_item(yaml_file, data):
+                print(f"测试项目已添加到测试项目列表中")
+                Log().logger.info(f"跟踪灵敏度结果已经添加到列表中")
+            else:
+                print(f"添加测试项目失败")
+                Log().logger.error(f"添加跟踪灵敏度测试项目失败")
+            return_message['status'] = 'success'
+            return_message['result_static_mbias'] = bias
+            return_message['pc'] = output_reference_power
+            return return_message
     except Exception as e:
         return_message['status'] = 'error'
         return_message['message'] = str(e)

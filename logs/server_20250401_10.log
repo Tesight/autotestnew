@@ -1,0 +1,137 @@
+2025-04-01 10:36:30,722 - root - ERROR - 服务器连接skydel仿真器失败
+2025-04-01 10:36:30,722 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:36:30] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 10:36:39,350 - root - ERROR - 服务器连接skydel仿真器失败
+2025-04-01 10:36:39,350 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:36:39] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 10:36:58,666 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 10:36:58,666 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:36:58] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 10:37:02,446 - root - INFO - 信号频点设置成功
+2025-04-01 10:37:02,447 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:37:02] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 10:37:07,464 - root - INFO - 输出基准功率设置成功
+2025-04-01 10:37:07,465 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:37:07] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 10:37:13,090 - root - INFO - 自定义路径设置成功
+2025-04-01 10:37:13,090 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:37:13] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 10:37:20,293 - root - INFO - 接收器串口设置成功
+2025-04-01 10:37:20,294 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:37:20] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 10:37:24,710 - root - INFO - 接收器成功接受数据
+2025-04-01 10:37:24,711 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:37:24] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 10:38:02,475 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:02,475 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:03,478 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:03,479 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:04,487 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:04,489 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:04] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:05,498 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:05,500 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:05] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:06,508 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:06,511 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:07,521 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:07,522 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:08,531 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:08,531 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:08] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:09,541 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:09,542 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:09] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:10,549 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:10,550 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:10] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:11,555 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:11,555 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:11] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:12,560 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:12,561 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:12] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:13,567 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:13,569 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:14,577 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:14,578 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:14] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:15,587 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:15,588 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:15] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:16,593 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:16,594 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:17,604 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:17,606 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:18,612 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:18,612 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:19,619 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:19,621 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:20,630 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:20,632 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:20] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:21,643 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:21,644 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:21] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:22,655 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:22,656 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:22] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:23,664 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:23,667 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:23] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:24,673 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:24,674 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:24] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:25,682 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:25,684 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:25] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:26,695 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:26,697 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:26] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:27,703 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:27,703 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:27] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:28,708 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:28,709 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:28] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:29,717 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:29,719 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:29] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:30,725 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:30,726 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:30] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:31,733 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:31,734 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:31] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:32,742 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:32,743 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:32] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:33,751 - root - INFO - 接收器信息获取成功
+2025-04-01 10:38:33,752 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:33] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:38:45,555 - root - INFO - 接收器串口设置成功
+2025-04-01 10:38:45,555 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:45] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 10:38:51,805 - root - INFO - 接收器成功接受数据
+2025-04-01 10:38:51,805 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:38:51] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 10:46:20,056 - root - INFO - 接收器串口设置成功
+2025-04-01 10:46:20,056 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:46:20] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 10:46:24,252 - root - INFO - 接收器成功接受数据
+2025-04-01 10:46:24,253 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:46:24] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 10:46:39,127 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 10:46:42,020 - root - INFO - 接收器串口设置成功
+2025-04-01 10:46:42,021 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:46:42] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 10:46:44,415 - root - INFO - 接收器成功接受数据
+2025-04-01 10:46:44,416 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:46:44] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 10:47:15,151 - root - INFO - 接收器成功接受数据
+2025-04-01 10:47:15,152 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:47:15] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 10:47:20,907 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 10:47:25,336 - root - INFO - 接收器串口设置成功
+2025-04-01 10:47:25,336 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:47:25] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 10:47:29,560 - root - INFO - 接收器成功接受数据
+2025-04-01 10:47:29,561 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:47:29] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 10:49:41,909 - root - INFO - 接收器成功接受数据
+2025-04-01 10:49:41,910 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:49:41] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 10:49:43,964 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 10:49:48,945 - root - INFO - 接收器串口设置成功
+2025-04-01 10:49:48,946 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:49:48] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 10:49:52,346 - root - INFO - 接收器成功接受数据
+2025-04-01 10:49:52,347 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:49:52] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 10:50:06,470 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:06,470 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:07,477 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:07,478 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:08,488 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:08,490 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:08] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:09,499 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:09,501 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:09] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:10,511 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:10,513 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:10] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:11,521 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:11,522 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:11] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:12,528 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:12,529 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:12] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:13,540 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:13,542 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:14,551 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:14,551 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:14] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:15,558 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:15,559 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:15] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:16,566 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:16,568 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:17,577 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:17,579 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:18,590 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:18,592 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:19,603 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:19,604 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 10:50:20,609 - root - INFO - 接收器信息获取成功
+2025-04-01 10:50:20,609 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 10:50:20] "GET /receiver/location HTTP/1.1" 200 -

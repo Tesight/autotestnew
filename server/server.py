@@ -8,6 +8,8 @@ from flask_restful import Api,Resource,fields,marshal_with,reqparse
 from funcs import * 
 import json,traceback
 from common.logger import Log
+# 在文件顶部引入相关模块
+import json
 
 sim = MySimulator()
 pathTrajectory = PathTrajectory()
@@ -300,7 +302,9 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                 sim.control=args["propagation_model"]
                 sim.startTime = args['startTime'] if args['startTime'] != None else None
                 sim.systemnum=args["systemnum"]
+                print(args["signals"])
                 sim.setSignals(args["signals"])
+                
                 Log().logger.info(f"信号频点设置成功")
                 return {"status":"success","message":"skydel frequency set successfully"}
             except Exception as e:
@@ -328,7 +332,20 @@ class CustomizedPath(Resource):#定制skydel模拟器参数
                 Log().logger.error(f"输出基准功率设置失败:{str(e)}")
                 return {"status":"failed","message":"Error: "+str(e)}
         
-
+        elif data == "offset2":
+            if not verification(args,"output_reference_power"):
+                Log().logger.error(f"输出基准功率设置错误")
+                return {"status":"failed","message":"Wrong input of output_reference_power"}
+            try:
+                sim.output_reference_power=args["output_reference_power"]
+                sim.getSignalPowerOffset2()
+                Log().logger.info(f"输出基准功率设置成功")
+                return {"status":"success","message":"skydel offset set successfully"}
+            except Exception as e:
+                traceback.print_exc(e)
+                Log().logger.error(f"输出基准功率设置失败:{str(e)}")
+                return {"status":"failed","message":"Error: "+str(e)}
+                    
         elif data == "trajectory":
             if not verification(args,"customizedPath"):
                 Log().logger.error(f"自定义路径设置错误")
@@ -463,14 +480,25 @@ class VehicleInfo(Resource):#获取skydel模拟数据
                 Log().logger.error(f"skydel连接断开")
                 return {"status":"failed","message":"Simulator connect failed"}
         try:
+            # print("**********************************")
             lla,odometer,speed,yaw,pitch,roll,pc,time = sim.getVehicleInfo()
             # sim.simulator_disconnect()
+            # 使用f-string格式化到固定小数位
+            formatted_lat = f"{lla.latDeg():.6f}"  # 7位小数
+            formatted_lon = f"{lla.lonDeg():.6f}"  # 7位小数
+            formatted_alt = f"{lla.alt:.3f}"       # 3位小数
+
+            # 转回浮点数
+            latitude = float(formatted_lat)
+            longitude = float(formatted_lon)
+            altitude = float(formatted_alt)
+            print(latitude)
             return {"status":"success",
                     "message":{
-                        'sim_current_time':time,
-                        "latitude":lla.latDeg(),#纬度
-                        "longitude":lla.lonDeg(),#经度
-                        "altitude":lla.alt,#高度
+                        'sim_current_time':time.strftime("%Y-%m-%d %H:%M:%S"),
+                        "latitude":latitude,#纬度
+                        "longitude":longitude,#经度
+                        "altitude":altitude,#高度
                         "odometer":odometer,#里程
                         "speed":speed,#速度
                         "yaw":yaw,#偏航角
@@ -481,6 +509,7 @@ class VehicleInfo(Resource):#获取skydel模拟数据
                     }
         except Exception as e:
             # sim.simulator_disconnect()
+            print(1)
             Log().logger.error(f"获取skydel模拟数据失败:{str(e)}")
             return {"status":"failed","message":"Error: "+str(e)}
                    
@@ -733,9 +762,10 @@ class ExReceiver(Resource):#接收器设置
                 if rsv.serialPort:
                     rsv.startReceiveMessage()
                     time.sleep(1)
+                    print(rsv.message_thread.is_alive())
                     if rsv.message_thread.is_alive():
                         Log().logger.info(f"接收器成功接受数据")
-                        return {"status":"success","message":"start successfully"}  
+                        return {"status":"success","message":"dut start successfully"}  
                     else:
                         Log().logger.error(f"接收器接受数据失败")
                         return{"status":"failed","message":"failed to start"}   

@@ -1,0 +1,476 @@
+2025-04-01 11:04:32,609 - root - INFO - 接收器串口设置成功
+2025-04-01 11:04:32,610 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:04:32] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:04:36,515 - root - INFO - 接收器成功接受数据
+2025-04-01 11:04:36,516 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:04:36] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:14:18,733 - root - INFO - 接收器串口设置成功
+2025-04-01 11:14:18,734 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:14:18] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:14:21,796 - root - INFO - 接收器成功接受数据
+2025-04-01 11:14:21,810 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:14:21] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:14:34,727 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 11:14:40,319 - root - ERROR - 接收器串口未初始化
+2025-04-01 11:14:40,320 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:14:40] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:14:43,600 - root - INFO - 接收器串口设置成功
+2025-04-01 11:14:43,601 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:14:43] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:14:46,403 - root - INFO - 接收器成功接受数据
+2025-04-01 11:14:46,403 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:14:46] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:15:07,481 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 11:15:18,767 - root - INFO - 接收器串口设置成功
+2025-04-01 11:15:18,768 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:15:18] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:15:21,088 - root - INFO - 接收器成功接受数据
+2025-04-01 11:15:21,089 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:15:21] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:16:19,858 - root - INFO - 接收器串口设置成功
+2025-04-01 11:16:19,859 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:16:19] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:16:22,226 - root - INFO - 接收器成功接受数据
+2025-04-01 11:16:22,227 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:16:22] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:16:52,993 - root - ERROR - 接收器串口未初始化
+2025-04-01 11:16:52,993 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:16:52] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:16:56,823 - root - INFO - 接收器串口设置成功
+2025-04-01 11:16:56,824 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:16:56] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:16:59,127 - root - INFO - 接收器成功接受数据
+2025-04-01 11:16:59,128 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:16:59] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:17:51,670 - root - INFO - 接收器串口设置成功
+2025-04-01 11:17:51,671 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:17:51] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:17:54,087 - root - INFO - 接收器成功接受数据
+2025-04-01 11:17:54,087 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:17:54] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:18:07,639 - root - INFO - 接收器信息获取成功
+2025-04-01 11:18:07,641 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:18:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:18:08,659 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:18:08,659 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:18:08] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:18:08,662 - root - INFO - 接收器信息获取成功
+2025-04-01 11:18:08,662 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:18:08] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:18:58,108 - root - INFO - 接收器串口设置成功
+2025-04-01 11:18:58,109 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:18:58] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:19:05,307 - root - INFO - 接收器成功接受数据
+2025-04-01 11:19:05,309 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:19:05] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:19:23,647 - root - INFO - 接收器信息获取成功
+2025-04-01 11:19:23,648 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:19:23] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:19:24,656 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:19:24,657 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:19:24] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:19:24,659 - root - INFO - 接收器信息获取成功
+2025-04-01 11:19:24,660 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:19:24] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:20:45,175 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 11:20:45,176 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:20:45] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 11:20:46,908 - root - INFO - 信号频点设置成功
+2025-04-01 11:20:46,909 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:20:46] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 11:20:48,955 - root - INFO - 输出基准功率设置成功
+2025-04-01 11:20:48,956 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:20:48] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 11:20:50,121 - root - INFO - 自定义路径设置成功
+2025-04-01 11:20:50,121 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:20:50] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 11:20:53,963 - root - INFO - 接收器串口设置成功
+2025-04-01 11:20:53,964 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:20:53] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:20:56,494 - root - INFO - 接收器成功接受数据
+2025-04-01 11:20:56,495 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:20:56] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:21:16,931 - root - INFO - 接收器信息获取成功
+2025-04-01 11:21:16,932 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:21:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:21:17,942 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:21:17,942 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:21:17] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:21:17,948 - root - INFO - 接收器信息获取成功
+2025-04-01 11:21:17,949 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:21:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:22:12,884 - root - INFO - 接收器信息获取成功
+2025-04-01 11:22:12,885 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:22:12] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:22:13,897 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:22:13,899 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:22:13] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:22:13,902 - root - INFO - 接收器信息获取成功
+2025-04-01 11:22:13,902 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:22:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:22:53,840 - root - INFO - 接收器信息获取成功
+2025-04-01 11:22:53,841 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:22:53] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:22:54,850 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:22:54,852 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:22:54] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:22:54,858 - root - INFO - 接收器信息获取成功
+2025-04-01 11:22:54,859 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:22:54] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:23:25,325 - root - INFO - 接收器信息获取成功
+2025-04-01 11:23:25,325 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:25] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:23:26,332 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:23:26,333 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:26] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:23:26,337 - root - INFO - 接收器信息获取成功
+2025-04-01 11:23:26,338 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:26] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:23:46,398 - root - INFO - 接收器信息获取成功
+2025-04-01 11:23:46,399 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:23:47,403 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:23:47,403 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:47] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:23:47,407 - root - INFO - 接收器信息获取成功
+2025-04-01 11:23:47,407 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:47] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:23:58,097 - root - INFO - 接收器信息获取成功
+2025-04-01 11:23:58,097 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:58] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:23:59,102 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:23:59,103 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:59] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:23:59,107 - root - INFO - 接收器信息获取成功
+2025-04-01 11:23:59,107 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:23:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:27:55,928 - root - ERROR - 仿真器启动失败:Start failed: Simulator is already started.
+2025-04-01 11:27:55,929 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:27:55] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:28:09,770 - root - INFO - 接收器信息获取成功
+2025-04-01 11:28:09,771 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:28:09] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:28:10,778 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:28:10,779 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:28:10] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:28:10,782 - root - INFO - 接收器信息获取成功
+2025-04-01 11:28:10,783 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:28:10] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:37,766 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 11:32:40,372 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:40,373 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:40] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:41,377 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:41,378 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:41] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:42,382 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:42,382 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:42] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:43,386 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:43,387 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:43] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:44,392 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:44,392 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:44] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:45,396 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:45,397 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:45] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:46,400 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:46,401 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:47,406 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:47,407 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:47] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:48,411 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:48,411 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:48] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:49,416 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:49,416 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:49] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:50,419 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:50,420 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:50] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:51,423 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:51,424 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:51] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:52,426 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:52,427 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:52] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:53,430 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:53,430 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:53] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:54,433 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:54,433 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:54] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:55,437 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:55,438 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:55] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:56,442 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:56,443 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:56] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:57,446 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:57,446 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:57] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:58,451 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:58,452 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:58] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:32:59,455 - root - INFO - 接收器信息获取成功
+2025-04-01 11:32:59,456 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:32:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:33:00,459 - root - INFO - 接收器信息获取成功
+2025-04-01 11:33:00,459 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:00] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:33:01,462 - root - INFO - 接收器信息获取成功
+2025-04-01 11:33:01,463 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:01] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:33:02,466 - root - INFO - 接收器信息获取成功
+2025-04-01 11:33:02,467 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:33:10,574 - root - INFO - 接收器串口设置成功
+2025-04-01 11:33:10,575 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:10] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:33:13,989 - root - INFO - 接收器成功接受数据
+2025-04-01 11:33:13,990 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:13] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:33:18,327 - root - INFO - 接收器信息获取成功
+2025-04-01 11:33:18,327 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:33:19,336 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:33:19,337 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:19] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:33:19,339 - root - INFO - 接收器信息获取成功
+2025-04-01 11:33:19,340 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:33:32,893 - root - ERROR - 仿真器启动失败:Start failed: Simulator is already started.
+2025-04-01 11:33:32,894 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:32] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:33:38,816 - root - INFO - 接收器信息获取成功
+2025-04-01 11:33:38,817 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:38] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:33:39,822 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:33:39,823 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:39] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:33:39,825 - root - INFO - 接收器信息获取成功
+2025-04-01 11:33:39,826 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:33:39] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:36:50,652 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 11:37:02,822 - root - INFO - 接收器串口设置成功
+2025-04-01 11:37:02,822 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:02] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:37:05,915 - root - INFO - 接收器成功接受数据
+2025-04-01 11:37:05,916 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:05] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:37:08,470 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 11:37:08,471 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:08] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 11:37:10,241 - root - INFO - 信号频点设置成功
+2025-04-01 11:37:10,242 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:10] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 11:37:12,410 - root - INFO - 输出基准功率设置成功
+2025-04-01 11:37:12,411 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:12] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 11:37:14,415 - root - INFO - 自定义路径设置成功
+2025-04-01 11:37:14,415 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:14] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 11:37:17,089 - root - INFO - 仿真器启动成功
+2025-04-01 11:37:17,089 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:17] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:37:58,589 - root - INFO - 接收器信息获取成功
+2025-04-01 11:37:58,589 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:58] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:37:59,596 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:37:59,597 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:59] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:37:59,599 - root - INFO - 接收器信息获取成功
+2025-04-01 11:37:59,600 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:37:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:38:39,959 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\server.py', reloading
+2025-04-01 11:38:51,360 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 11:38:51,361 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:38:51] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 11:38:55,055 - root - INFO - 信号频点设置成功
+2025-04-01 11:38:55,056 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:38:55] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 11:38:57,707 - root - INFO - 输出基准功率设置成功
+2025-04-01 11:38:57,707 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:38:57] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 11:39:00,377 - root - INFO - 自定义路径设置成功
+2025-04-01 11:39:00,378 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:00] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 11:39:02,398 - root - INFO - 仿真器启动成功
+2025-04-01 11:39:02,398 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:02] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:39:14,489 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:14,490 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:14] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:15,494 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:15,495 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:15] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:16,499 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:16,500 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:17,505 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:17,506 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:18,510 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:18,511 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:19,514 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:19,515 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:20,520 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:20,520 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:20] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:21,524 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:21,525 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:21] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:22,529 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:22,529 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:22] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:23,534 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:23,535 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:23] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:24,538 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:24,539 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:24] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:25,543 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:25,544 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:25] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:26,548 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:26,549 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:26] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:27,552 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:27,553 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:27] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:28,555 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:28,556 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:28] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:29,560 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:29,561 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:29] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:30,565 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:30,565 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:30] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:31,569 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:31,569 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:31] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:32,574 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:32,575 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:32] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:33,578 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:33,578 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:33] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:34,582 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:34,583 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:34] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:35,586 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:35,587 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:35] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:36,590 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:36,590 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:36] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:37,594 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:37,595 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:37] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:38,599 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:38,602 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:38] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:39,606 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:39,606 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:39] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:40,609 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:40,610 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:40] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:41,615 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:41,616 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:41] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:42,620 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:42,620 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:42] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:43,624 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:43,624 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:43] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:44,629 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:44,630 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:44] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:45,633 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:45,634 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:45] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:46,637 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:46,637 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:47,640 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:47,641 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:47] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:48,645 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:48,645 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:48] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:49,649 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:49,650 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:49] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:50,653 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:50,654 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:50] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:51,658 - root - INFO - 接收器信息获取成功
+2025-04-01 11:39:51,659 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:51] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:39:57,983 - root - INFO - 接收器串口设置成功
+2025-04-01 11:39:57,984 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:39:57] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:40:00,302 - root - INFO - 接收器成功接受数据
+2025-04-01 11:40:00,302 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:40:00] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:40:05,286 - root - INFO - 接收器信息获取成功
+2025-04-01 11:40:05,287 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:40:05] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:40:06,290 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:40:06,291 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:40:06] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:40:06,292 - root - INFO - 接收器信息获取成功
+2025-04-01 11:40:06,293 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:40:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:40:47,426 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 11:40:57,157 - root - INFO - 接收器信息获取成功
+2025-04-01 11:40:57,157 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:40:57] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:40:58,163 - root - INFO - 接收器信息获取成功
+2025-04-01 11:40:58,164 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:40:58] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:40:59,169 - root - INFO - 接收器信息获取成功
+2025-04-01 11:40:59,170 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:40:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:00,175 - root - INFO - 接收器信息获取成功
+2025-04-01 11:41:00,176 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:00] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:01,181 - root - INFO - 接收器信息获取成功
+2025-04-01 11:41:01,182 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:01] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:02,186 - root - INFO - 接收器信息获取成功
+2025-04-01 11:41:02,187 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:03,190 - root - INFO - 接收器信息获取成功
+2025-04-01 11:41:03,191 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:10,361 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 11:41:10,361 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:10] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 11:41:12,227 - root - INFO - 信号频点设置成功
+2025-04-01 11:41:12,227 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:12] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 11:41:14,136 - root - INFO - 输出基准功率设置成功
+2025-04-01 11:41:14,136 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:14] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 11:41:16,049 - root - INFO - 自定义路径设置成功
+2025-04-01 11:41:16,049 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:16] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 11:41:18,089 - root - INFO - 仿真器启动成功
+2025-04-01 11:41:18,090 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:18] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:41:21,395 - root - INFO - 接收器串口设置成功
+2025-04-01 11:41:21,396 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:21] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:41:23,686 - root - INFO - 接收器成功接受数据
+2025-04-01 11:41:23,687 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:23] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:41:28,478 - root - INFO - 接收器信息获取成功
+2025-04-01 11:41:28,479 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:28] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:29,484 - root - INFO - 接收器信息获取成功
+2025-04-01 11:41:29,485 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:29] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:30,489 - root - INFO - 接收器信息获取成功
+2025-04-01 11:41:30,490 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:30] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:31,498 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:41:31,499 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:31] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:41:31,501 - root - INFO - 接收器信息获取成功
+2025-04-01 11:41:31,502 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:31] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:41:56,013 - root - INFO - 接收器串口设置成功
+2025-04-01 11:41:56,013 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:56] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:41:58,465 - root - INFO - 接收器成功接受数据
+2025-04-01 11:41:58,466 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:41:58] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:42:02,059 - root - INFO - 接收器信息获取成功
+2025-04-01 11:42:02,059 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:42:03,063 - root - INFO - 接收器信息获取成功
+2025-04-01 11:42:03,064 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:42:04,067 - root - INFO - 接收器信息获取成功
+2025-04-01 11:42:04,067 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:04] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:42:05,073 - root - INFO - 接收器信息获取成功
+2025-04-01 11:42:05,074 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:05] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:42:06,080 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:42:06,081 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:06] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:42:06,083 - root - INFO - 接收器信息获取成功
+2025-04-01 11:42:06,084 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:42:17,218 - root - INFO - 接收器信息获取成功
+2025-04-01 11:42:17,219 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:42:18,224 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:42:18,225 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:18] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:42:18,228 - root - INFO - 接收器信息获取成功
+2025-04-01 11:42:18,228 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:42:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:43:12,993 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\skydelsdx\\remotesimulator.py', reloading
+2025-04-01 11:43:20,338 - root - INFO - 接收器串口设置成功
+2025-04-01 11:43:20,339 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:20] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:43:22,629 - root - INFO - 接收器成功接受数据
+2025-04-01 11:43:22,630 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:22] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:43:27,319 - root - INFO - 接收器信息获取成功
+2025-04-01 11:43:27,320 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:27] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:43:28,326 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:43:28,327 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:28] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:43:28,328 - root - INFO - 接收器信息获取成功
+2025-04-01 11:43:28,328 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:28] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:43:43,880 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\skydelsdx\\remotesimulator.py', reloading
+2025-04-01 11:43:47,827 - root - INFO - 接收器串口设置成功
+2025-04-01 11:43:47,828 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:47] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:43:50,465 - root - INFO - 接收器成功接受数据
+2025-04-01 11:43:50,466 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:50] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:43:55,486 - root - INFO - 接收器信息获取成功
+2025-04-01 11:43:55,487 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:55] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:43:56,493 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:43:56,493 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:56] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:43:56,495 - root - INFO - 接收器信息获取成功
+2025-04-01 11:43:56,496 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:43:56] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:44:26,608 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\skydelsdx\\remotesimulator.py', reloading
+2025-04-01 11:44:30,018 - root - INFO - 接收器串口设置成功
+2025-04-01 11:44:30,018 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:44:30] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:44:32,285 - root - INFO - 接收器成功接受数据
+2025-04-01 11:44:32,285 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:44:32] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:44:35,705 - root - INFO - 接收器信息获取成功
+2025-04-01 11:44:35,705 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:44:35] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:44:36,714 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:44:36,714 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:44:36] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:44:36,716 - root - INFO - 接收器信息获取成功
+2025-04-01 11:44:36,717 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:44:36] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:45:23,488 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\skydelsdx\\clienthil.py', reloading
+2025-04-01 11:45:27,591 - root - INFO - 接收器串口设置成功
+2025-04-01 11:45:27,592 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:27] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:45:29,939 - root - INFO - 接收器成功接受数据
+2025-04-01 11:45:29,939 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:29] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:45:34,430 - root - INFO - 接收器信息获取成功
+2025-04-01 11:45:34,431 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:34] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:45:35,441 - root - ERROR - 获取skydel模拟数据失败:No VehicleInfo,maybe the simulator didn't start.
+2025-04-01 11:45:35,441 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:35] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:45:35,444 - root - INFO - 接收器信息获取成功
+2025-04-01 11:45:35,445 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:35] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:45:47,123 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 11:45:47,123 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:47] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 11:45:48,927 - root - INFO - 信号频点设置成功
+2025-04-01 11:45:48,928 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:48] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 11:45:51,119 - root - INFO - 输出基准功率设置成功
+2025-04-01 11:45:51,120 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:51] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 11:45:52,952 - root - INFO - 自定义路径设置成功
+2025-04-01 11:45:52,952 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:52] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 11:45:54,700 - root - INFO - 仿真器启动成功
+2025-04-01 11:45:54,701 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:54] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:45:59,108 - root - INFO - 接收器信息获取成功
+2025-04-01 11:45:59,109 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:45:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:46:00,116 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:46:00,116 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:46:00] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:46:00,119 - root - INFO - 接收器信息获取成功
+2025-04-01 11:46:00,120 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:46:00] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:46:57,679 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\skydelsdx\\clienthil.py', reloading
+2025-04-01 11:47:55,953 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 11:47:55,954 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:47:55] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 11:47:57,498 - root - INFO - 信号频点设置成功
+2025-04-01 11:47:57,499 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:47:57] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 11:47:59,206 - root - INFO - 输出基准功率设置成功
+2025-04-01 11:47:59,207 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:47:59] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 11:48:00,285 - root - INFO - 自定义路径设置成功
+2025-04-01 11:48:00,286 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:48:00] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 11:48:01,488 - root - INFO - 仿真器启动成功
+2025-04-01 11:48:01,488 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:48:01] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:48:04,966 - root - INFO - 接收器串口设置成功
+2025-04-01 11:48:04,967 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:48:04] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:48:07,253 - root - INFO - 接收器成功接受数据
+2025-04-01 11:48:07,253 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:48:07] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:48:14,614 - root - INFO - 接收器信息获取成功
+2025-04-01 11:48:14,614 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:48:14] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:48:15,622 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:48:15,623 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:48:15] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:48:15,625 - root - INFO - 接收器信息获取成功
+2025-04-01 11:48:15,626 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:48:15] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:48:37,029 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 11:50:24,347 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 11:50:24,348 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:24] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 11:50:25,217 - root - INFO - 信号频点设置成功
+2025-04-01 11:50:25,218 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:25] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 11:50:26,205 - root - INFO - 输出基准功率设置成功
+2025-04-01 11:50:26,206 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:26] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 11:50:26,836 - root - INFO - 自定义路径设置成功
+2025-04-01 11:50:26,836 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:26] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 11:50:27,144 - root - INFO - 仿真器启动成功
+2025-04-01 11:50:27,145 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:27] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:50:27,542 - root - INFO - 接收器串口设置成功
+2025-04-01 11:50:27,542 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:27] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:50:28,837 - root - INFO - 接收器成功接受数据
+2025-04-01 11:50:28,849 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:28] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:50:40,242 - root - INFO - 接收器信息获取成功
+2025-04-01 11:50:40,243 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:40] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:50:41,250 - root - ERROR - 获取skydel模拟数据失败:unsupported type for timedelta milliseconds component: SimulationElapsedTimeResult
+2025-04-01 11:50:41,251 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:41] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:50:41,254 - root - INFO - 接收器信息获取成功
+2025-04-01 11:50:41,255 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:50:41] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:53:46,637 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-01 11:53:51,924 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 11:53:51,925 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:53:51] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 11:53:52,829 - root - INFO - 信号频点设置成功
+2025-04-01 11:53:52,829 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:53:52] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 11:53:53,783 - root - INFO - 输出基准功率设置成功
+2025-04-01 11:53:53,783 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:53:53] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 11:53:54,446 - root - INFO - 自定义路径设置成功
+2025-04-01 11:53:54,446 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:53:54] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 11:53:54,746 - root - INFO - 仿真器启动成功
+2025-04-01 11:53:54,747 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:53:54] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 11:53:55,062 - root - INFO - 接收器串口设置成功
+2025-04-01 11:53:55,062 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:53:55] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 11:53:56,370 - root - INFO - 接收器成功接受数据
+2025-04-01 11:53:56,371 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:53:56] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 11:54:03,250 - root - INFO - 接收器信息获取成功
+2025-04-01 11:54:03,251 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:54:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:54:04,255 - root - INFO - 接收器信息获取成功
+2025-04-01 11:54:04,256 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:54:04] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 11:54:05,262 - root - ERROR - 获取skydel模拟数据失败:unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+2025-04-01 11:54:05,263 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:54:05] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 11:54:05,264 - root - INFO - 接收器信息获取成功
+2025-04-01 11:54:05,265 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 11:54:05] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 13:24:44,565 - werkzeug - INFO -  * Detected change in 'c:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading

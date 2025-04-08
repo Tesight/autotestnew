@@ -1,0 +1,20 @@
+2025-04-01 14:21:25,670 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-01 14:21:25,671 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:25] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-01 14:21:26,371 - root - INFO - 信号频点设置成功
+2025-04-01 14:21:26,372 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:26] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-01 14:21:27,372 - root - INFO - 输出基准功率设置成功
+2025-04-01 14:21:27,373 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:27] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-01 14:21:28,082 - root - INFO - 自定义路径设置成功
+2025-04-01 14:21:28,082 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:28] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-01 14:21:28,392 - root - INFO - 仿真器启动成功
+2025-04-01 14:21:28,393 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:28] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-01 14:21:28,791 - root - INFO - 接收器串口设置成功
+2025-04-01 14:21:28,792 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:28] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-01 14:21:30,106 - root - INFO - 接收器成功接受数据
+2025-04-01 14:21:30,106 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:30] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-01 14:23:18,635 - root - INFO - 接收器信息获取成功
+2025-04-01 14:23:18,635 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:23:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-01 14:23:19,643 - root - ERROR - 获取skydel模拟数据失败:'datetime.datetime' object has no attribute 'latDeg'
+2025-04-01 14:23:19,644 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:23:19] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-01 14:23:19,648 - root - INFO - 接收器信息获取成功
+2025-04-01 14:23:19,649 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:23:19] "GET /receiver/location HTTP/1.1" 200 -

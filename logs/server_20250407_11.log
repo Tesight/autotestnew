@@ -1,0 +1,1134 @@
+2025-04-07 11:04:47,214 - root - INFO - <Response [404]>
+2025-04-07 11:04:50,264 - root - INFO - <Response [404]>
+2025-04-07 11:04:53,322 - root - INFO - <Response [404]>
+2025-04-07 11:04:56,382 - root - INFO - <Response [404]>
+2025-04-07 11:04:59,434 - root - INFO - <Response [404]>
+2025-04-07 11:05:02,494 - root - INFO - <Response [404]>
+2025-04-07 11:05:05,559 - root - INFO - <Response [404]>
+2025-04-07 11:05:08,624 - root - INFO - <Response [404]>
+2025-04-07 11:05:11,670 - root - INFO - <Response [404]>
+2025-04-07 11:05:14,703 - root - INFO - <Response [404]>
+2025-04-07 11:05:17,762 - root - INFO - <Response [404]>
+2025-04-07 11:05:20,811 - root - INFO - <Response [404]>
+2025-04-07 11:05:23,855 - root - INFO - <Response [404]>
+2025-04-07 11:05:26,920 - root - INFO - <Response [404]>
+2025-04-07 11:05:29,966 - root - INFO - <Response [404]>
+2025-04-07 11:05:33,018 - root - INFO - <Response [404]>
+2025-04-07 11:05:36,063 - root - INFO - <Response [404]>
+2025-04-07 11:05:42,200 - root - INFO - <Response [404]>
+2025-04-07 11:05:45,258 - root - INFO - <Response [404]>
+2025-04-07 11:05:48,324 - root - INFO - <Response [404]>
+2025-04-07 11:05:51,381 - root - INFO - <Response [404]>
+2025-04-07 11:05:54,444 - root - INFO - <Response [404]>
+2025-04-07 11:05:57,491 - root - INFO - <Response [404]>
+2025-04-07 11:06:00,545 - root - INFO - <Response [404]>
+2025-04-07 11:06:03,608 - root - INFO - <Response [404]>
+2025-04-07 11:06:06,670 - root - INFO - <Response [404]>
+2025-04-07 11:06:09,730 - root - INFO - <Response [404]>
+2025-04-07 11:06:12,795 - root - INFO - <Response [404]>
+2025-04-07 11:06:15,870 - root - INFO - <Response [404]>
+2025-04-07 11:06:18,916 - root - INFO - <Response [404]>
+2025-04-07 11:06:21,997 - root - INFO - <Response [404]>
+2025-04-07 11:06:25,044 - root - INFO - <Response [404]>
+2025-04-07 11:06:28,076 - root - INFO - <Response [404]>
+2025-04-07 11:06:31,133 - root - INFO - <Response [404]>
+2025-04-07 11:06:34,216 - root - INFO - <Response [404]>
+2025-04-07 11:06:37,294 - root - INFO - <Response [404]>
+2025-04-07 11:06:40,328 - root - INFO - <Response [404]>
+2025-04-07 11:06:43,364 - root - INFO - <Response [404]>
+2025-04-07 11:06:46,427 - root - INFO - <Response [404]>
+2025-04-07 11:06:49,477 - root - INFO - <Response [404]>
+2025-04-07 11:06:52,531 - root - INFO - <Response [404]>
+2025-04-07 11:19:09,575 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 11:19:09,576 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:19:09] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 11:19:10,342 - root - INFO - 信号频点设置成功
+2025-04-07 11:19:10,343 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:19:10] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 11:19:11,351 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:19:11,352 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:19:11] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 11:19:11,959 - root - INFO - 自定义路径设置成功
+2025-04-07 11:19:11,960 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:19:11] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 11:19:12,256 - root - INFO - 仿真器启动成功
+2025-04-07 11:19:12,256 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:19:12] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 11:19:12,649 - root - INFO - 接收器串口设置成功
+2025-04-07 11:19:12,650 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:19:12] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 11:19:13,954 - root - INFO - 接收器成功接受数据
+2025-04-07 11:19:13,954 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:19:13] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 11:19:29,204 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:19:29] "[35m[1mPOST /customized/offset HTTP/1.1[0m" 500 -
+2025-04-07 11:19:47,208 - werkzeug - INFO -  * Detected change in 'C:\\baidunetdiskdownload\\mysence\\server\\server.py', reloading
+2025-04-07 11:20:09,905 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 11:20:09,906 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:20:09] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 11:20:10,679 - root - INFO - 信号频点设置成功
+2025-04-07 11:20:10,679 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:20:10] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 11:20:11,712 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:20:11,712 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:20:11] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 11:20:12,198 - root - INFO - 自定义路径设置成功
+2025-04-07 11:20:12,198 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:20:12] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 11:20:12,509 - root - INFO - 仿真器启动成功
+2025-04-07 11:20:12,509 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:20:12] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 11:20:12,934 - root - INFO - 接收器串口设置成功
+2025-04-07 11:20:12,935 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:20:12] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 11:20:14,254 - root - INFO - 接收器成功接受数据
+2025-04-07 11:20:14,254 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:20:14] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 11:20:17,812 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:20:17] "[35m[1mPOST /customized/offset HTTP/1.1[0m" 500 -
+2025-04-07 11:21:36,588 - werkzeug - INFO -  * Detected change in 'C:\\baidunetdiskdownload\\mysence\\server\\funcs.py', reloading
+2025-04-07 11:21:49,217 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 11:21:49,217 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:21:49] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 11:21:53,859 - root - INFO - 信号频点设置成功
+2025-04-07 11:21:53,859 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:21:53] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 11:22:00,402 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:22:00,403 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:22:00] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 11:25:12,841 - werkzeug - INFO -  * Detected change in 'C:\\baidunetdiskdownload\\mysence\\server\\server.py', reloading
+2025-04-07 11:25:41,543 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 11:25:41,543 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:25:41] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 11:25:42,310 - root - INFO - 信号频点设置成功
+2025-04-07 11:25:42,311 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:25:42] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 11:25:43,318 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:25:43,319 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:25:43] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 11:25:43,902 - root - INFO - 自定义路径设置成功
+2025-04-07 11:25:43,903 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:25:43] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 11:25:44,214 - root - INFO - 仿真器启动成功
+2025-04-07 11:25:44,214 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:25:44] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 11:25:44,620 - root - INFO - 接收器串口设置成功
+2025-04-07 11:25:44,621 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:25:44] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 11:25:45,928 - root - INFO - 接收器成功接受数据
+2025-04-07 11:25:45,929 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:25:45] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 11:25:50,410 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:25:50,411 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:25:50] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:26:13,348 - root - INFO - 接收器信息获取成功
+2025-04-07 11:26:13,349 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:26:13,360 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:13] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:26:14,370 - root - INFO - 接收器信息获取成功
+2025-04-07 11:26:14,371 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:14] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:26:16,433 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:16] "[33mPOST /CustomizedPath/offset2 HTTP/1.1[0m" 404 -
+2025-04-07 11:26:16,434 - root - INFO - <Response [404]>
+2025-04-07 11:26:16,440 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:16] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:26:17,447 - root - INFO - 接收器信息获取成功
+2025-04-07 11:26:17,448 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:26:19,495 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:19] "[33mPOST /CustomizedPath/offset2 HTTP/1.1[0m" 404 -
+2025-04-07 11:26:19,497 - root - INFO - <Response [404]>
+2025-04-07 11:26:19,504 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:19] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:26:20,510 - root - INFO - 接收器信息获取成功
+2025-04-07 11:26:20,511 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:20] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:26:22,558 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:22] "[33mPOST /CustomizedPath/offset2 HTTP/1.1[0m" 404 -
+2025-04-07 11:26:22,559 - root - INFO - <Response [404]>
+2025-04-07 11:26:22,566 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:26:22] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:28:33,806 - root - INFO - 接收器信息获取成功
+2025-04-07 11:28:33,806 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:33] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:28:33,819 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:33] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:28:34,824 - root - INFO - 接收器信息获取成功
+2025-04-07 11:28:34,825 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:34] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:28:34,837 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:28:34,837 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:34] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:28:34,839 - root - INFO - <Response [200]>
+2025-04-07 11:28:34,845 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:34] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:28:35,856 - root - INFO - 接收器信息获取成功
+2025-04-07 11:28:35,857 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:35] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:28:35,869 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:28:35,870 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:35] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:28:35,871 - root - INFO - <Response [200]>
+2025-04-07 11:28:35,876 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:35] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:28:36,890 - root - INFO - 接收器信息获取成功
+2025-04-07 11:28:36,890 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:36] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:28:36,903 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:28:36,903 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:36] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:28:36,904 - root - INFO - <Response [200]>
+2025-04-07 11:28:36,909 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:28:36] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:29:37,353 - werkzeug - INFO -  * Detected change in 'C:\\baidunetdiskdownload\\mysence\\server\\server.py', reloading
+2025-04-07 11:29:46,966 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 11:29:46,967 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:29:46] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 11:29:47,771 - root - INFO - 信号频点设置成功
+2025-04-07 11:29:47,771 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:29:47] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 11:29:48,808 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:29:48,809 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:29:48] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 11:29:49,396 - root - INFO - 自定义路径设置成功
+2025-04-07 11:29:49,396 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:29:49] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 11:29:49,702 - root - INFO - 仿真器启动成功
+2025-04-07 11:29:49,702 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:29:49] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 11:29:50,131 - root - INFO - 接收器串口设置成功
+2025-04-07 11:29:50,132 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:29:50] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 11:29:51,451 - root - INFO - 接收器成功接受数据
+2025-04-07 11:29:51,452 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:29:51] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 11:31:26,935 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:26,936 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:26] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:26,943 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:26] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:27,952 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:27,953 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:27] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:27,966 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:27,967 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:27] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:27,968 - root - INFO - <Response [200]>
+2025-04-07 11:31:27,972 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:27] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:28,979 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:28,980 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:28] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:28,993 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:28,994 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:28] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:28,995 - root - INFO - <Response [200]>
+2025-04-07 11:31:28,999 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:28] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:30,012 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:30,013 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:30] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:30,022 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:30,023 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:30] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:30,024 - root - INFO - <Response [200]>
+2025-04-07 11:31:30,027 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:30] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:31,045 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:31,046 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:31] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:31,054 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:31,054 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:31] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:31,055 - root - INFO - <Response [200]>
+2025-04-07 11:31:31,059 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:31] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:32,076 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:32,076 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:32] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:32,087 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:32,088 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:32] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:32,089 - root - INFO - <Response [200]>
+2025-04-07 11:31:32,093 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:32] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:33,102 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:33,102 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:33] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:33,112 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:33,113 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:33] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:33,114 - root - INFO - <Response [200]>
+2025-04-07 11:31:33,119 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:33] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:34,132 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:34,133 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:34] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:34,145 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:34,145 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:34] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:34,147 - root - INFO - <Response [200]>
+2025-04-07 11:31:34,152 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:34] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:35,161 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:35,162 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:35] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:35,177 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:35,178 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:35] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:35,179 - root - INFO - <Response [200]>
+2025-04-07 11:31:35,184 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:35] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:36,199 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:36,200 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:36] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:36,210 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:36,211 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:36] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:36,211 - root - INFO - <Response [200]>
+2025-04-07 11:31:36,216 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:36] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:37,231 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:37,231 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:37] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:37,243 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:37,244 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:37] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:37,245 - root - INFO - <Response [200]>
+2025-04-07 11:31:37,248 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:37] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:38,264 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:38,264 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:38] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:38,274 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:38,275 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:38] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:38,276 - root - INFO - <Response [200]>
+2025-04-07 11:31:38,280 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:38] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:39,291 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:39,292 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:39] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:39,305 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:39,306 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:39] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:39,307 - root - INFO - <Response [200]>
+2025-04-07 11:31:39,311 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:39] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:40,322 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:40,323 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:40] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:40,333 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:40,334 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:40] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:40,334 - root - INFO - <Response [200]>
+2025-04-07 11:31:40,338 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:40] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:41,342 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:41,343 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:41] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:41,351 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:41,352 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:41] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:41,353 - root - INFO - <Response [200]>
+2025-04-07 11:31:41,357 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:41] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:42,366 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:42,366 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:42] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:42,375 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:42,375 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:42] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:42,377 - root - INFO - <Response [200]>
+2025-04-07 11:31:42,382 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:42] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:43,395 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:43,396 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:43] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:43,404 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:43,405 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:43] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:43,405 - root - INFO - <Response [200]>
+2025-04-07 11:31:43,409 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:43] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:44,424 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:44,424 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:44] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:44,432 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:44,433 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:44] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:44,434 - root - INFO - <Response [200]>
+2025-04-07 11:31:44,438 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:44] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:45,446 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:45,447 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:45] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:45,456 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:45,457 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:45] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:45,458 - root - INFO - <Response [200]>
+2025-04-07 11:31:45,461 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:45] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:46,479 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:46,480 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:46,492 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:46,492 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:46] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:46,493 - root - INFO - <Response [200]>
+2025-04-07 11:31:46,497 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:46] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:47,509 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:47,510 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:47] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:47,520 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:47,521 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:47] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:47,522 - root - INFO - <Response [200]>
+2025-04-07 11:31:47,526 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:47] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:48,544 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:48,545 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:48] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:48,556 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:48,556 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:48] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:48,557 - root - INFO - <Response [200]>
+2025-04-07 11:31:48,560 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:48] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:49,576 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:49,577 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:49] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:49,588 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:49,589 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:49] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:49,590 - root - INFO - <Response [200]>
+2025-04-07 11:31:49,593 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:49] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:50,600 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:50,601 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:50] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:50,614 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:50,615 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:50] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:50,615 - root - INFO - <Response [200]>
+2025-04-07 11:31:50,621 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:50] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:51,631 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:51,631 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:51] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:51,639 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:51,640 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:51] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:51,640 - root - INFO - <Response [200]>
+2025-04-07 11:31:51,644 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:51] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:52,656 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:52,657 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:52] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:52,671 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:52,671 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:52] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:52,672 - root - INFO - <Response [200]>
+2025-04-07 11:31:52,675 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:52] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:53,681 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:53,682 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:53] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:53,691 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:53,692 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:53] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:53,693 - root - INFO - <Response [200]>
+2025-04-07 11:31:53,739 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:53] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:54,745 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:54,746 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:54] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:54,757 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:54,758 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:54] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:54,759 - root - INFO - <Response [200]>
+2025-04-07 11:31:54,762 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:54] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:55,778 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:55,779 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:55] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:55,787 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:55,788 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:55] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:55,789 - root - INFO - <Response [200]>
+2025-04-07 11:31:55,793 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:55] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:56,812 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:56,814 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:56] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:56,827 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:56,827 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:56] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:56,828 - root - INFO - <Response [200]>
+2025-04-07 11:31:56,834 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:56] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:57,840 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:57,841 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:57] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:57,852 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:31:57,853 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:57] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:31:57,854 - root - INFO - <Response [200]>
+2025-04-07 11:31:57,860 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:57] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:58,874 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:58,874 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:58] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:58,889 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:58] "[35m[1mPOST /customized/offset2 HTTP/1.1[0m" 500 -
+2025-04-07 11:31:58,890 - root - INFO - <Response [500]>
+2025-04-07 11:31:58,896 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:58] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:31:59,911 - root - INFO - 接收器信息获取成功
+2025-04-07 11:31:59,912 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:31:59,921 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:59] "[35m[1mPOST /customized/offset2 HTTP/1.1[0m" 500 -
+2025-04-07 11:31:59,922 - root - INFO - <Response [500]>
+2025-04-07 11:31:59,928 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:31:59] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:32:00,933 - root - INFO - 接收器信息获取成功
+2025-04-07 11:32:00,933 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:00] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:32:00,941 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:00] "[35m[1mPOST /customized/offset2 HTTP/1.1[0m" 500 -
+2025-04-07 11:32:00,942 - root - INFO - <Response [500]>
+2025-04-07 11:32:00,947 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:00] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:32:01,965 - root - INFO - 接收器信息获取成功
+2025-04-07 11:32:01,965 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:01] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:32:01,974 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:01] "[35m[1mPOST /customized/offset2 HTTP/1.1[0m" 500 -
+2025-04-07 11:32:01,975 - root - INFO - <Response [500]>
+2025-04-07 11:32:01,979 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:01] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:32:02,995 - root - INFO - 接收器信息获取成功
+2025-04-07 11:32:02,996 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:32:03,004 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:03] "[35m[1mPOST /customized/offset2 HTTP/1.1[0m" 500 -
+2025-04-07 11:32:03,005 - root - INFO - <Response [500]>
+2025-04-07 11:32:03,010 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:32:03] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:45:49,703 - root - INFO - 接收器信息获取成功
+2025-04-07 11:45:49,704 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:45:49] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:45:49,716 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:45:49] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:45:50,731 - root - INFO - 接收器信息获取成功
+2025-04-07 11:45:50,732 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:45:50] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:45:50,741 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:45:50] "[35m[1mPOST /customized/offset2 HTTP/1.1[0m" 500 -
+2025-04-07 11:45:50,742 - root - INFO - <Response [500]>
+2025-04-07 11:45:50,742 - root - INFO - 检测失败
+2025-04-07 11:46:06,955 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 11:46:06,956 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:06] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 11:46:07,877 - root - INFO - 信号频点设置成功
+2025-04-07 11:46:07,878 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:07] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 11:46:08,883 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:08,884 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:08] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 11:46:09,497 - root - INFO - 自定义路径设置成功
+2025-04-07 11:46:09,497 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:09] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 11:46:09,803 - root - INFO - 仿真器启动成功
+2025-04-07 11:46:09,804 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:09] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 11:46:10,174 - root - INFO - 接收器串口设置成功
+2025-04-07 11:46:10,174 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:10] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 11:46:11,484 - root - INFO - 接收器成功接受数据
+2025-04-07 11:46:11,485 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:11] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 11:46:17,707 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:17,707 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:17,715 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:17] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:18,732 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:18,733 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:18,742 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:18,743 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:18] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:18,744 - root - INFO - <Response [200]>
+2025-04-07 11:46:18,745 - root - INFO - 成功发送请求
+2025-04-07 11:46:18,749 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:18] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:19,761 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:19,762 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:19,775 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:19,775 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:19] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:19,777 - root - INFO - <Response [200]>
+2025-04-07 11:46:19,777 - root - INFO - 成功发送请求
+2025-04-07 11:46:19,782 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:19] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:20,803 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:20,804 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:20] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:20,815 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:20,816 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:20] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:20,818 - root - INFO - <Response [200]>
+2025-04-07 11:46:20,818 - root - INFO - 成功发送请求
+2025-04-07 11:46:20,823 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:20] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:21,839 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:21,840 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:21] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:21,852 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:21,853 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:21] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:21,854 - root - INFO - <Response [200]>
+2025-04-07 11:46:21,854 - root - INFO - 成功发送请求
+2025-04-07 11:46:21,859 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:21] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:22,870 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:22,871 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:22] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:22,882 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:22,883 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:22] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:22,885 - root - INFO - <Response [200]>
+2025-04-07 11:46:22,886 - root - INFO - 成功发送请求
+2025-04-07 11:46:22,892 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:22] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:23,904 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:23,904 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:23] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:23,917 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:23,917 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:23] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:23,918 - root - INFO - <Response [200]>
+2025-04-07 11:46:23,919 - root - INFO - 成功发送请求
+2025-04-07 11:46:23,924 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:23] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:24,932 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:24,933 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:24] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:24,946 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:24,946 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:24] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:24,947 - root - INFO - <Response [200]>
+2025-04-07 11:46:24,947 - root - INFO - 成功发送请求
+2025-04-07 11:46:24,953 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:24] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:25,961 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:25,961 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:25] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:25,974 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:25,974 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:25] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:25,975 - root - INFO - <Response [200]>
+2025-04-07 11:46:25,975 - root - INFO - 成功发送请求
+2025-04-07 11:46:25,981 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:25] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:26,991 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:26,992 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:26] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:27,000 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:27,001 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:27] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:27,002 - root - INFO - <Response [200]>
+2025-04-07 11:46:27,002 - root - INFO - 成功发送请求
+2025-04-07 11:46:27,008 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:27] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:28,013 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:28,014 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:28] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:28,025 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:28,026 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:28] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:28,028 - root - INFO - <Response [200]>
+2025-04-07 11:46:28,028 - root - INFO - 成功发送请求
+2025-04-07 11:46:28,033 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:28] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:29,045 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:29,046 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:29] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:29,055 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:29,056 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:29] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:29,057 - root - INFO - <Response [200]>
+2025-04-07 11:46:29,057 - root - INFO - 成功发送请求
+2025-04-07 11:46:29,060 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:29] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:30,078 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:30,079 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:30] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:30,093 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:30,093 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:30] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:30,094 - root - INFO - <Response [200]>
+2025-04-07 11:46:30,095 - root - INFO - 成功发送请求
+2025-04-07 11:46:30,098 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:30] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:31,110 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:31,111 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:31] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:31,120 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:31,121 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:31] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:31,122 - root - INFO - <Response [200]>
+2025-04-07 11:46:31,122 - root - INFO - 成功发送请求
+2025-04-07 11:46:31,127 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:31] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:32,140 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:32,141 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:32] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:32,154 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:32,154 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:32] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:32,155 - root - INFO - <Response [200]>
+2025-04-07 11:46:32,155 - root - INFO - 成功发送请求
+2025-04-07 11:46:32,158 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:32] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:33,170 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:33,171 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:33] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:33,179 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:33,180 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:33] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:33,181 - root - INFO - <Response [200]>
+2025-04-07 11:46:33,181 - root - INFO - 成功发送请求
+2025-04-07 11:46:33,184 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:33] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:34,200 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:34,200 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:34] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:34,208 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:34,209 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:34] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:34,210 - root - INFO - <Response [200]>
+2025-04-07 11:46:34,210 - root - INFO - 成功发送请求
+2025-04-07 11:46:34,213 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:34] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:35,218 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:35,219 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:35] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:35,227 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:35,228 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:35] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:35,229 - root - INFO - <Response [200]>
+2025-04-07 11:46:35,229 - root - INFO - 成功发送请求
+2025-04-07 11:46:35,233 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:35] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:36,248 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:36,248 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:36] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:36,256 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:36,257 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:36] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:36,258 - root - INFO - <Response [200]>
+2025-04-07 11:46:36,258 - root - INFO - 成功发送请求
+2025-04-07 11:46:36,262 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:36] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:37,278 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:37,278 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:37] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:37,288 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:37,288 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:37] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:37,289 - root - INFO - <Response [200]>
+2025-04-07 11:46:37,289 - root - INFO - 成功发送请求
+2025-04-07 11:46:37,293 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:37] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:38,307 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:38,307 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:38] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:38,317 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:38,318 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:38] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:38,319 - root - INFO - <Response [200]>
+2025-04-07 11:46:38,319 - root - INFO - 成功发送请求
+2025-04-07 11:46:38,322 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:38] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:39,336 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:39,336 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:39] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:39,345 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:39,346 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:39] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:39,347 - root - INFO - <Response [200]>
+2025-04-07 11:46:39,347 - root - INFO - 成功发送请求
+2025-04-07 11:46:39,350 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:39] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:40,354 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:40,355 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:40] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:40,364 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:40,364 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:40] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:40,365 - root - INFO - <Response [200]>
+2025-04-07 11:46:40,366 - root - INFO - 成功发送请求
+2025-04-07 11:46:40,371 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:40] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:41,379 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:41,380 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:41] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:41,388 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:41,389 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:41] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:41,390 - root - INFO - <Response [200]>
+2025-04-07 11:46:41,390 - root - INFO - 成功发送请求
+2025-04-07 11:46:41,394 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:41] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:42,408 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:42,409 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:42] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:42,420 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:42,420 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:42] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:42,421 - root - INFO - <Response [200]>
+2025-04-07 11:46:42,421 - root - INFO - 成功发送请求
+2025-04-07 11:46:42,426 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:42] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:43,436 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:43,436 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:43] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:43,446 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:43,446 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:43] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:43,447 - root - INFO - <Response [200]>
+2025-04-07 11:46:43,447 - root - INFO - 成功发送请求
+2025-04-07 11:46:43,450 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:43] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:44,466 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:44,467 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:44] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:44,475 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:44,476 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:44] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:44,477 - root - INFO - <Response [200]>
+2025-04-07 11:46:44,477 - root - INFO - 成功发送请求
+2025-04-07 11:46:44,593 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:44] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:45,606 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:45,607 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:45] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:45,615 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:45,616 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:45] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:45,617 - root - INFO - <Response [200]>
+2025-04-07 11:46:45,617 - root - INFO - 成功发送请求
+2025-04-07 11:46:45,620 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:45] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:46,637 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:46,638 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:46,648 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:46,648 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:46] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:46,649 - root - INFO - <Response [200]>
+2025-04-07 11:46:46,650 - root - INFO - 成功发送请求
+2025-04-07 11:46:46,654 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:46] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:47,666 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:47,667 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:47] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:47,676 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:47,676 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:47] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:47,677 - root - INFO - <Response [200]>
+2025-04-07 11:46:47,678 - root - INFO - 成功发送请求
+2025-04-07 11:46:47,680 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:47] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:48,693 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:48,694 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:48] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:48,706 - root - INFO - 输出基准功率设置成功
+2025-04-07 11:46:48,706 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:48] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 11:46:48,707 - root - INFO - <Response [200]>
+2025-04-07 11:46:48,707 - root - INFO - 成功发送请求
+2025-04-07 11:46:48,716 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:48] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 11:46:49,733 - root - INFO - 接收器信息获取成功
+2025-04-07 11:46:49,734 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:49] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 11:46:49,742 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 11:46:49] "[35m[1mPOST /customized/offset2 HTTP/1.1[0m" 500 -
+2025-04-07 11:46:49,743 - root - INFO - <Response [500]>
+2025-04-07 11:46:49,744 - root - INFO - 检测失败
+2025-04-07 13:48:04,500 - root - INFO - 输出基准功率设置成功
+2025-04-07 13:48:04,500 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:04] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 13:48:09,939 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 13:48:09,940 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:09] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 13:48:10,967 - root - INFO - 信号频点设置成功
+2025-04-07 13:48:10,968 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:10] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 13:48:12,059 - root - INFO - 输出基准功率设置成功
+2025-04-07 13:48:12,060 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:12] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 13:48:12,765 - root - INFO - 自定义路径设置成功
+2025-04-07 13:48:12,766 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:12] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 13:48:13,051 - root - INFO - 仿真器启动成功
+2025-04-07 13:48:13,052 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:13] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 13:48:13,434 - root - INFO - 接收器串口设置成功
+2025-04-07 13:48:13,435 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:13] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 13:48:14,734 - root - INFO - 接收器成功接受数据
+2025-04-07 13:48:14,735 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:14] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 13:48:20,315 - root - INFO - 接收器信息获取成功
+2025-04-07 13:48:20,315 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:20] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:48:20,323 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:20] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 13:48:21,340 - root - INFO - 接收器信息获取成功
+2025-04-07 13:48:21,341 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:21] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:48:21,350 - root - INFO - 输出基准功率设置成功
+2025-04-07 13:48:21,351 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:21] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 13:48:21,357 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:21] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 13:48:22,375 - root - INFO - 接收器信息获取成功
+2025-04-07 13:48:22,376 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:22] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:48:22,392 - root - INFO - 输出基准功率设置成功
+2025-04-07 13:48:22,393 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:22] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 13:48:22,397 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:22] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 13:48:23,405 - root - INFO - 接收器信息获取成功
+2025-04-07 13:48:23,406 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:23] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:48:23,419 - root - INFO - 输出基准功率设置成功
+2025-04-07 13:48:23,419 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:23] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 13:48:23,424 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:23] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 13:48:24,434 - root - INFO - 接收器信息获取成功
+2025-04-07 13:48:24,434 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:24] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:48:24,448 - root - INFO - 输出基准功率设置成功
+2025-04-07 13:48:24,449 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:24] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 13:48:24,455 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:48:24] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 13:49:19,255 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:19,259 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:19,281 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:19] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 13:49:20,290 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:20,291 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:20] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:21,310 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:21,311 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:21] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:22,324 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:22,325 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:22] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:23,342 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:23,343 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:23] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:24,355 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:24,356 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:24] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:25,369 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:25,370 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:25] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:26,387 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:26,388 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:26] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:27,404 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:27,405 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:27] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:28,417 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:28,417 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:28] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:28,428 - root - INFO - 输出基准功率设置成功
+2025-04-07 13:49:28,429 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:28] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 13:49:28,450 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:28] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 13:49:29,462 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:29,463 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:29] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:30,475 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:30,476 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:30] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 13:49:31,485 - root - INFO - 接收器信息获取成功
+2025-04-07 13:49:31,486 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 13:49:31] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:30:51,139 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 14:30:51,139 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:30:51] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 14:30:52,122 - root - INFO - 信号频点设置成功
+2025-04-07 14:30:52,123 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:30:52] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 14:30:53,118 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:30:53,119 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:30:53] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 14:30:53,821 - root - INFO - 自定义路径设置成功
+2025-04-07 14:30:53,822 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:30:53] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 14:30:54,139 - root - INFO - 仿真器启动成功
+2025-04-07 14:30:54,139 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:30:54] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 14:30:54,513 - root - INFO - 接收器串口设置成功
+2025-04-07 14:30:54,514 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:30:54] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 14:30:55,829 - root - INFO - 接收器成功接受数据
+2025-04-07 14:30:55,829 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:30:55] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 14:31:03,462 - root - INFO - 接收器信息获取成功
+2025-04-07 14:31:03,463 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:31:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:31:04,478 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:31:04] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:31:04,482 - root - INFO - 接收器信息获取成功
+2025-04-07 14:31:04,482 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:31:04] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:33:59,955 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 14:33:59,956 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:33:59] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 14:34:00,961 - root - INFO - 信号频点设置成功
+2025-04-07 14:34:00,962 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:00] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 14:34:01,935 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:34:01,935 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:01] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 14:34:02,630 - root - INFO - 自定义路径设置成功
+2025-04-07 14:34:02,630 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:02] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 14:34:02,938 - root - INFO - 仿真器启动成功
+2025-04-07 14:34:02,938 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:02] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 14:34:03,299 - root - INFO - 接收器串口设置成功
+2025-04-07 14:34:03,300 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:03] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 14:34:04,615 - root - INFO - 接收器成功接受数据
+2025-04-07 14:34:04,615 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:04] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 14:34:10,675 - root - INFO - 接收器信息获取成功
+2025-04-07 14:34:10,676 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:10] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:34:11,696 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:11] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:34:11,702 - root - INFO - 接收器信息获取成功
+2025-04-07 14:34:11,702 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:34:11] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:35:02,215 - root - INFO - 接收器信息获取成功
+2025-04-07 14:35:02,216 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:35:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:35:03,243 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:35:03] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:35:03,249 - root - INFO - 接收器信息获取成功
+2025-04-07 14:35:03,250 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:35:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:36:06,782 - root - INFO - 接收器信息获取成功
+2025-04-07 14:36:06,782 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:36:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:36:07,801 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:36:07] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:36:07,806 - root - INFO - 接收器信息获取成功
+2025-04-07 14:36:07,806 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:36:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:36:46,414 - root - INFO - 接收器信息获取成功
+2025-04-07 14:36:46,415 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:36:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:36:47,434 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:36:47] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:36:47,438 - root - INFO - 接收器信息获取成功
+2025-04-07 14:36:47,439 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:36:47] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:38:29,197 - root - INFO - 接收器信息获取成功
+2025-04-07 14:38:29,197 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:38:29] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:38:30,215 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:38:30] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:38:30,219 - root - INFO - 接收器信息获取成功
+2025-04-07 14:38:30,220 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:38:30] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:38:59,716 - root - INFO - 接收器信息获取成功
+2025-04-07 14:38:59,717 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:38:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:39:00,738 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:39:00] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:39:00,742 - root - INFO - 接收器信息获取成功
+2025-04-07 14:39:00,743 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:39:00] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:39:35,076 - root - INFO - 接收器信息获取成功
+2025-04-07 14:39:35,076 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:39:35] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:39:36,103 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:39:36] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:39:36,108 - root - INFO - 接收器信息获取成功
+2025-04-07 14:39:36,109 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:39:36] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:40:09,086 - root - INFO - 接收器信息获取成功
+2025-04-07 14:40:09,087 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:40:09] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:40:10,093 - root - INFO - 接收器信息获取成功
+2025-04-07 14:40:10,094 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:40:10] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:40:11,108 - root - INFO - 接收器信息获取成功
+2025-04-07 14:40:11,108 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:40:11] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:40:12,122 - root - INFO - 接收器信息获取成功
+2025-04-07 14:40:12,123 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:40:12] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:40:13,151 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:40:13] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:40:13,156 - root - INFO - 接收器信息获取成功
+2025-04-07 14:40:13,157 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:40:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:41:16,481 - root - INFO - 接收器信息获取成功
+2025-04-07 14:41:16,482 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:41:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:41:17,502 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:41:17] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:41:17,509 - root - INFO - 接收器信息获取成功
+2025-04-07 14:41:17,509 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:41:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:41:56,172 - root - INFO - 接收器信息获取成功
+2025-04-07 14:41:56,172 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:41:56] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:41:57,188 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:41:57] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:41:57,192 - root - INFO - 接收器信息获取成功
+2025-04-07 14:41:57,193 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:41:57] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:07,831 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:07,831 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:08,851 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:08,852 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:08] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:09,858 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:09,859 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:09] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:10,870 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:10,871 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:10] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:11,881 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:11,882 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:11] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:12,894 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:12,895 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:12] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:13,905 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:13,906 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:13] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:14,910 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:14,910 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:14] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:15,924 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:15,925 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:15] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:16,932 - root - ERROR - 获取skydel模拟数据失败:GetSimulationElapsedTime failed: Forbidden because simulation is not running.
+2025-04-07 14:51:16,933 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:16] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:28,369 - root - INFO - skydel仿真器连接成功,设备序列号：123456789,外部衰减：5.0,隔直器安装：1
+2025-04-07 14:51:28,369 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:28] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-07 14:51:29,380 - root - INFO - 信号频点设置成功
+2025-04-07 14:51:29,380 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:29] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-07 14:51:30,374 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:51:30,375 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:30] "POST /customized/offset HTTP/1.1" 200 -
+2025-04-07 14:51:31,071 - root - INFO - 自定义路径设置成功
+2025-04-07 14:51:31,072 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:31] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-07 14:51:31,396 - root - INFO - 仿真器启动成功
+2025-04-07 14:51:31,397 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:31] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-07 14:51:31,747 - root - INFO - 接收器串口设置成功
+2025-04-07 14:51:31,747 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:31] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-07 14:51:33,047 - root - INFO - 接收器成功接受数据
+2025-04-07 14:51:33,047 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:33] "POST /receiver/start HTTP/1.1" 200 -
+2025-04-07 14:51:37,018 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:37,018 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:37] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:38,032 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:38] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:38,063 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:38,064 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:38] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:39,082 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:39] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:39,085 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:39,085 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:39] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:40,092 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:40] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:40,095 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:40,096 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:40] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:41,105 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:41] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:41,109 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:41,110 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:41] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:42,131 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:42] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:42,134 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:42,135 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:42] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:43,146 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:43] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:43,149 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:43,149 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:43] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:44,157 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:44] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:44,160 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:44,160 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:44] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:45,181 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:45] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:45,184 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:45,184 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:45] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:51:46,196 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:46] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:51:46,199 - root - INFO - 接收器信息获取成功
+2025-04-07 14:51:46,199 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:51:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:15,721 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:15,721 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:15] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:16,736 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:16] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:16,739 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:16,740 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:17,749 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:17] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:17,753 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:17,753 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:18,763 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:18] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:18,767 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:18,767 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:19,777 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:19] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:19,780 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:19,780 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:20,798 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:20] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:20,803 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:20,803 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:20] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:21,824 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:21] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:21,828 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:21,828 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:21] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:22,837 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:22] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:22,842 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:22,842 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:22] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:23,866 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:23] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:23,872 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:23,872 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:23] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:52:24,893 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:24] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:52:24,898 - root - INFO - 接收器信息获取成功
+2025-04-07 14:52:24,899 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:52:24] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:06,908 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:06,909 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:06,922 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:06] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:54:07,931 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:07,932 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:08,946 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:08,947 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:08] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:09,963 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:09,963 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:09] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:10,980 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:10,980 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:10] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:11,993 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:11,994 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:11] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:13,005 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:13,005 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:14,026 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:14,026 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:14] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:15,032 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:15,033 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:15] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:16,042 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:16,043 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:16,053 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:54:16,053 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:16] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:54:16,061 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:16] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:54:17,073 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:17,074 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:18,087 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:18,087 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:19,098 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:19,099 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:20,107 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:20,108 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:20] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:21,122 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:21,123 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:21] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:22,135 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:22,135 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:22] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:23,147 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:23,148 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:23] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:24,158 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:24,159 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:24] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:25,169 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:25,170 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:25] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:25,178 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:54:25,179 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:25] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:54:25,188 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:25] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:54:26,199 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:26,199 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:26] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:27,215 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:27,216 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:27] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:28,229 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:28,229 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:28] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:29,248 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:29,248 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:29] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:30,261 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:30,261 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:30] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:31,273 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:31,274 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:31] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:32,288 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:32,288 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:32] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:33,302 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:33,302 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:33] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:34,319 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:34,320 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:34] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:34,328 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:54:34,329 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:34] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:54:34,336 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:34] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:54:35,353 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:35,354 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:35] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:36,371 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:36,371 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:36] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:37,387 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:37,388 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:37] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:38,403 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:38,404 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:38] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:39,413 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:39,413 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:39] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:40,425 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:40,426 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:40] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:41,443 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:41,443 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:41] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:42,461 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:42,462 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:42] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:43,474 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:43,475 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:43] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:43,485 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:54:43,486 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:43] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:54:43,494 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:43] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:54:44,513 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:44,513 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:44] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:45,522 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:45,522 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:45] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:46,529 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:46,529 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:47,545 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:47,545 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:47] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:48,557 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:48,557 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:48] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:49,571 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:49,572 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:49] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:50,584 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:50,584 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:50] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:51,596 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:51,597 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:51] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:52,604 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:52,605 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:52] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:52,614 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:54:52,614 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:52] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:54:52,621 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:52] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:54:53,630 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:53,630 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:53] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:54,643 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:54,643 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:54] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:55,652 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:55,653 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:55] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:56,668 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:56,669 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:56] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:57,681 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:57,682 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:57] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:58,699 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:58,700 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:58] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:54:59,717 - root - INFO - 接收器信息获取成功
+2025-04-07 14:54:59,718 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:54:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:00,724 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:00,724 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:00] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:01,736 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:01,737 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:01] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:01,747 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:55:01,747 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:01] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:55:01,755 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:01] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:55:02,761 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:02,761 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:03,771 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:03,772 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:04,779 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:04,780 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:04] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:05,788 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:05,789 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:05] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:06,803 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:06,804 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:07,819 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:07,820 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:12,417 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:12,418 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:12] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:12,425 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:12] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:55:13,444 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:13,445 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:14,461 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:14,462 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:14] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:15,481 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:15,482 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:15] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:16,493 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:16,494 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:17,509 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:17,509 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:53,374 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:53,375 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:53] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:53,383 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:53] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:55:54,388 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:54,389 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:54] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:55,405 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:55,405 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:55] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:55:56,418 - root - INFO - 接收器信息获取成功
+2025-04-07 14:55:56,418 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:55:56] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:56:59,702 - root - INFO - 接收器信息获取成功
+2025-04-07 14:56:59,703 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:56:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:56:59,708 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:56:59] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:57:00,723 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:00,724 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:00] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:01,739 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:01,740 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:01] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:02,745 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:02,745 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:03,761 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:03,762 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:04,769 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:04,770 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:04] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:05,777 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:05,777 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:05] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:06,785 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:06,785 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:07,803 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:07,804 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:08,819 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:08,819 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:08] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:08,829 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:57:08,830 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:08] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:57:08,838 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:08] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:57:09,857 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:09,858 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:09] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:10,868 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:10,869 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:10] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:11,880 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:11,880 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:11] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:12,898 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:12,899 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:12] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:57:13,915 - root - INFO - 接收器信息获取成功
+2025-04-07 14:57:13,915 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:57:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:43,453 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:43,454 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:43] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:43,464 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:43] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:58:44,478 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:44,479 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:44] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:45,499 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:45,500 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:45] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:46,510 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:46,510 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:46] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:47,517 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:47,517 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:47] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:48,526 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:48,527 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:48] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:49,537 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:49,538 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:49] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:50,556 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:50,556 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:50] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:51,571 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:51,571 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:51] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:52,588 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:52,589 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:52] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:52,597 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:58:52,597 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:52] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:58:52,604 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:52] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:58:53,616 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:53,617 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:53] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:54,635 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:54,636 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:54] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:55,650 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:55,650 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:55] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:56,660 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:56,661 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:56] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:57,677 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:57,678 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:57] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:58,683 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:58,684 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:58] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:58:59,699 - root - INFO - 接收器信息获取成功
+2025-04-07 14:58:59,700 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:58:59] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:00,712 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:00,713 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:00] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:01,724 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:01,724 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:01] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:01,734 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:59:01,735 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:01] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:59:01,746 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:01] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:59:02,763 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:02,764 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:02] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:03,773 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:03,773 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:03] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:04,787 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:04,788 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:04] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:05,805 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:05,805 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:05] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:06,812 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:06,813 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:06] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:07,823 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:07,823 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:07] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:08,835 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:08,836 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:08] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:09,848 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:09,849 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:09] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:10,854 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:10,855 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:10] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:10,865 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:59:10,866 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:10] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:59:10,874 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:10] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:59:11,884 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:11,885 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:11] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:12,898 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:12,899 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:12] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:13,903 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:13,903 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:13] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:14,921 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:14,921 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:14] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:15,937 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:15,937 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:15] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:16,956 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:16,957 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:16] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:17,970 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:17,970 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:17] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:18,980 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:18,980 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:18] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:19,997 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:19,998 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:19] "GET /receiver/location HTTP/1.1" 200 -
+2025-04-07 14:59:20,008 - root - INFO - 输出基准功率设置成功
+2025-04-07 14:59:20,009 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:20] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-07 14:59:20,017 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:20] "GET /vehicleinfo HTTP/1.1" 200 -
+2025-04-07 14:59:21,024 - root - INFO - 接收器信息获取成功
+2025-04-07 14:59:21,025 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2025 14:59:21] "GET /receiver/location HTTP/1.1" 200 -

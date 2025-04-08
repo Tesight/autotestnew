@@ -138,17 +138,15 @@ class PathTrajectory:#路径轨迹类
                 self.path_list_deg.append([speed,llaPos.latDeg(),llaPos.lonDeg(),llaPos.alt])
                 self.push_list_radian.append([speed,llaPos.lat,llaPos.lon,llaPos.alt])
 
-    def __StaticTrajectory(self,travelTime,timeStep):
-        speed = 0
-        i = 0.0
-        while True:
-            if i > travelTime:
-                break
-            self.push_list_radian.append([speed,self.ORIGIN.lat,self.ORIGIN.lon,self.ORIGIN.alt])
-            self.path_list_deg.append([speed,self.ORIGIN.latDeg(),self.ORIGIN.lonDeg(),self.ORIGIN.alt])
-            
-            
-            i+= timeStep
+    # def __StaticTrajectory(self,travelTime,timeStep):
+    #     speed = 0
+    #     i = 0.0
+    #     while True:
+    #         if i > travelTime:
+    #             break
+    #         self.push_list_radian.append([speed,self.ORIGIN.lat,self.ORIGIN.lon,self.ORIGIN.alt])
+    #         self.path_list_deg.append([speed,self.ORIGIN.latDeg(),self.ORIGIN.lonDeg(),self.ORIGIN.alt])
+    #         i+= timeStep
 
     def __RectangleTrajectory(self, speed, length, width, turn_radius, rotation_direction, time_step, direction_matrix):
         """生成矩形轨迹（含圆角）
@@ -398,9 +396,9 @@ class PathTrajectory:#路径轨迹类
                                             timeStep=route['timeStep'],
                                             lastDirectionMatrix=route['lastDirectionMatrix'],
                                             circle=True)   
-            elif route['type'] == 'static':#静态轨迹
-                self.__StaticTrajectory(travelTime=route['travelTime'],
-                                        timeStep=route['timeStep'])
+            # elif route['type'] == 'static':#静态轨迹
+            #     self.__StaticTrajectory(travelTime=route['travelTime'],
+            #                             timeStep=route['timeStep'])
             elif route['type'] == 'rectangle':#矩形轨迹
                 # 初始方向向东，生成顺时针矩形轨迹
                 for i in range(route['repeat']):
@@ -691,7 +689,20 @@ class MySimulator:#模拟器类
                                                     )) 
         self.simulator.call(SetDuration(self.duration_time))
         self.simulator.arm()
-        
+    
+    def setStatic2(self,time):
+        # 设置定点
+        self.simulator.call(SetVehicleTrajectoryFix("Fix",
+                                                    toRadian(self.pathTrajectoryGenerator.LAT),
+                                                    toRadian(self.pathTrajectoryGenerator.LONG),
+                                                    self.pathTrajectoryGenerator.ALT,
+                                                    toRadian(self.pathTrajectoryGenerator.YAW),
+                                                    toRadian(self.pathTrajectoryGenerator.PITCH),
+                                                    toRadian(self.pathTrajectoryGenerator.ROLL)
+                                                    )) 
+        self.simulator.call(SetDuration(time))
+        self.simulator.arm()    
+
     def setDynamic(self):
         # self.antennaModelGenerator.generateClearSky()
         # # self.__simulator_init_new_config(bandList= ["UpperL"], signalList=["L1CA,G1,E1,B1"])    
@@ -864,6 +875,7 @@ class MySimulator:#模拟器类
             speed: 速度 
         """
         if self.simulator.hasVehicleInfo():
+
             time = self.get_current_simulation_time()
             info = self.simulator.lastVehicleInfo()
             lla = info.ecef.toLla()
@@ -871,27 +883,32 @@ class MySimulator:#模拟器类
             pitch = info.attitude.pitchDeg()
             roll = info.attitude.rollDeg()  
             pc=self.output_reference_power
-        
-        
-            return time,lla,info.odometer,info.speed,yaw,pitch,roll,pc
+            #print("lla:"+str(lla),"info"+str(info),"yaw:"+str(yaw),"pitch:"+str(pitch),"roll:"+str(roll),"pc:"+str(pc),"time:"+str(time))
+            return lla,info.odometer,info.speed,yaw,pitch,roll,pc,time
         else:
             raise Exception("No VehicleInfo,maybe the simulator didn't start.") 
 
     def customizedTest(self,routeList):
         self.__resetStartPoint()#重置起点为弧度制
+        for route in routeList:
+            # print(route)
+            if type(route) == str:
+               route = json.loads(route.replace("'",'"'))
+            if route['type'] != 'static':#匀速直线轨迹
+                self.pathTrajectoryGenerator.generateCustomerRoute(routeList,self.duration_time)
+            # print(self.pathTrajectoryGenerator.push_list_radian)
+                self.pushRouteNode(self.pathTrajectoryGenerator.push_list_radian)
+                self.simulator.arm() 
+            else:
+                self.setStatic2(route['travelTime'])
         
-        self.pathTrajectoryGenerator.generateCustomerRoute(routeList,self.duration_time)
-        # print(self.pathTrajectoryGenerator.push_list_radian)
-        
-        self.pushRouteNode(self.pathTrajectoryGenerator.push_list_radian)
-        self.simulator.arm()    
-
     def setGlobalPowerOffset(self,offset:int):
         #-45---30
         self.simulator.call(SetGlobalPowerOffset(offset))
     
     def getSignalPowerOffset2(self):#获取信号功率偏移
         self.globaloffset=-(-self.output_reference_power+self.skydel_Benchmark_Power-self.externalattenuation+self.gain)
+        # print(str(self.globaloffset)+"***************************")
         if self.globaloffset < -45 or self.globaloffset > 30:
             raise Exception("Global Power Offset out of range")
         else:
@@ -983,14 +1000,16 @@ class MySimulator:#模拟器类
         return visibles.svId()
 
 
-    def get_current_simulation_time(self):#获取当前模拟时间
+    def get_current_simulation_time(self):
         # 获取模拟器已运行的毫秒数
-        elapsed_milliseconds = self.simulator.call(GetSimulationElapsedTime())
-        
-        # 将毫秒转换为时间增量（timedelta）
+        elapsed_time_result = self.simulator.call(GetSimulationElapsedTime())
+        # 从结果对象中提取毫秒值
+        elapsed_milliseconds = elapsed_time_result.milliseconds()
+        # 现在可以正确创建 timedelta 对象
         delta = timedelta(milliseconds=elapsed_milliseconds)
-        
         # 计算当前模拟时间
+        if self.startTime is None:
+            self.startTime = datetime.now()
         current_time = self.startTime + delta
         return current_time
     
@@ -1077,7 +1096,10 @@ class Receiver:#dut类
     def getMessage(self):
         m = self.sio.readline()#读取一行数据
         # m = m.decode()
-        # print(m)
+        # print(m, flush=True)
+        # 同时保存到文件
+        # with open('nmea_log.txt', 'a') as f:
+        #     f.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} - {m}\n")
         msg = pynmea2.parse(m)#解析数据
         if msg.sentence_type == "GGA":
             self.parse_GGA(msg)
@@ -1105,18 +1127,47 @@ class Receiver:#dut类
         self.GSV_info['receiver_running'] = self.running
         return self.GSV_info
 
+    # def __startReceive(self):
+    #     errCount = 0
+    #     while self.running:
+    #         # self.infoUpdated = False
+    #         try:
+    #             print(1)
+    #             if self.getMessage():
+    #                 errCount = 0
+    #                 self.infoUpdated = True
+    #                 self.err_message = None
+    #         except Exception as e:
+
+    #             errCount += 1
+    #             if errCount > 200:
+    #                 self.running = False
+    #                 self.err_message = e
+
     def __startReceive(self):
         errCount = 0
         while self.running:
-            # self.infoUpdated = False
             try:
                 if self.getMessage():
                     errCount = 0
                     self.infoUpdated = True
                     self.err_message = None
             except Exception as e:
-                errCount += 1
-                if errCount > 50:
+                # 添加详细错误记录
+                error_type = type(e).__name__
+                error_msg = str(e)
+                print(f"接收错误: {error_type} - {error_msg}")
+                
+                # 区分不同类型的错误
+                if isinstance(e, (pynmea2.ParseError, UnicodeDecodeError)):
+                    # 解析错误不计入严重错误
+                    print("NMEA解析错误，不增加错误计数")
+                else:
+                    errCount += 1
+                    print(f"错误计数增加: {errCount}/200")
+                
+                if errCount > 200:
+                    print(f"错误计数超限，停止接收线程")
                     self.running = False
                     self.err_message = e
 
@@ -1125,42 +1176,51 @@ class Receiver:#dut类
         self.message_thread = threading.Thread(target=self.__startReceive,daemon=True)
         self.message_thread.start() 
 
-    def parse_GGA(self,msg):
-        self.location_dict['update_time'] = msg.datetime
+    def parse_GGA(self, msg):
+        # self.location_dict['update_time'] = msg.datetime.strftime("%Y-%m-%d %H:%M:%S")
         self.location_dict['receiver_running'] = self.running
-        self.location_dict['lat_deg'] = msg.latitude
-        self.location_dict['lon_deg'] = msg.longitude
-        self.location_dict['alt'] = msg.altitude
+        # 格式化经纬度高度到固定小数位
+        formatted_lat = round(msg.latitude, 6)  # 纬度保留6位小数
+        formatted_lon = round(msg.longitude, 6)  # 经度保留6位小数
+        # 计算椭球高度并格式化
+        altitude = float(msg.altitude) if msg.altitude else 0
+        geo_sep = float(msg.geo_sep) if msg.geo_sep else 0
+        formatted_alt = round(altitude + geo_sep, 3)  # 高度保留3位小数
+        self.location_dict['lat_deg'] = formatted_lat
+        self.location_dict['lon_deg'] = formatted_lon
+        self.location_dict['alt'] = formatted_alt
         self.location_dict['isValid'] = msg.is_valid
         self.location_dict['message'] = str(msg)
         self.location_dict['num_sats'] = msg.num_sats
         self.location_dict['err_message'] = self.err_message
-        self.location_dict['speed'] = msg.spd_over_grnd  # 提取速度信息
 
-    def parse_RMC(self,msg):
-        self.location_dict['update_time'] = msg.datetime
-        
+    def parse_RMC(self, msg):
         self.location_dict['receiver_running'] = self.running
-        self.location_dict['lat_deg'] = msg.latitude
-        self.location_dict['lon_deg'] = msg.longitude
-        self.location_dict['alt'] = msg.altitude
-        self.location_dict['datetime'] = msg.datetime
+        
+        # 格式化经纬度
+        formatted_lat = round(msg.latitude, 6)
+        formatted_lon = round(msg.longitude, 6)
+        
+        self.location_dict['lat_deg'] = formatted_lat
+        self.location_dict['lon_deg'] = formatted_lon
+        self.location_dict['datetime'] = msg.datetime.strftime("%Y-%m-%d %H:%M:%S")
         self.location_dict['isValid'] = msg.is_valid
         self.location_dict['message'] = str(msg)
         self.location_dict['err_message'] = self.err_message
-        self.location_dict['speed'] = msg.spd_over_grnd  # 提取速度信息
+        self.location_dict['speed'] = round(msg.spd_over_grnd, 2) if msg.spd_over_grnd else 0
         
-    def parse_GLL(self,msg):
-        self.location_dict['update_time'] = msg.datetime
-        
+    def parse_GLL(self, msg):
         self.location_dict['receiver_running'] = self.running
-        self.location_dict['lat_deg'] = msg.latitude
-        self.location_dict['lon_deg'] = msg.longitude
-        self.location_dict['alt'] = msg.altitude
+        
+        # 格式化经纬度
+        formatted_lat = round(msg.latitude, 6)
+        formatted_lon = round(msg.longitude, 6)
+        
+        self.location_dict['lat_deg'] = formatted_lat
+        self.location_dict['lon_deg'] = formatted_lon
         self.location_dict['isValid'] = msg.is_valid
         self.location_dict['message'] = str(msg)
         self.location_dict['err_message'] = self.err_message
-        self.location_dict['speed'] = msg.spd_over_grnd  # 提取速度信息
 
     def parse_GSV(self,msg,line): 
         num_sv_in_view = int(msg.num_sv_in_view)
@@ -1174,7 +1234,6 @@ class Receiver:#dut类
         elif 'GA' in line:
             self.GSV_info['num_sv_in_view']['GLONASS'] = num_sv_in_view 
             
-        self.GSV_info['update_time'] = msg.datetime
         
         self.GSV_info['num_sv_in_view']['all'] = self.GSV_info['num_sv_in_view']['GPS']+self.GSV_info['num_sv_in_view']['BeiDou']+self.GSV_info['num_sv_in_view']['Galileo']+self.GSV_info['num_sv_in_view']['GLONASS']
     
