@@ -701,7 +701,7 @@ class MySimulator:#模拟器类
                                                     toRadian(self.pathTrajectoryGenerator.ROLL)
                                                     )) 
         self.simulator.call(SetDuration(time))
-        self.simulator.arm()    
+        self.simulator.arm()
 
     def setDynamic(self):
         # self.antennaModelGenerator.generateClearSky()

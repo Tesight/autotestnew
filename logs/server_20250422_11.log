@@ -1,0 +1,36 @@
+2025-04-22 11:27:43,452 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：0.0,隔直器安装：1
+2025-04-22 11:27:43,452 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:27:43] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-22 11:28:07,992 - root - INFO - 仿真器停止成功
+2025-04-22 11:28:07,992 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:28:07] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-22 11:28:08,334 - root - INFO - 信号频点设置成功
+2025-04-22 11:28:08,334 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:28:08] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-22 11:28:08,358 - root - INFO - 输出基准功率设置成功
+2025-04-22 11:28:08,359 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:28:08] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-22 11:28:08,577 - root - INFO - 自定义路径设置成功
+2025-04-22 11:28:08,577 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:28:08] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-22 11:30:18,651 - root - INFO - 仿真器停止成功
+2025-04-22 11:30:18,652 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:30:18] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-22 11:30:19,084 - root - INFO - 信号频点设置成功
+2025-04-22 11:30:19,085 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:30:19] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-22 11:30:19,113 - root - INFO - 输出基准功率设置成功
+2025-04-22 11:30:19,114 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:30:19] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-22 11:30:19,490 - root - INFO - 自定义路径设置成功
+2025-04-22 11:30:19,491 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:30:19] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-22 11:34:43,234 - root - INFO - 仿真器停止成功
+2025-04-22 11:34:43,234 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:34:43] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-22 11:34:43,690 - root - INFO - 信号频点设置成功
+2025-04-22 11:34:43,690 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:34:43] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-22 11:34:43,718 - root - INFO - 输出基准功率设置成功
+2025-04-22 11:34:43,718 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:34:43] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-22 11:34:45,239 - root - INFO - 自定义路径设置成功
+2025-04-22 11:34:45,240 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 11:34:45] "POST /customized/trajectory HTTP/1.1" 200 -
+2025-04-22 12:20:47,686 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：0.0,隔直器安装：1
+2025-04-22 12:20:47,687 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 12:20:47] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-22 12:22:11,936 - root - INFO - 仿真器停止成功
+2025-04-22 12:22:11,936 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 12:22:11] "POST /simulatorcontrol HTTP/1.1" 200 -
+2025-04-22 12:22:12,382 - root - INFO - 信号频点设置成功
+2025-04-22 12:22:12,382 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 12:22:12] "POST /customized/frequencyset HTTP/1.1" 200 -
+2025-04-22 12:22:12,411 - root - INFO - 输出基准功率设置成功
+2025-04-22 12:22:12,411 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 12:22:12] "POST /customized/offset2 HTTP/1.1" 200 -
+2025-04-22 12:22:12,748 - root - INFO - 自定义路径设置成功
+2025-04-22 12:22:12,748 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 12:22:12] "POST /customized/trajectory HTTP/1.1" 200 -

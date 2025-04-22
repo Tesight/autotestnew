@@ -1,0 +1,32 @@
+2025-04-15 17:24:19,649 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：0.0,隔直器安装：1
+2025-04-15 17:24:19,649 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:19] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-15 17:24:25,796 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：0.0,隔直器安装：1
+2025-04-15 17:24:25,797 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:25] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-15 17:24:29,530 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:29,530 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:29] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:33,043 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:33,044 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:33] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:35,317 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:35,318 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:35] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:38,045 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：0.0,隔直器安装：1
+2025-04-15 17:24:38,046 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:38] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-15 17:24:44,522 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：0.0,隔直器安装：1
+2025-04-15 17:24:44,522 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:44] "POST /customized/connect HTTP/1.1" 200 -
+2025-04-15 17:24:46,043 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:46,043 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:46] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:47,571 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:47,571 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:47] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:48,448 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:48,448 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:48] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:49,222 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:49,222 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:49] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:49,923 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:49,924 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:49] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:51,038 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:51,038 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:51] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:52,535 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:52,535 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:52] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:54,085 - root - ERROR - 接收器串口设置错误
+2025-04-15 17:24:54,085 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:54] "POST /receiver/setser HTTP/1.1" 200 -
+2025-04-15 17:24:57,477 - root - INFO - skydel仿真器连接成功,设备序列号：None,外部衰减：0.0,隔直器安装：1
+2025-04-15 17:24:57,477 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 17:24:57] "POST /customized/connect HTTP/1.1" 200 -
