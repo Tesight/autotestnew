@@ -8,8 +8,8 @@ import imghdr
 class PDF(FPDF):
     def __init__(self):
         super().__init__()
-        self.add_font('OPPOSans', '', 'C:/baidunetdiskdownload/mysence/font/OPPOSans-B.ttf', uni=True)
-        self.logo_path = 'C:/baidunetdiskdownload/mysence/logo/favicon.png'  # 默认 logo 路径
+        self.add_font('OPPOSans', '', 'C:/baidunetdiskdownload/clean_production/autotestnew/font/OPPOSans-B.ttf', uni=True)
+        self.logo_path = 'C:/baidunetdiskdownload/clean_production/autotestnew/logo/favicon.png'  # 默认 logo 路径
 
     def header(self):
         # 设置页面宽度
@@ -136,8 +136,8 @@ def yaml_to_pdf(yaml_file_path, pdf_file_path=None, logo_path=None):
         return None
 
 if __name__ == "__main__":
-    yaml_file = "C:/baidunetdiskdownload/mysence/testsuits/yongli/testcase/casedata/lib/测试报告.yaml"
-    logo_path = "C:/baidunetdiskdownload/mysence/logo/favicon.png"
+    yaml_file = "C:/baidunetdiskdownload/clean_production/autotestnew/lib/测试报告.yaml"
+    logo_path = "C:/baidunetdiskdownload/clean_production/autotestnew/logo/favicon.png"
     pdf_path = yaml_to_pdf(yaml_file,logo_path=logo_path)
     if pdf_path:
         print(f"PDF 文件已生成: {pdf_path}")
