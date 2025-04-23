@@ -1,4 +1,3 @@
-from logging import LogRecord
 import os
 import sys
 import time

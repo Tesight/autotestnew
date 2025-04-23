@@ -39,13 +39,12 @@ class PathTrajectory:#路径轨迹类
         # 统计总路径行驶时间
         self.runningTime = 0
     
-    def __StraightLineTrajectory(self,initialVelocity,finalVelocity=600,accelerationDistance=0,travelTime=0,timeStep=0,directionMatrix=(0,0),flag=0,acceleration=0):
+    def __StraightLineTrajectory(self,initialVelocity,finalVelocity=600,travelTime=0,timeStep=0,directionMatrix=(0,0),flag=0,acceleration=0):
         """_summary_
         生成直线轨迹
         Args:
             initialVelocity (_type_): m/s
             finalVelocity (_type_): m/s
-            accelerationDistance (_type_): m
             travelTime(_type_):s
             timeStep (_type_): s
             directionMatrix (_type_): (X,Y)
@@ -65,7 +64,7 @@ class PathTrajectory:#路径轨迹类
                     self.push_list_radian.append([speed,llaPos.lat,llaPos.lon,llaPos.alt])
                 i+=timeStep
         elif flag == 1:
-            a = (finalVelocity**2 - initialVelocity**2) / (2 * accelerationDistance) #加速度
+            a = acceleration
             # 计算直线加速轨迹
             t = (finalVelocity-initialVelocity)/a
             self.runningTime+=t
@@ -395,10 +394,7 @@ class PathTrajectory:#路径轨迹类
                                             rotationDirection=route['rotationDirection'],
                                             timeStep=route['timeStep'],
                                             lastDirectionMatrix=route['lastDirectionMatrix'],
-                                            circle=True)   
-            # elif route['type'] == 'static':#静态轨迹
-            #     self.__StaticTrajectory(travelTime=route['travelTime'],
-            #                             timeStep=route['timeStep'])
+                                            circle=True)
             elif route['type'] == 'rectangle':#矩形轨迹
                 # 初始方向向东，生成顺时针矩形轨迹
                 for i in range(route['repeat']):
