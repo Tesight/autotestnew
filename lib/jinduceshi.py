@@ -435,6 +435,7 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
             print("等待接收机定位...")
             time.sleep(time_step)
             rsv_location = requests.get(url='http://'+address+'/receiver/location').json()
+            print(rsv_location)
             is_valid = rsv_location['message'].get('isValid')
             if is_valid:
                wait=True

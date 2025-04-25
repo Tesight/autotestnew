@@ -1098,6 +1098,7 @@ class Receiver:#dut类
         #     f.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} - {m}\n")
         msg = pynmea2.parse(m)#解析数据
         if msg.sentence_type == "GGA":
+            print(msg.is_valid)
             self.parse_GGA(msg)
             return True
         elif msg.sentence_type == "GSV":
