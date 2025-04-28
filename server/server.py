@@ -509,7 +509,6 @@ class VehicleInfo(Resource):#获取skydel模拟数据
                     }
         except Exception as e:
             # sim.simulator_disconnect()
-            print(1)
             Log().logger.error(f"获取skydel模拟数据失败:{str(e)}")
             return {"status":"failed","message":"Error: "+str(e)}
                    

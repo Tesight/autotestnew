@@ -871,7 +871,6 @@ class MySimulator:#模拟器类
             speed: 速度 
         """
         if self.simulator.hasVehicleInfo():
-
             time = self.get_current_simulation_time()
             info = self.simulator.lastVehicleInfo()
             lla = info.ecef.toLla()
@@ -1005,8 +1004,10 @@ class MySimulator:#模拟器类
         delta = timedelta(milliseconds=elapsed_milliseconds)
         # 计算当前模拟时间
         if self.startTime is None:
-            self.startTime = datetime.now()
-        current_time = self.startTime + delta
+            st = datetime.now()
+        else:
+            st = datetime(self.startTime[0],self.startTime[1],self.startTime[2],self.startTime[3],self.startTime[4],self.startTime[5])
+        current_time = st + delta
         return current_time
     
     

@@ -444,6 +444,7 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
             count=0
             sum=0
             sim_location = requests.get(url='http://'+address+'/vehicleinfo').json()
+            print(sim_location["status"], sim_location["message"])
             if sim_location['status'] == 'success':
               # 将数据存储在 YAML 文件中
               data = {      'sim_current_time':sim_location['message']['sim_current_time'],
@@ -452,6 +453,7 @@ def capture_sensitivity(locus ='' ,data_num =300,wait_time=180,time_step = 1,add
                             'sim_alt': sim_location['message']['altitude'],
                             'sim_v': 0,
                         }
+
               with FileLock("捕获灵敏度模拟器参数.yaml.lock"):
                 with open('捕获灵敏度模拟器参数.yaml', 'w') as file:
                   yaml.dump(data, file)

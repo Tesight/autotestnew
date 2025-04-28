@@ -39,10 +39,10 @@ class ClientHil(Client):
     
   def pollVehicleInfo(self):
     _start = datetime.datetime.now()
-
     sent = None
     oldTimeout = self.sock.gettimeout()
     self.sock.settimeout(0)
+
     try:
       result, addr = self.sock.recvfrom(255)
       id = result[0]
